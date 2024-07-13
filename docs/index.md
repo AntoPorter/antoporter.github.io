@@ -1,5 +1,6 @@
 # Home
 
-Hi Everyone!
-
 **UNDER CONSTRUCTION**
+
+**Content Coming Soon!**
+
