@@ -1,0 +1,65 @@
+site_name: Anto Porter
+site_url: https://antoporter.github.io
+site_author: Anthony Porter.
+site_description: My Blog Site
+
+# Repository
+repo_name: AntoPorter
+repo_url: https://github.com/AntoPorter/antoporter.github.io
+
+theme:
+ name: material
+ features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+ language: en
+ palette:
+  - scheme: slate
+    toggle:
+     icon: material/toggle-switch-off-outline
+     name: Switch to light mode
+    primary: teal
+    accent: purple
+  - scheme: default
+    toggle:
+     icon: material/toggle-switch
+     name: Switch to dark mode
+    primary: teal
+    accent: lime
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/AntoPorter
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/anthonyantoporter/
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/AntoPorter"  target="_blank" rel="noopener">Anthony Porter</a>
