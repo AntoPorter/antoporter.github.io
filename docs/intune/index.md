@@ -3,4 +3,4 @@
 
 Quick Menu: 
 
-- [Intune Remediations](.\remediations\remediations.md)
+- [Intune Remediations](./remediations/remediations.md)
