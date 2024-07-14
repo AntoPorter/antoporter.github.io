@@ -11,9 +11,9 @@ Welcome to my Cloud Security Hub, where I share my expertise and resources on Mi
 
 Dive into my curated collection of GitHub repositories, where you’ll find a wealth of resources, including scripts, configurations, and best practices for leveraging Microsoft Defender, Intune, and Copilot. Each repository is designed to help you implement and manage these powerful tools effectively.
 
-- [**Microsoft Defender XDR**](.\defenderxdr\index.md): Discover advanced threat protection strategies and configurations to safeguard your environment.
-- [**Microsoft Intune**](.\intune\index.md): Learn how to manage devices and applications with ease, ensuring compliance and security across your organization.
-- [**Microsoft Copilot**](.\copilot\index.md): Explore the capabilities of Copilot in enhancing your security operations and IT management through AI-powered insights and automation.
+- [**Microsoft Defender XDR**](./defenderxdr/index.md): Discover advanced threat protection strategies and configurations to safeguard your environment.
+- [**Microsoft Intune**](./intune/index.md): Learn how to manage devices and applications with ease, ensuring compliance and security across your organization.
+- [**Microsoft Copilot**](./copilot/index.md): Explore the capabilities of Copilot in enhancing your security operations and IT management through AI-powered insights and automation.
 
 
 ---
