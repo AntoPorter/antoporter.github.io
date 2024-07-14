@@ -19,7 +19,7 @@ To automatically unsanction applications with a score below 6, follow these step
 
 1. **Access Defender for Cloud Apps:** Log in to the Microsoft Defender XDR portal and navigate to Cloud Apps.
     
-2. **Navigate to Cloud App Catalog:** In the navigation pane, select ** Cloud App Catalog**. Here, you’ll see a list of all cloud apps along with their risk scores.
+2. **Navigate to Cloud App Catalog:** In the navigation pane, select **Cloud App Catalog**. Here, you’ll see a list of all cloud apps along with their risk scores.
     
 3. **Create a New Policy:** Click on **New Policy from Search** in the navigation pane.
     
