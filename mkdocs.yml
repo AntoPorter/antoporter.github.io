@@ -15,6 +15,8 @@ theme:
     - navigation.expand
     - navigation.path
     - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
     - toc.integrate
     - navigation.top
     - search.suggest
@@ -72,3 +74,23 @@ markdown_extensions:
 
 copyright: |
   &copy; 2023 <a href="https://github.com/AntoPorter"  target="_blank" rel="noopener">Anthony Porter</a>
+
+nav:
+  - Homepage:
+    - index.md
+    - .\defenderxdr\index.md
+    - .\intune\index.md
+    - .\copilot\index.md
+  - Microsoft Defender XDR:
+    - .\defenderxdr\index.md
+    - .\defenderxdr\defenderendpoint\index.md
+    - .\defenderxdr\defenderoffice365\index.md
+    - .\defenderxdr\defenderidentity\index.md
+    - .\defenderxdr\defendercloudapps\index.md         
+  - Microsoft Intune: 
+    - .\intune\index.md 
+    - .\intune\remediations\remediations.md
+  - Microsoft Copilot:
+    - .\copilot\index.md
+    - .\copilot\copilotm365\index.md
+    - .\copilot\copilotsecurity\index.md
