@@ -1,3 +1,0 @@
-# Microsoft Copilot for Security
-
-

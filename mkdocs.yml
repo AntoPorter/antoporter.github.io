@@ -11,21 +11,42 @@ theme:
  name: material
  features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
     - navigation.indexes
     - navigation.instant
     - navigation.instant.progress
+    - navigation.tracking
     - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
+    - search.share
     - content.tabs.link
     - content.code.annotate
     - content.code.copy
  language: en
  
+ extra:
+  analytics:
+    provider: google
+    property: G-2H6Z23PMCP
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback!
+
  plugins:
   - blog
   - tags
@@ -78,16 +99,32 @@ copyright: |
 nav:
   - Homepage:
     - index.md
+    - Microsoft Defender XDR: defenderxdr/index.md
+    - Endpoint Management: endpoint/index.md
+    - Microsoft Copilot: copilot/index.md
   - Microsoft Defender XDR:
-    - defenderxdr/index.md
-    - defenderxdr/defenderendpoint/index.md
-    - defenderxdr/defenderoffice365/index.md
-    - defenderxdr/defenderidentity/index.md
-    - defenderxdr/defendercloudapps/index.md         
-  - Microsoft Intune: 
-    - intune/index.md 
-    - intune/remediations/remediations.md
+    - Microsoft Defender XDR: defenderxdr/index.md
+    - Microsoft Defender for Endpoint:
+      - defenderxdr/defenderendpoint/enforcementscope.md
+    - Microsoft Defender for Office 365:
+      - defenderxdr/defenderoffice365/index.md
+    - Microsoft Defender for Identity:
+      - defenderxdr/defenderidentity/index.md  
+    - Microsoft Defender for Cloud Apps:
+      - defenderxdr/defendercloudapps/appblocking-dfe.md
+      - defenderxdr/defendercloudapps/unsanctioning-riskyapps.md  
+  - Endpoint Management: 
+    - Endpoint Management: endpoint/index.md
+    - Microsoft Intune:
+      - endpoint/intune/remediations.md
+    - Microsoft Configuration Manager:
+      - endpoint/configmgr/index.md
   - Microsoft Copilot:
-    - copilot/index.md
-    - copilot/copilotm365/index.md
-    - copilot/copilotsecurity/index.md
+    - Microsoft Copilot: copilot/index.md
+    - Microsoft Copilot for Security:
+      - copilot/copilotsecurity/deploy-templatespec.md
+      - copilot/copilotsecurity/logicapp-promptbook.md
+      - copilot/copilotsecurity/promptinspiration.md
+      - copilot/copilotsecurity/ll-scudeployment.md
+    - Microsoft Copilot for M365:
+      - copilot/copilotm365/index.md

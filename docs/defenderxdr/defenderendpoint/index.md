@@ -1,2 +1,0 @@
-# Microsoft Defender for Endpoint
-

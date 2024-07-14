@@ -1,4 +1,4 @@
-# Intune Remediations
+# Remediations
 
 The **Intune Remediations** collection is a set of script packages designed to detect and fix common support issues on user endpoints. Each script package includes a detection script, a remediation script, and metadata. By deploying these packages through Intune, you can proactively address issues before end-users even notice them, potentially reducing support calls.
 
@@ -21,7 +21,7 @@ The **Intune Remediations** collection is a set of script packages designed to
 
 #### 3. Create a Script Package
 1. **Go to Devices** > **Scripts and remediations**.
-2. **Click on Create to create a new script package.
+2. **Click on Create** to create a new script package.
 3. **Enter the Name and Description** for the script package.
 
 #### 4. Upload Scripts
@@ -45,8 +45,7 @@ The **Intune Remediations** collection is a set of script packages designed to
 - **Logging**: Include logging in your scripts to help with troubleshooting.
 - **Updates**: Regularly update your scripts to address new issues and improve performance.
 
-
-
+---
 ## Repository
 ### [Device Compliance](https://github.com/AntoPorter/Intune-Remediations/tree/main/DeviceCompliance/)
 
@@ -67,7 +66,3 @@ This category includes scripts to manage and remediate issues related to Microso
 ### [Miscellaneous](https://github.com/AntoPorter/Intune-Remediations/tree/main/Miscellaneous/)
 
 A collection of various scripts that don't fit into the other categories but are still useful for maintaining and troubleshooting devices.
-
-### Contact
-
-For support or questions, please contact me on [LinkedIn](https://www.linkedin.com/in/anthonyantoporter/).

@@ -1,13 +1,24 @@
 # Microsoft Defender XDR
 
-Quick Menu:
 
-- [Defender for Endpoint](./defenderendpoint/index.md)
+## Defender for Endpoint
+---
 
-- [Defender for Office 365](./defenderoffice365/index.md)
+- [Enforcement Scopes](./defenderendpoint/enforcementscope.md)
 
-- [Defender for Identity](./defenderidentity/index.md)
+## DRAFT Defender for Office 365
+---
 
-- [Defender for Cloud Apps](./defendercloudapps/index.md)
+- [DRAFT Defender for Office 365](./defenderoffice365/index.md)
 
+## DRAFT Defender for Identity
+---
+
+- [DRAFT Defender for Identity](./defenderidentity/index.md)
+
+## Defender for Cloud Apps
+---
+
+- [Automatically Unsanctioning Risky Apps](./defendercloudapps/unsanctioning-riskyapps.md)
+- [Enforce App Blocking with MDE](./defendercloudapps/appblocking-dfe.md)
 
