@@ -1,4 +1,4 @@
-# Copilot for Security Prompt Inspiration
+# Copilot for Security: Prompt Inspiration
 ---
 Where possible when retrieving information from Sentinel and Defender XDR, specify the following details:
 
