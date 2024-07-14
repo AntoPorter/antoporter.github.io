@@ -36,7 +36,7 @@ Once Complete, you will be able to Edit and Save the Logic App Parameters and co
 
 ### Logic App Designer
 
-![LogicAppDesigner-Overview](https://github.com/AntoPorter/CopilotForSecurity/blob/main/LogicApp-Promptbook/Images/LogicAppDesigner-Overview.png)
+![LogicAppDesigner-Overview](./Images/LogicAppDesigner-Overview.png)
 
 ### Logic App Parameters
 
@@ -51,7 +51,7 @@ Once Complete, you will be able to Edit and Save the Logic App Parameters and co
 - Prompt 3
 - Prompt 4
 
-![LogicAppDesigner-Parameters](https://github.com/AntoPorter/CopilotForSecurity/blob/main/LogicApp-Promptbook/Images/LogicAppDesigner-Parameters.png)
+![LogicAppDesigner-Parameters](./Images/LogicAppDesigner-Parameters.png)
 
 ### Prompt Template
 
@@ -70,7 +70,7 @@ Once Complete, you will be able to Edit and Save the Logic App Parameters and co
 
 Upon the successful Logic App run, the "Email" recipient should receive a Markdown style email with relative summary information as to your investigation.
 
-![LogicApp-Markdown Email](https://github.com/AntoPorter/CopilotForSecurity/blob/main/LogicApp-Promptbook/Images/LogicApp-Markdown%20Email.png)
+![LogicApp-Markdown Email](./Images/LogicApp-MarkdownEmail.png)
 
 ## Prompt Inspiration
 
