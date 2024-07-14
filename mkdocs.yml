@@ -79,15 +79,15 @@ nav:
   - Homepage:
     - index.md
   - Microsoft Defender XDR:
-    - defenderxdr\index.md
-    - defenderxdr\defenderendpoint\index.md
-    - defenderxdr\defenderoffice365\index.md
-    - defenderxdr\defenderidentity\index.md
-    - defenderxdr\defendercloudapps\index.md         
+    - defenderxdr/index.md
+    - defenderxdr/defenderendpoint/index.md
+    - defenderxdr/defenderoffice365/index.md
+    - defenderxdr/defenderidentity/index.md
+    - defenderxdr/defendercloudapps/index.md         
   - Microsoft Intune: 
-    - intune\index.md 
-    - intune\remediations\remediations.md
+    - intune/index.md 
+    - intune/remediations/remediations.md
   - Microsoft Copilot:
-    - copilot\index.md
-    - copilot\copilotm365\index.md
-    - copilot\copilotsecurity\index.md
+    - copilot/index.md
+    - copilot/copilotm365/index.md
+    - copilot/copilotsecurity/index.md
