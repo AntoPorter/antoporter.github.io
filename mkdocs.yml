@@ -78,9 +78,6 @@ copyright: |
 nav:
   - Homepage:
     - index.md
-    - .\defenderxdr\index.md
-    - .\intune\index.md
-    - .\copilot\index.md
   - Microsoft Defender XDR:
     - .\defenderxdr\index.md
     - .\defenderxdr\defenderendpoint\index.md
