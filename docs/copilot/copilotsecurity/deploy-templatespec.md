@@ -124,6 +124,8 @@
 
 **Technical Disclaimer: Logic Apps, SCU Usage, and Best Practices**
 
+---
+
 **Attention Customers!**
 
 When utilizing Logic Apps on Copilot, please be aware that it may result in increased consumption of Secure Compute Units (SCUs). We recommend closely monitoring SCU usage to optimize resource management.

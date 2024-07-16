@@ -31,11 +31,6 @@ theme:
  favicon: images/favicon.png
  logo: images/logo.png
 
- extra:
-  analytics:
-    provider: google
-    property: G-2H6Z23PMCP
-
  plugins:
   - blog
   - tags
@@ -64,6 +59,10 @@ extra:
       link: https://github.com/AntoPorter
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/anthonyantoporter/
+
+  analytics:
+    provider: google
+    property: G-2H6Z23PMCP
 
 markdown_extensions:
   - pymdownx.highlight:
