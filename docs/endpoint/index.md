@@ -4,9 +4,9 @@
 ## Microsoft Intune
 ---
 
-- [Remediations](./intune/remediations.md)
+- [Intune Remediations](./intune/remediations.md)
 
-## DRAFT Microsoft Configuration Manager
+## Microsoft Configuration Manager
 ---
 
-- [DRAFT Configuration Manager](./configmgr/index.md)
+- [Top Challenges and Solutions: Microsoft Configuration Manager to Intune Migration](./configmgr/challengesolution-mcmtointune.md)

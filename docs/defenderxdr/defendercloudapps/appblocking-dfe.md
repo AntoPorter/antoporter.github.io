@@ -1,8 +1,9 @@
 # Enforcing App Blocking with Microsoft Defender for Endpoint 
----
+
 
 Ensuring that only approved applications run within your environment is crucial for maintaining a robust security posture. Microsoft Defender for Endpoint offers powerful features to enforce app blocking and manage network indicators, making it easier to protect your organization from potential threats. In this post, we’ll explore how to enable these features and share some lessons learned from implementing them.
 
+---
 ### Enabling Custom Network Indicators
 
 **Enabling the Defender for Cloud Apps Integration from Defender for Endpoint** allow you to forward signals from devices that are onboarded and using Defender for Endpoint, giving administrators deeper visibility into both sanctioned cloud apps and shadow IT. It is also required to mark and block apps identified as Unsanctioned within Defender for Cloud Apps. Telemetry for this will be found under **Cloud Apps > Cloud Discovery**. Here’s how to enable and configure this feature:
@@ -15,6 +16,7 @@ Ensuring that only approved applications run within your environment is crucial 
 
 4. Click **Save Preferences**.
 
+---
 ### Enabling Custom Network Indicators
 
 **Custom Network Indicators** allow you to define specific network indicators of compromise (IoCs) that Defender for Endpoint should also monitor and block. Here’s how to enable and configure this feature:
@@ -27,6 +29,7 @@ Ensuring that only approved applications run within your environment is crucial 
 
 4. Click **Save Preferences**.
 
+---
 ### Enforcing App Blocking with Defender for Endpoint
 
 **App Blocking** in Defender for Endpoint allows you to prevent unauthorized or potentially harmful applications from running on your devices. Here’s how to enable and configure this feature:
@@ -39,7 +42,7 @@ Ensuring that only approved applications run within your environment is crucial 
 
 4. Click **Save**.
 
-
+---
 ### Lessons Learned
 
 Implementing app blocking and custom network indicators in Defender for Endpoint has provided several valuable insights:
@@ -56,6 +59,7 @@ Continuously monitor the effectiveness of your policies and indicators. Use the 
 4. **Integration with Other Tools:**
 Integrate Defender for Endpoint with other security tools and solutions within your organization. This provides a more comprehensive security framework and enhances overall protection.
 
+---
 ### Conclusion
 
 Microsoft Defender for Endpoint simplifies the process of enforcing app blocking and managing custom network indicators, providing a robust layer of security for your organization. By leveraging these features, you can proactively prevent unauthorized applications and monitor network threats, ensuring a secure and compliant environment.

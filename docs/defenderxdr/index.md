@@ -6,19 +6,22 @@
 
 - [Enforcement Scopes](./defenderendpoint/enforcementscope.md)
 
-## DRAFT Defender for Office 365
+
+## Defender for Office 365
 ---
 
-- [DRAFT Defender for Office 365](./defenderoffice365/index.md)
+- [Lessons Learnt: Resolving Safe Links Rewrap Breaking URLs](./defenderoffice365/ll-safelinks-rewrap.md)
 
-## DRAFT Defender for Identity
+
+## Defender for Identity
 ---
 
-- [DRAFT Defender for Identity](./defenderidentity/index.md)
+- [Top 5 Features of Microsoft Defender for Identity](./defenderidentity/top5features.md)
+
 
 ## Defender for Cloud Apps
 ---
 
 - [Automatically Unsanctioning Risky Apps](./defendercloudapps/unsanctioning-riskyapps.md)
-- [Enforce App Blocking with MDE](./defendercloudapps/appblocking-dfe.md)
+- [Enforce App Blocking with Microsoft Defender for Endpoint](./defendercloudapps/appblocking-dfe.md)
 

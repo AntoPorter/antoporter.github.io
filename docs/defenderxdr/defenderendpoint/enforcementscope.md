@@ -2,6 +2,7 @@
 ---
 Microsoft Defender for Endpoint, integrated with Microsoft Intune, offers a comprehensive solution for managing security settings across various platforms, including Windows endpoints, Windows servers, and Linux servers. This report delves into the importance of this integration and how it enhances your security management capabilities.
 
+---
 ## Key Highlights
 
 1. **Unified Management**: 
@@ -16,6 +17,7 @@ Microsoft Defender for Endpoint, integrated with Microsoft Intune, offers a comp
 4. **Cross-Platform Support**: 
    This setup supports Windows 10, Windows 11, Windows Server (2012 R2 and up), and Linux. It extends the Microsoft Intune Endpoint Security surface to devices that aren't capable of enrolling in Intune. This cross-platform support is essential for organizations with diverse IT environments, ensuring that all devices, regardless of their operating system, are secured.
 
+---
 ## Why This Integration is Important
 
 1. **Enhanced Security Posture**: 
@@ -30,6 +32,7 @@ Microsoft Defender for Endpoint, integrated with Microsoft Intune, offers a comp
 4. **Scalability**: 
    As organizations grow and their IT environments become more complex, the need for scalable security solutions becomes paramount. The integration of Defender for Endpoint with Intune provides a scalable solution that can adapt to the changing needs of the organization, ensuring that security remains robust and effective.
 
+---
 ## Lessons Learned from Deployment and Use
 
 1. **Hybrid Azure AD-Joined Devices**: 
@@ -43,5 +46,7 @@ Microsoft Defender for Endpoint, integrated with Microsoft Intune, offers a comp
 
 4. **Continuous Monitoring and Adjustment**: 
    Regularly monitoring the deployment and making necessary adjustments based on real-world feedback is important. This includes updating policies, addressing new security threats, and ensuring that all devices remain compliant with the latest security standards.
+
+---
 
 By leveraging these lessons learned, organizations can optimize their deployment and use of Microsoft Defender for Endpoint and Intune, ensuring a robust and effective security management strategy.

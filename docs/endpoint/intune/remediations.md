@@ -1,8 +1,8 @@
-# Remediations
+# Intune Remediations
 
 The **Intune Remediations** collection is a set of script packages designed to detect and fix common support issues on user endpoints. Each script package includes a detection script, a remediation script, and metadata. By deploying these packages through Intune, you can proactively address issues before end-users even notice them, potentially reducing support calls.
 
-
+---
 ## Step-by-Step Guide to Using Microsoft Intune Remediations
 
 ### Prerequisites
