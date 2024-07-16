@@ -48,7 +48,7 @@ A collection of various scripts that don't fit into the other categories but are
 2. Click on **Create Script Package** to create a new script package.
 3. **Enter the Name and Description** for the script package.
 
-![Remediations-CreateScriptPackage](./Images/Remediations-CreateScriptPackage.png)
+![Remediations-CreateScriptPackage](./Images/remediations-createscriptpackage.png)
 
 #### 4. Upload Scripts
 
@@ -60,7 +60,7 @@ A collection of various scripts that don't fit into the other categories but are
 - **Enforce script signature check**: Ensure scripts are encoded in UTF-8.
 - **Run this script using the logged-on credentials**: Choose whether to run the script with user or system credentials.
 
-![Remediations-ScriptSettings](./Images/Remediations-ScriptSettings.png)
+![Remediations-ScriptSettings](./Images/remediations-scriptsettings.png)
 
 #### 6. Assign the Script Package
 1. **Select Groups**: Assign the script package to the appropriate device groups.
