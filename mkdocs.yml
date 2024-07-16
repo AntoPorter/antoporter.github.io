@@ -28,7 +28,9 @@ theme:
     - content.code.annotate
     - content.code.copy
  language: en
- 
+ favicon: images/favicon.png
+ logo: images/logo.png
+
  extra:
   analytics:
     provider: google
@@ -48,13 +50,13 @@ theme:
      icon: material/toggle-switch-off-outline
      name: Switch to light mode
     primary: teal
-    accent: purple
+    accent: deep purple
   - scheme: default
     toggle:
      icon: material/toggle-switch
      name: Switch to dark mode
     primary: teal
-    accent: lime
+    accent: deep purple
 
 extra:
   social:
