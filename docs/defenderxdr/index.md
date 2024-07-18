@@ -25,3 +25,8 @@
 - [Automatically Unsanctioning Risky Apps](./defendercloudapps/unsanctioning-riskyapps.md)
 - [Enforce App Blocking with Microsoft Defender for Endpoint](./defendercloudapps/appblocking-dfe.md)
 
+
+## Microsoft Sentinel
+---
+
+- [Streamlining Project Documentation with ‘Workspace Usage Report’ Workbook](./sentinel/workspaceworkbookexport.md)

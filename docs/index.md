@@ -6,11 +6,13 @@
 
 Welcome to my Cloud Security Hub, where I share my expertise and resources on Microsoft Defender, Endpoint Management, and Microsoft Copilot. As a Cloud Security Architect specializing in these technologies, I aim to provide valuable insights, tools, solutions, and lessons learnt to help organizations enhance their security posture and streamline their IT operations.
 
-- [**Microsoft Defender XDR**](./defenderxdr/index.md): Discover advanced threat protection strategies and configurations to safeguard your environment.
+---
 
-- [**Endpoint Management**](./endpoint/index.md): Learn how to manage devices and applications with ease, ensuring compliance and security across your organization.
+[**Microsoft Defender XDR**](./defenderxdr/index.md): Discover advanced threat protection strategies and configurations to safeguard your environment.
 
-- [**Microsoft Copilot**](./copilot/index.md): Explore the capabilities of Copilot in enhancing your security operations and IT management through AI-powered insights and automation.
+[**Endpoint Management**](./endpoint/index.md): Learn how to manage devices and applications with ease, ensuring compliance and security across your organization.
+
+[**Microsoft Copilot**](./copilot/index.md): Explore the capabilities of Copilot in enhancing your security operations and IT management through AI-powered insights and automation.
 
 ---
 **Explore My GitHub Repositories**

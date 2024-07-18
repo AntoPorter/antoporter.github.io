@@ -100,7 +100,9 @@ nav:
       - defenderxdr/defenderidentity/top5features.md  
     - Microsoft Defender for Cloud Apps:
       - defenderxdr/defendercloudapps/appblocking-dfe.md
-      - defenderxdr/defendercloudapps/unsanctioning-riskyapps.md  
+      - defenderxdr/defendercloudapps/unsanctioning-riskyapps.md
+    - Microsoft Sentinel:
+      - defenderxdr/sentinel/workspaceworkbookexport.md 
   - Endpoint Management: 
     - Endpoint Management: endpoint/index.md
     - Microsoft Intune:
