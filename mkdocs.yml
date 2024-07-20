@@ -107,6 +107,7 @@ nav:
     - Endpoint Management: endpoint/index.md
     - Microsoft Intune:
       - endpoint/intune/remediations.md
+     - endpoint/intune/bitlocker_selfservice.md
     - Microsoft Configuration Manager:
       - endpoint/configmgr/challengesolution-mcmtointune.md
   - Microsoft Copilot:
