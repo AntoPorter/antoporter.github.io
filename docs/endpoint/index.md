@@ -4,7 +4,9 @@
 ## Microsoft Intune
 ---
 
+- [The Importance of Self-Service Recovery Key Retrieval](./intune/bitlocker_selfservice.md)
 - [Intune Remediations](./intune/remediations.md)
+
 
 ## Microsoft Configuration Manager
 ---
