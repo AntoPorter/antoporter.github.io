@@ -8,29 +8,29 @@ Setting up disk encryption with Microsoft Intune is a straightforward process th
 
 1. **Sign in to the Microsoft Intune Admin Center**
 
-   - Navigate to the [Microsoft Intune admin center](https://endpoint.microsoft.com).
+ - Navigate to the [Microsoft Intune admin center](https://endpoint.microsoft.com).
 
 2. **Create a BitLocker Policy**
 
-   - Go to **Endpoint security** > **Disk encryption** > **Create Policy**.
-   - Set the **Platform** to **Windows 10 and later**.
-   - Choose **BitLocker** as the **Profile**.
+ - Go to **Endpoint security** > **Disk encryption** > **Create Policy**.
+ - Set the **Platform** to **Windows 10 and later**.
+ - Choose **BitLocker** as the **Profile**.
 
 3. **Configure BitLocker Settings**
 
-   - **Encryption for OS and Fixed Data Drives**: Enable full disk encryption using XTS-AES 128-bit, which is the recommended encryption method.
-   - **Startup Authentication**: Configure TPM startup with PIN for added security.
-   - **Recovery Options**: Ensure that recovery keys are stored in Entra ID. This is crucial for self-service recovery.
-   - **BitLocker Removable Drive Policy**: Enable BitLocker for removable drives and set the encryption method to AES-CBC 128-bit.
+ - **Encryption for OS and Fixed Data Drives**: Enable full disk encryption using XTS-AES 128-bit, which is the recommended encryption method.
+ - **Startup Authentication**: Configure TPM startup with PIN for added security.
+ - **Recovery Options**: Ensure that recovery keys are stored in Entra ID. This is crucial for self-service recovery.
+ - **BitLocker Removable Drive Policy**: Enable BitLocker for removable drives and set the encryption method to AES-CBC 128-bit.
 
 4. **Assign the Policy**
 
-   - On the **Assignments** page, select the groups that will receive this policy.
+ - On the **Assignments** page, select the groups that will receive this policy.
    - Click **Next** and then **Create** to deploy the policy.
 
 5. **Monitor Encryption Status**
 
-   - Use the built-in encryption report in Intune to monitor the encryption status of devices. This report provides details about the encryption status across all managed devices.
+ - Use the built-in encryption report in Intune to monitor the encryption status of devices. This report provides details about the encryption status across all managed devices.
 
 ## Self-Service Recovery Key Retrieval Process
 
@@ -38,24 +38,24 @@ Empowering users to retrieve their BitLocker recovery keys without IT interventi
 
 1. **Access the Microsoft Entra ID Portal**
 
-   - Users should navigate to [myaccount.microsoft.com](https://myaccount.microsoft.com).
+ - Users should navigate to [myaccount.microsoft.com](https://myaccount.microsoft.com).
 
 2. **Sign In**
 
-   - Sign in with their organizational account.
+ - Sign in with their organizational account.
 
 3. **Navigate to Devices**
 
-   - Go to the **Devices** tab.
+ - Go to the **Devices** tab.
 
 4. **Select the Device**
 
-   - Find and select the device that is locked.
+ - Find and select the device that is locked.
 
 5. **Retrieve the Recovery Key**
 
-   - Click on **View BitLocker Keys** to display the recovery key.
-   - Enter the 48-digit recovery key on the BitLocker recovery screen to unlock the device.
+ - Click on **View BitLocker Keys** to display the recovery key.
+ - Enter the 48-digit recovery key on the BitLocker recovery screen to unlock the device.
 
 ## Conclusion
 
