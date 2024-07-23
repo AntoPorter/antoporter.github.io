@@ -10,4 +10,4 @@ Throughout my career, I've earned a range of Microsoft Certifications and have b
 
 Outside of work, I cherish spending time with my amazing wife and little boy. While I used to be an avid competitive FPS gamer and Twitch streamer (under the alias 'redsnoW'), those days are behind me. Nowadays, I've taken up tinkering with my Subaru and collecting Hot Wheels (yep, those little cars in the candy isle of grocery shops) – what started as a hobby for my son has turned into a passion of mine. How wrong I was to believe it was to be a cheap hobby, I guess no hobbies are "cheap".
 
-Feel free to connect with me on [LinkedIn](https://linkedin.com/id/anthonyantoporter) as im always happy to have a chat, collaborate or help out.
+Feel free to connect with me on [LinkedIn](https://linkedin.com/in/anthonyantoporter) as im always happy to have a chat, collaborate or help out.
