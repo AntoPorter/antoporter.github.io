@@ -92,6 +92,7 @@ nav:
     - Microsoft Defender XDR: defenderxdr/index.md
     - Endpoint Management: endpoint/index.md
     - Microsoft Copilot: copilot/index.md
+    - About Me: aboutme.md
   - Microsoft Defender XDR:
     - Microsoft Defender XDR: defenderxdr/index.md
     - Microsoft Defender for Endpoint:
