@@ -1,7 +1,7 @@
 site_name: Anto Porter
 site_url: https://antoporter.github.io
 site_author: Anthony Porter.
-site_description: My Blog Site
+site_description: My Security Hub
 
 # Repository
 repo_name: AntoPorter
@@ -84,7 +84,7 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 copyright: |
-  &copy; 2023 <a href="https://github.com/AntoPorter"  target="_blank" rel="noopener">Anthony Porter</a>
+  &copy; 2024 <a href="https://github.com/AntoPorter"  target="_blank" rel="noopener">Anthony Porter</a>
 
 nav:
   - Homepage:
@@ -123,3 +123,5 @@ nav:
     - Microsoft Copilot for M365:
       - copilot/copilotm365/gettingstarted.md
       - copilot/copilotm365/enablecopilotm365.md
+  - About Me:
+    - aboutme.md
