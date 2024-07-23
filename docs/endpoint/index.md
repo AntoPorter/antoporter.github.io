@@ -4,6 +4,7 @@
 ## Microsoft Intune
 ---
 
+- [Enhancing Security with Microsoft Intune Security Baselines and Insights](./intune/baselineinsights.md)
 - [The Importance of Self-Service Recovery Key Retrieval](./intune/bitlocker_selfservice.md)
 - [Intune Remediations](./intune/remediations.md)
 
