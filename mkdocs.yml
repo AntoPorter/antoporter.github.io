@@ -1,12 +1,14 @@
+# Site
 site_name: Anto Porter
 site_url: https://antoporter.github.io
 site_author: Anthony Porter.
-site_description: My Security Hub
+site_description: Welcome to My Cloud Security Hub
 
 # Repository
 repo_name: AntoPorter
 repo_url: https://github.com/AntoPorter/antoporter.github.io
 
+# Themes
 theme:
  name: material
  features:
@@ -31,6 +33,7 @@ theme:
  favicon: images/favicon.png
  logo: images/logo.png
 
+# Plugins
  plugins:
   - blog
   - tags
@@ -41,6 +44,7 @@ theme:
   - git-revision-date-localized:
       enable_creation_date: true
 
+# Colour Schemes
  palette:
   - scheme: slate
     toggle:
@@ -55,6 +59,7 @@ theme:
     primary: teal
     accent: deep purple
 
+# Extras
 extra:
   social:
     - icon: fontawesome/brands/github-alt
@@ -66,6 +71,7 @@ extra:
     provider: google
     property: G-2H6Z23PMCP
 
+# Extensions
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -83,15 +89,18 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+# Copyright
 copyright: |
   &copy; 2024 <a href="https://github.com/AntoPorter"  target="_blank" rel="noopener">Anthony Porter</a>
 
+# Navigation
 nav:
   - Homepage:
     - index.md
     - Microsoft Defender XDR: defenderxdr/index.md
     - Endpoint Management: endpoint/index.md
     - Microsoft Copilot: copilot/index.md
+    - Microsoft Entra: entra/index.md
     - About Me: aboutme.md
   - Microsoft Defender XDR:
     - Microsoft Defender XDR: defenderxdr/index.md
@@ -124,5 +133,7 @@ nav:
     - Microsoft Copilot for M365:
       - copilot/copilotm365/gettingstarted.md
       - copilot/copilotm365/enablecopilotm365.md
+  - Microsoft Entra:
+    - entra/azconnect-device.md
   - About Me:
     - aboutme.md

@@ -20,6 +20,10 @@ Learn how to manage devices and applications with ease, ensuring compliance and 
 
 Explore the capabilities of Copilot in enhancing your security operations and IT management through AI-powered insights and automation.
 
+## [**Microsoft Entra**](./entra/index.md)
+
+Unlock the full potential of identity and access management with Microsoft Entra, where managing permissions becomes a breeze, and security protocols align seamlessly with user experience.
+
 ---
 **Explore My GitHub Repositories**
 

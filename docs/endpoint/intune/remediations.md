@@ -37,10 +37,12 @@ A collection of various scripts that don't fit into the other categories but are
 ### Steps to Create and Deploy Remediations
 
 #### 1. Download/Create a Detection and Remediation Scripts
+
 - **Detection Script**: This script checks for the presence of an issue.
 - **Remediation Script**: This script fixes the issue detected by the detection script.
 
 #### 2. Navigate to the Intune Portal
+
 - Go to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
 #### 3. Create a Script Package
@@ -63,14 +65,17 @@ A collection of various scripts that don't fit into the other categories but are
 ![Remediations-ScriptSettings](./Images/remediations-scriptsettings.png)
 
 #### 6. Assign the Script Package
+
 1. **Select Groups**: Assign the script package to the appropriate device groups.
 2. **Click Next** and **Review + Save**.
 
 #### 7. Monitor Script Status
+
 - **Go to Reports** > **Endpoint Analytics** > **Scripts and remediations**.
 - Monitor the status and results of the script execution.
 
 ### Best Practices
+
 - **Testing**: Test your scripts in a controlled environment before deploying them widely.
 - **Logging**: Include logging in your scripts to help with troubleshooting.
 - **Updates**: Regularly update your scripts to address new issues and improve performance.

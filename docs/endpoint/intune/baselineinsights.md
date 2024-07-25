@@ -15,27 +15,27 @@ Now, this is where it gets interesting. The "Settings insight" feature. It uses 
 Alright, let's break it down step-by-step. Here's how to access and use these powerful features:
 
 1. **Sign in to the Microsoft Intune admin center.**
-   - Open your browser and go to the Microsoft Intune admin center.
-   - Enter your credentials to sign in.
+	   - Open your browser and go to the Microsoft Intune admin center.
+	   - Enter your credentials to sign in.
 
-2. **Navigate to Endpoint security.**
-   - In the left-hand menu, select **Endpoint security**.
+3. **Navigate to Endpoint security.**
+	   - In the left-hand menu, select **Endpoint security**.
 
-3. **Go to Security baselines.**
-   - Under Endpoint security, click on **Security baselines**.
+4. **Go to Security baselines.**
+	   - Under Endpoint security, click on **Security baselines**.
 
-4. **Select a baseline and create a profile.**
-   - Choose the security baseline you want to deploy.
-   - Click on **Create profile** to start configuring the baseline.
+5. **Select a baseline and create a profile.**
+	   - Choose the security baseline you want to deploy.
+	   - Click on **Create profile** to start configuring the baseline.
 
-5. **Configure settings with insights.**
-   - On the Configuration settings tab, look for the light bulb icon next to settings. This icon indicates that insights are available.
-   - Click on the light bulb icon to view the recommended settings based on similar organizations.
-   - Review these recommendations and decide if they fit your organization's needs.
+6. **Configure settings with insights.**
+	   - On the Configuration settings tab, look for the light bulb icon next to settings. This icon indicates that insights are available.
+	   - Click on the light bulb icon to view the recommended settings based on similar organizations.
+	   - Review these recommendations and decide if they fit your organization's needs.
 
-6. **Customize and deploy.**
-   - Customize the baseline settings as needed to match your specific security requirements.
-   - Once configured, deploy the baseline to your managed devices.
+7. **Customize and deploy.**
+	   - Customize the baseline settings as needed to match your specific security requirements.
+	   - Once configured, deploy the baseline to your managed devices.
 
 ## Benefits of Using Intune Security Baselines and Insights
 
