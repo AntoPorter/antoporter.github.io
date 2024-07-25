@@ -134,6 +134,7 @@ nav:
       - copilot/copilotm365/gettingstarted.md
       - copilot/copilotm365/enablecopilotm365.md
   - Microsoft Entra:
+    - entra/index.md
     - entra/azconnect-device.md
   - About Me:
     - aboutme.md
