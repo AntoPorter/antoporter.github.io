@@ -46,23 +46,26 @@ A collection of various scripts that don't fit into the other categories but are
 - Go to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 
 #### 3. Create a Script Package
+
 1. **Go to Devices** > **Scripts and remediations**.
-2. Click on **Create Script Package** to create a new script package.
-3. **Enter the Name and Description** for the script package.
+2. Click on **Create** to create a new script package.
+3. Under the Basic Tab, Enter the **Name and Description** for the script package.
 
 ![Remediations-CreateScriptPackage](./Images/remediations-createscriptpackage.png)
 
 #### 4. Upload Scripts
 
+Under the Settings Tab:
  - **Detection Script**: Upload your detection script.
  - **Remediation Script**: Upload your remediation script (optional).
+
+![Remediations-ScriptSettings](./Images/remediations-scriptsettings.png)
 
 #### 5. Configure Script Settings
 
 - **Enforce script signature check**: Ensure scripts are encoded in UTF-8.
 - **Run this script using the logged-on credentials**: Choose whether to run the script with user or system credentials.
 
-![Remediations-ScriptSettings](./Images/remediations-scriptsettings.png)
 
 #### 6. Assign the Script Package
 
