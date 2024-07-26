@@ -35,7 +35,8 @@ theme:
 
 # Plugins
  plugins:
-  - blog
+  - blog:
+      blog_dir: .
   - tags
   - social:
       cards_layout: default
@@ -43,6 +44,7 @@ theme:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - git-revision-date-localized:
       enable_creation_date: true
+      type: date
 
 # Colour Schemes
  palette:

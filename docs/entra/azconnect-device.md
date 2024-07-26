@@ -1,16 +1,3 @@
----
-title: Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell
-draft: false
-date: 2024-07-26
-description: Connect-AzAccount -Device
-categories:
-  - Entra
-tags:
-  - Entra
-  - PowerShell
-  - AzAccount
----
-
 # Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell
 
 I am sure you all understand the importance of seamless and secure connections to Azure resources. One common challenge is handling authentication issues when using PowerShell to connect to Azure. This article explores how the `Connect-AzAccount -UseDeviceAuthentication` parameter can help resolve these issues, particularly when accessing Microsoft Entra ID.
