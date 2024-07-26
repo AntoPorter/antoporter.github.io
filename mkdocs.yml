@@ -37,6 +37,7 @@ theme:
  plugins:
   - blog:
       blog_dir: .
+#      post_dir: "{blog}"
   - tags
   - social:
       cards_layout: default
