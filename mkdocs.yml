@@ -3,6 +3,7 @@ site_name: Anto Porter
 site_url: https://antoporter.github.io
 site_author: Anthony Porter.
 site_description: Welcome to My Cloud Security Hub
+edit_uri: edit/main/docs
 
 # Repository
 repo_name: AntoPorter
@@ -35,17 +36,16 @@ theme:
 
 # Plugins
  plugins:
-  - blog:
-      blog_dir: .
-#      post_dir: "{blog}"
+  - macros
   - tags
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
   - social:
       cards_layout: default
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: date
+
 
 # Colour Schemes
  palette:
