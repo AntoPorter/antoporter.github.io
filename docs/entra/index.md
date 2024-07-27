@@ -3,4 +3,4 @@
 ---
 
 - [Resolving Az Connection Issues with 'Connect-AzAccount -Device' in PowerShell](./azconnect-device.md)
-- [Draft](./testpage1.md)
+- [Test Page 1](./testpage1.md)

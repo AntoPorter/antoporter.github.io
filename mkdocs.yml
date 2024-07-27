@@ -159,6 +159,6 @@ nav:
   - Microsoft Entra:
     - entra/index.md
     - entra/azconnect-device.md
-    - entra/testpage.md
+    - entra/testpage1.md
   - About Me:
     - aboutme.md
