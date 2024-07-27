@@ -111,6 +111,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://antoporter.github.io/entra/TestPage/</loc>
+         <lastmod>2024-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://antoporter.github.io/entra/azconnect-device/</loc>
          <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
