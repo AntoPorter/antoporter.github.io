@@ -1850,7 +1850,7 @@
         
   
   <span class="md-ellipsis">
-    Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell
+    Resolving Azure Connection Issues with Connect-AzAccount -Device in PowerShell
   </span>
   
 
@@ -1957,16 +1957,24 @@
 
   
   
+    
+      
+    
+    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/defenderxdr/defenderoffice365/ll-safelinks-rewrap.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
 
 
-<h1 id="lessons-learnt-resolving-safe-links-rewrap-breaking-urls">Lessons Learnt: Resolving Safe Links Rewrap Breaking URLs</h1>
+<h1 id="lessons-learnt-resolving-safe-links-rewrap-breaking-urls">Lessons Learnt: Resolving Safe Links Rewrap Breaking URLs<a class="headerlink" href="#lessons-learnt-resolving-safe-links-rewrap-breaking-urls" title="Permanent link">&para;</a></h1>
 <p>Ensuring robust protection while maintaining user experience is paramount for clients. One feature in Microsoft Defender for Office 365 that strikes this balance is <strong>Safe Links</strong>. This feature provides real-time URL scanning and protection, safeguarding users from malicious URLs in emails and Office documents.</p>
 <hr />
-<h2 id="the-problem">The Problem</h2>
+<h2 id="the-problem">The Problem<a class="headerlink" href="#the-problem" title="Permanent link">&para;</a></h2>
 <p>A common challenge when implementing Safe Links is that legitimate URLs, such as password reset links from trusted domains, can be broken when rewrapped by Safe Links. This can lead to user frustration and increased support tickets, as users are unable to complete necessary actions like resetting their passwords. This may even lead to not using the protection feature entirely.</p>
-<h2 id="the-resolution">The Resolution</h2>
+<h2 id="the-resolution">The Resolution<a class="headerlink" href="#the-resolution" title="Permanent link">&para;</a></h2>
 <p>To address this issue, you can configure Safe Links to exclude specific domains from being rewrapped. This ensures that critical links, such as those for password resets, remain functional while still providing protection for other URLs.</p>
-<h3 id="steps-to-exclude-domains">Steps to Exclude Domains</h3>
+<h3 id="steps-to-exclude-domains">Steps to Exclude Domains<a class="headerlink" href="#steps-to-exclude-domains" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p><strong>Access the Microsoft Defender XDR Portal</strong>: Navigate to the <a href="https://security.microsoft.com">Microsoft Defender XDR portal</a>.</p>
@@ -1992,10 +2000,10 @@
 </ol>
 <p>This will ensure that all links that pass through Office 365 are inspected and rewrapped (excluding the specific domains excluded), providing time-of-click verification of the URLs by scanning URLs for potentially malicious content and again evaluating them once clicked on by an end user.</p>
 <hr />
-<h2 id="an-alternative-control">An Alternative Control</h2>
+<h2 id="an-alternative-control">An Alternative Control<a class="headerlink" href="#an-alternative-control" title="Permanent link">&para;</a></h2>
 <p>Another approach is to use the setting <strong>"Do not rewrite URLs, do checks via SafeLinks API only"</strong>.</p>
 <p>This option tells Defender for Office 365 to scan URLs using the SafeLinks API without modifying or rewrapping them.</p>
-<h3 id="benefits">Benefits</h3>
+<h3 id="benefits">Benefits<a class="headerlink" href="#benefits" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p><strong>Preserves Original URLs</strong>: Keeps the URLs in their original form, preventing issues with broken links, especially for critical functions like password resets.</p>
@@ -2007,7 +2015,7 @@
 <p><strong>Simplified Management</strong>: Reduces the need to maintain a list of excluded domains.</p>
 </li>
 </ul>
-<h3 id="disadvantages">Disadvantages</h3>
+<h3 id="disadvantages">Disadvantages<a class="headerlink" href="#disadvantages" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p><strong>Limited Protection on Some Platforms</strong>: The Safe Links API checks may not be as comprehensive on all platforms, such as mobile or web-based clients.</p>
@@ -2020,7 +2028,7 @@
 </li>
 </ul>
 <hr />
-<h2 id="lessons-learnt">Lessons Learnt</h2>
+<h2 id="lessons-learnt">Lessons Learnt<a class="headerlink" href="#lessons-learnt" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p><strong>User Experience Matters</strong>: Balancing security with usability is crucial for End Users. By excluding certain domains or using the SafeLinks API-only option, you can maintain a seamless user experience without compromising on security.</p>
@@ -2033,7 +2041,7 @@
 </li>
 </ol>
 <hr />
-<h2 id="closing-note">Closing Note</h2>
+<h2 id="closing-note">Closing Note<a class="headerlink" href="#closing-note" title="Permanent link">&para;</a></h2>
 <p>By addressing this problem and implementing the resolution, you can enhance your organization's security posture while ensuring critical functionalities remain intact. This approach not only improves user satisfaction but also reinforces the importance of adaptive security measures.</p>
 <p>Microsoft Learn Reference:</p>
 <p><a href="https://learn.microsoft.com/en-us/defender-office-365/safe-links-policies-configure#use-the-microsoft-defender-portal-to-create-safe-links-policies">Use the Microsoft Defender Portal to Create Safe Links Policies</a></p>
@@ -2126,7 +2134,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.integrate", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

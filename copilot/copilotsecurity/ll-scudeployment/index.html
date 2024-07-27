@@ -1808,7 +1808,7 @@
         
   
   <span class="md-ellipsis">
-    Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell
+    Resolving Azure Connection Issues with Connect-AzAccount -Device in PowerShell
   </span>
   
 
@@ -1915,29 +1915,37 @@
 
   
   
+    
+      
+    
+    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/copilot/copilotsecurity/ll-scudeployment.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
 
 
-<h1 id="lesson-learnt-streamlining-scu-deployment">Lesson Learnt: Streamlining SCU Deployment</h1>
+<h1 id="lesson-learnt-streamlining-scu-deployment">Lesson Learnt: Streamlining SCU Deployment<a class="headerlink" href="#lesson-learnt-streamlining-scu-deployment" title="Permanent link">&para;</a></h1>
 <hr />
 <p>I’ve had the opportunity to delve deep into the capabilities of Copilot for Security. One particularly valuable lesson emerged from automating Security Configuration Unit (SCU) deployment via Logic Apps: <strong>using the same subscription, resource group, and resource name ensures that Copilot for Security will not reprompt for SCU configuration within its standalone portal before use</strong>.</p>
-<h2 id="the-challenge">The Challenge</h2>
+<h2 id="the-challenge">The Challenge<a class="headerlink" href="#the-challenge" title="Permanent link">&para;</a></h2>
 <p>When deploying SCUs, the goal is to streamline the process as much as possible. However, initial attempts revealed a recurring issue: Copilot for Security would repeatedly prompt for SCU configuration within the Standalone Portal, adding unnecessary steps and potential delays. This was particularly problematic when aiming for a seamless, automated deployment pipeline.</p>
-<h2 id="the-solution">The Solution</h2>
+<h2 id="the-solution">The Solution<a class="headerlink" href="#the-solution" title="Permanent link">&para;</a></h2>
 <p>Through trial and error, a crucial insight was uncovered: <strong>consistency in subscription, resource group, and resource name</strong>. By ensuring these elements remained unchanged across deployments, Copilot for Security recognized the SCU configuration and did not prompt for reconfiguration.</p>
-<h3 id="implementation-via-logic-apps">Implementation via Logic Apps</h3>
+<h3 id="implementation-via-logic-apps">Implementation via Logic Apps<a class="headerlink" href="#implementation-via-logic-apps" title="Permanent link">&para;</a></h3>
 <p>Here’s a brief overview of how this was achieved using Logic Apps:</p>
 <ol>
 <li><strong>Define Consistent Parameters</strong>: Establish fixed values for the subscription, resource group, and resource name in your Logic App workflow.</li>
 <li><strong>Automate Deployment</strong>: Use Logic Apps to automate the deployment process, ensuring these parameters are consistently applied.</li>
 <li><strong>Monitor and Validate</strong>: Regularly monitor the deployment process to ensure that Copilot for Security recognizes the SCU configuration without reprompting.</li>
 </ol>
-<h3 id="benefits">Benefits</h3>
+<h3 id="benefits">Benefits<a class="headerlink" href="#benefits" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Efficiency</strong>: Eliminates redundant configuration steps, speeding up the deployment process.</li>
 <li><strong>Consistency</strong>: Ensures uniformity across deployments, reducing the risk of configuration errors.</li>
 <li><strong>Scalability</strong>: Facilitates scalable deployment processes, crucial for large-scale environments.</li>
 </ul>
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
 <p>This lesson underscores the importance of consistency in cloud security automation. By leveraging Copilot for Security’s ability to recognize previously configured SCUs, we can achieve more efficient and reliable deployments. As we continue to explore and refine these processes, such insights will be invaluable in enhancing our security posture and operational efficiency.</p>
 
 
@@ -2028,7 +2036,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.integrate", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

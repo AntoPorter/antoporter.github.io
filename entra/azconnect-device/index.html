@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell">
+        <meta name="description" content="Welcome to My Cloud Security Hub">
       
       
         <meta name="author" content="Anthony Porter.">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell - Anto Porter</title>
+        <title>Resolving Azure Connection Issues with Connect-AzAccount -Device in PowerShell - Anto Porter</title>
       
     
     
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell
+              Resolving Azure Connection Issues with Connect-AzAccount -Device in PowerShell
             
           </span>
         </div>
@@ -1720,7 +1720,7 @@
           
   
   <span class="md-ellipsis">
-    Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell
+    Resolving Azure Connection Issues with Connect-AzAccount -Device in PowerShell
   </span>
   
 
@@ -1731,7 +1731,7 @@
         
   
   <span class="md-ellipsis">
-    Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell
+    Resolving Azure Connection Issues with Connect-AzAccount -Device in PowerShell
   </span>
   
 
@@ -1918,13 +1918,21 @@
 
   
   
+    
+      
+    
+    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/entra/azconnect-device.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
 
 
-<h1 id="resolving-azure-connection-issues-with-connect-azaccount-device-in-powershell">Resolving Azure Connection Issues with <code>Connect-AzAccount -Device</code> in PowerShell</h1>
+<h1 id="resolving-azure-connection-issues-with-connect-azaccount-device-in-powershell">Resolving Azure Connection Issues with <code>Connect-AzAccount -Device</code> in PowerShell<a class="headerlink" href="#resolving-azure-connection-issues-with-connect-azaccount-device-in-powershell" title="Permanent link">&para;</a></h1>
 <p>I am sure you all understand the importance of seamless and secure connections to Azure resources. One common challenge is handling authentication issues when using PowerShell to connect to Azure. This article explores how the <code>Connect-AzAccount -UseDeviceAuthentication</code> parameter can help resolve these issues, particularly when accessing Microsoft Entra ID.</p>
-<h2 id="understanding-connect-azaccount">Understanding <code>Connect-AzAccount</code></h2>
+<h2 id="understanding-connect-azaccount">Understanding <code>Connect-AzAccount</code><a class="headerlink" href="#understanding-connect-azaccount" title="Permanent link">&para;</a></h2>
 <p>The <code>Connect-AzAccount</code> cmdlet is a fundamental tool in the Azure PowerShell module, enabling users to authenticate and connect to their Azure accounts. This cmdlet supports various authentication methods, including interactive login, service principal, and managed identity. However, users often encounter issues such as token expiration, multi-factor authentication (MFA) requirements, and network restrictions.</p>
-<h3 id="the-role-of-usedeviceauthentication">The Role of <code>-UseDeviceAuthentication</code></h3>
+<h3 id="the-role-of-usedeviceauthentication">The Role of <code>-UseDeviceAuthentication</code><a class="headerlink" href="#the-role-of-usedeviceauthentication" title="Permanent link">&para;</a></h3>
 <p>The <code>-UseDeviceAuthentication</code> parameter provides an alternative authentication method that can mitigate some of these common issues. When you use <code>Connect-AzAccount -UseDeviceAuthentication</code>, the cmdlet generates a device code that you can enter in a web browser to authenticate. This method is particularly useful in scenarios where:</p>
 <ul>
 <li><strong>Interactive Login is Challenging</strong>: For environments with strict MFA policies or where interactive login is not feasible, <code>-UseDeviceAuthentication</code> offers a straightforward way to authenticate.</li>
@@ -1932,7 +1940,7 @@
 </ul>
 <p>I'm sure you're all familiar with the following Microsoft Azure Sign-In window once in a while:</p>
 <p><img alt="AzConnect-Device-LoginError" src="../images/azconnect-device-loginerror.jpg" /></p>
-<h3 id="aliases-for-usedeviceauthentication">Aliases for <code>-UseDeviceAuthentication</code></h3>
+<h3 id="aliases-for-usedeviceauthentication">Aliases for <code>-UseDeviceAuthentication</code><a class="headerlink" href="#aliases-for-usedeviceauthentication" title="Permanent link">&para;</a></h3>
 <p>The <code>-UseDeviceAuthentication</code> parameter can also be referenced using the following aliases:</p>
 <ul>
 <li><strong><code>-DeviceCode</code></strong></li>
@@ -1940,20 +1948,20 @@
 <li><strong><code>-Device</code></strong></li>
 </ul>
 <p>These aliases provide flexibility and convenience when scripting and automating tasks.</p>
-<h2 id="example-usage">Example Usage</h2>
+<h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
 <p>Here’s a simple example of how to use <code>Connect-AzAccount -UseDeviceAuthentication</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># Initiate device authentication</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">Connect-AzAccount</span> <span class="n">-DeviceCode</span>
+<div class="highlight"><pre><span></span><code><span class="c"># Initiate device authentication</span>
+<span class="nb">Connect-AzAccount</span> <span class="n">-DeviceCode</span>
 </code></pre></div>
 <p>After running this command, you will receive a device code and a URL. Enter the code at the URL in your web browser to complete the authentication process.</p>
 <p><img alt="AzConnect-Device-Code" src="../images/azconnect-device-code.png" /></p>
-<h2 id="differences-between-usedeviceauthentication-and-standard-connect-azaccount">Differences Between <code>-UseDeviceAuthentication</code> and Standard <code>Connect-AzAccount</code></h2>
+<h2 id="differences-between-usedeviceauthentication-and-standard-connect-azaccount">Differences Between <code>-UseDeviceAuthentication</code> and Standard <code>Connect-AzAccount</code><a class="headerlink" href="#differences-between-usedeviceauthentication-and-standard-connect-azaccount" title="Permanent link">&para;</a></h2>
 <p>While both methods aim to authenticate and connect to Azure, there are key differences:</p>
 <ul>
 <li><strong>Interactive Login</strong>: The standard <code>Connect-AzAccount</code> cmdlet typically requires interactive login, which can be cumbersome in environments with strict MFA or where user interaction is limited.</li>
 <li><strong>Device Authentication</strong>: The <code>-UseDeviceAuthentication</code> parameter simplifies the process by allowing authentication through a web browser, which can be more flexible and user-friendly in certain scenarios.</li>
 </ul>
-<h2 id="summary">Summary</h2>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <p>In summary, the <code>Connect-AzAccount -UseDeviceAuthentication</code> parameter is a powerful tool for resolving common Azure connection issues in PowerShell. By offering an alternative authentication method, it addresses challenges related to interactive login and network restrictions. This makes it an excellent choice for accessing Microsoft Entra ID and other Azure resources securely and efficiently.</p>
 
 
@@ -1961,9 +1969,6 @@
 
 
 
-
-  
-  
 
 
 
@@ -2047,7 +2052,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.integrate", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy", "content.action.view"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

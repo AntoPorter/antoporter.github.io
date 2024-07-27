@@ -2063,7 +2063,7 @@
         
   
   <span class="md-ellipsis">
-    Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell
+    Resolving Azure Connection Issues with Connect-AzAccount -Device in PowerShell
   </span>
   
 
@@ -2170,9 +2170,17 @@
 
   
   
+    
+      
+    
+    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/copilot/copilotsecurity/promptinspiration.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
 
 
-<h1 id="copilot-for-security-prompt-inspiration">Copilot for Security: Prompt Inspiration</h1>
+<h1 id="copilot-for-security-prompt-inspiration">Copilot for Security: Prompt Inspiration<a class="headerlink" href="#copilot-for-security-prompt-inspiration" title="Permanent link">&para;</a></h1>
 <hr />
 <p>Where possible when retrieving information from Sentinel and Defender XDR, specify the following details:</p>
 <p>Microsoft Sentinel:</p>
@@ -2188,7 +2196,7 @@
 <li>Defender Incident / Alert ID</li>
 </ul>
 <p>Example of Prompt Format:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>WorkspaceName:*workspace*, SubscriptionName:*Subscription*, ResourceGroupName:*Workspace*, Request:*In Microsoft Sentinel show me detailed information for incident ID 12345*.
+<div class="highlight"><pre><span></span><code>WorkspaceName:*workspace*, SubscriptionName:*Subscription*, ResourceGroupName:*Workspace*, Request:*In Microsoft Sentinel show me detailed information for incident ID 12345*.
 </code></pre></div>
 If you wish for a Table of Contents to be generated based on information you are collecting through prompts, Specify the Table Column Headings and the information you would like included into those columns.</p>
 <p>If you are looking at what type of information you could gather from a Prompt, you should consider using the <a href="https://securitycopilot.microsoft.com">Copilot for Security</a> portal.</p>
@@ -2198,127 +2206,127 @@ If you wish for a Table of Contents to be generated based on information you are
 <li><a href="https://github.com/Azure/Copilot-For-Security/tree/main/Promptbook%20samples">Promptbook Samples</a></li>
 </ul>
 <hr />
-<h2 id="examples-of-prompts-for-incidents">Examples of Prompts for Incidents</h2>
-<h3 id="incident-details">Incident Details</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Show me detailed information for incident ID 12345.
+<h2 id="examples-of-prompts-for-incidents">Examples of Prompts for Incidents<a class="headerlink" href="#examples-of-prompts-for-incidents" title="Permanent link">&para;</a></h2>
+<h3 id="incident-details">Incident Details<a class="headerlink" href="#incident-details" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me detailed information for incident ID 12345.
 </code></pre></div>
 This prompt can provide detailed information for a specific incident, including its severity, the number of entities involved, the raw events that triggered the incident, the incident’s unique ID, and any mapped MITRE ATT&amp;CK tactics or techniques.</p>
-<h3 id="incident-summary">Incident Summary</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Give me a summary of all security incidents in the last month.
+<h3 id="incident-summary">Incident Summary<a class="headerlink" href="#incident-summary" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Give me a summary of all security incidents in the last month.
 </code></pre></div>
 <p>This prompt can provide a high-level overview of all the security incidents that occurred in the past month.</p>
-<h3 id="incident-timeline">Incident Timeline</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Show me the timeline of alerts and bookmarks for incident ID 12345.
+<h3 id="incident-timeline">Incident Timeline<a class="headerlink" href="#incident-timeline" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me the timeline of alerts and bookmarks for incident ID 12345.
 </code></pre></div>
 This prompt can help you reconstruct the timeline of attacker activity for a specific incident.</p>
-<h3 id="similar-incidents">Similar Incidents</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Show me similar incidents to incident ID 12345.
+<h3 id="similar-incidents">Similar Incidents<a class="headerlink" href="#similar-incidents" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Show me similar incidents to incident ID 12345.
 </code></pre></div>
 <p>This prompt can show you a collection of incidents that most closely resemble the current incident.</p>
-<h3 id="incident-severity">Incident Severity</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>List all incidents with high severity in the past week.
+<h3 id="incident-severity">Incident Severity<a class="headerlink" href="#incident-severity" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>List all incidents with high severity in the past week.
 </code></pre></div>
 This prompt can help you prioritize incidents based on their severity.</p>
-<h3 id="incident-status">Incident Status</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Show me all active incidents.
+<h3 id="incident-status">Incident Status<a class="headerlink" href="#incident-status" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me all active incidents.
 </code></pre></div>
 This prompt can help you keep track of incidents that are currently being investigated.</p>
-<h3 id="incident-investigation">Incident Investigation</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Give me a summary of all security incidents in the last quarter.
+<h3 id="incident-investigation">Incident Investigation<a class="headerlink" href="#incident-investigation" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Give me a summary of all security incidents in the last quarter.
 </code></pre></div>
 This prompt can help you generate an Incident Investigation report, which can provide a comprehensive view of all security incidents.</p>
 <hr />
-<h2 id="examples-of-prompts-for-microsoft-intune">Examples of Prompts for Microsoft Intune</h2>
-<h3 id="show-device-details">Show Device Details</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Show me details for device XYZ.
+<h2 id="examples-of-prompts-for-microsoft-intune">Examples of Prompts for Microsoft Intune<a class="headerlink" href="#examples-of-prompts-for-microsoft-intune" title="Permanent link">&para;</a></h2>
+<h3 id="show-device-details">Show Device Details<a class="headerlink" href="#show-device-details" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me details for device XYZ.
 </code></pre></div>
 This prompt retrieves all relevant properties of the specified device, including its name, ID, manufacturer, enrollment date, primary user, device type (e.g., laptop, mobile), and compliance status.</p>
-<h3 id="compare-device-details">Compare Device Details</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Compare device XYZ with device ABC.
+<h3 id="compare-device-details">Compare Device Details<a class="headerlink" href="#compare-device-details" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Compare device XYZ with device ABC.
 </code></pre></div>
 By comparing these two devices, you can identify any differences in their configurations, compliance status, or other relevant attributes. This helps troubleshoot issues and understand why one device is functioning correctly while another isn’t.</p>
-<h3 id="show-device-in-microsoft-defender">Show Device in Microsoft Defender</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Open Microsoft Defender for device XYZ.
+<h3 id="show-device-in-microsoft-defender">Show Device in Microsoft Defender<a class="headerlink" href="#show-device-in-microsoft-defender" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Open Microsoft Defender for device XYZ.
 </code></pre></div>
 This prompt provides a direct link to the corresponding device in Microsoft Defender. From there, you can take further security actions, investigate threats, and analyze security events.</p>
 <hr />
-<h2 id="examples-of-prompts-for-reporting-purposes">Examples of Prompts for Reporting Purposes</h2>
+<h2 id="examples-of-prompts-for-reporting-purposes">Examples of Prompts for Reporting Purposes<a class="headerlink" href="#examples-of-prompts-for-reporting-purposes" title="Permanent link">&para;</a></h2>
 <p>The following prompt suggestions are based around potential reporting capabilities via Copilot for Security.</p>
 <p>These prompts may require certain plugins to be enabled, or the use of additional toolsets and capabilities within your Microsoft Stack to retrieve relative information.</p>
-<h3 id="user-authentication-reports">User Authentication Reports</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Show me the top 50 IP addresses from where login attempts have been denied in the last 24 hours.
+<h3 id="user-authentication-reports">User Authentication Reports<a class="headerlink" href="#user-authentication-reports" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me the top 50 IP addresses from where login attempts have been denied in the last 24 hours.
 </code></pre></div>
 This prompt can help you generate a User Authentication report, which can detect attempts to gain access to your IT infrastructure through any existing account.</p>
-<h3 id="file-access-attempts">File Access Attempts</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>List all the unsuccessful file access attempts in the past week.
+<h3 id="file-access-attempts">File Access Attempts<a class="headerlink" href="#file-access-attempts" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>List all the unsuccessful file access attempts in the past week.
 </code></pre></div>
 This prompt can help you generate a report on file access attempts, which can be crucial in identifying unauthorized attempts to access sensitive files.</p>
-<h3 id="password-change-events">Password Change Events</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Show me all the password change events in the last month.
+<h3 id="password-change-events">Password Change Events<a class="headerlink" href="#password-change-events" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me all the password change events in the last month.
 </code></pre></div>
 This prompt can help you generate a report on password change events, which can be useful in tracking any unauthorized attempts to change passwords.</p>
-<h3 id="threat-detection">Threat Detection</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Show me all the detected threats in the last 30 days.
+<h3 id="threat-detection">Threat Detection<a class="headerlink" href="#threat-detection" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me all the detected threats in the last 30 days.
 </code></pre></div>
 This prompt can help you generate a Threat Detection report, which can provide insights into the security threats your organization is facing.</p>
-<h3 id="network-traffic-analysis">Network Traffic Analysis</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Show me the network traffic patterns for the last week.
+<h3 id="network-traffic-analysis">Network Traffic Analysis<a class="headerlink" href="#network-traffic-analysis" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me the network traffic patterns for the last week.
 </code></pre></div>
 This prompt can help you generate a Network Traffic Analysis report, which can provide insights into the data flow within your network.</p>
-<h3 id="malware-activity">Malware Activity</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>List all detected malware activities in the past month.
+<h3 id="malware-activity">Malware Activity<a class="headerlink" href="#malware-activity" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>List all detected malware activities in the past month.
 </code></pre></div>
 This prompt can help you generate a Malware Activity report, which can be crucial in identifying and mitigating malware threats.</p>
-<h3 id="user-behavior-analysis">User Behavior Analysis</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Give me a summary of unusual user behavior in the last 30 days.
+<h3 id="user-behavior-analysis">User Behavior Analysis<a class="headerlink" href="#user-behavior-analysis" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Give me a summary of unusual user behavior in the last 30 days.
 </code></pre></div>
 This prompt can help you generate a User Behavior Analysis report, which can detect potential insider threats or compromised accounts.</p>
-<h3 id="firewall-activity">Firewall Activity</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Show me all the firewall deny events in the last 24 hours.
+<h3 id="firewall-activity">Firewall Activity<a class="headerlink" href="#firewall-activity" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me all the firewall deny events in the last 24 hours.
 </code></pre></div>
 This prompt can help you generate a Firewall Activity report, which can provide insights into the effectiveness of your firewall rules.</p>
-<h3 id="vulnerability-assessment">Vulnerability Assessment</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>List all the vulnerabilities detected in the last quarter.
+<h3 id="vulnerability-assessment">Vulnerability Assessment<a class="headerlink" href="#vulnerability-assessment" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>List all the vulnerabilities detected in the last quarter.
 </code></pre></div>
 This prompt can help you generate a Vulnerability Assessment report, which can provide a comprehensive view of the vulnerabilities in your IT infrastructure.</p>
-<h3 id="device-compliance">Device Compliance</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Show me all devices that are not in compliance with our security policy.
+<h3 id="device-compliance">Device Compliance<a class="headerlink" href="#device-compliance" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me all devices that are not in compliance with our security policy.
 </code></pre></div>
 This prompt can help you generate a Device Compliance report, which can provide insights into the security posture of your devices.</p>
-<h3 id="data-loss-prevention">Data Loss Prevention</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>List all data loss prevention (DLP) incidents in the past week.
+<h3 id="data-loss-prevention">Data Loss Prevention<a class="headerlink" href="#data-loss-prevention" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>List all data loss prevention (DLP) incidents in the past week.
 </code></pre></div>
 This prompt can help you generate a DLP report, which can be crucial in identifying and mitigating data leaks.</p>
-<h3 id="privileged-account-activity">Privileged Account Activity</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>Give me a summary of privileged account activity in the last 30 days.
+<h3 id="privileged-account-activity">Privileged Account Activity<a class="headerlink" href="#privileged-account-activity" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Give me a summary of privileged account activity in the last 30 days.
 </code></pre></div>
 This prompt can help you generate a Privileged Account Activity report, which can detect potential misuse of privileged accounts.</p>
-<h3 id="patch-management">Patch Management</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>Show me all the devices that are missing critical security patches.
+<h3 id="patch-management">Patch Management<a class="headerlink" href="#patch-management" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me all the devices that are missing critical security patches.
 </code></pre></div>
 This prompt can help you generate a Patch Management report, which can provide insights into the patch status of your devices.</p>
-<h3 id="intrusion-detection">Intrusion Detection</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>List all the intrusion detection events in the last month.
+<h3 id="intrusion-detection">Intrusion Detection<a class="headerlink" href="#intrusion-detection" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>List all the intrusion detection events in the last month.
 </code></pre></div>
 This prompt can help you generate an Intrusion Detection report, which can provide insights into the security threats your organization is facing.</p>
-<h3 id="threat-detection_1">Threat Detection</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>Show me all the detected threats in the last 30 days.
+<h3 id="threat-detection_1">Threat Detection<a class="headerlink" href="#threat-detection_1" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me all the detected threats in the last 30 days.
 </code></pre></div>
 This prompt can help you generate a Threat Detection report, which can provide insights into the security threats your organization is facing.</p>
-<h3 id="network-traffic-analysis_1">Network Traffic Analysis</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Show me the network traffic patterns for the last week.
+<h3 id="network-traffic-analysis_1">Network Traffic Analysis<a class="headerlink" href="#network-traffic-analysis_1" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me the network traffic patterns for the last week.
 </code></pre></div>
 This prompt can help you generate a Network Traffic Analysis report, which can provide insights into the data flow within your network.</p>
-<h3 id="malware-activity_1">Malware Activity</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>List all detected malware activities in the past month. 
+<h3 id="malware-activity_1">Malware Activity<a class="headerlink" href="#malware-activity_1" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>List all detected malware activities in the past month. 
 </code></pre></div>
 This prompt can help you generate a Malware Activity report, which can be crucial in identifying and mitigating malware threats.</p>
-<h3 id="user-behavior-analysis_1">User Behavior Analysis</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Give me a summary of unusual user behavior in the last 30 days. 
+<h3 id="user-behavior-analysis_1">User Behavior Analysis<a class="headerlink" href="#user-behavior-analysis_1" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Give me a summary of unusual user behavior in the last 30 days. 
 </code></pre></div>
 This prompt can help you generate a User Behavior Analysis report, which can detect potential insider threats or compromised accounts.</p>
-<h3 id="firewall-activity_1">Firewall Activity</h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>Show me all the firewall deny events in the last 24 hours.
+<h3 id="firewall-activity_1">Firewall Activity<a class="headerlink" href="#firewall-activity_1" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>Show me all the firewall deny events in the last 24 hours.
 </code></pre></div>
 This prompt can help you generate a Firewall Activity report, which can provide insights into the effectiveness of your firewall rules.</p>
 
@@ -2410,7 +2418,7 @@ This prompt can help you generate a Firewall Activity report, which can provide 
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.integrate", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

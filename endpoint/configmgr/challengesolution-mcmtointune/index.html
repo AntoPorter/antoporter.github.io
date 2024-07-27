@@ -1829,7 +1829,7 @@
         
   
   <span class="md-ellipsis">
-    Resolving Azure Connection Issues with `Connect-AzAccount -Device` in PowerShell
+    Resolving Azure Connection Issues with Connect-AzAccount -Device in PowerShell
   </span>
   
 
@@ -1936,47 +1936,55 @@
 
   
   
+    
+      
+    
+    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/endpoint/configmgr/challengesolution-mcmtointune.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
 
 
-<h1 id="top-challenges-and-solutions-microsoft-configuration-manager-to-intune-migration">Top Challenges and Solutions: Microsoft Configuration Manager to Intune Migration</h1>
+<h1 id="top-challenges-and-solutions-microsoft-configuration-manager-to-intune-migration">Top Challenges and Solutions: Microsoft Configuration Manager to Intune Migration<a class="headerlink" href="#top-challenges-and-solutions-microsoft-configuration-manager-to-intune-migration" title="Permanent link">&para;</a></h1>
 <p>As organizations continue to modernize their IT infrastructure, migrating from Microsoft Endpoint Configuration Manager (formerly SCCM) to Microsoft Intune is becoming increasingly common. This transition can be complex, but with the right approach, it can be managed smoothly. Here are some of the top challenges organizations face during this migration and practical solutions to overcome them.</p>
 <hr />
-<h3 id="1-understanding-the-existing-environment">1. <strong>Understanding the Existing Environment</strong></h3>
+<h3 id="1-understanding-the-existing-environment">1. <strong>Understanding the Existing Environment</strong><a class="headerlink" href="#1-understanding-the-existing-environment" title="Permanent link">&para;</a></h3>
 <p><strong>Challenge:</strong> One of the first hurdles is gaining a comprehensive understanding of the current Configuration Manager environment. This includes identifying all managed devices, applications, and configurations.</p>
 <p><strong>Solution:</strong> Conduct a thorough inventory audit. Use tools like the Configuration Manager Inventory Tool to gather detailed information about your current setup. This data will be crucial for planning your migration strategy.</p>
 <p><strong>Reference</strong>: <a href="https://learn.microsoft.com/en-us/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory">Configuration Manager Inventory Tool documentation</a></p>
 <hr />
-<h3 id="2-application-compatibility">2. <strong>Application Compatibility</strong></h3>
+<h3 id="2-application-compatibility">2. <strong>Application Compatibility</strong><a class="headerlink" href="#2-application-compatibility" title="Permanent link">&para;</a></h3>
 <p><strong>Challenge:</strong> Ensuring that all applications currently managed by Configuration Manager are compatible with Intune can be daunting. Some legacy applications might not be supported.</p>
 <p><strong>Solution:</strong> Perform an application compatibility assessment. Tools like the Microsoft Application Compatibility Toolkit can help identify potential issues. For applications that are not compatible, consider alternatives or workarounds, such as using Windows Virtual Desktop.</p>
 <p><strong>Reference</strong>: <a href="https://learn.microsoft.com/en-us/windows/win32/win7appqual/application-compatibility-toolkit--act-">Microsoft Application Compatibility Toolkit documentation</a></p>
 <hr />
-<h3 id="3-data-migration">3. <strong>Data Migration</strong></h3>
+<h3 id="3-data-migration">3. <strong>Data Migration</strong><a class="headerlink" href="#3-data-migration" title="Permanent link">&para;</a></h3>
 <p><strong>Challenge:</strong> Migrating data, including user profiles and settings, can be complex and time-consuming.</p>
 <p><strong>Solution:</strong> Use the User State Migration Tool (USMT) to automate the migration of user profiles and settings. This tool can help ensure that user data is preserved during the transition.</p>
 <p><strong>Reference</strong>: <a href="https://learn.microsoft.com/en-us/windows/deployment/usmt/usmt-overview">User State Migration Tool (USMT) documentation</a></p>
 <hr />
-<h3 id="4-network-bandwidth">4. <strong>Network Bandwidth</strong></h3>
+<h3 id="4-network-bandwidth">4. <strong>Network Bandwidth</strong><a class="headerlink" href="#4-network-bandwidth" title="Permanent link">&para;</a></h3>
 <p><strong>Challenge:</strong> The migration process can put a significant load on your network, especially if you have a large number of devices to migrate.</p>
 <p><strong>Solution:</strong> Plan the migration in phases to spread out the network load. Use Intune’s Delivery Optimization feature to reduce bandwidth consumption by allowing devices to share content with each other.</p>
 <p><strong>Reference</strong>: <a href="https://learn.microsoft.com/en-us/mem/intune/configuration/delivery-optimization-windows">Intune Delivery Optimization feature documentation</a></p>
 <hr />
-<h3 id="5-security-and-compliance">5. <strong>Security and Compliance</strong></h3>
+<h3 id="5-security-and-compliance">5. <strong>Security and Compliance</strong><a class="headerlink" href="#5-security-and-compliance" title="Permanent link">&para;</a></h3>
 <p><strong>Challenge:</strong> Ensuring that security and compliance policies are maintained during and after the migration is critical.</p>
 <p><strong>Solution:</strong> Review and replicate your Configuration Manager security policies in Intune. Use Intune’s compliance policies and conditional access features to enforce security requirements. Regularly monitor and update these policies to adapt to new threats.</p>
 <p><strong>Reference</strong>: <a href="https://learn.microsoft.com/en-us/mem/intune/protect/conditional-access">Intune compliance policies and conditional access features documentation</a></p>
 <hr />
-<h3 id="6-user-training-and-support">6. <strong>User Training and Support</strong></h3>
+<h3 id="6-user-training-and-support">6. <strong>User Training and Support</strong><a class="headerlink" href="#6-user-training-and-support" title="Permanent link">&para;</a></h3>
 <p><strong>Challenge:</strong> Users may need training on new processes and tools introduced with Intune.</p>
 <p><strong>Solution:</strong> Develop a comprehensive training program for end-users and IT staff. Provide resources such as tutorials, webinars, and documentation to help them get up to speed. Establish a support system to address any issues that arise during the transition.</p>
 <p><strong>Reference</strong>: <a href="https://learn.microsoft.com/en-us/mem/">Microsoft Intune training resources</a></p>
 <hr />
-<h3 id="7-managing-hybrid-environments">7. <strong>Managing Hybrid Environments</strong></h3>
+<h3 id="7-managing-hybrid-environments">7. <strong>Managing Hybrid Environments</strong><a class="headerlink" href="#7-managing-hybrid-environments" title="Permanent link">&para;</a></h3>
 <p><strong>Challenge:</strong> During the migration, you may need to manage a hybrid environment where both Configuration Manager and Intune are in use.</p>
 <p><strong>Solution:</strong> Use co-management capabilities to manage devices with both Configuration Manager and Intune. This allows you to gradually transition workloads to Intune while maintaining control over your existing Configuration Manager environment.</p>
 <p><strong>Reference</strong>: <a href="https://learn.microsoft.com/en-us/mem/configmgr/comanage/overview">Intune co-management capabilities documentation</a></p>
 <hr />
-<h3 id="closing-note">Closing Note</h3>
+<h3 id="closing-note">Closing Note<a class="headerlink" href="#closing-note" title="Permanent link">&para;</a></h3>
 <p>Migrating from Microsoft Endpoint Configuration Manager to Intune is a significant undertaking, but with careful planning and the right tools, it can be accomplished successfully. By addressing these common challenges and implementing the suggested solutions, organizations can ensure a smooth transition to modern device management with Intune.</p>
 
 
@@ -2067,7 +2075,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.integrate", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
