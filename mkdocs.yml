@@ -23,6 +23,7 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - toc.integrate
+    - toc.follow
     - navigation.top
     - search.suggest
     - search.highlight
@@ -30,22 +31,22 @@ theme:
     - content.tabs.link
     - content.code.annotate
     - content.code.copy
+    - content.action.view
  language: en
  favicon: images/favicon.png
  logo: images/logo.png
+ icon:
+   repo: fontawesome/brands/git-alt
 
 # Plugins
  plugins:
-  - macros
-  - tags
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: date
-  - social:
-      cards_layout: default
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-
+  - macros
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - social:
+      cards_layout: default
 
 # Colour Schemes
  palette:
@@ -61,6 +62,9 @@ theme:
      name: Switch to dark mode
     primary: teal
     accent: deep purple
+ font:
+    text: Roboto
+    code: Roboto Mono
 
 # Extras
 extra:
@@ -74,23 +78,39 @@ extra:
     provider: google
     property: G-2H6Z23PMCP
 
-# Extensions
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
+
+  # Python Markdown
+  - abbr
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
   - pymdownx.arithmatex:
       generic: true
-  - footnotes
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
   - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
-  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 # Copyright
 copyright: |
