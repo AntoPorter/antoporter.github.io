@@ -12,18 +12,21 @@ repo_url: https://github.com/AntoPorter/antoporter.github.io
 # Themes
 theme:
  name: material
+ custom_dir: material/overrides
  features:
+    - announce.dismiss
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
+    - navigation.footer
     - navigation.indexes
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
-    - toc.integrate
     - toc.follow
+    - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
@@ -32,6 +35,7 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.action.view
+    - content.tooltips
  language: en
  favicon: images/favicon.png
  logo: images/logo.png
@@ -45,6 +49,8 @@ theme:
   - macros
   - git-revision-date-localized:
       enable_creation_date: true
+      fallback_to_build_date: true
+      type: date
   - social:
       cards_layout: default
 
