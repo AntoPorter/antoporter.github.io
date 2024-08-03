@@ -49,13 +49,15 @@ A collection of various scripts that don't fit into the other categories but are
 
 1. **Go to Devices** > **Scripts and remediations**.
 2. Click on **Create** to create a new script package.
-3. Under the Basic Tab, Enter the **Name and Description** for the script package.
 
 ![Remediations-CreateScriptPackage](./Images/remediations-createscriptpackage.png)
+
+3. Under the Basic Tab, Enter the **Name and Description** for the script package.
 
 #### 4. Upload Scripts
 
 Under the Settings Tab:
+
  - **Detection Script**: Upload your detection script.
  - **Remediation Script**: Upload your remediation script (optional).
 
