@@ -61,7 +61,7 @@ Microsoft Defender for Cloud Apps is a comprehensive solution designed to provid
 | ![anomaly detection policy icon.](https://learn.microsoft.com/en-us/defender-cloud-apps/media/anomaly-detection-policy.png) | Cloud Discovery anomaly detection policy | Shadow IT              | Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app. [Learn more](https://learn.microsoft.com/en-us/defender-cloud-apps/cloud-discovery-anomaly-detection-policy) |
 
 
-Source: https://learn.microsoft.com/en-us/defender-cloud-apps/control-cloud-apps-with-policies#policy-types
+Source: https://learn.microsoft.com/en-us/defender-cloud-apps/control-cloud-apps-with-policies#policy-types 
 
 
 ---
