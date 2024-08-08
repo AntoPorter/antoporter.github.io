@@ -1,5 +1,5 @@
 # Automatically Unsanctioning Risky Apps
----
+
 
 ## Enhancing Security with Microsoft Defender for Cloud Apps
 

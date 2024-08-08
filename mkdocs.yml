@@ -140,6 +140,7 @@ nav:
     - Microsoft Defender for Identity:
       - defenderxdr/defenderidentity/top5features.md  
     - Microsoft Defender for Cloud Apps:
+      - defenderxdr/defendercloudapps/demystifying-policies.md
       - defenderxdr/defendercloudapps/appblocking-dfe.md
       - defenderxdr/defendercloudapps/unsanctioning-riskyapps.md
     - Microsoft Sentinel:
