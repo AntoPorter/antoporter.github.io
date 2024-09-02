@@ -5,6 +5,7 @@ The **Intune Remediations** collection is a set of script packages designed to
 ---
 ## My Intune Remediations (GitHub Repository)
 
+
 ### [Device Compliance](https://github.com/AntoPorter/Intune-Remediations/tree/main/DeviceCompliance/)
 
 This section includes scripts to ensure devices comply with your organization's policies, such as password requirements and encryption standards.
@@ -23,7 +24,11 @@ This category includes scripts to manage and remediate issues related to Microso
 
 ### [Miscellaneous](https://github.com/AntoPorter/Intune-Remediations/tree/main/Miscellaneous/)
 
-A collection of various scripts that don't fit into the other categories but are still useful for maintaining and troubleshooting devices.
+A collection of various scripts that don't fit into the other categories but are still useful for maintaining and troubleshooting endpoints.
+
+### [**WIP** - Reporting](https://github.com/AntoPorter/Intune-Remediations/tree/main/Reporting/)
+
+A collection of reporting based scripts which can be used to gather information on an endpoint to assist management and troubleshooting on an endpoint.
 
 ---
 

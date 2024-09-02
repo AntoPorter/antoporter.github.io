@@ -30,4 +30,5 @@
 ## Microsoft Sentinel
 ---
 
+- [The Importance of SOAR within a SOC Team](./sentinel/soar.md)
 - [Streamlining Project Documentation with ‘Workspace Usage Report’ Workbook](./sentinel/workspaceworkbookexport.md)
