@@ -30,11 +30,13 @@ Configuring Security Orchestration, Automation, and Response (SOAR) within Micro
     
     - In the Microsoft Sentinel portal, go to the **Automation** blade.
     - Click on **Automation Rules**.
+
 2. **Create a New Automation Rule**:
     
     - Click on **+ Add** to create a new rule.
     - Define the **Name**, **Description**, and **Severity** for the rule.
     - Set the **Trigger** to specify when the rule should be executed (e.g., when an incident is created or updated).
+
 3. **Define Actions**:
     
     - Add actions such as tagging, assigning, or closing incidents.
@@ -46,14 +48,17 @@ Configuring Security Orchestration, Automation, and Response (SOAR) within Micro
     
     - In the Microsoft Sentinel portal, go to the **Automation** blade.
     - Click on **Playbooks**.
+
 2. **Create a New Playbook**:
     
     - Click on **+ Add** to create a new playbook.
     - Choose **Create from blank** or select a template from the gallery.
+
 3. **Design the Workflow**:
     
     - Use Azure Logic Apps to design the workflow.
     - Add triggers (e.g., when an incident is created) and actions (e.g., send an email, create a ticket in a ticketing system).
+
 4. **Save and Test**:
     
     - Save the playbook and test it to ensure it works as expected.
@@ -64,6 +69,7 @@ Configuring Security Orchestration, Automation, and Response (SOAR) within Micro
     
     - Microsoft Sentinel provides a variety of managed connectors to integrate with other systems (e.g., Jira, ServiceNow, AWS).
     - Navigate to the **Logic Apps designer** to add these connectors to your playbooks.
+
 2. **Create Custom Connectors**:
     
     - If a required connector is not available, you can create custom connectors using Azure Logic Apps.
@@ -75,6 +81,7 @@ Configuring Security Orchestration, Automation, and Response (SOAR) within Micro
     
     - Regularly monitor the performance of your automation rules and playbooks.
     - Check for any failures or issues and optimize the workflows as needed.
+
 2. **Update and Improve**:
     
     - Continuously update your automation rules and playbooks based on new threats and organizational changes.
