@@ -26,7 +26,7 @@ This category includes scripts to manage and remediate issues related to Microso
 
 A collection of various scripts that don't fit into the other categories but are still useful for maintaining and troubleshooting endpoints.
 
-### [**WIP** - Reporting](https://github.com/AntoPorter/Intune-Remediations/tree/main/Reporting/)
+### [Reporting](https://github.com/AntoPorter/Intune-Remediations/tree/main/Reporting/)
 
 A collection of reporting based scripts which can be used to gather information on an endpoint to assist management and troubleshooting on an endpoint.
 
