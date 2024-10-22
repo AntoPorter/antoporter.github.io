@@ -35,8 +35,6 @@ Here’s why GRC is indispensable:
 - **Risk management:** Identifies, assesses, and mitigates risks that could impact your organisation.
 - **Compliance:** Ensures adherence to laws, regulations, and standards, reducing the risk of legal penalties and reputational damage.
 
-Understanding these components is essential, but how can organisations effectively implement them?
-
 ## **The holistic security picture**
 
 Focusing solely on technical controls is like locking your doors while leaving your windows wide open. To address all aspects of cybersecurity, a comprehensive strategy must integrate GRC—governing your security posture, identifying risks, responding to incidents, and recovering effectively. While technical controls are crucial, they’re just pieces of the puzzle. To build a resilient security strategy, you must include GRC. Incorporating GRC isn’t just best practice—it’s a necessity.
