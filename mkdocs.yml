@@ -130,6 +130,7 @@ nav:
     - Endpoint Management: endpoint/index.md
     - Microsoft Copilot: copilot/index.md
     - Microsoft Entra: entra/index.md
+    - Miscellaneous: misc/index.md
     - About Me: aboutme.md
   - Microsoft Defender XDR:
     - Microsoft Defender XDR: defenderxdr/index.md
@@ -168,5 +169,8 @@ nav:
     - entra/index.md
     - entra/azconnect-device.md
     - entra/exploringtrv2.md
+  - Miscellaneous:
+    - misc/index.md
+    - misc/misconception-technicalcontrols.md
   - About Me:
     - aboutme.md

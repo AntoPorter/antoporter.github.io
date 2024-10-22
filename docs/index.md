@@ -26,12 +26,20 @@ Explore the capabilities of Copilot in enhancing your security operations and IT
 
 Unlock the full potential of identity and access management with Microsoft Entra, where managing permissions becomes a breeze, and security protocols align seamlessly with user experience.
 
+## [**Miscellaneous**](./misc/index.md)
+
+A collection of my security-related articles that cover various aspects of security beyond the Microsoft security stack
+
 ---
 **Explore My GitHub Repositories**
 
 Dive into my curated collection of GitHub repositories, where you’ll find a wealth of resources, including scripts, configurations, and best practices for leveraging Microsoft Defender, Endpoint Management, and Microsoft Copilot. Each repository is designed to help you implement and manage these powerful tools effectively.
 
 [My GitHub](https://www.github.com/AntoPorter)
+
+---
+
+Some of these articles may also appear via my [Canon Business Services ANZ Authors Page](https://business.canon.com.au/authors/anthony-porter). 
 
 ---
 **Connect with Me**
