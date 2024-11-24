@@ -30,6 +30,10 @@ A collection of various scripts that don't fit into the other categories but are
 
 A collection of reporting based scripts which can be used to gather information on an endpoint to assist management and troubleshooting on an endpoint.
 
+### [**New** - Toast Notifications](https://github.com/AntoPorter/Intune-Remediations/tree/main/ToastNotifications/)
+
+After my recent live presentations on Intune Remediations, the buzz around Toast Notifications has been incredible! The discussions highlighted how proactive notifications can empower end users to manage and resolve device issues themselves, speeding up the resolution process and enhancing overall productivity.
+
 ---
 
 ## Step-by-Step Guide to Using Microsoft Intune Remediations
