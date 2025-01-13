@@ -18,6 +18,10 @@ Discover advanced threat protection strategies and configurations to safeguard y
 
 Learn how to manage devices and applications with ease, ensuring compliance and security across your organization.
 
+## [**Microsoft Purview**](./purview/index.md)
+
+Delve into comprehensive data governance, security, and compliance solutions with Microsoft Purview. Learn how to manage insider risks, protect sensitive information, and ensure regulatory compliance across your organization. 
+
 ## [**Microsoft Copilot**](./copilot/index.md)
 
 Explore the capabilities of Copilot in enhancing your security operations and IT management through AI-powered insights and automation.

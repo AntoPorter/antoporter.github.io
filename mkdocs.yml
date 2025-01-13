@@ -128,6 +128,7 @@ nav:
     - index.md
     - Microsoft Defender XDR: defenderxdr/index.md
     - Endpoint Management: endpoint/index.md
+    - Microsoft Purview: purview/index.md
     - Microsoft Copilot: copilot/index.md
     - Microsoft Entra: entra/index.md
     - Miscellaneous: misc/index.md
@@ -156,6 +157,9 @@ nav:
       - endpoint/intune/baselineinsights.md
     - Microsoft Configuration Manager:
       - endpoint/configmgr/challengesolution-mcmtointune.md
+  - Microsoft Purview: 
+    - purview/index.md
+    - purview/browsersignaldetection.md
   - Microsoft Copilot:
     - Microsoft Copilot: copilot/index.md
     - Microsoft Copilot for Security:
