@@ -10,6 +10,12 @@ As a Cloud Security Architect specializing in these technologies, I aim to provi
 
 ---
 
+## [**Out Of Band: A Microsoft Security Podcast**](./podcast/outofband/index.md)
+
+Teaming up with Microsoft Security MVP's Shehan Perera and Andrew O'Young, we’ll discuss all things Microsoft Security, ranging from Identity, Access Management, Defender, Intune, Purview and more.
+
+---
+
 ## [**Microsoft Defender XDR**](./defenderxdr/index.md)
 
 Discover advanced threat protection strategies and configurations to safeguard your environment.

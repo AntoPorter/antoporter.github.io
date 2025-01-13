@@ -132,6 +132,7 @@ nav:
     - Microsoft Copilot: copilot/index.md
     - Microsoft Entra: entra/index.md
     - Miscellaneous: misc/index.md
+    - Out of Band Podcast: podcast/outofband/index.md
     - About Me: aboutme.md
   - Microsoft Defender XDR:
     - Microsoft Defender XDR: defenderxdr/index.md
@@ -178,5 +179,8 @@ nav:
     - misc/index.md
     - misc/misconception-technicalcontrols.md
     - misc/understandingcybersecurityethics.md
+  - Out of Band Podcast:
+    - podcast/outofband/index.md
+    - podcast/outofband/episode0.md    
   - About Me:
     - aboutme.md
