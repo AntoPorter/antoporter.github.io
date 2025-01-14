@@ -95,7 +95,7 @@
 
 - **"After the July Incident 2024"** Microsoft discussed with a range of companies and defined: Easier Windows Recovery, Stronger Security Tools and Drivers, and Reduced Security Complexity Overall.
     
-- **Ignite Announcements (aka.ms/WinWithSecurity):**
+- **Ignite Announcements ([aka.ms/WinWithSecurity](https://aka.ms/WinWithSecurity)):**
     
     - **Windows Resilient Security Platform (Private Preview July 2025):** Run your security solutions as an app in user mode, built outside of Kernel Mode. Flexible API, build EDR/AV outside of Kernel.
         
@@ -268,14 +268,14 @@
 - "To Summarise... Copilot and Security"
 
 #### Security:
-- **Zero Day Quest hacking event ([aka.ms/zerodayquest](edge://newtab/)):**
+- **Zero Day Quest hacking event ([aka.ms/zerodayquest](https://aka.ms/zerodayquest)):**
   - Closes on the 19th of January 2025
   - In-person attendance event
   - In-person bounty hunting, debugging, and monetary prizes
-- **Windows (aka.ms/WinWithSecurity):**
+- **Windows ([aka.ms/WinWithSecurity](https://aka.ms/WinWithSecurity)):**
   - Administrator Protection, Standard User Permissions by default; covered in the first session.
   - Windows Resilient Security Platform (Private Preview July 2025); covered in the first session.
-- **Windows 365 (aka.ms/Windows365Link):**
+- **Windows 365 ([aka.ms/Windows365Link](https://aka.ms/Windows365Link)):**
   - A Thin Client for accessing Windows
   - A device that has nothing running locally on the device, all operations are within the cloud.
   - After Signing-Out of Windows 365 Link device, the device holds no persistent data.
@@ -382,7 +382,7 @@
 
 #### Dev:
 - **GitHub Copilot (Session BRK141 and BRK152):** Highlighted as a session to watch.
-- **GitHub Copilot... for free (aka.ms/copilot-free)**
+- **GitHub Copilot... for free ([aka.ms/copilot-free](https://aka.ms/copilot-free))**
 
 
 ### AI Spotlight on Australia and New Zealand
