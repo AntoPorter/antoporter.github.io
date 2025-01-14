@@ -1,4 +1,4 @@
-# Microsoft Summer Bootcamp Recap
+# Microsoft Summer Bootcamp Recap - Day 3
 
 ## Day 3
 
