@@ -2514,34 +2514,1413 @@
 <h1 id="microsoft-summer-bootcamp-recap-day-2">Microsoft Summer Bootcamp Recap - Day 2<a class="headerlink" href="#microsoft-summer-bootcamp-recap-day-2" title="Permanent link">&para;</a></h1>
 <h2 id="day-2">Day 2<a class="headerlink" href="#day-2" title="Permanent link">&para;</a></h2>
 <h3 id="microsoft-purview-data-security-for-microsoft-365">Microsoft Purview Data Security for Microsoft 365<a class="headerlink" href="#microsoft-purview-data-security-for-microsoft-365" title="Permanent link">&para;</a></h3>
-<p>Speaker: 
-- Tim Addison - Cloud Solutions Architect
-- Callum Lowe - Sr Customer Success Account Manager
-Key Notes:
-- </p>
+<p><strong>Speaker</strong></p>
+<ul>
+<li>
+<p>Tim Addison - Cloud Solutions Architect</p>
+</li>
+<li>
+<p>Callum Lowe - Sr Customer Success Account Manager</p>
+</li>
+</ul>
+<p><strong>Key Notes</strong></p>
+<p><strong>Agenda for the session</strong></p>
+<ul>
+<li>
+<p>Data Security: Concepts &amp; Scenarios</p>
+</li>
+<li>
+<p>How to get started in Purview</p>
+</li>
+<li>
+<p>How Microsoft can help</p>
+</li>
+</ul>
+<p><strong>Data Security</strong></p>
+<p><strong>Scenarios</strong></p>
+<ol>
+<li>
+<p><strong>User account is compromised and used to exfiltrate highly sensitive information</strong></p>
+<ul>
+<li>Phishing Attack, Harvesting and Exfiltrating Data for financial benefit.</li>
+</ul>
+</li>
+<li>
+<p><strong>AI Generated content containing sensitive information is inappropriately distributed</strong></p>
+<ul>
+<li>Copilot accidentally passes sensitive information onwards.</li>
+</ul>
+</li>
+<li>
+<p><strong>A Malicious internal user sends valuable information to their personal email address</strong></p>
+<ul>
+<li>Disgruntled user, looking to email their personal email.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Information Management Concept Pillars</strong></p>
+<ul>
+<li>
+<p><strong>Know Your Data</strong> - Understand your data landscape and identify data across your hybrid landscape.</p>
+</li>
+<li>
+<p><strong>Prevent Data Loss</strong> - Prevent accidental oversharing of sensitive information.</p>
+</li>
+<li>
+<p><strong>Protect your Data</strong> - Apply flexible protection actions including encryption.</p>
+</li>
+<li>
+<p><strong>Govern your Data</strong> - Automatically retain, delete, and store data and records in a compliant manner.</p>
+</li>
+</ul>
+<p><strong>Scenario 1 - User account is compromised and used to exfiltrate highly sensitive information</strong></p>
+<ul>
+<li>
+<p><strong>Business Analysis Comes First</strong></p>
+<ul>
+<li>
+<p>What is your most sensitive information?</p>
+<ul>
+<li>e.g. Customer Information</li>
+</ul>
+</li>
+<li>
+<p>How can we Identify the Information?</p>
+<ul>
+<li>e.g. 'Customer Number and Customer Name' OR Customer Name</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Know Your Data</strong></p>
+<ul>
+<li>
+<p>Content Matching Methods which can be used to "Know Your Data" pillar:</p>
+<ul>
+<li>
+<p>Sensitive Information Type</p>
+</li>
+<li>
+<p>Trainable Classifier</p>
+</li>
+<li>
+<p>Exact Data Match</p>
+</li>
+<li>
+<p>Document Fingerprint</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Context Matching Methods which can be used to "Know Your Data" pillar:</p>
+<ul>
+<li>
+<p>Sensitivity Label</p>
+</li>
+<li>
+<p>Retention Label</p>
+</li>
+<li>
+<p>Document Property</p>
+</li>
+<li>
+<p>Metadata</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Prevent Data Loss</strong></p>
+<ul>
+<li>
+<p>Data Loss Prevention, Define the properties configured during your "Know Your Data" definition.</p>
+<ul>
+<li>
+<p>Actions which can be configured include "Block Users from receiving email" etc. This can also be configured to Block email for External only as an example also.</p>
+</li>
+<li>
+<p>Simulation Mode determines how many "hits" it gets before enabling.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>"A Good DLP configuration will never trigger as a result of a Business Process"</p>
+<ul>
+<li>
+<p>Configure exceptions into your DLP via policy conditional.</p>
+<ul>
+<li>These should be discovered and considered during Business Analysis component</li>
+</ul>
+</li>
+<li>
+<p>Volume Refinement: A low number of occurrences may be common business process, a high number of occurrences may be an indication of exfiltration</p>
+</li>
+<li>
+<p>Staged Policy Implementation (recommendation from Tim Addison)</p>
+<ul>
+<li>
+<ol>
+<li>Report Mode - Ensure your DLP is collecting the information relevant to "Know Your Data"</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Warn Mode - Identify false positives or legitimate use that may be blocked</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Block Mode - When risk of disruption has been mitigated, policy action can be set to block</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Scenario 2 - AI Generated content containing sensitive information is inappropriately distributed</strong></p>
+<ul>
+<li>
+<p><strong>General Info:</strong></p>
+<ul>
+<li>
+<p>DLP Policy Tips: can be configured to warn a user when the item they are working with matches a DLP policy condition.</p>
+<ul>
+<li>"This has company information, you may want to consider emailing this externally"</li>
+</ul>
+</li>
+<li>
+<p>Sensitivity Label:</p>
+<ul>
+<li>"Your instructions contain one or more sensitive files, referencing them may update the sensitivity of the document to match".</li>
+</ul>
+</li>
+<li>
+<p>DLP Policy:</p>
+<ul>
+<li>"Prevent Sensitivity Label from being sent externally"</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Prevent Data Loss</strong></p>
+<ul>
+<li>
+<p>Prevent copilot from interacting with sensitive files</p>
+<ul>
+<li>
+<p>Labels can be configured to apply encryption</p>
+</li>
+<li>
+<p>Encryption can be configured to block copilot access</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Prevent labelled items in copilot prompts</p>
+<ul>
+<li>DLP policies can be configured to prevent copilot from processing items with certain sensitivity labels.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Scenario 3 - A Malicious internal user sends valuable information to their personal email address</strong></p>
+<ul>
+<li>
+<p><strong>Insider Risk Management - Intelligently detect and mitigate the most critical risks</strong></p>
+<ul>
+<li>
+<p>Privacy - protect user trust and build a holistic insider risk program with pseudonymization and stronger privacy controls</p>
+</li>
+<li>
+<p>Simplicity - Identify hidden risks with 100+ built in machine-learning models and indicators, requiring no endpoint agent</p>
+</li>
+<li>
+<p>Acceleration - Expedite mitigation with enriched investigations and Adaptive protection that enforces DLP controls dynamically</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Insider Risk Management to prevent data theft</strong></p>
+<ul>
+<li>
+<p>Prioritize content type e.g. Sensitive Information Types, Sensitivity Labels, File Extensions etc.</p>
+</li>
+<li>
+<p>Indicators e.g. Office Indicators like Downloading Contents from OneDrive, Syncing Contents to OneDrive etc.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Insider Risk Management - Adaptive Protection (Risk Score Explained)</strong></p>
+<ul>
+<li>
+<p>Detects high impact users</p>
+</li>
+<li>
+<p>Downgrades sensitivity label on unusual volume of SharePoint files prior to downloading</p>
+</li>
+<li>
+<p>Submits Resignation</p>
+<ul>
+<li>Scales into Medium Risk from Low, Medium Risk Adaptive Controls Apply</li>
+</ul>
+</li>
+<li>
+<p>Tries to print confidential files</p>
+</li>
+<li>
+<p>Tried to copy same files to a USB</p>
+<ul>
+<li>Scales into High Risk from Medium, High Risk Adaptive Controls Apply</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>How to Get Started:</strong></p>
+<ol>
+<li>
+<p>Establish a sensitivity label taxonomy</p>
+</li>
+<li>
+<p>Configure sensitivity labels and publish to users</p>
+</li>
+<li>
+<p>Establish a data security framework that defines your information protection requirements</p>
+</li>
+<li>
+<p>Determine how to identify most sensitive information assets</p>
+</li>
+<li>
+<p>Configure DLP policies to protect highly sensitive information</p>
+</li>
+<li>
+<p>Configure DLP policies to protect your higher sensitive labels</p>
+</li>
+<li>
+<p>Enable IRM analytics to start scanning for potential malicious user activity</p>
+</li>
+<li>
+<p>Create IRM policies targeting suspicious activities around sensitive items</p>
+</li>
+<li>
+<p>Help to ensure label accuracy by automatically applying or recommending labels when sensitive content is detected</p>
+</li>
+<li>
+<p>Label items at rest in SharePoint based on locations or emails during transit</p>
+</li>
+</ol>
+<hr />
 <h3 id="how-to-apply-data-security-across-both-structured-and-unstructured-data">How to apply data security across both structured and unstructured data<a class="headerlink" href="#how-to-apply-data-security-across-both-structured-and-unstructured-data" title="Permanent link">&para;</a></h3>
-<p>Speaker: 
-- Richard Lee - Sr. Azure Data &amp; AI Specialist
-- Beau Faull - Technology Specialist
-- Nelson Yuen - Senior Compliance Global Black Belt
-Key Notes:
-- </p>
+<p><strong>Speaker</strong></p>
+<ul>
+<li>
+<p>Richard Lee - Snr. Azure Data &amp; AI Specialist</p>
+</li>
+<li>
+<p>Beau Faull - Technology Specialist, Security, Risk and Compliance</p>
+</li>
+<li>
+<p>Nelson Yuen - Senior Compliance Global Black Belt</p>
+</li>
+</ul>
+<p><strong>Key Notes</strong></p>
+<ul>
+<li>
+<p>"Securing data is complex and multi-faceted"</p>
+<ul>
+<li>
+<p>Different types of data, users and objectives</p>
+</li>
+<li>
+<p>AI transformation brings data risk</p>
+</li>
+<li>
+<p>Regulations continue to evolve</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Best-In-Class Classification Technologies (Microsoft Purview)</p>
+<ul>
+<li>
+<p>Sensitive Information Types - 200+ Out-of-the-box info types for use.</p>
+</li>
+<li>
+<p>Named Entities - 50+ entities cover examples names, medical terms, and drug names</p>
+</li>
+<li>
+<p>Exact Data Match - Provides a lookup to exactly match content</p>
+</li>
+<li>
+<p>OCR - Expand OCR for EXO, SPO, ODB, Team and Endpoint Device</p>
+</li>
+<li>
+<p>Trainable Classifiers - 35+ Pre-Trained Classifiers.</p>
+</li>
+<li>
+<p>Credentials SITs</p>
+</li>
+<li>
+<p>Fingerprint SITs</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Todays Data Realities</p>
+<ul>
+<li>
+<p>What data do I have?</p>
+</li>
+<li>
+<p>Is it trustworthy?</p>
+</li>
+<li>
+<p>Can people access the data needed to make the right decisions?</p>
+</li>
+<li>
+<p>How can I enable faster business insights?</p>
+</li>
+<li>
+<p>What is my compliance exposure?</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Unify analytics and governance with Microsoft Fabric and Microsoft Purview</p>
+<ul>
+<li>
+<p>Microsoft Fabric - Reshaping how you access, manage, and act on data and insights by connecting every day data source and analytics service together in Fabric.</p>
+</li>
+<li>
+<p>Microsoft Purview - Keep your data safe and governed with unified data governance, information protection, and risk and compliance solutions.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Use Purview security and compliance features to protect your data in OneLake</p>
+<ul>
+<li>
+<p>Information Protection Labels for Fabric - Classify sensitive fabric data using the same sensitivity labels that are used in Microsoft 365</p>
+<ul>
+<li>
+<p>Manually label fabric items with organizations sensitivity labels, used in Microsoft 365 apps.</p>
+<ul>
+<li>This is on the Roadmap to be Automated.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Data Loss Prevent Policies - Automatically detect the upload of sensitive data such as PII and trigger automatic risk remediation actions such as alerts.</p>
+<ul>
+<li>
+<p>Automatically detect the upload of sensitive data, supporting trigger alerts for admins and custom policy tips to data owners.</p>
+</li>
+<li>
+<p>Data owners can provide feedback using report a false positive action.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Audit - Log user activities from Microsoft Fabric to support security, forensic and internal investigations.</p>
+<ul>
+<li>
+<p>Support forensic investigations, preserve audit logs to meet regulatory requirements and gain high-bandwidth access to data</p>
+</li>
+<li>
+<p>Microsoft Fabric user activities are logged and available in the Microsoft Purview audit log.</p>
+</li>
+<li>
+<p>Use Fabric admin monitoring workspace to explore audit logs in Purview.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
 <h3 id="cyber-incident-response">Cyber Incident Response<a class="headerlink" href="#cyber-incident-response" title="Permanent link">&para;</a></h3>
-<p>Speaker: 
-- Ben Ackerman - Senior Specialist, Global Black Belt, Microsoft Unified
-- Aabir Quazi - Senior Security Researcher - Detection and Response Team (DART)
-Key Notes:
-- </p>
+<p><strong>Speaker</strong></p>
+<ul>
+<li>
+<p>Ben Ackerman - Senior Specialist, Global Black Belt, Microsoft Unified</p>
+</li>
+<li>
+<p>Aabir Quazi - Senior Security Researcher - Detection and Response Team (DART)</p>
+</li>
+</ul>
+<p><strong>Key Notes</strong></p>
+<ul>
+<li>
+<p><strong>Notable Attacks and Information in Recent History</strong></p>
+<ul>
+<li>
+<p>Feb 2024 - Ransomware attack on US Healthcare system.</p>
+</li>
+<li>
+<p>Data Breach in 2022 to an Australian company has cost $126 Million over the past 3 years.</p>
+</li>
+<li>
+<p>Attackers target Applications, Infrastructure (servers and networking), People (phishing), to gain the Data they wish to obtain.</p>
+</li>
+<li>
+<p>In a Recent IBM Report - Global Average breach was $4.3m US</p>
+</li>
+<li>
+<p>"The harsh reality is cybercriminals will continue to attack"</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Microsoft provide a Microsoft Security incident response service.</strong></p>
+<ul>
+<li>
+<p>Hourly based agreement</p>
+</li>
+<li>
+<p>Proactive and Reactive Service</p>
+</li>
+<li>
+<p>Prepare Proactively for Future Attack.</p>
+</li>
+<li>
+<p>Work closely with Microsoft Threat Intelligence teams.</p>
+</li>
+<li>
+<p>Collaborate with Private Sectors and Government Agencies, around the world.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cybersecurity Incident Response Approach</strong></p>
+<ul>
+<li>
+<p><strong>Investigation</strong> - Complete investigative service, determine whether systems are under target exploitation, set the groundwork recovery process of evicting the attack from the environment</p>
+<ul>
+<li>
+<p>Investigation of Windows environments including workstations, servers and domain controllers, as well as Investigating Entra ID and O365, including O365 Tenants and Entra ID (AAD)</p>
+<ul>
+<li>Deliverables include Outbrief Report, Outbrief Presentation, timeline report and power BI tool, showing technical information concerning the findings from the FENNEC scanner.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Containment</strong> - Deploy immediate countermeasures to contain active attacks and restore critical identity systems impacted by ransomware</p>
+</li>
+<li>
+<p><strong>Recovery</strong> - Take back control of the environment, removing attackers top tier privileges, deploy baseline controls</p>
+</li>
+<li>
+<p><strong>Modernization</strong> - Long-term architecture and process changes and Zero Trust and IR planning roadmap</p>
+<ul>
+<li>DART often takes 3 weeks for Investigate-Containment-Recovery, where this process is longer term.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pre-Incident Services: Compromise Assessment</strong></p>
+<ul>
+<li>
+<p>Scope Includes:</p>
+<ul>
+<li>
+<p>Investigation - Leverage the experience and expertise of Microsoft Incident response professionals</p>
+</li>
+<li>
+<p>Analyze - Compare organizations needs with the state of the environment</p>
+</li>
+<li>
+<p>Manage - Improve your ability to respond effectively to risk in a consonantly evolving landscape</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Assessment Deliverables:</p>
+<ul>
+<li>
+<p>Scope (Determine the level of effort in weeks)</p>
+</li>
+<li>
+<p>Kickoff (Deploy defender and validate connections)</p>
+</li>
+<li>
+<p>Analysis (Perform assessments on data collection)</p>
+</li>
+<li>
+<p>Brief (Present an Executive Summary of the Findings)</p>
+</li>
+<li>
+<p>Remediate (Work with to identify Microsoft services and products to help address security challenges)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tooling and Methodology</strong></p>
+<ul>
+<li>
+<p><strong>Point in Time Deep Scan</strong></p>
+<ul>
+<li>
+<p><strong>Fennec</strong> - Proprietary IR tooling for Windows (IR Only)</p>
+</li>
+<li>
+<p><strong>LiFE</strong> - Proprietary IR tooling for Linux (IR Only)</p>
+</li>
+<li>
+<p><strong>FoX</strong> - Forensic triage tool on devices of interest</p>
+</li>
+<li>
+<p><strong>Arctic</strong> - Active Directory security and configuration scan</p>
+</li>
+<li>
+<p><strong>Cosmic</strong> - Entra ID security and configuration scan</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Continuous Monitoring</strong></p>
+<ul>
+<li>
+<p>Microsoft Sentinel - Centralized event logging</p>
+</li>
+<li>
+<p>Microsoft Defender for Endpoint - Behavioral process-level detection</p>
+</li>
+<li>
+<p>Microsoft Defender for Identity - Detection of common threats, analyzes authentication requests</p>
+</li>
+<li>
+<p>Microsoft Defender for Cloud Apps - Analysts of cloud workloads to combat cyberthreats</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Sensor Intelligence</strong></p>
+<ul>
+<li>Custom Threat Intelligence - Based on data from Microsoft's global sensor network and Microsoft Threat Intelligence team</li>
+</ul>
+</li>
+<li>
+<p><strong>Attack Containment</strong></p>
+<ul>
+<li>Microsoft Incident Response can and will take direct and decisive action against ongoing actor activity to disrupt and limit damage activities based on IOCs gathered from the engagement</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Key Work Products</strong></p>
+<ul>
+<li>
+<p>Out-Brief presentation covers:</p>
+<ul>
+<li>
+<p>Executive overview and threat level summary</p>
+</li>
+<li>
+<p>Detailed findings, including attack activity and timeline (if applicable)</p>
+</li>
+<li>
+<p>Recommendations for short term and long term steps to improve overall security posture</p>
+</li>
+</ul>
+</li>
+<li>
+<p>A Power BI report, covering:</p>
+<ul>
+<li>
+<p>Identity drilldown including state of OnPrem AD and Entra ID</p>
+</li>
+<li>
+<p>Endpoint drilldown, based on machines scanned</p>
+</li>
+<li>
+<p>Security Posture Management (OnPrem and Entra ID)</p>
+</li>
+<li>
+<p>Commonly Exploited Third Party Applications</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
 <h3 id="ai-ready-infrastructure">AI ready Infrastructure<a class="headerlink" href="#ai-ready-infrastructure" title="Permanent link">&para;</a></h3>
-<p>Speaker: 
-- Andrew Orange - Product Manager Azure Infrastructure
-Key Notes:
-- </p>
+<p><strong>Speaker</strong></p>
+<ul>
+<li>Andrew Orange - Product Manager Azure Infrastructure</li>
+</ul>
+<p><strong>Key Notes</strong></p>
+<ul>
+<li>
+<p><strong>AI Transformation Opportunities</strong></p>
+<ul>
+<li>
+<p>Enrich employee experiences</p>
+</li>
+<li>
+<p>Reinvent customer engagement</p>
+</li>
+<li>
+<p>Reshape business process</p>
+</li>
+<li>
+<p>Bend the curve on innovation</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Azure Components</strong></p>
+<ul>
+<li>
+<p>AI Organization and toolchain</p>
+</li>
+<li>
+<p>Foundation Models</p>
+</li>
+<li>
+<p>Your Data</p>
+</li>
+<li>
+<p>AI Infrastructure</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Copilot and AI Stack</strong></p>
+<ul>
+<li>
+<p>AI Platform</p>
+</li>
+<li>
+<p>App Services</p>
+</li>
+<li>
+<p>Data Services</p>
+</li>
+<li>
+<p>AI Infrastructure</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud Infrastructure for the era of AI</strong></p>
+<ul>
+<li>
+<p><strong>Powerful</strong> - Purpose built platform for all workloads</p>
+<ul>
+<li>
+<p>AI Enhanced Apps - Intelligent apps for optimal latency and better enhancements with AI</p>
+</li>
+<li>
+<p>Your Data - Modernized data for seamless integration into your models</p>
+</li>
+<li>
+<p>Foundation Models - Widest Model Choice with Lowest Cost</p>
+</li>
+<li>
+<p>AI Infrastructure - Agility to run on purpose-built infrastructure for fastest AI performance</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Realize AI Ambitions at scale with Azure</strong></p>
+<ul>
+<li>
+<p>75% - agree that migrating to the cloud was essential to AI and ML adoption</p>
+</li>
+<li>
+<p>81% on Azure - Agility to change and improve AI</p>
+</li>
+<li>
+<p>77% on Azure - Ease to innovate with AI in Current Environments</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Infrastructure that's optimized end-to-end</strong></p>
+<ul>
+<li>
+<p>Datacenters - Enterprise grade datacenters and secure by default with built-in resiliency features for high availability</p>
+</li>
+<li>
+<p>CPU - Powerful performance to meet requirements across any workloads</p>
+</li>
+<li>
+<p>AI Accelerator - Handle Complex AI tasks faster with energy efficient AMD, NVIDIA, and Microsoft's Maia accelerators</p>
+</li>
+<li>
+<p>Network - Run large scale AI workloads with high bandwidth, low latency InifiBand and Ethernet based networking topologies</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Secure</strong> - Foundational security to cloud-native security solutions</p>
+<ul>
+<li>
+<p><strong>Challenges</strong></p>
+<ul>
+<li>
+<p>Multicloud Compliance</p>
+</li>
+<li>
+<p>Infrastructure as Code</p>
+</li>
+<li>
+<p>Security should not slow down developers.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Azure Security is Built-In vs Bolted On</strong></p>
+<ul>
+<li>
+<p>Microsoft Defender for Cloud</p>
+</li>
+<li>
+<p>Microsoft Sentinel</p>
+</li>
+<li>
+<p>Azure Network Security</p>
+</li>
+<li>
+<p>Confidential Computing</p>
+</li>
+<li>
+<p>GitHub Advanced Security</p>
+</li>
+<li>
+<p>Copilot for Security</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Secure Workloads</strong></p>
+<ul>
+<li>
+<p>Compute - Enable Multicloud protection</p>
+</li>
+<li>
+<p>Databases and Storage - Minimize risk proactively</p>
+</li>
+<li>
+<p>Service Layer - Reduce threat mitigation time by 50%</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Adaptive</strong> - Multicloud, hyperscale edge; cloud operations and management</p>
+<ul>
+<li>
+<p>Azure spans from hyperscale to edge to IoT with an adaptive cloud approach</p>
+<ul>
+<li>
+<p>Migrate and Modernize apps, data, and Infrastructure</p>
+</li>
+<li>
+<p>Migrate VMware as is</p>
+</li>
+<li>
+<p>Extend to Hybrid Multicloud and Edge</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Operate with AI-Enhanced Central Management</strong></p>
+<ul>
+<li>
+<p>Microsoft Copilot for Azure</p>
+</li>
+<li>
+<p>Azure Monitor</p>
+</li>
+<li>
+<p>Microsoft Defender for Cloud</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Rapidly Develop and Scale Applications Across Boundaries</strong></p>
+<ul>
+<li>
+<p>Visual Studio</p>
+</li>
+<li>
+<p>GitHub</p>
+</li>
+<li>
+<p>Azure Kubernetes Service</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cultivate data and Insights across physical operations</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Top Takeaways</strong></p>
+<ul>
+<li>
+<p>Migration to Azure is the first step to achieve AI Readiness</p>
+</li>
+<li>
+<p>Get powerful compute and run on the largest cloud network on the planet for optimal availability, scalability, and resiliency.</p>
+</li>
+<li>
+<p>Azure secures your workloads across the migration journey</p>
+</li>
+<li>
+<p>Azure supports a diverse ecosystem of applications and services through a single pane of management for your entire estate</p>
+</li>
+<li>
+<p>Azure is adaptive, meeting you where you are in the cloud journey</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
 <h3 id="unlock-value-from-your-data-with-analytics">Unlock Value from Your Data with Analytics<a class="headerlink" href="#unlock-value-from-your-data-with-analytics" title="Permanent link">&para;</a></h3>
-<p>Speaker: 
-- Fabio Braga - Senior Data &amp; AI Specialist
-Key Notes:
-- </p>
+<p><strong>Speaker</strong></p>
+<ul>
+<li>Fabio Braga - Senior Data &amp; AI Specialist</li>
+</ul>
+<p><strong>Key Notes</strong></p>
+<ul>
+<li>
+<p><strong>Agenda</strong></p>
+<ul>
+<li>
+<p>The opportunity with data and AI</p>
+</li>
+<li>
+<p>The challenges stifling digital transformation</p>
+</li>
+<li>
+<p>Introducing Microsoft Fabric</p>
+</li>
+<li>
+<p>Unifying your analytics on a complete, governed platform</p>
+</li>
+<li>
+<p>Establishing a trusted data foundation</p>
+</li>
+<li>
+<p>Empowering everyone with insights</p>
+</li>
+<li>
+<p>Fueling your AI Innovation</p>
+</li>
+<li>
+<p>Getting Started</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>The opportunity with data and AI</strong></p>
+<ul>
+<li>87% of Organizations believe AI will give them a competitive edge (Source: MIT Sloan Management Review)</li>
+</ul>
+</li>
+<li>
+<p><strong>The challenges stifling digital transformation</strong></p>
+<ul>
+<li>
+<p><strong>"The Starting Line"</strong></p>
+<ul>
+<li>
+<p>Data copies and infrastructure inefficiencies</p>
+</li>
+<li>
+<p>Limited interoperability between vendor services</p>
+</li>
+<li>
+<p>Data exposure risk</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>"The Finish Line"</strong></p>
+<ul>
+<li>A Unified, Intelligent data estate built on an open and governed data lake house</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Introducing Microsoft Fabric</strong></p>
+<ul>
+<li>
+<p>Microsoft Fabric includes the following services and components:</p>
+<ul>
+<li>
+<p>Data Factory</p>
+</li>
+<li>
+<p>Data Engineering</p>
+</li>
+<li>
+<p>Data Warehouse</p>
+</li>
+<li>
+<p>Data Science</p>
+</li>
+<li>
+<p>Real-Time Intelligence</p>
+</li>
+<li>
+<p>Power BI</p>
+</li>
+<li>
+<p>Copilot in Fabric</p>
+</li>
+<li>
+<p>OneLake</p>
+</li>
+<li>
+<p>Microsoft Purview</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Unify your analytics on a complete governed platform</strong></p>
+<ul>
+<li>
+<p><strong>"The Starting Line"</strong></p>
+<ul>
+<li>
+<p>Data copies and infrastructure inefficiencies</p>
+</li>
+<li>
+<p>Limited interoperability between vendor services</p>
+</li>
+<li>
+<p>Data exposure risk</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Unify your analytics on a complete platform with Fabric</strong></p>
+<ul>
+<li>
+<p>Empower every data professional with the right tools</p>
+</li>
+<li>
+<p>Manage, Secure and govern your data in Fabric</p>
+</li>
+<li>
+<p>Simplify billing with unified compute</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Manage, Govern, and Secure data at scale in Microsoft Fabric</strong></p>
+<ul>
+<li>
+<p><strong>Manage your data estate</strong></p>
+<ul>
+<li>
+<p>Admin Portal</p>
+</li>
+<li>
+<p>Tenant and Workspace Settings</p>
+</li>
+<li>
+<p>Capabilities</p>
+</li>
+<li>
+<p>Domains and Subdomains</p>
+</li>
+<li>
+<p>Workspaces</p>
+</li>
+<li>
+<p>Metadata Scanning</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Secure, Protect &amp; Comply</strong></p>
+<ul>
+<li>
+<p>Fabric inbound and outbound security</p>
+</li>
+<li>
+<p>Conditional Access</p>
+</li>
+<li>
+<p>Fine-Grained security and access controls</p>
+</li>
+<li>
+<p>Workspace &amp; Item Security</p>
+</li>
+<li>
+<p>Data Encryption</p>
+</li>
+<li>
+<p>Certificates &amp; Standards</p>
+</li>
+<li>
+<p>Data residency</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Encourage data discovery, trust and use</strong></p>
+<ul>
+<li>
+<p>OneLake data hub</p>
+</li>
+<li>
+<p>Endorsements</p>
+</li>
+<li>
+<p>Data lineage &amp; impact analysis</p>
+</li>
+<li>
+<p>External data sharing</p>
+</li>
+<li>
+<p>Metadata curation</p>
+</li>
+<li>
+<p>Discover &amp; reuse</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Monitor, uncover insights and act</strong></p>
+<ul>
+<li>
+<p>Admin monitoring</p>
+</li>
+<li>
+<p>Capacity metrics</p>
+</li>
+<li>
+<p>Monitoring Hub</p>
+</li>
+<li>
+<p>Purview Hub</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Microsoft Fabric Business Model Overview</strong></p>
+<ul>
+<li>
+<p>Compute: Data Factory, Data Engineering, Data Warehouse, Data Science, Real-Time Intelligence, Power BI, Copilot in Fabric</p>
+</li>
+<li>
+<p>Storage: Unified Data Foundations (OneLake)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Establish a Trusted Data Foundation</strong></p>
+<ul>
+<li>
+<p><strong>"The Starting Line"</strong></p>
+<ul>
+<li>
+<p>Data Duplication and Movement</p>
+</li>
+<li>
+<p>Access issues hindering data exploration and analysis</p>
+</li>
+<li>
+<p>No central data catalog</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Expectations of data lakes vs reality</strong></p>
+<ul>
+<li>
+<p><strong>Expectations</strong></p>
+<ul>
+<li>
+<p>One place for an organization to land all data, structured and unstructured.</p>
+</li>
+<li>
+<p>Break down data silos, making it easier to blend and analyze data together</p>
+</li>
+<li>
+<p>Simplify security, governance and data discovery enabling all users and applications to access the data they need</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Reality</strong></p>
+<ul>
+<li>
+<p><strong>You buy storage and build a complicated lake solution on top of it</strong></p>
+</li>
+<li>
+<p>Getting the desired value from one Data Lake is hard. Business groups get frustrated with the pace of change when having to coordinate through a central team.</p>
+</li>
+<li>
+<p>Shifting to a data mesh pattern enables business groups to work independently with multiple business domain-driven lakes. However, it requires each team to manage their own lakes.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>OneLake for all data - "The OneDrive for Data"</strong></p>
+<ul>
+<li>
+<p>Connect to data from across your multi-cloud estate - Easily connect to data across clouds using "Shortcuts" to virtualize data in OneLake without having to move or duplicate the data.</p>
+</li>
+<li>
+<p>Work from the same copy of data across engines - Load data of any format into the open data lake one time and access that single copy across any Fabric analytics engine.</p>
+</li>
+<li>
+<p>Responsibly democratize data access - Intuitively organize your data in Microsoft Fabric's data lake, OneLake, for central data discovery, sharing, governance, and compliance.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Connect to data across clouds using shortcuts and mirroring.</strong></p>
+</li>
+<li>
+<p><strong>A Single unified SaaS data lake - "No Silos"</strong></p>
+<ul>
+<li>
+<p>Provisioned Automatically with the tenant</p>
+</li>
+<li>
+<p>Any data in OneLake works with out-of-the-box governance such as data lineage, data protection, certification, catalog integration, etc. All data is ultimately under the control of a tenant admin</p>
+</li>
+<li>
+<p>OneLake enables distributed ownership. Different workspaces allow different parts of the organization to work independently while still contributing to the same data lake. Each workspace can have its own administrator, access control, region, and capacity for billing.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>OneLake for all domains - True Data Mesh as a Service.</strong></p>
+<ul>
+<li>
+<p>Logically group together all data in an organization relevant to an area of field, according to business needs with domains.</p>
+</li>
+<li>
+<p>Domains are defined with domain admins and contributors who can associate workspaces and group them together.</p>
+</li>
+<li>
+<p>Domains simplify discovery and consumption of data across the organization, allowing business-optimized consumption.</p>
+</li>
+<li>
+<p>Avoid data swamps by endorsing certain data as certified or promoted, thus encouraging reuse.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>OneLake which logically spans the world.</strong></p>
+<ul>
+<li>
+<p>To achieve data residency requirements, workspaces can reside in different regions around the world, while still being part of the same data lake.</p>
+</li>
+<li>
+<p>Data can reside in different regions without the overhead of managing different storage resources and without creating data silos.</p>
+</li>
+<li>
+<p>OneLake provisions storage resources for each workspace to meet demands for scale.</p>
+</li>
+<li>
+<p>Underlying physical storage is virtualized away.</p>
+</li>
+<li>
+<p>All storage is zone redundant by default with an option for Geo redundancy.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>One Copy for all computes - Real separation of compute and storage</strong></p>
+<ul>
+<li>
+<p>All the compute engines store their data automatically in OneLake as data items.</p>
+</li>
+<li>
+<p>The data is stored in a single common format.</p>
+</li>
+<li>
+<p><strong>Delta Parquet</strong>, an open standard format, and it is the storage format for all tabular data in Fabric.</p>
+</li>
+<li>
+<p>All the compute engines have been fully optimized to work with the <strong>Delta Parquet</strong> as their native format.</p>
+</li>
+<li>
+<p>Once data is stored in the lake, it is directly accessible by all the engines without needing any import/export.</p>
+</li>
+<li>
+<p>You're able to choose the right engine for the job.</p>
+</li>
+<li>
+<p>All compute engines have been fully optimized to work with <strong>Delta Parquet</strong> as their native format.</p>
+</li>
+<li>
+<p>Shared universal security model is enforced across all the engines (Coming Soon).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Empower everyone with Data and Insights</strong></p>
+<ul>
+<li>
+<p><strong>Frontline Workers</strong> - Lack of data insights and history around daily tasks lead to less optimal decision making.</p>
+</li>
+<li>
+<p><strong>Data Analysts</strong> - Fragmented data sources prevent a complete, contextualized view and inhibit the creation of insights.</p>
+</li>
+<li>
+<p><strong>Line of Business Leaders</strong> - Complex dashboard and multi-source data integrations with long lead times make it difficult to stay up to date on KPIs.</p>
+</li>
+<li>
+<p><strong>CxO</strong> - Digital transformation is slowed without usable tooling and technology that minimizes instinct-driven decisions.</p>
+</li>
+<li>
+<p><strong>Empower every business user</strong></p>
+<ul>
+<li>
+<p>Reduce data duplication and provide real-time insights - Save time for analysts and provide up-to-date insights with Direct Lake mode, a blazing fast, real-time connection to your data in OneLake.</p>
+</li>
+<li>
+<p>Act on insights in real-time - Easily set up a system of detection over your real-time data, alerting business users when they need to act.</p>
+</li>
+<li>
+<p>Embed insights in the apps people use every day - Foster a data-driven culture by seamlessly and securely embedding insights into Teams, Excel, PowerPoint, Outlook, and more with native integration.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Power BI: The Bridge between data and decisions</strong></p>
+</li>
+</ul>
+<p><strong>Fuel your AI Innovation</strong></p>
+<ul>
+<li>
+<p><strong>Accelerating Productivity with Copilot in Fabric</strong> - Stay focused on unlocking value from your data with built-in generative AI experiences.</p>
+</li>
+<li>
+<p><strong>AI Driven Insights</strong> - Uncover deeper insights and drive action faster with best-in-class AI models.</p>
+</li>
+<li>
+<p><strong>Generative AI on Your Data</strong> - Create custom generative AI experiences, grounded on your data.</p>
+</li>
+<li>
+<p><strong>Copilot in Microsoft Fabric</strong></p>
+<ul>
+<li>
+<p>Data Factory - Get intelligent code generation to transform data with ease and code explanations to help you better understand complex tasks.</p>
+</li>
+<li>
+<p>Data Engineering and Data Science - Quickly generate code in Notebooks to help work with Lakehouse data and get insights.</p>
+</li>
+<li>
+<p>Data Warehouse - Write and explain T-SQL queries, or even make intelligent suggestions and fixes while you are coding.</p>
+</li>
+<li>
+<p>Real-Time Intelligence - Translate questions into KQL queries that you can execute.</p>
+</li>
+<li>
+<p>Power BI - Quickly create report pages, natural language summaries, and generate synonyms.</p>
+<ul>
+<li>
+<p>Create insightful reports by chatting with Copilot.</p>
+</li>
+<li>
+<p>Define metrics and calculations for your data model by describing them in Natural Language.</p>
+</li>
+<li>
+<p>Use Copilot to find and summarize insights in your data.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Generative AI on your data</strong></p>
+<ul>
+<li>
+<p>Enable custom Q&amp;A on your data in Fabric.</p>
+</li>
+<li>
+<p>Define custom business semantics and grounding unique to your organization.</p>
+</li>
+<li>
+<p>Scale the custom experiences to Microsoft 365 Chat, Copilot Studio, and Azure AI Studio.</p>
+</li>
+<li>
+<p><strong>Build Your Own GenAI Experience</strong></p>
+<ul>
+<li>
+<p>Enhance data insights - Build enterprise chat applications to uncover insights using natural language from structured, unstructured, and real-time data.</p>
+</li>
+<li>
+<p>Analyze customer interactions - Build speech analytics applications to enhance customer service, tailor support responses, and make data-driven decisions.</p>
+</li>
+<li>
+<p>Customize machine learning models - Train, deploy, and orchestrate machine learning models tailored to specific business needs, from predictive maintenance to customer sentiment analysis.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Fuel the AI journey by getting data AI ready</strong></p>
+<ul>
+<li>
+<p>Establish a central repository for all data (using OneLake) - Integrate disparate data sources into a unified data platform and data lake.</p>
+</li>
+<li>
+<p>Prepare data for AI Innovation (Using Microsoft Fabric data experiences) - Improve the quality of your data, to ensure it is complete, accurate, and governed.</p>
+</li>
+<li>
+<p>Build generative AI experiences on top of your data (using Azure AI Studio) - Enhance the breadth and depth of data-driven experiences by creating an AI solution.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Getting Started</strong></p>
+<ul>
+<li>
+<p>Try Microsoft Fabric for 60 days free: <a href="https://aka.ms/try-fabric">aka.ms/try-fabric</a></p>
+</li>
+<li>
+<p>Join the vibrant Fabric community: <a href="https://aka.ms/fabric-community">aka.ms/fabric-community</a></p>
+</li>
+<li>
+<p>Learn more about Fabric with Microsoft's Technical blog site: <a href="https://blog.fabric.microsoft.com/en-US/blog">blog.fabric.microsoft.com/en-US/blog</a></p>
+</li>
+<li>
+<p>Read the Projected Total Economic Impact of Microsoft Fabric: <a href="https://aka.ms/Fabric-ForresterTEI-2024">aka.ms/Fabric-ForresterTEI-2024</a></p>
+</li>
+</ul>
 
 
 <!-- taken from 
