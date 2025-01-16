@@ -1,8 +1,6 @@
 # Microsoft Summer Bootcamp Recap - Day 2
 
-## Day 2
-
-### Microsoft Purview Data Security for Microsoft 365
+## Microsoft Purview Data Security for Microsoft 365
 
 **Speaker**
 
@@ -195,7 +193,7 @@
 
 ---
 
-### How to apply data security across both structured and unstructured data
+## How to apply data security across both structured and unstructured data
 
 **Speaker**
 
@@ -274,7 +272,7 @@
 
 ---
 
-### Cyber Incident Response
+## Cyber Incident Response
 
 **Speaker**
 
@@ -401,7 +399,7 @@
 
 ---
 
-### AI ready Infrastructure
+## AI ready Infrastructure
 
 **Speaker**
 
@@ -544,7 +542,7 @@
 
 ---
 
-### Unlock Value from Your Data with Analytics
+## Unlock Value from Your Data with Analytics
 
 **Speaker**
 

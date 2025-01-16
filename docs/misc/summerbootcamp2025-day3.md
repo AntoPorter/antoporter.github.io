@@ -1,8 +1,6 @@
 # Microsoft Summer Bootcamp Recap - Day 3
 
-## Day 3
-
-### Zero Trust 101: Embracing Proactive Security
+## Zero Trust 101: Embracing Proactive Security
 
 **Speaker**
 
@@ -118,7 +116,7 @@
 
 ---
 
-### Unlocking the Power of Microsoft Entra Suite: Comprehensive Security and Identity Management for the Modern Enterprise
+## Unlocking the Power of Microsoft Entra Suite: Comprehensive Security and Identity Management for the Modern Enterprise
 
 **Speaker**
 
@@ -354,7 +352,7 @@
 
 ---
 
-### Microsoft Defender XDR: The solution to modern cyberattacks
+## Microsoft Defender XDR: The solution to modern cyberattacks
 
 **Speaker**
 
@@ -472,7 +470,7 @@
 
 ---
 
-### Boost Developer Productivity with AI
+## Boost Developer Productivity with AI
 
 **Speaker**
 
@@ -608,7 +606,7 @@
 
 ---
 
-### Accelerate business growth with AI applications on Azure
+## Accelerate business growth with AI applications on Azure
 
 **Speaker**
 

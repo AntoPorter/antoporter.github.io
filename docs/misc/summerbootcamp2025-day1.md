@@ -1,8 +1,6 @@
 # Microsoft Summer Bootcamp Recap - Day 1
 
-## Day 1
-
-### Microsoft Security Innovation
+## Microsoft Security Innovation
 
 **Speaker:**
 
@@ -111,7 +109,7 @@
 
 ---
 
-### Inside Microsoft - Securing Our Enterprise
+## Inside Microsoft - Securing Our Enterprise
 
 **Speaker:**
 
@@ -184,7 +182,7 @@
 
 ---
 
-### Securing AI: Understanding Risk and Implementing Defenses
+## Securing AI: Understanding Risk and Implementing Defenses
 
 **Speakers:**
 
@@ -263,7 +261,7 @@
 
 ---
 
-### Microsoft Ignite 2024 Recap with Aaron Powell
+## Microsoft Ignite 2024 Recap with Aaron Powell
 
 **Speaker:**
 - Aaron Powell - Principal Cloud Developer Advocate
@@ -391,7 +389,7 @@
 
 ---
 
-### AI Spotlight on Australia and New Zealand
+## AI Spotlight on Australia and New Zealand
 
 **Speaker:**
 
