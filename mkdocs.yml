@@ -161,6 +161,7 @@ nav:
   - Microsoft Purview: 
     - purview/index.md
     - purview/browsersignaldetection.md
+    - purview/m365copilotDLP.md
   - Microsoft Copilot:
     - Microsoft Copilot: copilot/index.md
     - Microsoft Copilot for Security:
@@ -184,6 +185,7 @@ nav:
     - misc/summerbootcamp2025-day3.md
   - Out of Band Podcast:
     - podcast/outofband/index.md
-    - podcast/outofband/episode0.md    
+    - podcast/outofband/episode0.md
+    - podcast/outofband/episode1.md    
   - About Me:
     - aboutme.md
