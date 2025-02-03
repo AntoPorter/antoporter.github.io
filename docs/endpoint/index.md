@@ -4,6 +4,7 @@
 ## Microsoft Intune
 ---
 
+- [Quick Wins: Migrating Group Policies with Group Policy Analytics](./intune/quickwins-grouppolicyanalytics.md)
 - [Enhancing Security with Microsoft Intune Security Baselines and Insights](./intune/baselineinsights.md)
 - [The Importance of Self-Service Recovery Key Retrieval](./intune/bitlocker_selfservice.md)
 - [Intune Remediations](./intune/remediations.md)
