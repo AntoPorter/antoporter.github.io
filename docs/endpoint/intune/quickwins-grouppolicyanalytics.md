@@ -45,18 +45,18 @@ The migration process involves converting existing Group Policy Objects (GPOs) t
     
 3. Once the XML is within Microsoft Intune, the Analysis runs against the GPO and the following information is listed:
 
-- **Group Policy name**: The name is automatically generated using information in the GPO.
-    
-- **Active Directory Target**: The target is automatically generated using the organizational unit (OU) target information in the GPO.
-    
-- **MDM Support**: Shows the percentage of group policy settings in the GPO that have the same setting in Intune. This also displays the CSP which is relevant to that group policy setting.
-    
-- **Unknown Settings**: There are some CSPs that can't be analyzed. **Unknown Settings** lists the GPOs that can't be analyzed.
-    
-- **Targeted in AD**: **Yes** means the GPO is linked to an OU in on-premises group policy. **No** means the GPO isn't linked to an on-premises OU.
-    
-- **Last imported**: Shows the date of the last import.
-    
+	- **Group Policy name**: The name is automatically generated using information in the GPO.
+	    
+	- **Active Directory Target**: The target is automatically generated using the organizational unit (OU) target information in the GPO.
+	    
+	- **MDM Support**: Shows the percentage of group policy settings in the GPO that have the same setting in Intune. This also displays the CSP which is relevant to that group policy setting.
+	    
+	- **Unknown Settings**: There are some CSPs that can't be analyzed. **Unknown Settings** lists the GPOs that can't be analyzed.
+	    
+	- **Targeted in AD**: **Yes** means the GPO is linked to an OU in on-premises group policy. **No** means the GPO isn't linked to an on-premises OU.
+	    
+	- **Last imported**: Shows the date of the last import.
+	    
 
 **Note:** 
     
