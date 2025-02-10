@@ -4,6 +4,7 @@
 ## Microsoft Intune
 ---
 
+- [Quick Wins: Transitioning from WSUS to Windows Autopatch](./intune/quickwins-autopatch.md)
 - [Quick Wins: Migrating Group Policies with Group Policy Analytics](./intune/quickwins-grouppolicyanalytics.md)
 - [Enhancing Security with Microsoft Intune Security Baselines and Insights](./intune/baselineinsights.md)
 - [The Importance of Self-Service Recovery Key Retrieval](./intune/bitlocker_selfservice.md)
