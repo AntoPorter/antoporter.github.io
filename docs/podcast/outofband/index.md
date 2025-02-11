@@ -4,6 +4,7 @@
 
 ### Episodes
 
+- [Episode 2: Intune It](episode2md)
 - [Episode 1: Boots on Ground](episode1.md)
 - [Episode 0: Welcome to the Band](episode0.md)
 
