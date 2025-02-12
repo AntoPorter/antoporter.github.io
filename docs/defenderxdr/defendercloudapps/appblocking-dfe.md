@@ -4,7 +4,7 @@
 Ensuring that only approved applications run within your environment is crucial for maintaining a robust security posture. Microsoft Defender for Endpoint offers powerful features to enforce app blocking and manage network indicators, making it easier to protect your organization from potential threats. In this post, we’ll explore how to enable these features and share some lessons learned from implementing them.
 
 ---
-### Enabling Custom Network Indicators
+### Enabling the Defender for Cloud Apps Integration
 
 **Enabling the Defender for Cloud Apps Integration from Defender for Endpoint** allow you to forward signals from devices that are onboarded and using Defender for Endpoint, giving administrators deeper visibility into both sanctioned cloud apps and shadow IT. It is also required to mark and block apps identified as Unsanctioned within Defender for Cloud Apps. Telemetry for this will be found under **Cloud Apps > Cloud Discovery**. Here’s how to enable and configure this feature:
 
