@@ -153,6 +153,7 @@ nav:
   - Endpoint Management: 
     - Endpoint Management: endpoint/index.md
     - Microsoft Intune:
+      - endpoint/intune/quickwins-applications.md
       - endpoint/intune/quickwins-autopatch.md
       - endpoint/intune/quickwins-grouppolicyanalytics.md
       - endpoint/intune/remediations.md
