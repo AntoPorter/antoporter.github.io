@@ -40,7 +40,7 @@ Understanding the different types of applications that can be deployed using Mic
     
 
 And to deploy the Application itself, its quite simply:
-Navigating to Microsoft Intune (https://intune.microsoft.com) > Selecting Apps > All Apps > Add!
+Navigating to Microsoft Intune ([https://intune.microsoft.com](https://intune.microsoft.com)) > Selecting Apps > All Apps > Add!
 
 ![quickwins-applications-addapp](./Images/quickwins-applications-addapp.png)
 
