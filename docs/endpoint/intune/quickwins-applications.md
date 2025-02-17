@@ -89,22 +89,31 @@ Now, the **Microsoft Win32 Content Prep Tool** (IntuneWinAppUtil) is a powerful 
 2. **Prepare Application Files**: Gather the source files and installer for the Win32 application. Ensure that only the setup files for the app are in the specified folder.
     
 3. **Package the Application**:
-   - **Run IntuneWinAppUtil**: Use the tool to convert the application installer into a .intunewin file.
-   - **Specify Parameters**: Define installation and uninstallation commands, as well as any additional parameters. For example:
+    
+	- **Run IntuneWinAppUtil**: Use the tool to convert the application installer into a .intunewin file.
+		
+	- **Specify Parameters**: Define installation and uninstallation commands, as well as any additional parameters. For example:
      ```sh
      IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> -q
      ```
      This command will generate the .intunewin file from the specified source folder and setup file. The `-q` flag puts the tool in quiet mode.
     
 4. **Deploy the Application**:
-   - **Upload to Intune**: Upload the .intunewin file to Intune and configure the deployment settings.
-   - **Assign to Devices**: Assign the packaged application to the target devices or user groups.
+	
+	- **Upload to Intune**: Upload the .intunewin file to Intune and configure the deployment settings.
+		
+	- **Assign to Devices**: Assign the packaged application to the target devices or user groups.\
+	    
     
 5. **Additional Features**:
-   - **Catalog Files**: If you have catalog files, use the `-a` parameter to bundle them into the .intunewin file.
-   - **Quiet Mode**: Use the `-q` parameter to run the tool in quiet mode, which suppresses prompts and automatically overwrites existing output files.
-   - **Help and Version Information**: Use `IntuneWinAppUtil -h` to display usage information and `IntuneWinAppUtil -v` to show the tool version.
-    
+	
+	- **Catalog Files**: If you have catalog files, use the `-a` parameter to bundle them into the .intunewin file.
+		
+	- **Quiet Mode**: Use the `-q` parameter to run the tool in quiet mode, which suppresses prompts and automatically overwrites existing output files.
+		
+	- **Help and Version Information**: Use `IntuneWinAppUtil -h` to display usage information and `IntuneWinAppUtil -v` to show the tool version.
+		
+	
 
 For any further information, I would suggest looking at the GitHub repo itself (in case of any changes), and ensure you meet any current (and potentially future) prerequisites.
     
