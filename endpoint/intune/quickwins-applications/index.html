@@ -12,13 +12,13 @@
         <meta name="author" content="Anthony Porter.">
       
       
-        <link rel="canonical" href="https://antoporter.github.io/endpoint/intune/quickwins-autopatch/">
+        <link rel="canonical" href="https://antoporter.github.io/endpoint/intune/quickwins-applications/">
       
       
-        <link rel="prev" href="../quickwins-applications/">
+        <link rel="prev" href="../../">
       
       
-        <link rel="next" href="../quickwins-grouppolicyanalytics/">
+        <link rel="next" href="../quickwins-autopatch/">
       
       
       <link rel="icon" href="../../../images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Quick Win: Transitioning from WSUS to Windows Autopatch - Anto Porter</title>
+        <title>Quick Wins: Migrating Application Management to Microsoft Intune - Anto Porter</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#quick-win-transitioning-from-wsus-to-windows-autopatch" class="md-skip">
+        <a href="#quick-wins-migrating-application-management-to-microsoft-intune" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quick Win: Transitioning from WSUS to Windows Autopatch
+              Quick Wins: Migrating Application Management to Microsoft Intune
             
           </span>
         </div>
@@ -1419,28 +1419,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../quickwins-applications/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Quick Wins: Migrating Application Management to Microsoft Intune
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1457,7 +1435,7 @@
           
   
   <span class="md-ellipsis">
-    Quick Win: Transitioning from WSUS to Windows Autopatch
+    Quick Wins: Migrating Application Management to Microsoft Intune
     
   </span>
   
@@ -1469,7 +1447,7 @@
         
   
   <span class="md-ellipsis">
-    Quick Win: Transitioning from WSUS to Windows Autopatch
+    Quick Wins: Migrating Application Management to Microsoft Intune
     
   </span>
   
@@ -1492,46 +1470,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deprecation-of-wsus" class="md-nav__link">
+  <a href="#benefits-of-utilizing-microsoft-intune-for-app-management-over-alternative-systems" class="md-nav__link">
     <span class="md-ellipsis">
-      Deprecation of WSUS
+      Benefits of Utilizing Microsoft Intune for App Management Over Alternative Systems
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#intune-capabilities-for-windows-updates" class="md-nav__link">
+  <a href="#app-types-for-deployment" class="md-nav__link">
     <span class="md-ellipsis">
-      Intune Capabilities for Windows Updates
+      App Types for Deployment
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-and-prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration and Prerequisites
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration and Prerequisites">
+    <nav class="md-nav" aria-label="App Types for Deployment">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#key-information-related-to-configuration-and-specific-apps" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Key Information Related to Configuration and Specific Apps
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
+  <a href="#win32-app-wrapper-and-prep-tool" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration
+      Win32 App Wrapper and Prep Tool
     </span>
   </a>
   
@@ -1543,51 +1512,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#benefits-of-using-autopatch" class="md-nav__link">
+  <a href="#co-management-function-during-migration" class="md-nav__link">
     <span class="md-ellipsis">
-      Benefits of Using Autopatch
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Benefits of Using Autopatch">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#update-rings-and-group-allocation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Update Rings and Group Allocation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entra-joined-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Entra Joined Setup
+      Co-Management Function During Migration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-manager-via-co-management" class="md-nav__link">
+  <a href="#in-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration Manager via Co-Management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
+      In Summary
     </span>
   </a>
   
@@ -1597,6 +1533,28 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickwins-autopatch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Win: Transitioning from WSUS to Windows Autopatch
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2753,163 +2711,153 @@
     
       
     
-    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/endpoint/intune/quickwins-autopatch.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/endpoint/intune/quickwins-applications.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="quick-win-transitioning-from-wsus-to-windows-autopatch">Quick Win: Transitioning from WSUS to Windows Autopatch<a class="headerlink" href="#quick-win-transitioning-from-wsus-to-windows-autopatch" title="Permanent link">&para;</a></h1>
-<p>As organizations evolve, the need to adopt modern IT management solutions becomes imperative. Microsoft has officially announced the deprecation of Windows Server Update Services (WSUS). This move encourages organizations to transition to more efficient, cloud-based solutions like Windows Autopatch. This article will guide you through configuring Autopatch, the prerequisites, and the benefits of making the switch from WSUS.</p>
-<h2 id="deprecation-of-wsus">Deprecation of WSUS<a class="headerlink" href="#deprecation-of-wsus" title="Permanent link">&para;</a></h2>
-<p>Microsoft has announced that WSUS will no longer receive new feature updates or active development. While it will continue to operate, support for WSUS is set to end in 2025. This deprecation means organizations must transition to modern update management tools to maintain compliance, security, and efficiency.</p>
-<h2 id="intune-capabilities-for-windows-updates">Intune Capabilities for Windows Updates<a class="headerlink" href="#intune-capabilities-for-windows-updates" title="Permanent link">&para;</a></h2>
-<p>With the deprecation of WSUS, Microsoft Intune emerges as a powerful alternative for managing Windows Updates. Intune offers a comprehensive suite of capabilities to ensure devices are always up-to-date, secure, and compliant. Here are the key capabilities of Intune related to Windows Updates, with an emphasis on Windows Autopatch:</p>
-<ul>
-<li>
-<p><strong>Windows Autopatch</strong>: Automates the update process for Windows, Microsoft 365 Apps for Enterprise, Microsoft Edge, and Microsoft Teams. Autopatch ensures timely updates, enhances security, and reduces the administrative burden on IT staff.</p>
-</li>
-<li>
-<p><strong>Update Rings</strong>: Define and configure update rings in Intune to manage when and how updates are installed. This allows for a staged rollout of updates, minimizing disruptions and ensuring stability.</p>
-</li>
-<li>
-<p><strong>Quality and Feature Updates</strong>: Intune allows you to manage both quality updates (security and reliability) and feature updates (new capabilities) for Windows devices, ensuring that devices are always running the latest versions.</p>
-</li>
-<li>
-<p><strong>Driver and Firmware Updates</strong>: Manage driver and firmware updates through Intune, ensuring that all hardware components are up-to-date and functioning correctly.</p>
-</li>
-</ul>
-<p>This article delves into configuring Windows Autopatch, the prerequisites, and the benefits of using this modern update management solution.</p>
-<h2 id="configuration-and-prerequisites">Configuration and Prerequisites<a class="headerlink" href="#configuration-and-prerequisites" title="Permanent link">&para;</a></h2>
-<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
-<p>Before configuring Windows Autopatch, ensure that you meet the following prerequisites:</p>
-<ul>
-<li>
-<p><strong>Licensing</strong>: Windows 10/11 Enterprise E3+ or F3 licenses, included in Microsoft 365 F3, E3, or E5.</p>
-</li>
-<li>
-<p><strong>Microsoft Entra ID</strong>: Required for co-management.</p>
-</li>
-<li>
-<p><strong>Microsoft Entra Joined Devices</strong>: Devices must be either Microsoft Entra hybrid joined or Microsoft Entra joined.</p>
-</li>
-<li>
-<p><strong>Microsoft Intune</strong>: Use Configuration Manager 2010 or greater for co-management.</p>
-</li>
-<li>
-<p><strong>Infrastructure</strong>: Ensure your infrastructure supports cloud-based endpoint management.</p>
-</li>
-</ul>
-<p>Source: <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites?tabs=business-premium-a3-entitlements%2Cbusiness-premium-a3-intune-permissions">Prerequisites | Microsoft Learn</a></p>
-<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
-<p>To configure Windows Autopatch, follow these steps:</p>
+<h1 id="quick-wins-migrating-application-management-to-microsoft-intune">Quick Wins: Migrating Application Management to Microsoft Intune<a class="headerlink" href="#quick-wins-migrating-application-management-to-microsoft-intune" title="Permanent link">&para;</a></h1>
+<p>Migrating from traditional on-premises application management systems like Microsoft Configuration Manager to cloud-based solutions such as Microsoft Intune offers a streamlined approach to device and application management. I hope that this article acts as a guide, and provides essential information and steps to help IT administrators make this transition smoothly, highlighting the benefits, configuration details, application types, co-management functions, and deployment techniques.</p>
+<h2 id="benefits-of-utilizing-microsoft-intune-for-app-management-over-alternative-systems">Benefits of Utilizing Microsoft Intune for App Management Over Alternative Systems<a class="headerlink" href="#benefits-of-utilizing-microsoft-intune-for-app-management-over-alternative-systems" title="Permanent link">&para;</a></h2>
+<p>When considering a migration to the cloud, it is crucial to understand why Microsoft Intune stands out from other application management systems. Running through some of the general key benefits that demonstrate the advantages of using Intune over alternative solutions would include:</p>
 <ol>
 <li>
-<p><strong>Enroll Tenant</strong>: Enroll your tenant into the Windows Autopatch service through the Microsoft Endpoint Manager admin center.</p>
+<p><strong>Unified Management Platform</strong>: Intune offers a comprehensive platform that integrates device, application, and policy management in one place, reducing complexity and administrative overhead compared to multiple disparate systems.</p>
 </li>
 <li>
-<p><strong>Device Registration</strong>: Register your devices with Autopatch. Ensure that devices are Microsoft Entra hybrid joined or Microsoft Entra joined and enrolled in Microsoft Intune.</p>
+<p><strong>Flexibility and Scalability</strong>: Intune can seamlessly scale to accommodate the growth of your organization, whether you're managing a small team or a global enterprise. This scalability is often more challenging to achieve with traditional on-premises solutions.</p>
 </li>
 <li>
-<p><strong>Update Rings</strong>: Configure update rings in Intune to manage when and how updates are installed, ensuring consistent application across your organization.</p>
+<p><strong>Reduced Infrastructure Costs</strong>: By moving to a cloud-based solution, organizations can significantly reduce costs associated with maintaining on-premises infrastructure, such as servers and storage, as well as the associated power and cooling expenses.</p>
+</li>
+<li>
+<p><strong>Simplified Application Deployment</strong>: Intune simplifies application deployment with support for various app types, including Win32, MSI, and Microsoft Store apps. This flexibility is often lacking in alternative systems.</p>
+</li>
+<li>
+<p><strong>Seamless Integration with Microsoft 365</strong>: Intune integrates seamlessly with Microsoft 365, allowing for easy deployment and management of Microsoft 365 applications, such as Word, Excel, and Teams. This integration is a key advantage over other systems that may not offer the same level of compatibility.</p>
+</li>
+<li>
+<p><strong>Modern User Experience</strong>: Intune supports modern application delivery methods, ensuring that users have access to the apps they need, when they need them, without the limitations often imposed by older on-premises systems.</p>
+</li>
+<li>
+<p><strong>Built-In Compliance and Reporting</strong>: Intune offers built-in compliance policies and reporting capabilities, enabling organizations to ensure that devices and applications comply with corporate policies and regulatory requirements. This feature can be more cumbersome to implement with alternative systems.</p>
 </li>
 </ol>
-<p>Source: <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/prepare/windows-autopatch-feature-activation">Start using Windows Autopatch | Microsoft Learn</a></p>
-<h2 id="benefits-of-using-autopatch">Benefits of Using Autopatch<a class="headerlink" href="#benefits-of-using-autopatch" title="Permanent link">&para;</a></h2>
-<p>Switching to Windows Autopatch offers several advantages over traditional WSUS:</p>
-<ul>
-<li>
-<p><strong>Automated Updates</strong>: Autopatch automates the update process for Windows, Microsoft 365 Apps for Enterprise, Microsoft Edge, and Microsoft Teams. This reduces the administrative burden on IT staff and ensures timely updates.</p>
-</li>
-<li>
-<p><strong>Reduced Administrative Burden</strong>: Microsoft manages the update process, allowing IT administrators to focus on other critical tasks.</p>
-</li>
-<li>
-<p><strong>Improved Security</strong>: Automated updates ensure vulnerabilities and quality updates are addressed promptly, enhancing overall security.</p>
-</li>
-<li>
-<p><strong>Compliance</strong>: Autopatch helps maintain compliance by aligning with industry standards and ensuring all devices are up-to-date.</p>
-</li>
-<li>
-<p><strong>Efficiency</strong>: The automated nature of Autopatch makes the update process more efficient, reducing downtime and minimizing the impact on end-users.</p>
-</li>
-</ul>
-<h3 id="update-rings-and-group-allocation">Update Rings and Group Allocation<a class="headerlink" href="#update-rings-and-group-allocation" title="Permanent link">&para;</a></h3>
-<p>Windows Autopatch uses multiple progressive deployment rings to manage updates:</p>
+<h2 id="app-types-for-deployment">App Types for Deployment<a class="headerlink" href="#app-types-for-deployment" title="Permanent link">&para;</a></h2>
+<p>Understanding the different types of applications that can be deployed using Microsoft Intune is essential for effective application management. Planning ahead and using the best app type will vastly ease the management of your fleet, and ensure that you wont have headaches down the track. Here are some of the key app types you can deploy:</p>
 <ol>
 <li>
-<p><strong>First Deployment Ring</strong>: Receives updates first, allowing for early detection of issues. Typically includes a small group of devices used for testing and validation.</p>
+<p><strong>Microsoft Store Apps</strong>: Deploy trusted applications from the Microsoft Store.</p>
 </li>
 <li>
-<p><strong>Last Deployment Ring</strong>: Receives updates last, ensuring potential issues have been resolved. Ideal for devices requiring maximum stability.</p>
+<p><strong>Line-of-Business (LOB) Apps</strong>: Deploy custom in-house applications critical to organizational operations.</p>
 </li>
 <li>
-<p><strong>Dynamic Mix</strong>: Middle groups receive updates dynamically based on the organization's custom configuration. Designed to balance the deployment load and minimize user impact.</p>
+<p><strong>Built-In Apps</strong>: Utilize built-in apps provided by Intune for easy management.</p>
+</li>
+<li>
+<p><strong>Web Link Apps</strong>: Create shortcuts to web-based applications.</p>
+</li>
+<li>
+<p><strong>Microsoft 365 Apps</strong>: Deploy Microsoft 365 productivity tools like Word, Excel, and Teams.</p>
+</li>
+<li>
+<p><strong>Windows Apps (Win32)</strong>: Deploy traditional Win32 applications using the Intune Win32 App Wrapper, which will be covered in detail below.</p>
 </li>
 </ol>
-<p>Update rings are managed through static group allocation for the first and last deployment groups and a dynamic mix for the middle groups. This approach ensures a gradual rollout of updates, reducing the risk of widespread issues.</p>
-<p>Source: <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-update-rings">Manage Update rings | Microsoft Learn</a></p>
-<h2 id="entra-joined-setup">Entra Joined Setup<a class="headerlink" href="#entra-joined-setup" title="Permanent link">&para;</a></h2>
-<p>Windows Autopatch supports Microsoft Entra hybrid joined and Microsoft Entra joined devices. Here are the benefits and capabilities associated with this setup:</p>
+<p>And to deploy the Application itself, its quite simply:
+Navigating to Microsoft Intune (https://intune.microsoft.com) &gt; Selecting Apps &gt; All Apps &gt; Add!</p>
+<p><img alt="quickwins-applications-addapp" src="../Images/quickwins-applications-addapp.png" /></p>
+<h3 id="key-information-related-to-configuration-and-specific-apps">Key Information Related to Configuration and Specific Apps<a class="headerlink" href="#key-information-related-to-configuration-and-specific-apps" title="Permanent link">&para;</a></h3>
+<p>As mentioned above, Migrating to Microsoft Intune involves several crucial steps and considerations to ensure a smooth transition. The more planning you can have towards your current inventory, as well as the potential inventory you look to have in the future, is going to save you a lot of time and headaches in the long run. Below is a breakdown of the key information related to configuring Intune and managing specific applications:</p>
+<p><strong>Preparation</strong>:</p>
+<ol>
+<li>
+<p><strong>Inventory</strong>: Take inventory of all applications currently managed by Configuration Manager (or your current Application Management system).</p>
+</li>
+<li>
+<p><strong>Compatibility Check</strong>: Ensure all applications are compatible with Intune.</p>
+</li>
+</ol>
+<p>Pretty simple, right? Check what you got, Check if its relevant, Check if its compatible.</p>
+<p><strong>Configuration</strong>:</p>
+<ol>
+<li>
+<p><strong>Create Application Policies</strong>: Define application policies in Intune to control deployment settings and update schedules.</p>
+</li>
+<li>
+<p><strong>App Deployment Types</strong>: Use Intune to deploy various application types, including Win32, MSI, and Microsoft Store apps.</p>
+</li>
+<li>
+<p><strong>Packaging Applications</strong>: Package applications using the Win32 App Wrapper (IntuneWinAppUtil) to create .intunewin files for deployment. (Ill get into this a bit deeper down below...)</p>
+</li>
+</ol>
+<p>Once again, Check what you got, define where it sits, confirm how you plan to deploy.</p>
+<p><strong>Specific Apps</strong>:</p>
+<ol>
+<li>
+<p><strong>Microsoft 365 Apps</strong>: Utilize Intune’s built-in support for deploying Microsoft 365 Apps, ensuring users have access to the latest productivity tools.</p>
+</li>
+<li>
+<p><strong>Line-of-Business Apps</strong>: Configure and deploy custom line-of-business applications to meet organizational needs.</p>
+</li>
+</ol>
+<p>This is where you can speed up the process by streamlining the deployments of some of your commonly required software, and of course, Microsoft 365 Apps.</p>
+<h3 id="win32-app-wrapper-and-prep-tool">Win32 App Wrapper and Prep Tool<a class="headerlink" href="#win32-app-wrapper-and-prep-tool" title="Permanent link">&para;</a></h3>
+<p>Now, the <strong>Microsoft Win32 Content Prep Tool</strong> (IntuneWinAppUtil) is a powerful utility designed to package Win32 applications for deployment through Intune. Here’s a step-by-step guide to using this tool effectively:</p>
+<ol>
+<li>
+<p><strong>Download and Install</strong>: Obtain the IntuneWinAppUtil tool from the Microsoft Download Center. Ensure you have <strong>.NET Framework 4.7.2</strong> installed before proceeding. For Ease, here is the Microsoft GitHub Repo link: <a href="https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool">GitHub - microsoft/Microsoft-Win32-Content-Prep-Tool: A tool to wrap Win32 App and then it can be uploaded to Intune</a></p>
+</li>
+<li>
+<p><strong>Prepare Application Files</strong>: Gather the source files and installer for the Win32 application. Ensure that only the setup files for the app are in the specified folder.</p>
+</li>
+<li>
+<p><strong>Package the Application</strong>:</p>
+</li>
+<li><strong>Run IntuneWinAppUtil</strong>: Use the tool to convert the application installer into a .intunewin file.</li>
+<li>
+<p><strong>Specify Parameters</strong>: Define installation and uninstallation commands, as well as any additional parameters. For example:
+     <div class="highlight"><pre><span></span><code>IntuneWinAppUtil<span class="w"> </span>-c<span class="w"> </span>&lt;setup_folder&gt;<span class="w"> </span>-s<span class="w"> </span>&lt;source_setup_file&gt;<span class="w"> </span>-o<span class="w"> </span>&lt;output_folder&gt;<span class="w"> </span>-q
+</code></pre></div>
+     This command will generate the .intunewin file from the specified source folder and setup file. The <code>-q</code> flag puts the tool in quiet mode.</p>
+</li>
+<li>
+<p><strong>Deploy the Application</strong>:</p>
+</li>
+<li><strong>Upload to Intune</strong>: Upload the .intunewin file to Intune and configure the deployment settings.</li>
+<li>
+<p><strong>Assign to Devices</strong>: Assign the packaged application to the target devices or user groups.</p>
+</li>
+<li>
+<p><strong>Additional Features</strong>:</p>
+</li>
+<li><strong>Catalog Files</strong>: If you have catalog files, use the <code>-a</code> parameter to bundle them into the .intunewin file.</li>
+<li><strong>Quiet Mode</strong>: Use the <code>-q</code> parameter to run the tool in quiet mode, which suppresses prompts and automatically overwrites existing output files.</li>
+<li><strong>Help and Version Information</strong>: Use <code>IntuneWinAppUtil -h</code> to display usage information and <code>IntuneWinAppUtil -v</code> to show the tool version.</li>
+</ol>
+<p>For any further information, I would suggest looking at the GitHub repo itself (in case of any changes), and ensure you meet any current (and potentially future) prerequisites.</p>
+<h2 id="co-management-function-during-migration">Co-Management Function During Migration<a class="headerlink" href="#co-management-function-during-migration" title="Permanent link">&para;</a></h2>
+<p>During the migration process, And if you are currently running Configuration Manager for your Application management system, the co-management capability allows you to manage devices with both Configuration Manager and Intune. This phased approach ensures a smooth transition and minimizes disruption.</p>
 <ul>
 <li>
-<p><strong>Seamless Integration</strong>: Microsoft Entra ID provides a seamless integration with Windows Autopatch, allowing for easy management and deployment of updates across your organization.</p>
+<p>Don't <strong>Big Bang</strong> approach anything in migration, you will regret it. Move specific workloads, such as application deployment, from Configuration Manager to Intune incrementally (Pilot Intune). This allows for careful monitoring and adjustment.</p>
 </li>
 <li>
-<p><strong>Enhanced Security</strong>: Microsoft Entra joined devices benefit from improved security features, such as conditional access policies, multi-factor authentication, and single sign-on, ensuring that only authorized users and devices can access corporate resources.</p>
+<p>Continuously monitor the performance and functionality of the migrated workloads to ensure there are no disruptions to operations.</p>
 </li>
 <li>
-<p><strong>Centralized Management</strong>: By leveraging Intune for device management, you can manage, monitor, and report on the update status of all Entra joined devices from a single console. This provides better visibility and control over your IT environment.</p>
+<p>Make sure to include the collect of feedback from the pilot group to identify any issues and make necessary adjustments.</p>
 </li>
 <li>
-<p><strong>Simplified Onboarding</strong>: Enrolling devices into Windows Autopatch is straightforward with Microsoft Entra joined devices, streamlining the onboarding process and reducing administrative overhead.</p>
+<p>Once the pilot phase is successful, gradually extend the co-management setup to the rest of the organization.</p>
 </li>
 </ul>
-<h2 id="configuration-manager-via-co-management">Configuration Manager via Co-Management<a class="headerlink" href="#configuration-manager-via-co-management" title="Permanent link">&para;</a></h2>
-<p>For organizations using Configuration Manager, co-management allows efficient management of the Windows Update workload. Here are the benefits and capabilities associated with co-management:</p>
-<ul>
-<li>
-<p><strong>Flexibility</strong>: Co-management enables organizations to transition workloads to Intune at their own pace, allowing for a gradual migration from traditional on-premises management to modern cloud-based management.</p>
-</li>
-<li>
-<p><strong>Workload Separation</strong>: Organizations can choose which workloads to manage with Configuration Manager and which to manage with Intune. For example, you can continue using Configuration Manager for application deployment while using Intune for Windows Update management.</p>
-</li>
-<li>
-<p><strong>Enhanced Capabilities</strong>: Co-management allows organizations to take advantage of the unique capabilities of both Configuration Manager and Intune. This includes leveraging Intune's advanced reporting, compliance policies, and cloud-based management features. This also means that you can ensure that your Intune environment operates the way you need it too, before completely transitioning.</p>
-</li>
-<li>
-<p><strong>Improved User Experience</strong>: By using co-management, organizations can provide a consistent and seamless experience for end-users, regardless of whether their devices are managed by Configuration Manager or Intune.</p>
-</li>
-</ul>
-<p>Source: <a href="https://learn.microsoft.com/en-us/mem/configmgr/comanage/overview">Co-management for Windows devices - Configuration Manager | Microsoft Learn</a></p>
-<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
-<p>If you are looking for more assistance on how to deploy Windows Autopatch to your organization, I personally would suggest checking the following Windows Autopatch deployment guide: <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/overview/windows-autopatch-deployment-guide">Windows Autopatch deployment guide | Microsoft Learn</a>.</p>
-<p>This guide:</p>
-<ul>
-<li>
-<p>Helps you plan your deployment and adopt Windows Autopatch</p>
-</li>
-<li>
-<p>Lists and describes some common objectives</p>
-</li>
-<li>
-<p>Provides a recommended deployment plan</p>
-</li>
-<li>
-<p>Provides migration considerations for Windows Update for Business (WUfB) and Microsoft Configuration Manager</p>
-</li>
-<li>
-<p>Lists some common general considerations when deploying Windows Autopatch</p>
-</li>
-<li>
-<p>Provides suggested business case benefits and communication guidance</p>
-</li>
-<li>
-<p>Gives additional guidance and how to join the Autopatch community</p>
-</li>
-</ul>
-<p>With the deprecation of WSUS, transitioning to Windows Autopatch is a strategic move that offers significant benefits, including automated updates, reduced administrative burden, improved security, and enhanced compliance. By following the configuration steps and best practices outlined in this guide, you can ensure a smooth transition and maximize the benefits of modern update management.</p>
+<p><img alt="quickwins-applications-appworkload" src="../Images/quickwins-applications-appworkload.png" /></p>
+<h2 id="in-summary">In Summary<a class="headerlink" href="#in-summary" title="Permanent link">&para;</a></h2>
+<p>Migrating application management from on-premises systems like Configuration Manager to Microsoft Intune is a strategic move that offers numerous benefits, including enhanced security, centralized management, and improved user experience. By leveraging Intune’s capabilities, such as co-management and the Win32 App Wrapper, organizations can achieve a seamless transition to modern, cloud-based application management. Use this guide as a reference to ensure a successful migration and embrace the future of IT management.</p>
 
 
 <!-- taken from 
@@ -2954,7 +2902,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../quickwins-applications/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quick Wins: Migrating Application Management to Microsoft Intune">
+          <a href="../../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Endpoint Management">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2964,20 +2912,20 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
                 Previous
               </span>
               <div class="md-ellipsis">
-                Quick Wins: Migrating Application Management to Microsoft Intune
+                Endpoint Management
               </div>
             </div>
           </a>
         
         
           
-          <a href="../quickwins-grouppolicyanalytics/" class="md-footer__link md-footer__link--next" aria-label="Next: Quick Wins: Migrating Group Policies with Group Policy Analytics">
+          <a href="../quickwins-autopatch/" class="md-footer__link md-footer__link--next" aria-label="Next: Quick Win: Transitioning from WSUS to Windows Autopatch">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Quick Wins: Migrating Group Policies with Group Policy Analytics
+                Quick Win: Transitioning from WSUS to Windows Autopatch
               </div>
             </div>
             <div class="md-footer__button md-icon">
