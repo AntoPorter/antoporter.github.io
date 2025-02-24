@@ -153,6 +153,7 @@ nav:
   - Endpoint Management: 
     - Endpoint Management: endpoint/index.md
     - Microsoft Intune:
+      - endpoint/intune/quickwins-securitybaselines.md
       - endpoint/intune/quickwins-applications.md
       - endpoint/intune/quickwins-autopatch.md
       - endpoint/intune/quickwins-grouppolicyanalytics.md
@@ -190,6 +191,7 @@ nav:
     - podcast/outofband/index.md
     - podcast/outofband/episode0.md
     - podcast/outofband/episode1.md
-    - podcast/outofband/episode2.md    
+    - podcast/outofband/episode2.md
+    - podcast/outofband/episode3.md    
   - About Me:
     - aboutme.md
