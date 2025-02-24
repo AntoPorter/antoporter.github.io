@@ -143,7 +143,7 @@ Understanding the precedence of policies is crucial for avoiding conflicts and e
 To avoid conflicts, it's important to plan which methods to use for deploying configurations to different devices and ensure your different methods either agree or aren't deployed to the same devices. If conflicts occur, you can use Intune's built-in tools to identify and resolve the source of those conflicts.
 
 ## As much as you probably already know by now, but the Best Practices in this would be...
-
+    
 - **Pilot Deployment**: Test the security baseline settings on a small group of devices before a wide-scale rollout to identify and resolve any potential issues.
     
 - **Regular Reviews**: Periodically review and update the security baseline settings to ensure they align with the latest security standards and organizational policies.
