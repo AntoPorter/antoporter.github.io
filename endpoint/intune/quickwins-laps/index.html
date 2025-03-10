@@ -12,13 +12,13 @@
         <meta name="author" content="Anthony Porter.">
       
       
-        <link rel="canonical" href="https://antoporter.github.io/endpoint/intune/quickwins-autopatch/">
+        <link rel="canonical" href="https://antoporter.github.io/endpoint/intune/quickwins-laps/">
       
       
-        <link rel="prev" href="../quickwins-applications/">
+        <link rel="prev" href="../../">
       
       
-        <link rel="next" href="../quickwins-grouppolicyanalytics/">
+        <link rel="next" href="../quickwins-securitybaselines/">
       
       
       <link rel="icon" href="../../../images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Quick Win: Transitioning from WSUS to Windows Autopatch - Anto Porter</title>
+        <title>Quick Wins: Securing Local Devices with Microsoft Intune's LAPS - Anto Porter</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#quick-win-transitioning-from-wsus-to-windows-autopatch" class="md-skip">
+        <a href="#quick-wins-securing-local-devices-with-microsoft-intunes-laps" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quick Win: Transitioning from WSUS to Windows Autopatch
+              Quick Wins: Securing Local Devices with Microsoft Intune's LAPS
             
           </span>
         </div>
@@ -1423,10 +1423,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../quickwins-laps/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Quick Wins: Securing Local Devices with Microsoft Intune's LAPS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1436,6 +1457,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-using-microsoft-intunes-laps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of Using Microsoft Intune's LAPS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-guide-to-setting-up-laps-in-intune" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Guide to Setting Up LAPS in Intune
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Guide to Setting Up LAPS in Intune">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-enable-laps-in-microsoft-entra-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Enable LAPS in Microsoft Entra ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-a-laps-policy-in-intune" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Create a LAPS Policy in Intune
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-assign-the-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Assign the Policy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-monitor-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Monitor Compliance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-laps-with-microsoft-entra-id-a-comprehensive-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using LAPS with Microsoft Entra ID: A Comprehensive Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using LAPS with Microsoft Entra ID: A Comprehensive Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#permissions-required-for-helpdesk-staff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissions Required for Helpdesk Staff
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-for-helpdesk-staff-to-retrieve-passwords" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process for Helpdesk Staff to Retrieve Passwords
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-managing-the-local-administrator-group-with-intune" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bonus: Managing the Local Administrator Group with Intune
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1489,31 +1641,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Quick Win: Transitioning from WSUS to Windows Autopatch
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../quickwins-autopatch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1523,128 +1654,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#deprecation-of-wsus" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deprecation of WSUS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#intune-capabilities-for-windows-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Intune Capabilities for Windows Updates
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-and-prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration and Prerequisites
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration and Prerequisites">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benefits-of-using-autopatch" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benefits of Using Autopatch
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Benefits of Using Autopatch">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#update-rings-and-group-allocation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Update Rings and Group Allocation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entra-joined-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Entra Joined Setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-manager-via-co-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration Manager via Co-Management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2825,163 +2834,155 @@
     
       
     
-    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/endpoint/intune/quickwins-autopatch.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/endpoint/intune/quickwins-laps.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="quick-win-transitioning-from-wsus-to-windows-autopatch">Quick Win: Transitioning from WSUS to Windows Autopatch<a class="headerlink" href="#quick-win-transitioning-from-wsus-to-windows-autopatch" title="Permanent link">&para;</a></h1>
-<p>As organizations evolve, the need to adopt modern IT management solutions becomes imperative. Microsoft has officially announced the deprecation of Windows Server Update Services (WSUS). This move encourages organizations to transition to more efficient, cloud-based solutions like Windows Autopatch. This article will guide you through configuring Autopatch, the prerequisites, and the benefits of making the switch from WSUS.</p>
-<h2 id="deprecation-of-wsus">Deprecation of WSUS<a class="headerlink" href="#deprecation-of-wsus" title="Permanent link">&para;</a></h2>
-<p>Microsoft has announced that WSUS will no longer receive new feature updates or active development. While it will continue to operate, support for WSUS is set to end in 2025. This deprecation means organizations must transition to modern update management tools to maintain compliance, security, and efficiency.</p>
-<h2 id="intune-capabilities-for-windows-updates">Intune Capabilities for Windows Updates<a class="headerlink" href="#intune-capabilities-for-windows-updates" title="Permanent link">&para;</a></h2>
-<p>With the deprecation of WSUS, Microsoft Intune emerges as a powerful alternative for managing Windows Updates. Intune offers a comprehensive suite of capabilities to ensure devices are always up-to-date, secure, and compliant. Here are the key capabilities of Intune related to Windows Updates, with an emphasis on Windows Autopatch:</p>
+<h1 id="quick-wins-securing-local-devices-with-microsoft-intunes-laps">Quick Wins: Securing Local Devices with Microsoft Intune's LAPS<a class="headerlink" href="#quick-wins-securing-local-devices-with-microsoft-intunes-laps" title="Permanent link">&para;</a></h1>
+<p>In today’s IT landscape, where cloud migration is the goal for many organizations, managing rogue or disconnected devices presents unique challenges. These devices, especially those still reliant on local administrator accounts, can become security weak points. But here’s the good news: Microsoft Intune’s <strong>Local Admin Password Solution (LAPS)</strong> provides a smart, automated way to secure these devices.</p>
+<p>In this article, I’ll guide you through the process of setting up LAPS in Microsoft Intune, highlight why backing up to Entra ID is a crucial step, and introduce an additional tip for managing the <strong>Local Administrator Group</strong> on your devices. By the end, I hope you will have a clear understanding of how to make your devices more secure and your management process more efficient.</p>
+<h2 id="benefits-of-using-microsoft-intunes-laps">Benefits of Using Microsoft Intune's LAPS<a class="headerlink" href="#benefits-of-using-microsoft-intunes-laps" title="Permanent link">&para;</a></h2>
+<p>When discussing security solutions like LAPS, it’s important to understand not only how it works but why it’s valuable. Imagine trying to manage dozens—or even thousands—of local admin accounts manually. It’s time-consuming and risky. Here’s where LAPS simplifies things.</p>
+<p>Microsoft Intune’s LAPS enhances security by automating password management for local administrator accounts. It does more than just save time; it protects your environment against potential threats such as credential reuse or pass-the-hash attacks. LAPS achieves this by automatically generating unique, complex passwords for local admin accounts and regularly rotating them to prevent exploitation.</p>
+<p>Additionally, the solution offers centralized management through the Intune admin center, where you can define policies, monitor compliance, and retrieve passwords when necessary. By storing these passwords securely in Entra ID (or on-premises Active Directory if preferred), you gain both accessibility and peace of mind.</p>
+<p><strong>Key benefits include:</strong></p>
 <ul>
 <li>
-<p><strong>Windows Autopatch</strong>: Automates the update process for Windows, Microsoft 365 Apps for Enterprise, Microsoft Edge, and Microsoft Teams. Autopatch ensures timely updates, enhances security, and reduces the administrative burden on IT staff.</p>
+<p><strong>Strengthened device security</strong> with automated password generation and rotation.</p>
 </li>
 <li>
-<p><strong>Update Rings</strong>: Define and configure update rings in Intune to manage when and how updates are installed. This allows for a staged rollout of updates, minimizing disruptions and ensuring stability.</p>
+<p><strong>Streamlined management</strong> of admin account credentials from a single platform.</p>
 </li>
 <li>
-<p><strong>Quality and Feature Updates</strong>: Intune allows you to manage both quality updates (security and reliability) and feature updates (new capabilities) for Windows devices, ensuring that devices are always running the latest versions.</p>
-</li>
-<li>
-<p><strong>Driver and Firmware Updates</strong>: Manage driver and firmware updates through Intune, ensuring that all hardware components are up-to-date and functioning correctly.</p>
+<p><strong>Flexible, secure backup options</strong> tailored to cloud or hybrid environments.</p>
 </li>
 </ul>
-<p>This article delves into configuring Windows Autopatch, the prerequisites, and the benefits of using this modern update management solution.</p>
-<h2 id="configuration-and-prerequisites">Configuration and Prerequisites<a class="headerlink" href="#configuration-and-prerequisites" title="Permanent link">&para;</a></h2>
-<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
-<p>Before configuring Windows Autopatch, ensure that you meet the following prerequisites:</p>
-<ul>
-<li>
-<p><strong>Licensing</strong>: Windows 10/11 Enterprise E3+ or F3 licenses, included in Microsoft 365 F3, E3, or E5.</p>
-</li>
-<li>
-<p><strong>Microsoft Entra ID</strong>: Required for co-management.</p>
-</li>
-<li>
-<p><strong>Microsoft Entra Joined Devices</strong>: Devices must be either Microsoft Entra hybrid joined or Microsoft Entra joined.</p>
-</li>
-<li>
-<p><strong>Microsoft Intune</strong>: Use Configuration Manager 2010 or greater for co-management.</p>
-</li>
-<li>
-<p><strong>Infrastructure</strong>: Ensure your infrastructure supports cloud-based endpoint management.</p>
-</li>
-</ul>
-<p>Source: <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites?tabs=business-premium-a3-entitlements%2Cbusiness-premium-a3-intune-permissions">Prerequisites | Microsoft Learn</a></p>
-<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
-<p>To configure Windows Autopatch, follow these steps:</p>
+<h2 id="step-by-step-guide-to-setting-up-laps-in-intune">Step-by-Step Guide to Setting Up LAPS in Intune<a class="headerlink" href="#step-by-step-guide-to-setting-up-laps-in-intune" title="Permanent link">&para;</a></h2>
+<p>Setting up LAPS is straightforward, even for those just beginning their Intune journey. With a few steps, you can implement robust security for local administrator accounts across your organization.</p>
+<p>Start by enabling LAPS in <strong>Microsoft Entra ID</strong>—this step ensures that passwords are safely backed up and accessible when needed. After that, move on to creating a LAPS policy within Intune’s <strong>Endpoint Security</strong> section, where you’ll define essential settings like password complexity and rotation intervals. Finally, assign the policy to your device groups and monitor its implementation to ensure compliance.</p>
+<h3 id="step-1-enable-laps-in-microsoft-entra-id">Step 1: Enable LAPS in Microsoft Entra ID<a class="headerlink" href="#step-1-enable-laps-in-microsoft-entra-id" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p><strong>Enroll Tenant</strong>: Enroll your tenant into the Windows Autopatch service through the Microsoft Endpoint Manager admin center.</p>
+<p>Open the <strong>Microsoft Entra admin center</strong> and navigate to the <strong>Devices</strong> section.</p>
 </li>
 <li>
-<p><strong>Device Registration</strong>: Register your devices with Autopatch. Ensure that devices are Microsoft Entra hybrid joined or Microsoft Entra joined and enrolled in Microsoft Intune.</p>
+<p>Under Device Settings, Locate the LAPS settings and enable the feature for your tenant.</p>
 </li>
 <li>
-<p><strong>Update Rings</strong>: Configure update rings in Intune to manage when and how updates are installed, ensuring consistent application across your organization.</p>
+<p>Confirm password backup settings. For cloud-first deployments, ensure backups are configured to <strong>Microsoft Entra ID</strong>.</p>
 </li>
 </ol>
-<p>Source: <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/prepare/windows-autopatch-feature-activation">Start using Windows Autopatch | Microsoft Learn</a></p>
-<h2 id="benefits-of-using-autopatch">Benefits of Using Autopatch<a class="headerlink" href="#benefits-of-using-autopatch" title="Permanent link">&para;</a></h2>
-<p>Switching to Windows Autopatch offers several advantages over traditional WSUS:</p>
-<ul>
-<li>
-<p><strong>Automated Updates</strong>: Autopatch automates the update process for Windows, Microsoft 365 Apps for Enterprise, Microsoft Edge, and Microsoft Teams. This reduces the administrative burden on IT staff and ensures timely updates.</p>
-</li>
-<li>
-<p><strong>Reduced Administrative Burden</strong>: Microsoft manages the update process, allowing IT administrators to focus on other critical tasks.</p>
-</li>
-<li>
-<p><strong>Improved Security</strong>: Automated updates ensure vulnerabilities and quality updates are addressed promptly, enhancing overall security.</p>
-</li>
-<li>
-<p><strong>Compliance</strong>: Autopatch helps maintain compliance by aligning with industry standards and ensuring all devices are up-to-date.</p>
-</li>
-<li>
-<p><strong>Efficiency</strong>: The automated nature of Autopatch makes the update process more efficient, reducing downtime and minimizing the impact on end-users.</p>
-</li>
-</ul>
-<h3 id="update-rings-and-group-allocation">Update Rings and Group Allocation<a class="headerlink" href="#update-rings-and-group-allocation" title="Permanent link">&para;</a></h3>
-<p>Windows Autopatch uses multiple progressive deployment rings to manage updates:</p>
+<p><img alt="quickwins-laps-enable" src="../Images/quickwins-laps-enable.png" /></p>
+<h3 id="step-2-create-a-laps-policy-in-intune">Step 2: Create a LAPS Policy in Intune<a class="headerlink" href="#step-2-create-a-laps-policy-in-intune" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p><strong>First Deployment Ring</strong>: Receives updates first, allowing for early detection of issues. Typically includes a small group of devices used for testing and validation.</p>
+<p>Go to the <strong>Intune admin center</strong> and head to <strong>Endpoint Security &gt; Account Protection</strong>.</p>
 </li>
 <li>
-<p><strong>Last Deployment Ring</strong>: Receives updates last, ensuring potential issues have been resolved. Ideal for devices requiring maximum stability.</p>
+<p>Select <strong>Create Policy</strong> and choose your desired platform (e.g., Windows), and desired profile, in this case, Local Admin Password Solution (Windows LAPS) .</p>
 </li>
 <li>
-<p><strong>Dynamic Mix</strong>: Middle groups receive updates dynamically based on the organization's custom configuration. Designed to balance the deployment load and minimize user impact.</p>
+<p>Configure the following:</p>
+<ul>
+<li>
+<p><strong>Password Settings</strong>: Define complexity, length, and expiration intervals. I would recommend configuring a strong password complexity (obviously), with the expiration interval to be set to fortnightly.</p>
+</li>
+<li>
+<p><strong>Backup Configuration</strong>: Ensure passwords are backed up to <strong>Azure AD</strong> (yes, still referred to as Azure AD in Intune, I'm sure it will be updated soon), or your preferred directory.</p>
+</li>
+<li>
+<p><strong>Rotation</strong>: Set a regular schedule for password rotation. I would recommend a rotation after the use of the password.</p>
+</li>
+</ul>
 </li>
 </ol>
-<p>Update rings are managed through static group allocation for the first and last deployment groups and a dynamic mix for the middle groups. This approach ensures a gradual rollout of updates, reducing the risk of widespread issues.</p>
-<p>Source: <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-update-rings">Manage Update rings | Microsoft Learn</a></p>
-<h2 id="entra-joined-setup">Entra Joined Setup<a class="headerlink" href="#entra-joined-setup" title="Permanent link">&para;</a></h2>
-<p>Windows Autopatch supports Microsoft Entra hybrid joined and Microsoft Entra joined devices. Here are the benefits and capabilities associated with this setup:</p>
+<p><img alt="quickwins-laps-create" src="../Images/quickwins-laps-create.png" /></p>
+<p>Example of LAPS configuration:</p>
+<p><img alt="quickwins-laps-configure" src="../Images/quickwins-laps-configure.png" /></p>
+<h3 id="step-3-assign-the-policy">Step 3: Assign the Policy<a class="headerlink" href="#step-3-assign-the-policy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Target the policy to device groups within your organization. For testing, consider starting with a pilot group before rolling out tenant-wide.</li>
+</ul>
+<h3 id="step-4-monitor-compliance">Step 4: Monitor Compliance<a class="headerlink" href="#step-4-monitor-compliance" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use the <strong>Reports</strong> section in Intune to monitor devices and ensure LAPS policies are applied correctly. This is also the go-to place for auditing and manual password retrieval.</li>
+</ul>
+<h2 id="using-laps-with-microsoft-entra-id-a-comprehensive-guide">Using LAPS with Microsoft Entra ID: A Comprehensive Guide<a class="headerlink" href="#using-laps-with-microsoft-entra-id-a-comprehensive-guide" title="Permanent link">&para;</a></h2>
+<p>When managing local administrator passwords, Microsoft Entra ID (formerly Azure AD) provides a secure and centralized solution. By integrating LAPS with Entra ID, organizations can ensure that passwords are securely backed up and accessible only to authorized personnel. This section will guide you through the setup process, the permissions required for Helpdesk staff, and the steps they should follow to retrieve and manage passwords.</p>
+<h3 id="permissions-required-for-helpdesk-staff">Permissions Required for Helpdesk Staff<a class="headerlink" href="#permissions-required-for-helpdesk-staff" title="Permanent link">&para;</a></h3>
+<p>To ensure secure access to local administrator passwords, role-based access control (RBAC) must be configured in Entra ID. Helpdesk staff typically require specific permissions to view and manage passwords. Here’s what you need to know:</p>
 <ul>
 <li>
-<p><strong>Seamless Integration</strong>: Microsoft Entra ID provides a seamless integration with Windows Autopatch, allowing for easy management and deployment of updates across your organization.</p>
-</li>
-<li>
-<p><strong>Enhanced Security</strong>: Microsoft Entra joined devices benefit from improved security features, such as conditional access policies, multi-factor authentication, and single sign-on, ensuring that only authorized users and devices can access corporate resources.</p>
-</li>
-<li>
-<p><strong>Centralized Management</strong>: By leveraging Intune for device management, you can manage, monitor, and report on the update status of all Entra joined devices from a single console. This provides better visibility and control over your IT environment.</p>
-</li>
-<li>
-<p><strong>Simplified Onboarding</strong>: Enrolling devices into Windows Autopatch is straightforward with Microsoft Entra joined devices, streamlining the onboarding process and reducing administrative overhead.</p>
-</li>
-</ul>
-<h2 id="configuration-manager-via-co-management">Configuration Manager via Co-Management<a class="headerlink" href="#configuration-manager-via-co-management" title="Permanent link">&para;</a></h2>
-<p>For organizations using Configuration Manager, co-management allows efficient management of the Windows Update workload. Here are the benefits and capabilities associated with co-management:</p>
+<p><strong>Custom Role Creation</strong>:</p>
 <ul>
 <li>
-<p><strong>Flexibility</strong>: Co-management enables organizations to transition workloads to Intune at their own pace, allowing for a gradual migration from traditional on-premises management to modern cloud-based management.</p>
+<p>Create a custom role in Entra ID with the following permissions:</p>
+<ul>
+<li>
+<p><code>microsoft.directory/deviceLocalCredentials/password/read</code>: Allows viewing of local admin passwords.</p>
 </li>
 <li>
-<p><strong>Workload Separation</strong>: Organizations can choose which workloads to manage with Configuration Manager and which to manage with Intune. For example, you can continue using Configuration Manager for application deployment while using Intune for Windows Update management.</p>
-</li>
-<li>
-<p><strong>Enhanced Capabilities</strong>: Co-management allows organizations to take advantage of the unique capabilities of both Configuration Manager and Intune. This includes leveraging Intune's advanced reporting, compliance policies, and cloud-based management features. This also means that you can ensure that your Intune environment operates the way you need it too, before completely transitioning.</p>
-</li>
-<li>
-<p><strong>Improved User Experience</strong>: By using co-management, organizations can provide a consistent and seamless experience for end-users, regardless of whether their devices are managed by Configuration Manager or Intune.</p>
+<p><code>microsoft.directory/deviceLocalCredentials/standard/read</code>: Grants access to password metadata.</p>
 </li>
 </ul>
-<p>Source: <a href="https://learn.microsoft.com/en-us/mem/configmgr/comanage/overview">Co-management for Windows devices - Configuration Manager | Microsoft Learn</a></p>
+</li>
+<li>
+<p>Assign this role to Helpdesk staff or groups that need access.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Built-in Roles</strong>:</p>
+<ul>
+<li>Alternatively, you can use built-in roles like <strong>Cloud Device Administrator</strong>, but ensure they meet your organization’s security requirements.</li>
+</ul>
+</li>
+</ul>
+<h3 id="process-for-helpdesk-staff-to-retrieve-passwords">Process for Helpdesk Staff to Retrieve Passwords<a class="headerlink" href="#process-for-helpdesk-staff-to-retrieve-passwords" title="Permanent link">&para;</a></h3>
+<p>Once permissions are in place, Helpdesk staff can follow these steps to retrieve and manage local administrator passwords:</p>
+<ol>
+<li>
+<p><strong>Access the Entra Admin Center</strong>:</p>
+<ul>
+<li>Log in to the Microsoft Entra admin center with the appropriate credentials.</li>
+</ul>
+</li>
+<li>
+<p><strong>Locate the Device</strong>:</p>
+<ul>
+<li>Navigate to the <strong>Devices</strong> section and search for the specific device requiring password recovery.</li>
+</ul>
+</li>
+<li>
+<p><strong>Retrieve the Password</strong>:</p>
+<ul>
+<li>Select the device and view the local administrator password. Ensure that MFA is completed if required by Conditional Access policies.</li>
+</ul>
+</li>
+<li>
+<p><strong>Update or Rotate Passwords</strong>:</p>
+<ul>
+<li>If necessary, manually rotate the password using the Intune admin center or trigger an immediate update through the Entra admin center.</li>
+</ul>
+</li>
+<li>
+<p><strong>Document and Close the Request</strong>:</p>
+<ul>
+<li>Record the password retrieval in your Helpdesk ticketing system and ensure the request is closed securely.</li>
+</ul>
+</li>
+</ol>
+<h2 id="bonus-managing-the-local-administrator-group-with-intune">Bonus: Managing the Local Administrator Group with Intune<a class="headerlink" href="#bonus-managing-the-local-administrator-group-with-intune" title="Permanent link">&para;</a></h2>
+<p>While LAPS secures local administrator credentials, there’s another piece of the puzzle to address: who has access to the <strong>Local Administrator Group</strong> on each device. It’s not uncommon for these groups to become cluttered with legacy users or unauthorized accounts, creating potential security gaps. Intune’s <strong>Account Protection</strong> feature allows you to clean up and tightly manage group memberships, ensuring only authorized users are included.</p>
+<p>For example, you can use Intune to remove outdated accounts, add specific service accounts, or replace the entire membership list with a defined set of users. This capability not only improves security but also simplifies auditing and compliance efforts.</p>
+<p>To get started, navigate to Intune’s <strong>Local User Group Membership</strong> settings. From there, create a policy tailored to your organization’s needs. By assigning this policy to Azure AD groups, you can automate the management process and ensure consistency across all devices.</p>
+<p><img alt="quickwins-laps-localusergroup" src="../Images/quickwins-laps-localusergroup.png" /></p>
+<p>For more information on how to configure the Local User Group membership <a href="https://learn.microsoft.com/en-us/mem/intune-service/protect/endpoint-security-account-protection-policy#manage-local-groups-on-windows-devices">Click Here</a></p>
 <h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
-<p>If you are looking for more assistance on how to deploy Windows Autopatch to your organization, I personally would suggest checking the following Windows Autopatch deployment guide: <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/overview/windows-autopatch-deployment-guide">Windows Autopatch deployment guide | Microsoft Learn</a>.</p>
-<p>This guide:</p>
-<ul>
-<li>
-<p>Helps you plan your deployment and adopt Windows Autopatch</p>
-</li>
-<li>
-<p>Lists and describes some common objectives</p>
-</li>
-<li>
-<p>Provides a recommended deployment plan</p>
-</li>
-<li>
-<p>Provides migration considerations for Windows Update for Business (WUfB) and Microsoft Configuration Manager</p>
-</li>
-<li>
-<p>Lists some common general considerations when deploying Windows Autopatch</p>
-</li>
-<li>
-<p>Provides suggested business case benefits and communication guidance</p>
-</li>
-<li>
-<p>Gives additional guidance and how to join the Autopatch community</p>
-</li>
-</ul>
-<p>With the deprecation of WSUS, transitioning to Windows Autopatch is a strategic move that offers significant benefits, including automated updates, reduced administrative burden, improved security, and enhanced compliance. By following the configuration steps and best practices outlined in this guide, you can ensure a smooth transition and maximize the benefits of modern update management.</p>
+<p>Migrating to the cloud isn’t just about data—it’s about securing every corner of your IT ecosystem, including the often-overlooked local devices. By leveraging Microsoft Intune’s LAPS and Account Protection features, you can simplify password management, lock down administrative access, and remove outdated configurations. These quick wins not only enhance security but also demonstrate how modern tools can make IT management smarter and more efficient.</p>
 
 
 <!-- taken from 
@@ -3026,7 +3027,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../quickwins-applications/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quick Wins: Migrating Application Management to Microsoft Intune">
+          <a href="../../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Endpoint Management">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3036,20 +3037,20 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
                 Previous
               </span>
               <div class="md-ellipsis">
-                Quick Wins: Migrating Application Management to Microsoft Intune
+                Endpoint Management
               </div>
             </div>
           </a>
         
         
           
-          <a href="../quickwins-grouppolicyanalytics/" class="md-footer__link md-footer__link--next" aria-label="Next: Quick Wins: Migrating Group Policies with Group Policy Analytics">
+          <a href="../quickwins-securitybaselines/" class="md-footer__link md-footer__link--next" aria-label="Next: Quick Win: Establishing a Secure Baseline in a Greenfield Cloud Environment">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Quick Wins: Migrating Group Policies with Group Policy Analytics
+                Quick Win: Establishing a Secure Baseline in a Greenfield Cloud Environment
               </div>
             </div>
             <div class="md-footer__button md-icon">
