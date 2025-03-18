@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -2246,6 +2246,8 @@
       
         
       
+        
+      
     
     
       
@@ -2326,6 +2328,28 @@
   
   <span class="md-ellipsis">
     Understanding Cybersecurity Ethics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/aibootcamp2025-day1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI-Powered Business Applications Bootcamp Recap - Day 1
     
   </span>
   
@@ -2712,189 +2736,27 @@
 </li>
 </ol>
 <h3 id="requirements-for-intune-autopilot-v2">Requirements for Intune Autopilot v2<a class="headerlink" href="#requirements-for-intune-autopilot-v2" title="Permanent link">&para;</a></h3>
+<p>Before diving into the detailed software, networking, licensing, and configuration requirements, it's important to note that all technical and specific requirements should be cross-referenced with the official documentation available on <strong>Microsoft Learn</strong>. This ensures accuracy and alignment with the most up-to-date guidelines and recommendations. Below is an overview of the requirements for each section:</p>
 <h4 id="software-requirements">Software Requirements<a class="headerlink" href="#software-requirements" title="Permanent link">&para;</a></h4>
+<p>Windows Autopilot relies on specific software configurations to function effectively. These include compatible Windows client versions and other software specifications necessary for deployment.</p>
 <ul>
-<li>
-<p><strong>Windows 11</strong>: A supported version of Windows 11 General Availability Channel is required. The following editions of Windows 11 are supported:</p>
-<ul>
-<li>
-<p>Windows 11 Pro</p>
-</li>
-<li>
-<p>Windows 11 Pro Education</p>
-</li>
-<li>
-<p>Windows 11 Pro for Workstations</p>
-</li>
-<li>
-<p>Windows 11 Enterprise</p>
-</li>
-<li>
-<p>Windows 11 Education</p>
-</li>
-<li>
-<p>Windows 11 Enterprise LTSC</p>
-</li>
+<li>Source: <a href="https://learn.microsoft.com/en-us/autopilot/requirements?tabs=software">Windows Autopilot requirements | Microsoft Learn</a></li>
 </ul>
-</li>
-<li>
-<p><strong>Windows 10</strong>: A supported version of Windows 10 is required. The following editions of Windows 10 are supported:</p>
-<ul>
-<li>
-<p>Windows 10 Pro</p>
-</li>
-<li>
-<p>Windows 10 Pro Education</p>
-</li>
-<li>
-<p>Windows 10 Pro for Workstations</p>
-</li>
-<li>
-<p>Windows 10 Enterprise</p>
-</li>
-<li>
-<p>Windows 10 Education</p>
-</li>
-<li>
-<p>Windows 10 Enterprise LTSC</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>HoloLens</strong>: Windows Autopilot for HoloLens 2 requires a currently supported version of Windows Holographic.</p>
-</li>
-</ul>
-<p>Source: <a href="https://learn.microsoft.com/en-us/autopilot/requirements?tabs=software">Windows Autopilot requirements | Microsoft Learn</a></p>
 <h4 id="networking-requirements">Networking Requirements<a class="headerlink" href="#networking-requirements" title="Permanent link">&para;</a></h4>
+<p>Network connectivity is essential for Windows Autopilot, as devices must communicate with the necessary Microsoft services. This includes ensuring proper firewall configurations, domain name system (DNS) requirements, and internet accessibility.</p>
 <ul>
-<li>
-<p><strong>Internet Access</strong>: Devices must have internet access to communicate with Microsoft services.</p>
-</li>
-<li>
-<p><strong>Domain Name Services (DNS)</strong>: Ensure DNS name resolution for internet DNS names.</p>
-</li>
-<li>
-<p><strong>Ports</strong>: Allow access to all hosts via port 80 (HTTP), 443 (HTTPS), and 123 (UDP/NTP).</p>
-</li>
-<li>
-<p><strong>Smart Card and Certificate-Based Authentication</strong>: Not supported during the out-of-box experience (OOBE).</p>
-</li>
+<li>Source: <a href="https://learn.microsoft.com/en-us/autopilot/requirements?tabs=networking">Windows Autopilot requirements | Microsoft Learn</a></li>
 </ul>
-<h5 id="service-requirements">Service Requirements<a class="headerlink" href="#service-requirements" title="Permanent link">&para;</a></h5>
-<ul>
-<li>
-<p><strong>Windows Autopilot Deployment Service</strong>: Devices will contact the Windows Autopilot Deployment Service using the following URLs:</p>
-<ul>
-<li>
-<p><code>https://ztd.dds.microsoft.com</code></p>
-</li>
-<li>
-<p><code>https://cs.dds.microsoft.com</code></p>
-</li>
-<li>
-<p><code>https://login.live.com</code></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Windows Activation</strong>: Requires access to Windows Activation services.</p>
-</li>
-<li>
-<p><strong>Microsoft Entra ID</strong>: Validates user credentials and joins or registers the device to Microsoft Entra ID.</p>
-</li>
-<li>
-<p><strong>Microsoft Intune</strong>: Triggers enrollment of the device into the Intune mobile device management (MDM) service.</p>
-</li>
-<li>
-<p><strong>Autopilot Automatic Device Diagnostics Collection</strong>: Ensure the URL <code>lgmsapeweu.blob.core.windows.net</code> isn't blocked on the network.</p>
-</li>
-<li>
-<p><strong>Windows Update</strong>: Retrieves needed updates during the out-of-box experience (OOBE) process and after the Windows OS configuration.</p>
-</li>
-<li>
-<p><strong>Delivery Optimization</strong>: Contacts the Delivery Optimization service for peer-to-peer sharing of content.</p>
-</li>
-<li>
-<p><strong>Network Time Protocol (NTP) Sync</strong>: Ensure that UDP port 123 to <code>time.windows.com</code> is accessible.</p>
-</li>
-<li>
-<p><strong>Diagnostics Data</strong>: Enabled by default. If the device can't send diagnostic data, the Autopilot process still continues.</p>
-</li>
-<li>
-<p><strong>Network Connection Status Indicator (NCSI)</strong>: Windows must be able to tell that the device can access the internet. Ensure <code>*.msftconnecttest.com</code> is resolvable via DNS and accessible via HTTP.</p>
-</li>
-<li>
-<p><strong>Windows Notification Services (WNS)</strong>: Used to enable Windows to receive notifications from applications and services.</p>
-</li>
-<li>
-<p><strong>Microsoft Store</strong>: Applications in the Microsoft Store can be pushed to the device by triggering them via Intune or other MDM service.</p>
-</li>
-<li>
-<p><strong>Microsoft 365</strong>: Installation of Microsoft 365 Applications for enterprise might be required as part of the Intune device configuration.</p>
-</li>
-<li>
-<p><strong>Certificate Revocation Lists (CRLs)</strong>: Some services need to check CRLs for certificates used in the services.</p>
-</li>
-<li>
-<p><strong>Microsoft Entra Hybrid Join</strong>: The device can be Microsoft Entra hybrid joined. Ensure access to the internal network for Microsoft Entra hybrid join to work.</p>
-</li>
-<li>
-<p><strong>Autopilot Self-Deploying Mode and Autopilot Pre-Provisioning</strong>: Ensure access to the URL pattern <code>*.microsoftaik.azure.net</code> for TPM attestation.</p>
-</li>
-</ul>
-<p>Source: <a href="https://learn.microsoft.com/en-us/autopilot/requirements?tabs=networking">Windows Autopilot requirements | Microsoft Learn</a></p>
 <h4 id="licensing-requirements">Licensing Requirements<a class="headerlink" href="#licensing-requirements" title="Permanent link">&para;</a></h4>
 <p>Windows Autopilot depends on specific capabilities available in Windows client and Microsoft Entra ID. It also requires a mobile device management (MDM) service such as Microsoft Intune. These capabilities can be obtained through various editions and subscription programs. To provide needed Microsoft Entra ID and MDM functionality, including automatic MDM enrollment and company branding features, one of the following subscriptions is required:</p>
 <ul>
-<li>
-<p><strong>Microsoft 365 Business Premium subscription</strong></p>
-</li>
-<li>
-<p><strong>Microsoft 365 F1 or F3 subscription</strong></p>
-</li>
-<li>
-<p><strong>Microsoft 365 Academic A1, A3, or A5 subscription</strong></p>
-</li>
-<li>
-<p><strong>Microsoft 365 Enterprise E3 or E5 subscription</strong>, which include all Windows client, Microsoft 365, and EMS features (Microsoft Entra ID and Intune).</p>
-</li>
-<li>
-<p><strong>Enterprise Mobility + Security E3 or E5 subscription</strong>, which include all needed Microsoft Entra ID and Intune features.</p>
-</li>
-<li>
-<p><strong>Intune for Education subscription</strong>, which include all needed Microsoft Entra ID and Intune features.</p>
-</li>
-<li>
-<p><strong>Microsoft Entra ID P1 or P2 and Microsoft Intune subscription</strong> or an alternative MDM service.</p>
-</li>
+<li>Source: <a href="https://learn.microsoft.com/en-us/autopilot/requirements?tabs=licensing">Windows Autopilot requirements | Microsoft Learn</a></li>
 </ul>
-<p>Source: <a href="https://learn.microsoft.com/en-us/autopilot/requirements?tabs=licensing">Windows Autopilot requirements | Microsoft Learn</a></p>
 <h4 id="configuration-requirements">Configuration Requirements<a class="headerlink" href="#configuration-requirements" title="Permanent link">&para;</a></h4>
 <p>Before Windows Autopilot can be used, some configuration tasks are required to support the common Autopilot scenarios:</p>
-<ol>
-<li>
-<p><strong>Microsoft Entra Automatic Enrollment</strong>: Configure Microsoft Entra automatic enrollment.</p>
-</li>
-<li>
-<p><strong>User Permissions</strong>: The first user that signs in needs to have Microsoft Entra join permissions for some deployment scenarios.</p>
-</li>
-<li>
-<p><strong>Device Registration</strong>: Devices must be added to Windows Autopilot to support most Windows Autopilot scenarios.</p>
-</li>
-<li>
-<p><strong>Profile Configuration</strong>: Once devices are added to Windows Autopilot, a profile of settings needs to be applied to each device.</p>
-</li>
-</ol>
-<h5 id="optional-but-recommended-configurations">Optional but Recommended Configurations<a class="headerlink" href="#optional-but-recommended-configurations" title="Permanent link">&para;</a></h5>
 <ul>
-<li>
-<p><strong>Windows Subscription Activation</strong>: Automatically step up from Windows Pro to Windows Enterprise.</p>
-</li>
-<li>
-<p><strong>Microsoft Entra Custom Branding</strong>: Configure Microsoft Entra ID with the images and text that need to be displayed on the sign-on page.</p>
-</li>
+<li>Source: <a href="https://learn.microsoft.com/en-us/autopilot/requirements?tabs=configuration">Windows Autopilot requirements | Microsoft Learn</a></li>
 </ul>
-<p>Source: <a href="https://learn.microsoft.com/en-us/autopilot/requirements?tabs=configuration">Windows Autopilot requirements | Microsoft Learn</a></p>
 <h2 id="step-by-step-guide-to-using-autopilot-v2">Step-by-Step Guide to Using Autopilot v2<a class="headerlink" href="#step-by-step-guide-to-using-autopilot-v2" title="Permanent link">&para;</a></h2>
 <h3 id="1-set-up-windows-automatic-intune-enrollment">1. Set up Windows Automatic Intune Enrollment<a class="headerlink" href="#1-set-up-windows-automatic-intune-enrollment" title="Permanent link">&para;</a></h3>
 <p>First things first—automatic enrollment lets users enroll their Windows devices in Microsoft Intune without lifting a finger. This magic happens when a device joins Microsoft Entra ID. Here's how to set it up:</p>
@@ -3019,7 +2881,7 @@
 <p>Configure the following settings:</p>
 <ul>
 <li>
-<p><strong>Deployment mode</strong>: <code>User-driven</code> or <code>Self-Deploying</code></p>
+<p><strong>Deployment mode</strong>: <code>User-driven</code> or <code>Self-Deploying</code> (discussed more in detail below)</p>
 </li>
 <li>
 <p><strong>Join Type</strong>: <code>Microsoft Entra Join</code></p>
@@ -3062,7 +2924,73 @@
 <p>Finally, reset the device to factory settings to enroll it in Intune using Autopilot device preparation. Follow the steps to reset a Windows 11 device to factory settings. This ensures the device starts fresh and ready for the new deployment settings.</p>
 <h3 id="9-end-user-experience">9. End User Experience<a class="headerlink" href="#9-end-user-experience" title="Permanent link">&para;</a></h3>
 <p>Once a Windows 11 device is reset to factory settings, the user will go through the setup process, which includes selecting the country, keyboard layout, reviewing the license agreement, and setting up a PIN. The device will then be ready for use with the Windows Autopilot Device Preparation completed.</p>
-<h3 id="windows-autopilot-deployment-process">Windows Autopilot Deployment Process<a class="headerlink" href="#windows-autopilot-deployment-process" title="Permanent link">&para;</a></h3>
+<h2 id="understanding-deployment-scenarios-in-windows-autopilot-key-modes-and-best-use-cases">Understanding Deployment Scenarios in Windows Autopilot: Key Modes and Best Use Cases<a class="headerlink" href="#understanding-deployment-scenarios-in-windows-autopilot-key-modes-and-best-use-cases" title="Permanent link">&para;</a></h2>
+<p>Windows Autopilot offers several deployment scenarios, including <strong>User-Driven</strong>, <strong>Self-Deploying</strong>, and others such as <strong>Pre-provisioned</strong> and <strong>Windows Autopilot Reset</strong>. Selecting the right scenario depends on the purpose and use case of the deployment. Without going into too much detail, I want to mainly dive into an overview of what I believe are the core scenarios, with a detailed comparison of <strong>User-Driven</strong> and <strong>Self-Deploying</strong> modes.</p>
+<h3 id="pros-and-cons-of-user-driven-and-self-deploying-modes">Pros and Cons of User-Driven and Self-Deploying Modes<a class="headerlink" href="#pros-and-cons-of-user-driven-and-self-deploying-modes" title="Permanent link">&para;</a></h3>
+<h4 id="user-driven-mode">User-Driven Mode<a class="headerlink" href="#user-driven-mode" title="Permanent link">&para;</a></h4>
+<p><strong>Pros</strong>:</p>
+<ul>
+<li>
+<p>Requires no interaction from IT admins, OEMs, or resellers.</p>
+</li>
+<li>
+<p>Works on both physical devices and virtual machines (VMs), as it doesn't require TPM attestation.</p>
+</li>
+<li>
+<p>Supports both Microsoft Entra join and hybrid join.</p>
+</li>
+</ul>
+<p><strong>Cons</strong>:</p>
+<ul>
+<li>
+<p>Takes longer for the user, as they must go through both device and user Enrollment Status Pages (ESP).</p>
+</li>
+<li>
+<p>Requires user interaction during deployment.</p>
+</li>
+</ul>
+<p><strong>Best Use Cases</strong>:</p>
+<ul>
+<li>
+<p>Ideal for devices intended for single users.</p>
+</li>
+<li>
+<p>Suitable for scenarios where the device is shipped directly to the end user without IT intervention.</p>
+</li>
+</ul>
+<h4 id="self-deploying-mode">Self-Deploying Mode<a class="headerlink" href="#self-deploying-mode" title="Permanent link">&para;</a></h4>
+<p><strong>Pros</strong>:</p>
+<ul>
+<li>
+<p>Fully automated, requiring no interaction from users, IT admins, OEMs, or resellers.</p>
+</li>
+<li>
+<p>Streamlines deployment for shared devices, kiosks, or digital signage.</p>
+</li>
+</ul>
+<p><strong>Cons</strong>:</p>
+<ul>
+<li>
+<p>Requires TPM attestation, so it only works on physical devices with supported TPM (not on VMs).</p>
+</li>
+<li>
+<p>Doesn't support Microsoft Entra hybrid join.</p>
+</li>
+<li>
+<p>Cannot assign a user to the device, as user ESP doesn't run during deployment.</p>
+</li>
+</ul>
+<p><strong>Best Use Cases</strong>:</p>
+<ul>
+<li>
+<p>Perfect for shared devices or resources like kiosks.</p>
+</li>
+<li>
+<p>Suitable for scenarios requiring rapid, unattended setup.</p>
+</li>
+</ul>
+<p>Source: <a href="https://learn.microsoft.com/en-us/autopilot/tutorial/autopilot-scenarios">Windows Autopilot scenarios | Microsoft Learn</a> </p>
+<h2 id="windows-autopilot-deployment-process">Windows Autopilot Deployment Process<a class="headerlink" href="#windows-autopilot-deployment-process" title="Permanent link">&para;</a></h2>
 <p>And if you are interested in the whole process, you can check out the following posters, which define the whole deployment. </p>
 <p>Source: <a href="https://learn.microsoft.com/en-us/autopilot/deployment-process">Windows deployment process posters | Microsoft Learn</a></p>
 <p><img alt="quickwins-autopilotv2-deployment1" src="../Images/quickwins-autopilotv2-deployment1.png" />
