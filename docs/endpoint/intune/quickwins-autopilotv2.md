@@ -174,7 +174,7 @@ Creating this policy is where you specify the settings to configure the device d
 
 ![quickwins-autopilotv2-oobe](./Images/quickwins-autopilotv2-oobe.png)
 
-This step is like setting up the rules for your device deployment playbook.
+This step is setting up the rules for your device deployment playbook.
 
 ### 7. Add Windows Device to the Corporate Device Identifier
 
@@ -204,7 +204,9 @@ Once a Windows 11 device is reset to factory settings, the user will go through 
 
 Windows Autopilot offers several deployment scenarios, including **User-Driven**, **Self-Deploying**, and others such as **Pre-provisioned** and **Windows Autopilot Reset**. Selecting the right scenario depends on the purpose and use case of the deployment. Without going into too much detail, I want to mainly dive into an overview of what I believe are the core scenarios, with a detailed comparison of **User-Driven** and **Self-Deploying** modes.
 
-### Pros and Cons of User-Driven and Self-Deploying Modes
+For a list of all Scenarios: [Click Here](https://learn.microsoft.com/en-us/autopilot/tutorial/autopilot-scenarios#which-autopilot-scenario-to-use)
+
+### Pros and Cons of User-Driven vs Self-Deploying
 
 #### User-Driven Mode
 
