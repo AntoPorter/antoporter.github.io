@@ -18,3 +18,4 @@
 
 - [Day 1](aibootcamp2025-day1.md)
 - [Day 2](aibootcamp2025-day2.md)
+- [Day 3](aibootcamp2025-day3.md)
