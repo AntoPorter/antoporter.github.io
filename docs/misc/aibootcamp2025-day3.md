@@ -145,19 +145,19 @@ I do my best to capture key notes, but these upcoming slides were packed;
 - Highlighting the above "Breakdown of AI and Automation in the Microsoft Ecosystem"
 
 
-![aibootcamp2025-day3-aiecosystem](./Images/aibootcamp2025-day3-aiecosystem.png)
+![aibootcamp2025-day3-aiecosystem](./images/aibootcamp2025-day3-aiecosystem.png)
 
 - Highlighting the components from Breakdown of AI and Automation" for the use of the Digital Concierge
 
-![aibootcamp2025-day3-aidigitalconcierge](./Images/aibootcamp2025-day3-aidigitalconcierge.png)
+![aibootcamp2025-day3-aidigitalconcierge](./images/aibootcamp2025-day3-aidigitalconcierge.png)
 
 - Highlighting the Application Architecture of a Digital Concierge
 
-![aibootcamp2025-day3-apparchitecture](./Images/aibootcamp2025-day3-apparchitecture.png)
+![aibootcamp2025-day3-apparchitecture](./images/aibootcamp2025-day3-apparchitecture.png)
 
 - Highlighting capabilities associated with a Digital Concierge function.
 
-![aibootcamp2025-day3-digitalconcierge](./Images/aibootcamp2025-day3-digitalconcierge.png)
+![aibootcamp2025-day3-digitalconcierge](./images/aibootcamp2025-day3-digitalconcierge.png)
 
 
 ---
