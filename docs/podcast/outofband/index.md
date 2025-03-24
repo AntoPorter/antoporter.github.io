@@ -4,6 +4,8 @@
 
 ### Episodes
 
+- [Episode 5: Before Redmond - MVP Origins](episode5.md)
+- [Episode 4: Chronicles of a Rogue Device](episode4.md)
 - [Episode 3: Entra Goodness with Merill Fernando](episode3.md)
 - [Episode 2: Intune It](episode2.md)
 - [Episode 1: Boots on Ground](episode1.md)
