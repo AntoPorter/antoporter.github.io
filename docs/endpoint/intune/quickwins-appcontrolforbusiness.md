@@ -71,9 +71,12 @@ Intune’s built-in policies allow you to configure Windows client computers to 
     
 - Microsoft Store-signed apps
     
-- (Optional) Reputable apps as defined by the Intelligent Security Graph (ISG)
+- **(Optional) Reputable apps as defined by the Intelligent Security Graph (ISG)**
     
 - **(Optional) Trusted apps as defined by Managed Installers**
+	
+
+**Ill explain the Bold down below**
 	
 
 **Steps for Deployment**:
@@ -130,6 +133,15 @@ By prioritizing Managed Installers:
 - Applications deployed through Intune or similar trusted tools are seamlessly integrated into the control framework.
     
 - The risk of policy misconfigurations is significantly reduced.
+	
+
+## So, What's ISG?
+
+The Intelligent Security Graph (ISG) plays a pivotal role in enhancing App Control for Business by leveraging Microsoft's vast security intelligence and machine learning analytics. Instead of relying on static lists, the ISG dynamically evaluates applications based on trillions of signals collected from Windows endpoints and other data sources. 
+
+This cloud-based AI classifies applications as having "known good," "known bad," or "unknown" reputations. When App Control is configured to use the ISG, it checks the reputation of binaries not explicitly allowed or denied by policy. If the ISG identifies a binary as having a "known good" reputation, it is permitted to run, streamlining the process of managing app ecosystems while reducing end-user friction. 
+
+This approach is particularly beneficial for organizations with limited control over their app environments, as it allows for the automatic authorization of reputable applications, ensuring a balance between security and usability.
 
 ## Technical Tips for Seamless Implementation
 
@@ -163,6 +175,6 @@ Without thorough testing, deploying new policies may cause disruptions to busine
 **Mitigation Strategies**: 
 Test policies in a controlled environment before full deployment. Create an audit policy to monitor and review application execution without enforcing blocks initially.
 
-#### Conclusion
+## In Conclusion
 
 App Control for Business offers a powerful solution for IT administrators aiming to enhance security and replace legacy systems. By adopting this modern technology, organizations can ensure better protection, streamlined management, and regulatory compliance. It’s time to make the transition and embrace a more secure and efficient IT environment.
