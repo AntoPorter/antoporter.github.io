@@ -10,6 +10,7 @@
 		
 **Quick Wins Series:**
 		
+- [Quick Wins: Implementing App Control for Business to Replace Legacy Systems](./intune/quickwins-appcontrolforbusiness.md)
 - [Quick Wins: Securing Local Devices with Microsoft Intune's LAPS](./intune/quickwins-laps.md)
 - [Quick Wins: Establishing a Secure Baseline in a Greenfield Cloud Environment](./intune/quickwins-securitybaselines.md)
 - [Quick Wins: Migrating Application Management to Microsoft Intune](./intune/quickwins-applications.md)
