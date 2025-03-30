@@ -1598,17 +1598,17 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#a-strong-recommendation-for-managed-installers" class="md-nav__link">
-    <span class="md-ellipsis">
-      A Strong Recommendation for Managed Installers
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-whats-isg" class="md-nav__link">
+    <span class="md-ellipsis">
+      So, What's ISG?
+    </span>
+  </a>
   
 </li>
       
@@ -1637,20 +1637,14 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Risks and Considerations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusion
+      In Conclusion
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3123,12 +3117,13 @@
 <p>Microsoft Store-signed apps</p>
 </li>
 <li>
-<p>(Optional) Reputable apps as defined by the Intelligent Security Graph (ISG)</p>
+<p><strong>(Optional) Reputable apps as defined by the Intelligent Security Graph (ISG)</strong></p>
 </li>
 <li>
 <p><strong>(Optional) Trusted apps as defined by Managed Installers</strong></p>
 </li>
 </ul>
+<p><strong>Ill explain the Bold down below</strong></p>
 <p><strong>Steps for Deployment</strong>:</p>
 <ol>
 <li>
@@ -3163,6 +3158,19 @@
 </ol>
 <h3 id="leveraging-managed-installers-for-simplified-application-management">Leveraging Managed Installers for Simplified Application Management<a class="headerlink" href="#leveraging-managed-installers-for-simplified-application-management" title="Permanent link">&para;</a></h3>
 <p><strong>Streamlining application control policies can be challenging without an efficient management process.</strong> This is where Managed Installers come in, offering a practical solution to reduce administrative overhead and enhance policy precision.</p>
+<p>For organizations transitioning to <strong>App Control for Business</strong>, adopting Managed Installers is highly recommended. It not only simplifies the deployment and management process but also provides a solid foundation for secure application control.</p>
+<p>By prioritizing Managed Installers:</p>
+<ul>
+<li>
+<p>IT administrators can focus on strategic tasks rather than managing app exceptions.</p>
+</li>
+<li>
+<p>Applications deployed through Intune or similar trusted tools are seamlessly integrated into the control framework.</p>
+</li>
+<li>
+<p>The risk of policy misconfigurations is significantly reduced.</p>
+</li>
+</ul>
 <h3 id="benefits-of-using-managed-installers">Benefits of Using Managed Installers:<a class="headerlink" href="#benefits-of-using-managed-installers" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
@@ -3181,20 +3189,10 @@
 <p><strong>Improved Scalability</strong>: Facilitates easier onboarding of new applications or devices as the organization grows.</p>
 </li>
 </ol>
-<h3 id="a-strong-recommendation-for-managed-installers">A Strong Recommendation for Managed Installers<a class="headerlink" href="#a-strong-recommendation-for-managed-installers" title="Permanent link">&para;</a></h3>
-<p>For organizations transitioning to <strong>App Control for Business</strong>, adopting Managed Installers is highly recommended. It not only simplifies the deployment and management process but also provides a solid foundation for secure application control.</p>
-<p>By prioritizing Managed Installers:</p>
-<ul>
-<li>
-<p>IT administrators can focus on strategic tasks rather than managing app exceptions.</p>
-</li>
-<li>
-<p>Applications deployed through Intune or similar trusted tools are seamlessly integrated into the control framework.</p>
-</li>
-<li>
-<p>The risk of policy misconfigurations is significantly reduced.</p>
-</li>
-</ul>
+<h2 id="so-whats-isg">So, What's ISG?<a class="headerlink" href="#so-whats-isg" title="Permanent link">&para;</a></h2>
+<p>The Intelligent Security Graph (ISG) plays a pivotal role in enhancing App Control for Business by leveraging Microsoft's vast security intelligence and machine learning analytics. Instead of relying on static lists, the ISG dynamically evaluates applications based on trillions of signals collected from Windows endpoints and other data sources. </p>
+<p>This cloud-based AI classifies applications as having "known good," "known bad," or "unknown" reputations. When App Control is configured to use the ISG, it checks the reputation of binaries not explicitly allowed or denied by policy. If the ISG identifies a binary as having a "known good" reputation, it is permitted to run, streamlining the process of managing app ecosystems while reducing end-user friction. </p>
+<p>This approach is particularly beneficial for organizations with limited control over their app environments, as it allows for the automatic authorization of reputable applications, ensuring a balance between security and usability.</p>
 <h2 id="technical-tips-for-seamless-implementation">Technical Tips for Seamless Implementation<a class="headerlink" href="#technical-tips-for-seamless-implementation" title="Permanent link">&para;</a></h2>
 <p><strong>A few technical recommendations can make the difference between success and disruption.</strong></p>
 <ol>
@@ -3231,7 +3229,7 @@
 Without thorough testing, deploying new policies may cause disruptions to business operations if legitimate applications are mistakenly blocked.</p>
 <p><strong>Mitigation Strategies</strong>: 
 Test policies in a controlled environment before full deployment. Create an audit policy to monitor and review application execution without enforcing blocks initially.</p>
-<h4 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h4>
+<h2 id="in-conclusion">In Conclusion<a class="headerlink" href="#in-conclusion" title="Permanent link">&para;</a></h2>
 <p>App Control for Business offers a powerful solution for IT administrators aiming to enhance security and replace legacy systems. By adopting this modern technology, organizations can ensure better protection, streamlined management, and regulatory compliance. It’s time to make the transition and embrace a more secure and efficient IT environment.</p>
 
 
