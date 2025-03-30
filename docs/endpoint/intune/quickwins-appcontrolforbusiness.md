@@ -105,6 +105,21 @@ The Managed Installer process in Intune tags approved applications, ensuring the
 4. **Deploy Apps**: Once completed, you can navigate the Managed Installer tab, Add applications, and they will be trusted by your App Control policy, to be used on your endpoints.
     
 
+## Technical Tips for Seamless Implementation
+
+**A few technical recommendations can make the difference between success and disruption.**
+
+1. **Start Small**: Deploy policies in pilot groups to identify issues before large-scale rollout.
+    
+2. **Audit First**: Use **audit-only mode** to monitor policy impact without enforcement.
+    
+3. **Dynamic Maintenance**: Leverage Intune for frequent updates to adapt to changing requirements.
+    
+4. **Fail-Safe Planning**: Backup policy configurations and prepare fallback policies to ensure business continuity.
+    
+5. **Collaborate with Security Ecosystems**: Integrate App Control for Business with solutions like Entra Conditional Access and Endpoint Detection and Response for comprehensive protection.
+	
+
 ### Leveraging Managed Installers for Simplified Application Management
 
 **Streamlining application control policies can be challenging without an efficient management process.** This is where Managed Installers come in, offering a practical solution to reduce administrative overhead and enhance policy precision.
@@ -141,31 +156,9 @@ This cloud-based AI classifies applications as having "known good," "known bad,"
 
 This approach is particularly beneficial for organizations with limited control over their app environments, as it allows for the automatic authorization of reputable applications, ensuring a balance between security and usability.
 
-## Technical Tips for Seamless Implementation
-
-**A few technical recommendations can make the difference between success and disruption.**
-
-1. **Start Small**: Deploy policies in pilot groups to identify issues before large-scale rollout.
-    
-2. **Audit First**: Use **audit-only mode** to monitor policy impact without enforcement.
-    
-3. **Dynamic Maintenance**: Leverage Intune for frequent updates to adapt to changing requirements.
-    
-4. **Fail-Safe Planning**: Backup policy configurations and prepare fallback policies to ensure business continuity.
-    
-5. **Collaborate with Security Ecosystems**: Integrate App Control for Business with solutions like Entra Conditional Access and Endpoint Detection and Response for comprehensive protection.
-	
-
-## Benefits of App Control for Business
-
-- **Enhanced Security**: By restricting unauthorized applications and drivers, App Control for Business significantly reduces the risk of malware and other security threats.
-    
-- **Compliance**: Helps organizations meet regulatory requirements by ensuring only approved software runs on the network.
-    
-- **Simplified Management**: Centralized management through Intune allows for easy deployment and updating of policies, reducing administrative overhead.
-	
-
 ## Risks and Considerations
+
+I would be lying if I did not mention the risks and considerations associated to the use of App Control. It quite easily is the fastest way to create chaos on endpoints, and needs to be managed accordingly. Put simply;
 
 **Potential Impact**:
 Without thorough testing, deploying new policies may cause disruptions to business operations if legitimate applications are mistakenly blocked.
@@ -175,4 +168,4 @@ Test policies in a controlled environment before full deployment. Create an audi
 
 ## In Conclusion
 
-App Control for Business offers a powerful solution for IT administrators aiming to enhance security and replace legacy systems. By adopting this modern technology, organizations can ensure better protection, streamlined management, and regulatory compliance. It’s time to make the transition and embrace a more secure and efficient IT environment.
+App Control for Business offers a powerful solution for IT administrators aiming to enhance security and replace legacy systems. By adopting this modern technology, organizations can ensure better protection, streamlined management, and regulatory compliance, with a much easier experience. 
