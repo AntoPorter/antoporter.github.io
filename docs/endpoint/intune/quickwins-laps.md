@@ -67,6 +67,36 @@ Example of LAPS configuration:
 - Use the **Reports** section in Intune to monitor devices and ensure LAPS policies are applied correctly. This is also the go-to place for auditing and manual password retrieval.
     
 
+## **2025 Update! Automatic Account Management**
+
+Of course when I release this article, they update LAPS with Automatic Account Management! 
+
+One of the more exciting updates to Microsoft Intune's LAPS is the recent introduction of **Automatic Account Management**, a feature designed to further streamline and secure local admin account handling.
+
+This feature enables organizations to automatically create and manage local administrator accounts across devices. You can now specify custom account names or prefixes and even randomize account names for added security. Additionally, policies allow you to enable or disable these accounts as required, simplifying account lifecycle management.
+
+**Key benefits of Automatic Account Management include:**
+
+- Reduced administrative effort with automatic account creation and updates.
+    
+- Enhanced security through randomized account names and controlled enable/disable policies.
+    
+- Streamlined compliance with advanced password and account configurations.
+    
+
+To configure this feature:
+
+1. In the **Intune admin center**, navigate to **Endpoint Security > Account Protection**, and modify your LAPS policy.
+    
+2. Set the **Automatic Account Management Enabled** option to "**The Target Account will be automatically managed.**"
+    
+3. Specify additional settings like account name prefixes or randomized account names for flexibility.
+    
+
+![quickwins-laps-aam](./Images/quickwins-laps-aam.png)
+
+For more information, I would recommend: [LAPS CSP | Microsoft Learn](https://learn.microsoft.com/en-us/windows/client-management/mdm/laps-csp)
+
 ## Using LAPS with Microsoft Entra ID: A Comprehensive Guide
 
 When managing local administrator passwords, Microsoft Entra ID (formerly Azure AD) provides a secure and centralized solution. By integrating LAPS with Entra ID, organizations can ensure that passwords are securely backed up and accessible only to authorized personnel. This section will guide you through the setup process, the permissions required for Helpdesk staff, and the steps they should follow to retrieve and manage passwords.
