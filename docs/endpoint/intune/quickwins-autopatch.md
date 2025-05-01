@@ -1,4 +1,4 @@
-# Quick Win: Transitioning from WSUS to Windows Autopatch
+# Quick Wins: Transitioning from WSUS to Windows Autopatch
 
 As organizations evolve, the need to adopt modern IT management solutions becomes imperative. Microsoft has officially announced the deprecation of Windows Server Update Services (WSUS). This move encourages organizations to transition to more efficient, cloud-based solutions like Windows Autopatch. This article will guide you through configuring Autopatch, the prerequisites, and the benefits of making the switch from WSUS.
 

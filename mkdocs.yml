@@ -170,12 +170,13 @@ nav:
     - purview/m365copilotDLP.md
   - Microsoft Copilot:
     - Microsoft Copilot: copilot/index.md
-    - Microsoft Copilot for Security:
+    - Microsoft Security Copilot:
+      - copilot/copilotsecurity/globalaibootcamppresentation.md
       - copilot/copilotsecurity/deploy-templatespec.md
       - copilot/copilotsecurity/logicapp-promptbook.md
       - copilot/copilotsecurity/promptinspiration.md
       - copilot/copilotsecurity/ll-scudeployment.md
-    - Microsoft Copilot for M365:
+    - Microsoft 365 Copilot:
       - copilot/copilotm365/gettingstarted.md
       - copilot/copilotm365/enablecopilotm365.md
   - Microsoft Entra:

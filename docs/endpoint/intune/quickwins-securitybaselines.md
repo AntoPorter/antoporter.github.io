@@ -1,4 +1,4 @@
-# Quick Win: Establishing a Secure Baseline in a Greenfield Cloud Environment
+# Quick Wins: Establishing a Secure Baseline in a Greenfield Cloud Environment
 
 Transitioning from an on-premises environment to a greenfield setup in the cloud presents a unique opportunity to enhance security and streamline management. While this is an obvious benefit to some, this also poses as a difficult starting point if you are not sure of where to begin to look. Do you go with what others say is Best Practice? do you go straight to Zero Trust?
 

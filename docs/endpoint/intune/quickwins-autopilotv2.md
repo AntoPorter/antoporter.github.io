@@ -1,4 +1,4 @@
-# Migrating from Traditional SOE Deployment to Intune Autopilot v2
+# Quick Wins: Migrating from Traditional SOE Deployment to Intune Autopilot v2
 
 The shift from traditional Standard Operating Environment (SOE) deployment methods to modern, cloud-based solutions is not just a trend—it's a necessity. One of the most significant advancements in this domain is the introduction of Windows Autopilot v2, a modernized breakthrough for organizations looking to streamline their device deployment processes, while utilizing cloud services. This article delves into the benefits of migrating from traditional SOE deployment, typically managed through Configuration Manager, to the innovative Intune Autopilot v2.
 
