@@ -10,6 +10,7 @@
 		
 **Quick Wins Series:**
 		
+- [Quick Wins: Why Your Organization Should Adopt Microsoft Intune Security Tasks Today](./intune/quickwins-securitytasks.md)
 - [Quick Wins: Implementing App Control for Business to Replace Legacy Systems](./intune/quickwins-appcontrolforbusiness.md)
 - [Quick Wins: Securing Local Devices with Microsoft Intune's LAPS](./intune/quickwins-laps.md)
 - [Quick Wins: Establishing a Secure Baseline in a Greenfield Cloud Environment](./intune/quickwins-securitybaselines.md)
