@@ -1,8 +1,8 @@
 # Site
-site_name: Securing Microsoft 365
+site_name: SecuringM365
 site_url: https://www.securingm365.com/
 site_author: Anthony Porter
-site_description: Securing Microsoft 365
+site_description: Expert Insights & Strategies for Microsoft Defender XDR, Endpoint Management & More
 edit_uri: tree/main/docs
 
 # Repository
