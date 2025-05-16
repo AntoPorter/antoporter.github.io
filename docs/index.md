@@ -2,7 +2,7 @@
 
 ---
 
-**Your Go-To Resource for Microsoft Defender XDR, Endpoint Management, Microsoft Entra and Copilot**
+**Your Go-To Resource for Microsoft Defender XDR, Endpoint Management, Microsoft Entra ID and Copilot**
 
 As a Cloud Security Architect specializing in these technologies, I aim to provide my experience and knowledge into actionable insights and resources, designed to fortify your organization's defence strategies and optimize IT management. 
 
