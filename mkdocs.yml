@@ -155,6 +155,7 @@ nav:
     - Microsoft Intune:
       - endpoint/intune/quickwins-securitytasks.md
       - endpoint/intune/quickwins-appcontrolforbusiness.md
+      - endpoint/intune/quickwins-autopilotv2.md
       - endpoint/intune/quickwins-laps.md
       - endpoint/intune/quickwins-securitybaselines.md
       - endpoint/intune/quickwins-applications.md
