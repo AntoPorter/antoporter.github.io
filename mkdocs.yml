@@ -37,8 +37,8 @@ theme:
     - content.action.view
     - content.tooltips
  language: en
- favicon: images/favicon.png
- logo: images/logo.png
+ favicon: images/sitefavicon.png
+ logo: images/sitelogo.png
  icon:
    repo: fontawesome/brands/git-alt
 
