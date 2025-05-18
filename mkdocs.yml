@@ -12,7 +12,7 @@ repo_url: https://github.com/AntoPorter/antoporter.github.io
 # Themes
 theme:
  name: material
- custom_dir: material/overrides
+ custom_dir: overrides
  features:
     - announce.dismiss
     - navigation.tabs
@@ -60,13 +60,13 @@ theme:
     toggle:
      icon: material/toggle-switch-off-outline
      name: Switch to light mode
-    primary: teal
+    primary: black
     accent: deep purple
   - scheme: default
     toggle:
      icon: material/toggle-switch
      name: Switch to dark mode
-    primary: teal
+    primary: black
     accent: deep purple
  font:
     text: Roboto
