@@ -4,7 +4,7 @@
 
 **Expert Insights & Strategies for Microsoft Defender XDR, Endpoint Management & More**
 
-As a Cloud Security Architect specializing in these technologies, I aim to provide my experience and knowledge into actionable insights and resources, designed to fortify your organization's defence strategies and optimize IT management. 
+As a Cloud Security Architect specialising in these technologies, I aim to provide my experience and knowledge as actionable insights and resources, designed to fortify your organisation's defence strategies and optimise IT management.
 
 ---
 
