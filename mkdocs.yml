@@ -12,7 +12,7 @@ repo_url: https://github.com/AntoPorter/antoporter.github.io
 # Themes
 theme:
  name: material
- custom_dir: overrides
+ custom_dir: material/overrides
  features:
     - announce.dismiss
     - navigation.tabs
