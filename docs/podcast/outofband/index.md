@@ -4,6 +4,8 @@
 
 ### Episodes
 
+- [Episode 7: S.E.C.U.R.E with Mat Clark](episode7.md)
+- [Episode 6: Stories from Redmond - Post MVP Summit 2025](episode6.md)
 - [Episode 5: Before Redmond - MVP Origins](episode5.md)
 - [Episode 4: Chronicles of a Rogue Device](episode4.md)
 - [Episode 3: Entra Goodness with Merill Fernando](episode3.md)
