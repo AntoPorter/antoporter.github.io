@@ -20,4 +20,16 @@ Outside of work, I cherish spending time with my amazing wife and little boy. Wh
 
 ---
 
+**Explore My GitHub Repositories**
+
+Dive into my curated collection of GitHub repositories, where you’ll find a wealth of resources, including scripts, configurations, and best practices for leveraging Microsoft Defender, Endpoint Management, and Microsoft Copilot. Each repository is designed to help you implement and manage these powerful tools effectively.
+
+[My GitHub](https://www.github.com/AntoPorter)
+
+---
+
+Some of these articles may also appear via my [Canon Business Services ANZ Authors Page](https://business.canon.com.au/authors/anthony-porter). 
+
+---
+
 Feel free to connect with me on [LinkedIn](https://linkedin.com/in/anthonyantoporter) as I'm always happy to have a chat, collaborate or help out.
