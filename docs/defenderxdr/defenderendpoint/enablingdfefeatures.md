@@ -135,7 +135,7 @@ With EDR in block mode, Microsoft Defender not only **detects** malicious activi
 
 For more details, check out [Microsoft Learn](https://learn.microsoft.com/en-us/defender-endpoint/edr-in-block-mode).
 
-### How to Configure EDR
+### How to Configure
 
 To enable **EDR in Block Mode**, follow these steps:
 
@@ -322,8 +322,12 @@ For devices that are **not fully registered** in Microsoft Entra ID, a **synthet
 	
 - **How it works:** When a device onboards to **Microsoft Defender for Endpoint**, it is checked for **Intune enrollment**. If the device is **not enrolled**, a **synthetic Entra ID identity** is created, allowing the device to receive and enforce security policies.
 	
-- **How to configure:** To enable **Enforcement Scope** for servers using **Synthetic Entra ID Devices**, Navigate to **Settings > Endpoints > Configuration Management** and Enable **Defender for Endpoint security settings management**.
-	
+
+### How to Configure
+
+To enable **Enforcement Scope** for servers using **Synthetic Entra ID Devices**, Navigate to **Settings > Endpoints > Configuration Management** and Enable **Defender for Endpoint security settings management**.
+
+Once this is configured, you will start to see "Managed By" show values such as Co-Managed, Intune, MDE and ConfigMgr (based on where your endpoints are managed).
 
 ![enablingdefenderfeatures-es](./images/enablingdfefeatures-es.png)
 
