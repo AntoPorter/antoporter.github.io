@@ -984,9 +984,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#how-to-configure-edr" class="md-nav__link">
+  <a href="#how-to-configure_1" class="md-nav__link">
     <span class="md-ellipsis">
-      How to Configure EDR
+      How to Configure
     </span>
   </a>
   
@@ -1017,7 +1017,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#how-to-configure_1" class="md-nav__link">
+  <a href="#how-to-configure_2" class="md-nav__link">
     <span class="md-ellipsis">
       How to Configure
     </span>
@@ -1050,7 +1050,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#how-to-configure_2" class="md-nav__link">
+  <a href="#how-to-configure_3" class="md-nav__link">
     <span class="md-ellipsis">
       How to Configure
     </span>
@@ -1077,6 +1077,15 @@
   <a href="#how-synthetic-entra-id-devices-work" class="md-nav__link">
     <span class="md-ellipsis">
       How Synthetic Entra ID Devices Work?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-configure_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Configure
     </span>
   </a>
   
@@ -3414,7 +3423,7 @@
 </li>
 </ul>
 <p>For more details, check out <a href="https://learn.microsoft.com/en-us/defender-endpoint/edr-in-block-mode">Microsoft Learn</a>.</p>
-<h3 id="how-to-configure-edr">How to Configure EDR<a class="headerlink" href="#how-to-configure-edr" title="Permanent link">&para;</a></h3>
+<h3 id="how-to-configure_1">How to Configure<a class="headerlink" href="#how-to-configure_1" title="Permanent link">&para;</a></h3>
 <p>To enable <strong>EDR in Block Mode</strong>, follow these steps:</p>
 <ol>
 <li>
@@ -3482,7 +3491,7 @@
 <p>Security teams can <strong>proactively hunt for emerging threats</strong> using Live Response capabilities.</p>
 </li>
 </ol>
-<h3 id="how-to-configure_1">How to Configure<a class="headerlink" href="#how-to-configure_1" title="Permanent link">&para;</a></h3>
+<h3 id="how-to-configure_2">How to Configure<a class="headerlink" href="#how-to-configure_2" title="Permanent link">&para;</a></h3>
 <p>To enable <strong>Live Response</strong>, follow these steps:</p>
 <ol>
 <li>
@@ -3579,7 +3588,7 @@
 </ul>
 <p>Microsoft guarantees that AIR <strong>only acts when 99.9% confident</strong> in its verdict. This ensures that <strong>false positives are minimized</strong>, and critical threats are handled swiftly.</p>
 <p>For a deeper dive into AIR’s functionality, check out <a href="https://learn.microsoft.com/en-us/defender-endpoint/automated-investigations">Microsoft Learn</a>.</p>
-<h3 id="how-to-configure_2">How to Configure<a class="headerlink" href="#how-to-configure_2" title="Permanent link">&para;</a></h3>
+<h3 id="how-to-configure_3">How to Configure<a class="headerlink" href="#how-to-configure_3" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Go to <strong>System</strong> &gt; <strong>Settings</strong> &gt; <strong>Endpoints</strong> &gt; <strong>Permissions</strong> under <strong>Device Groups</strong>.</p>
@@ -3606,10 +3615,10 @@
 <li>
 <p><strong>How it works:</strong> When a device onboards to <strong>Microsoft Defender for Endpoint</strong>, it is checked for <strong>Intune enrollment</strong>. If the device is <strong>not enrolled</strong>, a <strong>synthetic Entra ID identity</strong> is created, allowing the device to receive and enforce security policies.</p>
 </li>
-<li>
-<p><strong>How to configure:</strong> To enable <strong>Enforcement Scope</strong> for servers using <strong>Synthetic Entra ID Devices</strong>, Navigate to <strong>Settings &gt; Endpoints &gt; Configuration Management</strong> and Enable <strong>Defender for Endpoint security settings management</strong>.</p>
-</li>
 </ul>
+<h3 id="how-to-configure_4">How to Configure<a class="headerlink" href="#how-to-configure_4" title="Permanent link">&para;</a></h3>
+<p>To enable <strong>Enforcement Scope</strong> for servers using <strong>Synthetic Entra ID Devices</strong>, Navigate to <strong>Settings &gt; Endpoints &gt; Configuration Management</strong> and Enable <strong>Defender for Endpoint security settings management</strong>.</p>
+<p>Once this is configured, you will start to see "Managed By" show values such as Co-Managed, Intune, MDE and ConfigMgr (based on where your endpoints are managed).</p>
 <p><img alt="enablingdefenderfeatures-es" src="../images/enablingdfefeatures-es.png" /></p>
 <p><em>And last, but not least;</em></p>
 <p><strong>Pro tip:</strong> Use <strong>Microsoft Entra ID dynamic device groups</strong> to ensure policies are properly applied across all endpoints/servers, especially when enabling for all servers, and Linux endpoints. These can act as " <strong>Catch-All's</strong> " for your 'baseline' policies.</p>
