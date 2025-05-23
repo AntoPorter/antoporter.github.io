@@ -3281,7 +3281,7 @@
 <p>Many organisations rely on Microsoft Defender for Endpoint as their frontline security solution, yet surprisingly, its most advanced features often go untouched. Over the years, there’s a common trend that paints a bleak picture... </p>
 <p>Defender is in place, providing baseline protection, but the deeper capabilities that could significantly strengthen security posture remain <strong>unused</strong>. Unlocking these features means better threat detection, automated security workflows, and tighter policy enforcement, all of which help organisations stay ahead of evolving cyber threats. </p>
 <p><strong>The potential is there — it’s just waiting to be fully utilised.</strong></p>
-<p><img alt="enablingdefenderfeatures-dfe" src="enablingdfefeatures-dfe.png" /></p>
+<p><img alt="enablingdefenderfeatures-dfe" src="../images/enablingdfefeatures-dfe.png" /></p>
 <p>If you're serious about security (and let's be honest, you should be), enabling these features can take your protection from "good enough" to "next-level" with a few simple clicks. Let’s dive into some key capabilities that need configuration and why they’re almost a necessity for securing your environment.</p>
 <p>Now there is some pre-assumed knowledge of licensing within your environment, but given we as IT Professionals should have security at the top of mind, I will also assume you have security at the top of mind, and you have Microsoft 365 E5 or at least E5 Security Add-On. If you haven't, some of these may not apply, but Id hope these would persuade you to consider, potentially consolidate, and take full advantage of the robust security features available within the Microsoft Security ecosystem.</p>
 <hr />
@@ -3313,7 +3313,7 @@
 </li>
 </ul>
 <p>The result is that categories 1-4 are all blocked, as illustrated in the following image.</p>
-<p><img alt="enablingdefenderfeatures-wcf" src="enablingdfefeatures-wcf.png" /></p>
+<p><img alt="enablingdefenderfeatures-wcf" src="../images/enablingdfefeatures-wcf.png" /></p>
 <p><strong>Network Protection</strong></p>
 <ul>
 <li>
@@ -3326,7 +3326,7 @@
 <p>Works across Microsoft Edge, Chrome, Firefox, Brave, and Opera, ensuring protection beyond Microsoft browsers.</p>
 </li>
 </ul>
-<p><img alt="enablingdefenderfeatures-np" src="enablingdfefeatures-np.png" /></p>
+<p><img alt="enablingdefenderfeatures-np" src="../images/enablingdfefeatures-np.png" /></p>
 <h3 id="how-to-configure">How to Configure<a class="headerlink" href="#how-to-configure" title="Permanent link">&para;</a></h3>
 <p><strong>Turning it On</strong></p>
 <ol>
@@ -3385,7 +3385,7 @@
 <p>If a <strong>malicious artifact</strong> is detected, EDR in Block Mode <strong>steps in to take action</strong>, even if Defender Antivirus is not the primary AV solution.</p>
 </li>
 </ul>
-<p><img alt="enablingdefenderfeatures-edr" src="enablingdfefeatures-edr.png" /></p>
+<p><img alt="enablingdefenderfeatures-edr" src="../images/enablingdfefeatures-edr.png" /></p>
 <p><strong>Automatic Remediation</strong></p>
 <ul>
 <li>
@@ -3449,7 +3449,7 @@
 <p>Once initiated, a <strong>secure remote shell</strong> is established, allowing analysts to execute commands directly on the affected device.</p>
 </li>
 </ol>
-<p><img alt="enablingdefenderfeatures-lr" src="enablingdfefeatures-lr.png" /></p>
+<p><img alt="enablingdefenderfeatures-lr" src="../images/enablingdfefeatures-lr.png" /></p>
 <ol>
 <li>
 <p><strong>Investigating Threats</strong></p>
@@ -3588,7 +3588,7 @@
 <p>Review your device group policies. More specifically, look at the <strong>Remediation level</strong> column. You might need to create or edit your device groups to get the level of automation you want.</p>
 </li>
 </ol>
-<p><img alt="enablingdefenderfeatures-air" src="enablingdfefeatures-air.png" /></p>
+<p><img alt="enablingdefenderfeatures-air" src="../images/enablingdfefeatures-air.png" /></p>
 <p><strong>Pro tip:</strong> Set automation levels to <strong>'full remediation'</strong> for low-risk alerts while requiring <strong>manual approval</strong> for high-severity threats. Microsoft has made mentions that they guarantee they will only act on certain events, only when 99.9% confident, and you best hope that you have automation on your side when its 99.9% certain.</p>
 <hr />
 <h2 id="enforcement-scope-with-synthetic-entra-id-devices-for-servers-strengthening-policy-consistency">Enforcement Scope (with Synthetic Entra ID Devices for Servers): Strengthening Policy Consistency<a class="headerlink" href="#enforcement-scope-with-synthetic-entra-id-devices-for-servers-strengthening-policy-consistency" title="Permanent link">&para;</a></h2>
@@ -3597,7 +3597,7 @@
 <p>By leveraging <strong>Microsoft Entra ID</strong> and <strong>Synthetic Entra ID Devices</strong>, organisations can ensure that security policies are <strong>uniformly applied</strong> across all endpoints, including servers that may not be traditionally enrolled in Intune.</p>
 <h3 id="how-synthetic-entra-id-devices-work">How Synthetic Entra ID Devices Work?<a class="headerlink" href="#how-synthetic-entra-id-devices-work" title="Permanent link">&para;</a></h3>
 <p>For devices that are <strong>not fully registered</strong> in Microsoft Entra ID, a <strong>synthetic device identity</strong> is created. This allows the device to <strong>retrieve and enforce security policies</strong> without requiring full Entra ID registration. This is particularly useful for <strong>Windows Server environments</strong>, where traditional endpoint management methods may not be feasible.</p>
-<p><img alt="enablingdefenderfeatures-syn" src="enablingdfefeatures-syn.png" /></p>
+<p><img alt="enablingdefenderfeatures-syn" src="../images/enablingdfefeatures-syn.png" /></p>
 <p><a href="https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/how-to-manage-microsoft-defender-policies-with-intune-on-non-managed-devices/3724894">How to Manage Microsoft Defender Policies with Intune on Non-Managed Devices | Microsoft Community Hub</a></p>
 <ul>
 <li>
@@ -3610,7 +3610,7 @@
 <p><strong>How to configure:</strong> To enable <strong>Enforcement Scope</strong> for servers using <strong>Synthetic Entra ID Devices</strong>, Navigate to <strong>Settings &gt; Endpoints &gt; Configuration Management</strong> and Enable <strong>Defender for Endpoint security settings management</strong>.</p>
 </li>
 </ul>
-<p><img alt="enablingdefenderfeatures-es" src="enablingdfefeatures-es.png" /></p>
+<p><img alt="enablingdefenderfeatures-es" src="../images/enablingdfefeatures-es.png" /></p>
 <p><em>And last, but not least;</em></p>
 <p><strong>Pro tip:</strong> Use <strong>Microsoft Entra ID dynamic device groups</strong> to ensure policies are properly applied across all endpoints/servers, especially when enabling for all servers, and Linux endpoints. These can act as " <strong>Catch-All's</strong> " for your 'baseline' policies.</p>
 <hr />
