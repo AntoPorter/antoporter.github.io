@@ -7,7 +7,7 @@ Defender is in place, providing baseline protection, but the deeper capabilities
 
 **The potential is there — it’s just waiting to be fully utilised.**
 
-![enablingdefenderfeatures-dfe](enablingdfefeatures-dfe.png)
+![enablingdefenderfeatures-dfe](./images/enablingdfefeatures-dfe.png)
 
 If you're serious about security (and let's be honest, you should be), enabling these features can take your protection from "good enough" to "next-level" with a few simple clicks. Let’s dive into some key capabilities that need configuration and why they’re almost a necessity for securing your environment.
 
@@ -45,7 +45,7 @@ Applying multiple different web content filtering policies to the same device re
 
 The result is that categories 1-4 are all blocked, as illustrated in the following image.
 
-![enablingdefenderfeatures-wcf](enablingdfefeatures-wcf.png)
+![enablingdefenderfeatures-wcf](./images/enablingdfefeatures-wcf.png)
 
 **Network Protection**
 
@@ -56,7 +56,7 @@ The result is that categories 1-4 are all blocked, as illustrated in the followi
 - Works across Microsoft Edge, Chrome, Firefox, Brave, and Opera, ensuring protection beyond Microsoft browsers.
 	
 
-![enablingdefenderfeatures-np](enablingdfefeatures-np.png)
+![enablingdefenderfeatures-np](./images/enablingdfefeatures-np.png)
 
 ### How to Configure
 
@@ -110,7 +110,7 @@ With EDR in block mode, Microsoft Defender not only **detects** malicious activi
 - If a **malicious artifact** is detected, EDR in Block Mode **steps in to take action**, even if Defender Antivirus is not the primary AV solution.
 	
 
-![enablingdefenderfeatures-edr](enablingdfefeatures-edr.png)
+![enablingdefenderfeatures-edr](./images/enablingdfefeatures-edr.png)
 
 **Automatic Remediation**
 
@@ -171,7 +171,7 @@ Live Response operates as a **remote shell connection**, giving security analyst
 - Once initiated, a **secure remote shell** is established, allowing analysts to execute commands directly on the affected device.
 	
 
-![enablingdefenderfeatures-lr](enablingdfefeatures-lr.png)
+![enablingdefenderfeatures-lr](./images/enablingdfefeatures-lr.png)
 
 2. **Investigating Threats**
 
@@ -296,7 +296,7 @@ For a deeper dive into AIR’s functionality, check out [Microsoft Learn](https:
     
 2. Review your device group policies. More specifically, look at the **Remediation level** column. You might need to create or edit your device groups to get the level of automation you want.
 
-![enablingdefenderfeatures-air](enablingdfefeatures-air.png)
+![enablingdefenderfeatures-air](./images/enablingdfefeatures-air.png)
 
 **Pro tip:** Set automation levels to **'full remediation'** for low-risk alerts while requiring **manual approval** for high-severity threats. Microsoft has made mentions that they guarantee they will only act on certain events, only when 99.9% confident, and you best hope that you have automation on your side when its 99.9% certain.
 
@@ -314,7 +314,7 @@ By leveraging **Microsoft Entra ID** and **Synthetic Entra ID Devices**, organis
 
 For devices that are **not fully registered** in Microsoft Entra ID, a **synthetic device identity** is created. This allows the device to **retrieve and enforce security policies** without requiring full Entra ID registration. This is particularly useful for **Windows Server environments**, where traditional endpoint management methods may not be feasible.
 
-![enablingdefenderfeatures-syn](enablingdfefeatures-syn.png)
+![enablingdefenderfeatures-syn](./images/enablingdfefeatures-syn.png)
 
 [How to Manage Microsoft Defender Policies with Intune on Non-Managed Devices | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/how-to-manage-microsoft-defender-policies-with-intune-on-non-managed-devices/3724894)
 
@@ -325,7 +325,7 @@ For devices that are **not fully registered** in Microsoft Entra ID, a **synthet
 - **How to configure:** To enable **Enforcement Scope** for servers using **Synthetic Entra ID Devices**, Navigate to **Settings > Endpoints > Configuration Management** and Enable **Defender for Endpoint security settings management**.
 	
 
-![enablingdefenderfeatures-es](enablingdfefeatures-es.png)
+![enablingdefenderfeatures-es](./images/enablingdfefeatures-es.png)
 
 *And last, but not least;*
 
