@@ -1,5 +1,5 @@
 # Enforcement Scope - Microsoft Intune Policy Enforcement
----
+
 Microsoft Defender for Endpoint, integrated with Microsoft Intune, offers a comprehensive solution for managing security settings across various platforms, including Windows endpoints, Windows servers, and Linux servers. This report delves into the importance of this integration and how it enhances your security management capabilities.
 
 ---

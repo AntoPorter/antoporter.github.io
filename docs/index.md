@@ -10,9 +10,9 @@ As a Cloud Security Architect specialising in these technologies, I aim to provi
 
 ## Latest Posts
 
-- [Quick Wins: Why Your Organization Should Adopt Microsoft Intune Security Tasks Today](./intune/quickwins-securitytasks.md)
-- [Session Recap: Empowering AI-Driven Security with Microsoft Sentinel and Security Copilot](./copilotsecurity/globalaibootcamppresentation.md)
-- [Quick Wins: Securing Local Devices with Microsoft Intune's LAPS](./intune/quickwins-laps.md)
+- [Unleashing Microsoft Defender for Endpoint: Advanced Features You're Missing](./defenderxdr/defenderendpoint/enablingdfefeatures.md)
+- [Quick Wins: Why Your Organization Should Adopt Microsoft Intune Security Tasks Today](./endpoint/intune/quickwins-securitytasks.md)
+- [Session Recap: Empowering AI-Driven Security with Microsoft Sentinel and Security Copilot](./copilot/copilotsecurity/globalaibootcamppresentation.md)
 
 ---
 

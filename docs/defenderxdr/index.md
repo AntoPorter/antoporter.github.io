@@ -1,23 +1,21 @@
-# Microsoft Defender XDR
+# Microsoft Defender XDR / Microsoft Sentinel
 
 
 ## Defender for Endpoint
 ---
 
+- [Unleashing Microsoft Defender for Endpoint: Advanced Features You're Missing](./defenderendpoint/enablingdfefeatures.md)
 - [Enforcement Scopes](./defenderendpoint/enforcementscope.md)
-
 
 ## Defender for Office 365
 ---
 
 - [Lessons Learnt: Resolving Safe Links Rewrap Breaking URLs](./defenderoffice365/ll-safelinks-rewrap.md)
 
-
 ## Defender for Identity
 ---
 
 - [Top 5 Features of Microsoft Defender for Identity](./defenderidentity/top5features.md)
-
 
 ## Defender for Cloud Apps
 ---
@@ -25,7 +23,6 @@
 - [Demystifying Microsoft Defender for Cloud Apps](./defendercloudapps/demystifying-policies.md)
 - [Automatically Unsanctioning Risky Apps](./defendercloudapps/unsanctioning-riskyapps.md)
 - [Enforce App Blocking with Microsoft Defender for Endpoint](./defendercloudapps/appblocking-dfe.md)
-
 
 ## Microsoft Sentinel
 ---
