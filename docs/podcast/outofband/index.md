@@ -4,6 +4,7 @@
 
 ### Episodes
 
+- [Episode 8: Into the World of Copilot](episode8.md)
 - [Episode 7: S.E.C.U.R.E with Mat Clark](episode7.md)
 - [Episode 6: Stories from Redmond - Post MVP Summit 2025](episode6.md)
 - [Episode 5: Before Redmond - MVP Origins](episode5.md)

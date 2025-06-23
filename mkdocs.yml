@@ -175,6 +175,7 @@ nav:
   - Microsoft Copilot:
     - Microsoft Copilot: copilot/index.md
     - Microsoft Security Copilot:
+      - copilot/copilotsecurity/vulnerabilityremediationagent.md
       - copilot/copilotsecurity/globalaibootcamppresentation.md
       - copilot/copilotsecurity/deploy-templatespec.md
       - copilot/copilotsecurity/logicapp-promptbook.md
@@ -206,6 +207,7 @@ nav:
     - podcast/outofband/episode4.md
     - podcast/outofband/episode5.md
     - podcast/outofband/episode6.md
-    - podcast/outofband/episode7.md    
+    - podcast/outofband/episode7.md
+    - podcast/outofband/episode8.md    
   - About Me:
     - aboutme.md

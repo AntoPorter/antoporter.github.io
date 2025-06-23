@@ -2,6 +2,7 @@
 
 ## Microsoft Security Copilot
 
+- [Transforming Vulnerability Management with the Security Copilot Agent in Intune](./copilotsecurity/vulnerabilityremediationagent.md)
 - [Session Recap: Empowering AI-Driven Security with Microsoft Sentinel and Security Copilot](./copilotsecurity/globalaibootcamppresentation.md)
 - [Deploy Copilot for Security](./copilotsecurity/deploy-templatespec.md)
 - [LogicApp Promptbook with Send Mail Function](./copilotsecurity/logicapp-promptbook.md)
