@@ -10,7 +10,7 @@ As a Cloud Security Architect specialising in these technologies, I aim to provi
 
 ## Latest Posts
 
-- [Transforming Vulnerability Management with the Security Copilot Agent in Intune](./copilotsecurity/vulnerabilityremediationagent.md)
+- [Transforming Vulnerability Management with the Security Copilot Agent in Intune](./copilot/copilotsecurity/vulnerabilityremediationagent.md)
 - [Unleashing Microsoft Defender for Endpoint: Advanced Features You're Missing](./defenderxdr/defenderendpoint/enablingdfefeatures.md)
 - [Quick Wins: Why Your Organization Should Adopt Microsoft Intune Security Tasks Today](./endpoint/intune/quickwins-securitytasks.md)
 
