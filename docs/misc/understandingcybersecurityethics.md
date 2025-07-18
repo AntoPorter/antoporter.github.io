@@ -9,11 +9,11 @@ Key principles? Privacy, fairness, transparency, and accountability. These aren�
 - **Transparency** means being open about our practices, policies, and any incidents that occur.
 - **Accountability** involves taking responsibility for our actions and decisions, especially when things go awry.
 
-Why are these principles so crucial? Because they help us navigate ethical dilemmas that aren’t always black and white. In [cybersecurity](https://business.canon.com.au/insights/navigating-cyber-security-risks-during-digital-transformation), we often face situations where the right course of action isn’t immediately clear. A solid ethical foundation helps us make decisions that protect assets and uphold the rights and trust of the people we serve.
+Why are these principles so crucial? Because they help us navigate ethical dilemmas that aren’t always black and white. In cybersecurity), we often face situations where the right course of action isn’t immediately clear. A solid ethical foundation helps us make decisions that protect assets and uphold the rights and trust of the people we serve.
 
-[Cybersecurity](https://business.canon.com.au/services/it-security-compliance). It’s not just about firewalls and antivirus software anymore. In today’s interconnected world, where nearly every facet of our lives is touched by digital technology, protecting sensitive information is more critical than ever.  
+Cybersecurity. It’s not just about firewalls and antivirus software anymore. In today’s interconnected world, where nearly every facet of our lives is touched by digital technology, protecting sensitive information is more critical than ever.  
   
-Data breaches and [cyber-attacks](https://business.canon.com.au/insights/types-of-cyber-attack) aren’t just headlines—they’re daily occurrences that can devastate individuals and organisations alike in Australia. According to the Australian Signals Directorate’s (ASD) [Cyber Threat Report 2022–23](https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/asd-cyber-threat-report-july-2022-june-2023), over 33,000 calls were made to its Australian Cyber Security Hotline, an increase of 32 per cent from 2021-22. ASD's Australian Cyber Security Centre also received over 94,000 reports of cybercrime over the financial year, an increase of 23 per cent from 2021-22.  
+Data breaches and cyber-attacks aren’t just headlines—they’re daily occurrences that can devastate individuals and organisations alike in Australia. According to the Australian Signals Directorate’s (ASD) [Cyber Threat Report 2022–23](https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/asd-cyber-threat-report-july-2022-june-2023), over 33,000 calls were made to its Australian Cyber Security Hotline, an increase of 32 per cent from 2021-22. ASD's Australian Cyber Security Centre also received over 94,000 reports of cybercrime over the financial year, an increase of 23 per cent from 2021-22.  
   
 But here’s the kicker—it’s not just about the tech. There’s a whole ethical side to this that we can’t ignore. Think of cybersecurity as a high-stakes game of chess. While we’re busy strategising our next move to outsmart cyber adversaries, we should also be mindful of the rules of the game—the ethical considerations that govern our actions. So, let’s explore how cybersecurity and ethics intersect.  
   
@@ -39,7 +39,7 @@ Fairness in cybersecurity is non-negotiable. We can’t afford to have biases in
   
 Promoting diversity and inclusion within our teams isn’t just nice to have; it’s crucial. Different perspectives help us spot and mitigate biases that homogeneous groups might overlook. By bringing together individuals from various backgrounds, we enhance our ability to create fair and effective security solutions.  
   
-Ethical practices that prioritize fairness and create an inclusive environment for everyone mean actively seeking out diverse talent, [fostering a culture](https://business.canon.com.au/insights/fostering-a-healthy-cybersecurity-culture) where all voices are heard, and continuously reviewing our systems for unintended biases. It’s like tending a garden—you need a variety of plants to create a balanced ecosystem.
+Ethical practices that prioritize fairness and create an inclusive environment for everyone mean actively seeking out diverse talent, fostering a culture where all voices are heard, and continuously reviewing our systems for unintended biases. It’s like tending a garden—you need a variety of plants to create a balanced ecosystem.
 
 ---
 ## Transparency and Accountability

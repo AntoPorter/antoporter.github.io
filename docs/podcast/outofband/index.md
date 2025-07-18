@@ -4,15 +4,26 @@
 
 ### Episodes
 
+- [Episode 9: Inside the Threat Landscape](episode9.md)
+	
 - [Episode 8: Into the World of Copilot](episode8.md)
+	
 - [Episode 7: S.E.C.U.R.E with Mat Clark](episode7.md)
+	
 - [Episode 6: Stories from Redmond - Post MVP Summit 2025](episode6.md)
+	
 - [Episode 5: Before Redmond - MVP Origins](episode5.md)
+	
 - [Episode 4: Chronicles of a Rogue Device](episode4.md)
+	
 - [Episode 3: Entra Goodness with Merill Fernando](episode3.md)
+	
 - [Episode 2: Intune It](episode2.md)
+	
 - [Episode 1: Boots on Ground](episode1.md)
+	
 - [Episode 0: Welcome to the Band](episode0.md)
+	
 
 ---
 
