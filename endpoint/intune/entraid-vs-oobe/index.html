@@ -12,22 +12,28 @@
         <meta name="author" content="Anthony Porter">
       
       
+        <link rel="canonical" href="https://www.securingm365.com/endpoint/intune/entraid-vs-oobe/">
       
       
+        <link rel="prev" href="../baselineinsights/">
       
-      <link rel="icon" href="/images/sitefavicon.png">
+      
+        <link rel="next" href="../../configmgr/challengesolution-mcmtointune/">
+      
+      
+      <link rel="icon" href="../../../images/sitefavicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>SecuringM365</title>
+        <title>Lessons Learned: Diagnosing Local Admin Priority Conflicts - SecuringM365</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -81,6 +87,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#lessons-learned-diagnosing-local-admin-priority-conflicts" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,9 +104,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="SecuringM365" class="md-header__button md-logo" aria-label="SecuringM365" data-md-component="logo">
+    <a href="../../.." title="SecuringM365" class="md-header__button md-logo" aria-label="SecuringM365" data-md-component="logo">
       
-  <img src="/images/sitelogo.png" alt="logo">
+  <img src="../../../images/sitelogo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -112,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Lessons Learned: Diagnosing Local Admin Priority Conflicts
             
           </span>
         </div>
@@ -226,7 +237,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/." class="md-tabs__link">
+        <a href="../../.." class="md-tabs__link">
           
   
   
@@ -248,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/defenderxdr/" class="md-tabs__link">
+        <a href="../../../defenderxdr/" class="md-tabs__link">
           
   
   
@@ -266,11 +277,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/endpoint/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -292,7 +305,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/purview/" class="md-tabs__link">
+        <a href="../../../purview/" class="md-tabs__link">
           
   
   
@@ -314,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/copilot/" class="md-tabs__link">
+        <a href="../../../copilot/" class="md-tabs__link">
           
   
   
@@ -336,7 +349,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/entra/" class="md-tabs__link">
+        <a href="../../../entra/" class="md-tabs__link">
           
   
   
@@ -358,7 +371,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/misc/" class="md-tabs__link">
+        <a href="../../../misc/" class="md-tabs__link">
           
   
   
@@ -380,7 +393,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/podcast/outofband/" class="md-tabs__link">
+        <a href="../../../podcast/outofband/" class="md-tabs__link">
           
   
   
@@ -402,7 +415,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/aboutme/" class="md-tabs__link">
+        <a href="../../../aboutme/" class="md-tabs__link">
           
   
   
@@ -446,9 +459,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="SecuringM365" class="md-nav__button md-logo" aria-label="SecuringM365" data-md-component="logo">
+    <a href="../../.." title="SecuringM365" class="md-nav__button md-logo" aria-label="SecuringM365" data-md-component="logo">
       
-  <img src="/images/sitelogo.png" alt="logo">
+  <img src="../../../images/sitelogo.png" alt="logo">
 
     </a>
     SecuringM365
@@ -516,7 +529,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/." class="md-nav__link ">
+            <a href="../../.." class="md-nav__link ">
               
   
   
@@ -551,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/" class="md-nav__link">
+      <a href="../../../defenderxdr/" class="md-nav__link">
         
   
   
@@ -574,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -597,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/purview/" class="md-nav__link">
+      <a href="../../../purview/" class="md-nav__link">
         
   
   
@@ -620,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/copilot/" class="md-nav__link">
+      <a href="../../../copilot/" class="md-nav__link">
         
   
   
@@ -643,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/entra/" class="md-nav__link">
+      <a href="../../../entra/" class="md-nav__link">
         
   
   
@@ -666,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/" class="md-nav__link">
+      <a href="../../../misc/" class="md-nav__link">
         
   
   
@@ -689,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/" class="md-nav__link">
+      <a href="../../../podcast/outofband/" class="md-nav__link">
         
   
   
@@ -712,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/aboutme/" class="md-nav__link">
+      <a href="../../../aboutme/" class="md-nav__link">
         
   
   
@@ -777,7 +790,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/defenderxdr/" class="md-nav__link ">
+            <a href="../../../defenderxdr/" class="md-nav__link ">
               
   
   
@@ -863,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/defenderendpoint/enablingdfefeatures/" class="md-nav__link">
+      <a href="../../../defenderxdr/defenderendpoint/enablingdfefeatures/" class="md-nav__link">
         
   
   
@@ -886,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/defenderendpoint/enforcementscope/" class="md-nav__link">
+      <a href="../../../defenderxdr/defenderendpoint/enforcementscope/" class="md-nav__link">
         
   
   
@@ -966,7 +979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/defenderoffice365/ll-safelinks-rewrap/" class="md-nav__link">
+      <a href="../../../defenderxdr/defenderoffice365/ll-safelinks-rewrap/" class="md-nav__link">
         
   
   
@@ -1046,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/defenderidentity/top5features/" class="md-nav__link">
+      <a href="../../../defenderxdr/defenderidentity/top5features/" class="md-nav__link">
         
   
   
@@ -1130,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/defendercloudapps/demystifying-policies/" class="md-nav__link">
+      <a href="../../../defenderxdr/defendercloudapps/demystifying-policies/" class="md-nav__link">
         
   
   
@@ -1153,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/defendercloudapps/appblocking-dfe/" class="md-nav__link">
+      <a href="../../../defenderxdr/defendercloudapps/appblocking-dfe/" class="md-nav__link">
         
   
   
@@ -1176,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/defendercloudapps/unsanctioning-riskyapps/" class="md-nav__link">
+      <a href="../../../defenderxdr/defendercloudapps/unsanctioning-riskyapps/" class="md-nav__link">
         
   
   
@@ -1260,7 +1273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/sentinel/unifiedsoc/" class="md-nav__link">
+      <a href="../../../defenderxdr/sentinel/unifiedsoc/" class="md-nav__link">
         
   
   
@@ -1283,7 +1296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/sentinel/soar/" class="md-nav__link">
+      <a href="../../../defenderxdr/sentinel/soar/" class="md-nav__link">
         
   
   
@@ -1306,7 +1319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/defenderxdr/sentinel/workspaceworkbookexport/" class="md-nav__link">
+      <a href="../../../defenderxdr/sentinel/workspaceworkbookexport/" class="md-nav__link">
         
   
   
@@ -1341,6 +1354,8 @@
       
   
   
+    
+  
   
   
     
@@ -1358,22 +1373,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/endpoint/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -1386,13 +1402,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Endpoint Management
@@ -1405,8 +1421,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1439,20 +1457,21 @@
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
             
   
   
@@ -1465,7 +1484,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Microsoft Intune
@@ -1479,7 +1498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/quickwins-securitytasks/" class="md-nav__link">
+      <a href="../quickwins-securitytasks/" class="md-nav__link">
         
   
   
@@ -1502,7 +1521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/quickwins-appcontrolforbusiness/" class="md-nav__link">
+      <a href="../quickwins-appcontrolforbusiness/" class="md-nav__link">
         
   
   
@@ -1525,7 +1544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/quickwins-autopilotv2/" class="md-nav__link">
+      <a href="../quickwins-autopilotv2/" class="md-nav__link">
         
   
   
@@ -1548,7 +1567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/quickwins-laps/" class="md-nav__link">
+      <a href="../quickwins-laps/" class="md-nav__link">
         
   
   
@@ -1571,7 +1590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/quickwins-securitybaselines/" class="md-nav__link">
+      <a href="../quickwins-securitybaselines/" class="md-nav__link">
         
   
   
@@ -1594,7 +1613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/quickwins-applications/" class="md-nav__link">
+      <a href="../quickwins-applications/" class="md-nav__link">
         
   
   
@@ -1617,7 +1636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/quickwins-autopatch/" class="md-nav__link">
+      <a href="../quickwins-autopatch/" class="md-nav__link">
         
   
   
@@ -1640,7 +1659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/quickwins-grouppolicyanalytics/" class="md-nav__link">
+      <a href="../quickwins-grouppolicyanalytics/" class="md-nav__link">
         
   
   
@@ -1663,7 +1682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/remediations/" class="md-nav__link">
+      <a href="../remediations/" class="md-nav__link">
         
   
   
@@ -1686,7 +1705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/bitlocker_selfservice/" class="md-nav__link">
+      <a href="../bitlocker_selfservice/" class="md-nav__link">
         
   
   
@@ -1709,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/intune/baselineinsights/" class="md-nav__link">
+      <a href="../baselineinsights/" class="md-nav__link">
         
   
   
@@ -1729,10 +1748,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/endpoint/intune/entraid-vs-oobe/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lessons Learned: Diagnosing Local Admin Priority Conflicts
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1743,6 +1784,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-entra-id-local-administrator-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Entra ID Local Administrator Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagnosing-the-unexpected-standard-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagnosing the Unexpected Standard Outcome
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autopilot-profile-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autopilot Profile Precedence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-priority-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Policy Priority Matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-enforcing-local-admin-via-intune-local-group-membership" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bonus: Enforcing Local Admin via Intune Local Group Membership
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1773,10 +1879,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1785,7 +1894,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
             
   
   
@@ -1812,7 +1921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/endpoint/configmgr/challengesolution-mcmtointune/" class="md-nav__link">
+      <a href="../../configmgr/challengesolution-mcmtointune/" class="md-nav__link">
         
   
   
@@ -1879,7 +1988,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/purview/" class="md-nav__link ">
+            <a href="../../../purview/" class="md-nav__link ">
               
   
   
@@ -1914,7 +2023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/purview/browsersignaldetection/" class="md-nav__link">
+      <a href="../../../purview/browsersignaldetection/" class="md-nav__link">
         
   
   
@@ -1937,7 +2046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/purview/m365copilotDLP/" class="md-nav__link">
+      <a href="../../../purview/m365copilotDLP/" class="md-nav__link">
         
   
   
@@ -1996,7 +2105,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/copilot/" class="md-nav__link ">
+            <a href="../../../copilot/" class="md-nav__link ">
               
   
   
@@ -2090,7 +2199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/copilot/copilotsecurity/vulnerabilityremediationagent/" class="md-nav__link">
+      <a href="../../../copilot/copilotsecurity/vulnerabilityremediationagent/" class="md-nav__link">
         
   
   
@@ -2113,7 +2222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/copilot/copilotsecurity/globalaibootcamppresentation/" class="md-nav__link">
+      <a href="../../../copilot/copilotsecurity/globalaibootcamppresentation/" class="md-nav__link">
         
   
   
@@ -2136,7 +2245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/copilot/copilotsecurity/deploy-templatespec/" class="md-nav__link">
+      <a href="../../../copilot/copilotsecurity/deploy-templatespec/" class="md-nav__link">
         
   
   
@@ -2159,7 +2268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/copilot/copilotsecurity/logicapp-promptbook/" class="md-nav__link">
+      <a href="../../../copilot/copilotsecurity/logicapp-promptbook/" class="md-nav__link">
         
   
   
@@ -2182,7 +2291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/copilot/copilotsecurity/promptinspiration/" class="md-nav__link">
+      <a href="../../../copilot/copilotsecurity/promptinspiration/" class="md-nav__link">
         
   
   
@@ -2205,7 +2314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/copilot/copilotsecurity/ll-scudeployment/" class="md-nav__link">
+      <a href="../../../copilot/copilotsecurity/ll-scudeployment/" class="md-nav__link">
         
   
   
@@ -2287,7 +2396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/copilot/copilotm365/gettingstarted/" class="md-nav__link">
+      <a href="../../../copilot/copilotm365/gettingstarted/" class="md-nav__link">
         
   
   
@@ -2310,7 +2419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/copilot/copilotm365/enablecopilotm365/" class="md-nav__link">
+      <a href="../../../copilot/copilotm365/enablecopilotm365/" class="md-nav__link">
         
   
   
@@ -2377,7 +2486,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/entra/" class="md-nav__link ">
+            <a href="../../../entra/" class="md-nav__link ">
               
   
   
@@ -2412,7 +2521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/entra/azconnect-device/" class="md-nav__link">
+      <a href="../../../entra/azconnect-device/" class="md-nav__link">
         
   
   
@@ -2435,7 +2544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/entra/exploringtrv2/" class="md-nav__link">
+      <a href="../../../entra/exploringtrv2/" class="md-nav__link">
         
   
   
@@ -2506,7 +2615,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/misc/" class="md-nav__link ">
+            <a href="../../../misc/" class="md-nav__link ">
               
   
   
@@ -2541,7 +2650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/misconception-technicalcontrols/" class="md-nav__link">
+      <a href="../../../misc/misconception-technicalcontrols/" class="md-nav__link">
         
   
   
@@ -2564,7 +2673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/understandingcybersecurityethics/" class="md-nav__link">
+      <a href="../../../misc/understandingcybersecurityethics/" class="md-nav__link">
         
   
   
@@ -2587,7 +2696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/aibootcamp2025-day1/" class="md-nav__link">
+      <a href="../../../misc/aibootcamp2025-day1/" class="md-nav__link">
         
   
   
@@ -2610,7 +2719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/aibootcamp2025-day2/" class="md-nav__link">
+      <a href="../../../misc/aibootcamp2025-day2/" class="md-nav__link">
         
   
   
@@ -2633,7 +2742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/aibootcamp2025-day3/" class="md-nav__link">
+      <a href="../../../misc/aibootcamp2025-day3/" class="md-nav__link">
         
   
   
@@ -2656,7 +2765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/summerbootcamp2025-day1/" class="md-nav__link">
+      <a href="../../../misc/summerbootcamp2025-day1/" class="md-nav__link">
         
   
   
@@ -2679,7 +2788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/summerbootcamp2025-day2/" class="md-nav__link">
+      <a href="../../../misc/summerbootcamp2025-day2/" class="md-nav__link">
         
   
   
@@ -2702,7 +2811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/summerbootcamp2025-day3/" class="md-nav__link">
+      <a href="../../../misc/summerbootcamp2025-day3/" class="md-nav__link">
         
   
   
@@ -2777,7 +2886,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/podcast/outofband/" class="md-nav__link ">
+            <a href="../../../podcast/outofband/" class="md-nav__link ">
               
   
   
@@ -2812,7 +2921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/episode0/" class="md-nav__link">
+      <a href="../../../podcast/outofband/episode0/" class="md-nav__link">
         
   
   
@@ -2835,7 +2944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/episode1/" class="md-nav__link">
+      <a href="../../../podcast/outofband/episode1/" class="md-nav__link">
         
   
   
@@ -2858,7 +2967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/episode2/" class="md-nav__link">
+      <a href="../../../podcast/outofband/episode2/" class="md-nav__link">
         
   
   
@@ -2881,7 +2990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/episode3/" class="md-nav__link">
+      <a href="../../../podcast/outofband/episode3/" class="md-nav__link">
         
   
   
@@ -2904,7 +3013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/episode4/" class="md-nav__link">
+      <a href="../../../podcast/outofband/episode4/" class="md-nav__link">
         
   
   
@@ -2927,7 +3036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/episode5/" class="md-nav__link">
+      <a href="../../../podcast/outofband/episode5/" class="md-nav__link">
         
   
   
@@ -2950,7 +3059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/episode6/" class="md-nav__link">
+      <a href="../../../podcast/outofband/episode6/" class="md-nav__link">
         
   
   
@@ -2973,7 +3082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/episode7/" class="md-nav__link">
+      <a href="../../../podcast/outofband/episode7/" class="md-nav__link">
         
   
   
@@ -2996,7 +3105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/episode8/" class="md-nav__link">
+      <a href="../../../podcast/outofband/episode8/" class="md-nav__link">
         
   
   
@@ -3019,7 +3128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/podcast/outofband/episode9/" class="md-nav__link">
+      <a href="../../../podcast/outofband/episode9/" class="md-nav__link">
         
   
   
@@ -3098,7 +3207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/aboutme/" class="md-nav__link">
+      <a href="../../../aboutme/" class="md-nav__link">
         
   
   
@@ -3133,8 +3242,198 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+    
+      
+    
+    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/endpoint/intune/entraid-vs-oobe.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="lessons-learned-diagnosing-local-admin-priority-conflicts">Lessons Learned: Diagnosing Local Admin Priority Conflicts<a class="headerlink" href="#lessons-learned-diagnosing-local-admin-priority-conflicts" title="Permanent link">&para;</a></h1>
+<p>By <em>default</em>, when a device undergoes a Microsoft Entra ID join, the <strong>registering</strong> user is automatically added to the local Administrators group (“Registering user is added as local administrator”).</p>
+<p>In a recent dive into an unexpected issue (and obfuscating the details), the <em>helpdesk</em> relied on this setting to elevate help-desk and IT staff during Entra ID join. However, enrolled devices kept landing with Standard user rights, preventing the ability to assist. Though they were not able to determine the root cause, they knew this was not the standard operating procedure.</p>
+<p>After a thorough investigation, It was discovered that a legacy Windows Autopilot profile—configured with <strong>User Account Type: Standard</strong>—was being applied during OOBE and silently overriding the Entra ID policy. This blog post unpacks that, in the style of a Lesson Learned.</p>
+<p><img alt="entraid-vs-oobe-uat" src="../Images/entraid-vs-oobe-uat.png" /></p>
+<h2 id="understanding-entra-id-local-administrator-settings">Understanding Entra ID Local Administrator Settings<a class="headerlink" href="#understanding-entra-id-local-administrator-settings" title="Permanent link">&para;</a></h2>
+<p>Under <strong>Devices → Device settings</strong> in the Entra portal, two critical policies control local admin assignment:</p>
+<ul>
+<li>
+<p><strong>Registering User Is Added as Local Administrator</strong><br />
+    This was set to (“All”). When set, the enrolling user becomes a local admin during Entra join.<br />
+<em>This was the “expected result.”</em></p>
+</li>
+<li>
+<p><strong>Global Admin Role Inclusion</strong><br />
+    Governs whether Global Administrators auto-join the local Administrators group.</p>
+</li>
+</ul>
+<p><img alt="entraid-vs-oobe-entraidsetttings" src="../Images/entraid-vs-oobe-entraidsetttings.png" /></p>
+<p><strong>Now my recommendations on this:</strong></p>
+<ul>
+<li>
+<p>Disable Global Admin inclusion (set to <strong>No</strong>) to prevent broad elevation and lateral movement.</p>
+</li>
+<li>
+<p>Keep “Registering user” enabled only if you trust every enrolling user—or scope it to a specific group via “Selected” for granular control. </p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This will only really take affect if you are not using Autopilot or Bulk Enrolment. Keep reading...</p>
+</div>
+<h2 id="diagnosing-the-unexpected-standard-outcome">Diagnosing the Unexpected Standard Outcome<a class="headerlink" href="#diagnosing-the-unexpected-standard-outcome" title="Permanent link">&para;</a></h2>
+<p>When devices enrolled without admin rights, my diagnostic steps were:</p>
+<ol>
+<li>
+<p><strong>Verify Entra Settings</strong><br />
+    Confirm “Registering user is added as local administrator” was still enabled.</p>
+</li>
+<li>
+<p><strong>List All Autopilot Profiles</strong><br />
+    In Intune’s Autopilot blade, export profiles, noting each one’s <strong>User Account Type</strong> and priority.</p>
+</li>
+<li>
+<p><strong>Reduce Profile Scopes</strong><br />
+    Identify any legacy Standard profile assigned at a higher priority and remove or adjust it.</p>
+</li>
+<li>
+<p><strong>Deploy to Lab Endpoint</strong><br />
+    Test on a lab device to confirm which profile applies during OOBE and verify adjustments.</p>
+</li>
+</ol>
+<h2 id="autopilot-profile-precedence">Autopilot Profile Precedence<a class="headerlink" href="#autopilot-profile-precedence" title="Permanent link">&para;</a></h2>
+<p>It wasn’t until we captured and reviewed the Autopilot diagnostics logs that everything clicked into place. As soon as the device hit OOBE, Autopilot downloaded and applied profiles, long before Entra ID could add the registering user to Administrators. In this case, that meant the old “Standard” profile ran first, effectively vetoing any Entra-based elevation.</p>
+<p>Once we saw that behaviour, we grabbed a whiteboard (well, a set of Text Messages) and sketched out the relationship:</p>
+<ul>
+<li>
+<p>Autopilot profiles are processed in strict assignment order.</p>
+</li>
+<li>
+<p>The first profile whose scope matches the device wins—its User Account Type becomes law for that enrolment.</p>
+</li>
+<li>
+<p>Only after OOBE completes does Entra ID join kick in, but by then it’s too late to elevate the primary user.</p>
+</li>
+</ul>
+<p>With that “<em>aha</em>” moment, we formalized what we’d discovered into a simple matrix, mapping every combination of Entra setting and profile type. That matrix is the single source of truth for predicting OOBE outcomes.</p>
+<h2 id="policy-priority-matrix">Policy Priority Matrix<a class="headerlink" href="#policy-priority-matrix" title="Permanent link">&para;</a></h2>
+<p>Autopilot profiles are processed during OOBE before Entra policies take effect, meaning their <strong>User Account Type</strong> will always win. Below is a matrix illustrating outcomes:</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Entra “Registering User”</th>
+<th>Autopilot Profile User Type</th>
+<th>Effective Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Expected Entra admin; Autopilot admin</td>
+<td>Enabled</td>
+<td>Administrator</td>
+<td>Registering user (primary user) is admin — as intended.</td>
+</tr>
+<tr>
+<td>2. Expected Entra admin; Autopilot standard</td>
+<td>Enabled</td>
+<td>Standard</td>
+<td>Primary user remains Standard; Autopilot profile overrides “Registering user.”</td>
+</tr>
+<tr>
+<td>3. Entra registering user disabled; Autopilot admin</td>
+<td>Disabled</td>
+<td>Administrator</td>
+<td>Primary user becomes admin because Autopilot profile wins.</td>
+</tr>
+<tr>
+<td>4. Both Entra and Autopilot set to standard</td>
+<td>Disabled</td>
+<td>Standard</td>
+<td>No local admin at OOBE — requires post-enrollment remediation.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bonus-enforcing-local-admin-via-intune-local-group-membership">Bonus: Enforcing Local Admin via Intune Local Group Membership<a class="headerlink" href="#bonus-enforcing-local-admin-via-intune-local-group-membership" title="Permanent link">&para;</a></h2>
+<p>Cheers for making it this far into the article. As a thanks, here is also how I fixed the problem.</p>
+<p>To bake in a safety net for future rollouts, I had leaned on Intune’s Local User Group Membership policy. This ensures your designated admins or support accounts are <strong>always</strong> added to the local Administrators group—no matter what Autopilot or Entra ID settings do upstream.</p>
+<ol>
+<li>Navigate to <strong>Intune</strong> &gt; <strong>Endpoint Security</strong> &gt; <strong>Account Protection</strong> &gt; <strong>Local User Group Membership</strong>.</li>
+</ol>
+<p><img alt="entraid-vs-oobe-localusergroup" src="../Images/entraid-vs-oobe-localusergroup.png" /></p>
+<ol>
+<li>
+<p>Create a new policy:</p>
+<ul>
+<li>
+<p><strong>Action:</strong> Add (Update)</p>
+</li>
+<li>
+<p><strong>Group:</strong> Administrators</p>
+</li>
+<li>
+<p><strong>Members:</strong></p>
+<ul>
+<li>
+<p>Specific user principal names (e.g., helpdesk@securingm365.com)</p>
+</li>
+<li>
+<p>Azure AD groups (e.g., “Trusted Enrollers,” “Site IT Support”)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><img alt="entraid-vs-oobe-localusergroupsettings" src="../Images/entraid-vs-oobe-localusergroupsettings.png" /></p>
+<ol>
+<li>
+<p>Scope the policy to your device groups:</p>
+<ul>
+<li>
+<p>Use device or dynamic groups (e.g., “All Windows 10+ Devices”).</p>
+</li>
+<li>
+<p>Exclude any high-risk endpoints if necessary.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Monitor &amp; maintain:</p>
+<ul>
+<li>Review policy deployment status in Intune to catch any failures.</li>
+</ul>
+</li>
+</ol>
+<p>Source: <a href="https://techcommunity.microsoft.com/blog/intunecustomersuccess/new-settings-available-to-configure-local-user-group-membership-in-endpoint-secu/3093207">New settings available to configure local user group membership in endpoint security | Microsoft Community Hub</a></p>
+
+
+<!-- taken from 
+https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
+
+<hr />
+<div class="md-source-file">
+<small>
+
+    <!-- mkdocs-git-revision-date-localized-plugin -->
+    
+</small>
+</div>
+
+  
+
+
+
+
+                
               </article>
             </div>
           
@@ -3154,6 +3453,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../baselineinsights/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Enhancing Security with Microsoft Intune Security Baselines and Insights">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Enhancing Security with Microsoft Intune Security Baselines and Insights
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../configmgr/challengesolution-mcmtointune/" class="md-footer__link md-footer__link--next" aria-label="Next: Top Challenges and Solutions: Microsoft Configuration Manager to Intune Migration">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Top Challenges and Solutions: Microsoft Configuration Manager to Intune Migration
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -3213,10 +3550,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["announce.dismiss", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy", "content.action.view", "content.tooltips"], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy", "content.action.view", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>
