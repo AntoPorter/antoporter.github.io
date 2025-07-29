@@ -166,6 +166,7 @@ nav:
       - endpoint/intune/remediations.md
       - endpoint/intune/bitlocker_selfservice.md
       - endpoint/intune/baselineinsights.md
+      - endpoint/intune/entraid-vs-oobe.md
     - Microsoft Configuration Manager:
       - endpoint/configmgr/challengesolution-mcmtointune.md
   - Microsoft Purview: 
