@@ -84,36 +84,36 @@ Cheers for making it this far into the article. As a thanks, here is also how I 
 
 To bake in a safety net for future rollouts, I had leaned on Intune’s Local User Group Membership policy. This ensures your designated admins or support accounts are **always** added to the local Administrators group—no matter what Autopilot or Entra ID settings do upstream.
 
-1. Navigate to **Intune** > **Endpoint Security** > **Account Protection** > **Local User Group Membership**.
+**Navigate to Intune > Endpoint Security > Account Protection > Local User Group Membership.**
 
 ![entraid-vs-oobe-localusergroup](./Images/entraid-vs-oobe-localusergroup.png)
 
-2. Create a new policy:
+**Create a new policy:**
+	
+- **Action:** Add (Update)
+	
+- **Group:** Administrators
+	
+- **Members:**
 		
-	- **Action:** Add (Update)
+	- Specific user principal names (e.g., helpdesk@securingm365.com)
 		
-	- **Group:** Administrators
+	- Azure AD groups (e.g., “Trusted Enrollers,” “Site IT Support”)
 		
-	- **Members:**
-		
-		- Specific user principal names (e.g., helpdesk@securingm365.com)
-			
-		- Azure AD groups (e.g., “Trusted Enrollers,” “Site IT Support”)
-			
 
 ![entraid-vs-oobe-localusergroupsettings](./Images/entraid-vs-oobe-localusergroupsettings.png)
 
-3. Scope the policy to your device groups:
-		
-	- Use device or dynamic groups (e.g., “All Windows 10+ Devices”).
-		
-	- Exclude any high-risk endpoints if necessary.
-		
+**Scope the policy to your device groups:**
+	
+- Use device or dynamic groups (e.g., “All Windows 10+ Devices”).
+	
+- Exclude any high-risk endpoints if necessary.
+	
 
-4. Monitor & maintain:
-		
-	- Review policy deployment status in Intune to catch any failures.
-		
+**Monitor & maintain:**
+	
+- Review policy deployment status in Intune to catch any failures.
+	
 
 
 Source: [New settings available to configure local user group membership in endpoint security | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/intunecustomersuccess/new-settings-available-to-configure-local-user-group-membership-in-endpoint-secu/3093207)
