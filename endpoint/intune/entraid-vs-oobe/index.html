@@ -3365,13 +3365,9 @@
 <h2 id="bonus-enforcing-local-admin-via-intune-local-group-membership">Bonus: Enforcing Local Admin via Intune Local Group Membership<a class="headerlink" href="#bonus-enforcing-local-admin-via-intune-local-group-membership" title="Permanent link">&para;</a></h2>
 <p>Cheers for making it this far into the article. As a thanks, here is also how I fixed the problem.</p>
 <p>To bake in a safety net for future rollouts, I had leaned on Intune’s Local User Group Membership policy. This ensures your designated admins or support accounts are <strong>always</strong> added to the local Administrators group—no matter what Autopilot or Entra ID settings do upstream.</p>
-<ol>
-<li>Navigate to <strong>Intune</strong> &gt; <strong>Endpoint Security</strong> &gt; <strong>Account Protection</strong> &gt; <strong>Local User Group Membership</strong>.</li>
-</ol>
+<p><strong>Navigate to Intune &gt; Endpoint Security &gt; Account Protection &gt; Local User Group Membership.</strong></p>
 <p><img alt="entraid-vs-oobe-localusergroup" src="../Images/entraid-vs-oobe-localusergroup.png" /></p>
-<ol>
-<li>
-<p>Create a new policy:</p>
+<p><strong>Create a new policy:</strong></p>
 <ul>
 <li>
 <p><strong>Action:</strong> Add (Update)</p>
@@ -3391,12 +3387,8 @@
 </ul>
 </li>
 </ul>
-</li>
-</ol>
 <p><img alt="entraid-vs-oobe-localusergroupsettings" src="../Images/entraid-vs-oobe-localusergroupsettings.png" /></p>
-<ol>
-<li>
-<p>Scope the policy to your device groups:</p>
+<p><strong>Scope the policy to your device groups:</strong></p>
 <ul>
 <li>
 <p>Use device or dynamic groups (e.g., “All Windows 10+ Devices”).</p>
@@ -3405,14 +3397,10 @@
 <p>Exclude any high-risk endpoints if necessary.</p>
 </li>
 </ul>
-</li>
-<li>
-<p>Monitor &amp; maintain:</p>
+<p><strong>Monitor &amp; maintain:</strong></p>
 <ul>
 <li>Review policy deployment status in Intune to catch any failures.</li>
 </ul>
-</li>
-</ol>
 <p>Source: <a href="https://techcommunity.microsoft.com/blog/intunecustomersuccess/new-settings-available-to-configure-local-user-group-membership-in-endpoint-secu/3093207">New settings available to configure local user group membership in endpoint security | Microsoft Community Hub</a></p>
 
 
