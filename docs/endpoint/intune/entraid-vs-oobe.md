@@ -115,5 +115,6 @@ To bake in a safety net for future rollouts, I had leaned on Intune’s Local Us
 	- Review policy deployment status in Intune to catch any failures.
 		
 
+
 Source: [New settings available to configure local user group membership in endpoint security | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/intunecustomersuccess/new-settings-available-to-configure-local-user-group-membership-in-endpoint-secu/3093207)
 
