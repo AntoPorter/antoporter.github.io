@@ -138,6 +138,7 @@ nav:
   - Microsoft Defender XDR:
     - Microsoft Defender XDR: defenderxdr/index.md
     - Microsoft Defender for Endpoint:
+      - defenderxdr/defenderendpoint/effectivesettings.md
       - defenderxdr/defenderendpoint/enablingdfefeatures.md
       - defenderxdr/defenderendpoint/enforcementscope.md
     - Microsoft Defender for Office 365:

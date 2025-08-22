@@ -10,9 +10,9 @@ As a Cloud Security Architect specialising in these technologies, I aim to provi
 
 ## Latest Posts
 
+- [Intune + Defender: See What’s Really Effective](./defenderxdr/defenderendpoint/effectivesettings.md)
 - [Lessons Learned: Diagnosing Local Admin Priority Conflicts](./endpoint/intune/entraid-vs-oobe.md)
 - [Transforming Vulnerability Management with the Security Copilot Agent in Intune](./copilot/copilotsecurity/vulnerabilityremediationagent.md)
-- [Unleashing Microsoft Defender for Endpoint: Advanced Features You're Missing](./defenderxdr/defenderendpoint/enablingdfefeatures.md)
 
 ---
 

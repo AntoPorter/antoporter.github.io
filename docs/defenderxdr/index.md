@@ -4,6 +4,7 @@
 ## Defender for Endpoint
 ---
 
+- [Intune + Defender: See What’s Really Effective](./defenderendpoint/effectivesettings.md)
 - [Unleashing Microsoft Defender for Endpoint: Advanced Features You're Missing](./defenderendpoint/enablingdfefeatures.md)
 - [Enforcement Scopes](./defenderendpoint/enforcementscope.md)
 
