@@ -150,6 +150,7 @@ nav:
       - defenderxdr/defendercloudapps/appblocking-dfe.md
       - defenderxdr/defendercloudapps/unsanctioning-riskyapps.md
     - Microsoft Sentinel:
+      - defenderxdr/sentinel/kqlactivitytemplates.md
       - defenderxdr/sentinel/unifiedsoc.md
       - defenderxdr/sentinel/soar.md
       - defenderxdr/sentinel/workspaceworkbookexport.md

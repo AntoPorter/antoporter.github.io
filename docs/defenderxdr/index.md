@@ -28,6 +28,7 @@
 ## Microsoft Sentinel
 ---
 
+- [KQL Made Less Scary: A Practical Starting Point Hidden in Plain Sight](./sentinel/kqlactivitytemplates.md)
 - [The Future of SOC, with Microsoft](./sentinel/unifiedsoc.md)
 - [The Importance of SOAR within a SOC Team](./sentinel/soar.md)
 - [Streamlining Project Documentation with ‘Workspace Usage Report’ Workbook](./sentinel/workspaceworkbookexport.md)
