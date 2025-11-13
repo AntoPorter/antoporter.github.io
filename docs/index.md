@@ -10,18 +10,18 @@ As a Cloud Security Architect specialising in these technologies, I aim to provi
 
 ## Latest Posts
 
+- [Endpoint Privilege Management (EPM): The New Era of Privileged Access Management](./endpoint/intune/epm-as-pam.md)
+	
 - [KQL Made Less Scary: A Practical Starting Point Hidden in Plain Sight](./defenderxdr/sentinel/kqlactivitytemplates.md)
 	
 - [Intune + Defender: See What’s Really Effective](./defenderxdr/defenderendpoint/effectivesettings.md)
-	
-- [Lessons Learned: Diagnosing Local Admin Priority Conflicts](./endpoint/intune/entraid-vs-oobe.md)
 	
 
 ---
 
 ## Latest Podcast
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cIUmD8s0VRA?si=FXsqrYBJA7QG3OcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9MBEHWk9GZ0?si=EACLwR5F7BMy1uCd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [**Out Of Band: A Microsoft Security Podcast**](./podcast/outofband/index.md)
 

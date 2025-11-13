@@ -169,6 +169,7 @@ nav:
       - endpoint/intune/bitlocker_selfservice.md
       - endpoint/intune/baselineinsights.md
       - endpoint/intune/entraid-vs-oobe.md
+      - endpoint/intune/epm-as-pam.md
     - Microsoft Configuration Manager:
       - endpoint/configmgr/challengesolution-mcmtointune.md
   - Microsoft Purview: 
@@ -212,6 +213,8 @@ nav:
     - podcast/outofband/episode6.md
     - podcast/outofband/episode7.md
     - podcast/outofband/episode8.md
-    - podcast/outofband/episode9.md   
+    - podcast/outofband/episode9.md
+    - podcast/outofband/episode10.md
+    - podcast/outofband/episode11.md
   - About Me:
     - aboutme.md

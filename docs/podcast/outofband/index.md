@@ -4,6 +4,10 @@
 
 ### Episodes
 
+- [Episode 11: Microsoft Secure 2025](episode11.md)
+	
+- [Episode 10: Security Chin Wag with Mat Clark](episode10.md)
+	
 - [Episode 9: Inside the Threat Landscape](episode9.md)
 	
 - [Episode 8: Into the World of Copilot](episode8.md)
