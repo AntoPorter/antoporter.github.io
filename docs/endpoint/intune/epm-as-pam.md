@@ -3,11 +3,11 @@
 
 Let’s start at the beginning, because, honestly, if you’re reading this, you’re probably either 
 
-**(a)** a security architect who’s been burned by local admin rights one too many times, 
+**a.** a security architect who’s been burned by local admin rights one too many times, 
 
-**(b)** an IT pro who’s tired of the “just give me admin” refrain, or 
+**b.** an IT pro who’s tired of the “just give me admin” refrain, or 
 
-**(c)** someone who’s heard the phrase “least privilege” so often it’s become a mantra. 
+**c.** someone who’s heard the phrase “least privilege” so often it’s become a mantra. 
 
 
 ---
