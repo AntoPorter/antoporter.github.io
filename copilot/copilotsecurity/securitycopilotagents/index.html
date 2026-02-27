@@ -1,0 +1,4861 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Expert Insights & Strategies for Microsoft Defender XDR, Endpoint Management & More">
+      
+      
+        <meta name="author" content="Anthony Porter">
+      
+      
+        <link rel="canonical" href="https://www.securingm365.com/copilot/copilotsecurity/securitycopilotagents/">
+      
+      
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../vulnerabilityremediationagent/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/sitefavicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>A New Narrative for Agentic AI in Security - SecuringM365</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-2H6Z23PMCP"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-2H6Z23PMCP",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-2H6Z23PMCP",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#a-new-narrative-for-agentic-ai-in-security" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="SecuringM365" class="md-header__button md-logo" aria-label="SecuringM365" data-md-component="logo">
+      
+  <img src="../../../images/sitelogo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SecuringM365
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              A New Narrative for Agentic AI in Security
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AntoPorter/antoporter.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AntoPorter
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Homepage
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../defenderxdr/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Microsoft Defender XDR
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../endpoint/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Endpoint Management
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../purview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Microsoft Purview
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Microsoft Copilot
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../entra/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Microsoft Entra
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../misc/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Miscellaneous
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../podcast/outofband/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Out of Band Podcast
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../aboutme/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  About Me
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="SecuringM365" class="md-nav__button md-logo" aria-label="SecuringM365" data-md-component="logo">
+      
+  <img src="../../../images/sitelogo.png" alt="logo">
+
+    </a>
+    SecuringM365
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AntoPorter/antoporter.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AntoPorter
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homepage
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Homepage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Defender XDR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Endpoint Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../purview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Purview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Copilot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Entra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Miscellaneous
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Out of Band Podcast
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aboutme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About Me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../defenderxdr/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Defender XDR
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Defender XDR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Defender for Endpoint
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Defender for Endpoint
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/defenderendpoint/effectivesettings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intune + Defender: See What’s Really Effective
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/defenderendpoint/enablingdfefeatures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unleashing Microsoft Defender for Endpoint: Advanced Features You're Missing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/defenderendpoint/enforcementscope/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enforcement Scope - Microsoft Intune Policy Enforcement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Defender for Office 365
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Defender for Office 365
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/defenderoffice365/ll-safelinks-rewrap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lessons Learnt: Resolving Safe Links Rewrap Breaking URLs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Defender for Identity
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Defender for Identity
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/defenderidentity/top5features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Top 5 Features of Microsoft Defender for Identity You Should Be Using
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Defender for Cloud Apps
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Defender for Cloud Apps
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/defendercloudapps/demystifying-policies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demystifying Microsoft Defender for Cloud Apps: A Self-Learning Journey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/defendercloudapps/appblocking-dfe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enforcing App Blocking with Microsoft Defender for Endpoint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/defendercloudapps/unsanctioning-riskyapps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automatically Unsanctioning Risky Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Sentinel
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Sentinel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/sentinel/kqlactivitytemplates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KQL Made Less Scary: A Practical Starting Point Hidden in Plain Sight
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/sentinel/unifiedsoc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Future of SOC, with Microsoft
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/sentinel/soar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Importance of SOAR within a SOC Team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../defenderxdr/sentinel/workspaceworkbookexport/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streamlining Project Documentation with ‘Workspace Usage Report’ Workbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../endpoint/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Endpoint Management
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Endpoint Management
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Intune
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Intune
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/quickwins-securitytasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Wins: Why Your Organization Should Adopt Microsoft Intune Security Tasks Today
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/quickwins-appcontrolforbusiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Wins: Implementing App Control for Business to Replace Legacy Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/quickwins-autopilotv2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Wins: Migrating from Traditional SOE Deployment to Intune Autopilot v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/quickwins-laps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Wins: Securing Local Devices with Microsoft Intune's LAPS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/quickwins-securitybaselines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Wins: Establishing a Secure Baseline in a Greenfield Cloud Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/quickwins-applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Wins: Migrating Application Management to Microsoft Intune
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/quickwins-autopatch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Wins: Transitioning from WSUS to Windows Autopatch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/quickwins-grouppolicyanalytics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Wins: Migrating Group Policies with Group Policy Analytics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/remediations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intune Remediations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/bitlocker_selfservice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Importance of Self-Service Recovery Key Retrieval
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/baselineinsights/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enhancing Security with Microsoft Intune Security Baselines and Insights
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/entraid-vs-oobe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lessons Learned: Diagnosing Local Admin Priority Conflicts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/epm-as-pam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Endpoint Privilege Management (EPM): The New Era of Privileged Access Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/intune/dynamic-scoping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dynamic Intune Scope Tagging through Entra ID Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Configuration Manager
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Configuration Manager
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../endpoint/configmgr/challengesolution-mcmtointune/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Top Challenges and Solutions: Microsoft Configuration Manager to Intune Migration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../purview/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Purview
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Purview
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../purview/browsersignaldetection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Understanding Microsoft Purview Insider Risk Management and Browser Signal Detection for Microsoft Edge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../purview/m365copilotDLP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Safeguarding Sensitive Information with Microsoft Purview DLP and Microsoft 365 Copilot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Copilot
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Copilot
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Security Copilot
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Security Copilot
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A New Narrative for Agentic AI in Security
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A New Narrative for Agentic AI in Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Shift
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Shift">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credibility-through-consistency-and-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credibility Through Consistency and Context
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ignite-2025-security-copilot-agents-now-included-for-microsoft-365-e5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ignite 2025: Security Copilot Agents Now Included for Microsoft 365 E5
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ignite 2025: Security Copilot Agents Now Included for Microsoft 365 E5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whats-included" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What’s Included
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-scus-security-compute-units" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding SCUs: Security Compute Units
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoprovisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto‑Provisioning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumption-limits-and-overage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consumption, Limits, and Overage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-scu-planning-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why SCU Planning Matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embedded-security-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Embedded Security Agents
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Embedded Security Agents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defender-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defender Agents
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defender Agents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#threat-intelligence-briefing-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Intelligence Briefing Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entra-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entra Agents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intune-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intune Agents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#purview-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purview Agents
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#governance-and-control-agent-365-and-foundry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Governance and Control: Agent 365 and Foundry
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measuring-impact-what-does-success-look-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measuring Impact: What Does Success Look Like?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#human-roles-and-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Human Roles and Skills
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-scenarios-and-mitigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Scenarios and Mitigation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risk Scenarios and Mitigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#practical-adoption-steps-from-entitlement-to-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Adoption Steps: From Entitlement to Impact
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Adoption Steps: From Entitlement to Impact">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prepare-your-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Prepare Your Environment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-identify-highimpact-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Identify High‑Impact Use Cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-standardise-and-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Standardise and Measure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-govern-and-optimise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Govern and Optimise
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-upskill-and-communicate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Upskill and Communicate
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vulnerabilityremediationagent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transforming Vulnerability Management with the Security Copilot Agent in Intune
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../globalaibootcamppresentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session Recap: Empowering AI-Driven Security with Microsoft Sentinel and Security Copilot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deploy-templatespec/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploy Copilot for Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logicapp-promptbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LogicApp Promptbook with Send Email Function
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../promptinspiration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Copilot for Security: Prompt Inspiration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ll-scudeployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson Learnt: Streamlining SCU Deployment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft 365 Copilot
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft 365 Copilot
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../copilotm365/gettingstarted/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started with Microsoft Copilot for Microsoft 365: A Beginner’s Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../copilotm365/enablecopilotm365/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step-by-Step Instructions to Enable Microsoft Copilot for Microsoft 365
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../entra/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Entra
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microsoft Entra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entra/azconnect-device/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resolving Azure Connection Issues with Connect-AzAccount -Device in PowerShell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entra/exploringtrv2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exploring Tenant Restrictions v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Miscellaneous
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Miscellaneous
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/misconception-technicalcontrols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Misconception of Technical Controls in IT Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/understandingcybersecurityethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Understanding Cybersecurity Ethics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/aibootcamp2025-day1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Powered Business Applications Bootcamp Recap - Day 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/aibootcamp2025-day2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Powered Business Applications Bootcamp Recap - Day 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/aibootcamp2025-day3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Powered Business Applications Bootcamp Recap - Day 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/summerbootcamp2025-day1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Summer Bootcamp Recap - Day 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/summerbootcamp2025-day2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Summer Bootcamp Recap - Day 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/summerbootcamp2025-day3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Summer Bootcamp Recap - Day 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../podcast/outofband/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Out of Band Podcast
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Out of Band Podcast
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 0: Welcome to the Band
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 1: Boots on Ground
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 2: Intune It
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 3: Entra Goodness with Merill Fernando
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 4: Chronicles of a Rogue Device
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 5: Before Redmond - MVP Origins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 6: Stories from Redmond - Post MVP Summit 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 7: S.E.C.U.R.E with Mat Clark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 8: # Into The World of Copilot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 09: Inside the Threat Landscape
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 10: Security Chin Wag with Mat Clark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 11: Microsoft Secure 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 12: Agents, Agents Everywhere
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../podcast/outofband/episode13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Episode 13: 2026 Begins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About Me
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About Me
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aboutme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About Me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Microsoft Copilot
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Microsoft Security Copilot
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+    
+      
+    
+    <a href="https://github.com/AntoPorter/antoporter.github.io/tree/main/docs/copilot/copilotsecurity/securitycopilotagents.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="a-new-narrative-for-agentic-ai-in-security">A New Narrative for Agentic AI in Security<a class="headerlink" href="#a-new-narrative-for-agentic-ai-in-security" title="Permanent link">&para;</a></h1>
+<p>As threats multiply and adversaries adopt AI-driven tactics, security teams face mounting pressure to <em>do more with less</em>. The narrative around AI in security has often been tinged with anxiety... </p>
+<p><strong>Will AI take jobs, deskill practitioners, or introduce new risks?</strong> </p>
+<p><em>But this framing misses the REAL opportunity.</em></p>
+<hr />
+<h2 id="the-shift">The Shift<a class="headerlink" href="#the-shift" title="Permanent link">&para;</a></h2>
+<p>For years, automation in security was about scripting away repetitive tasks, reducing the noise, and essentially making your day-to-day easier. But agentic AI, autonomous and adaptive agents that reason, plan, and act, marks a profound shift for the workforce. </p>
+<p><strong>These agents don’t just automate; they collaborate.</strong> </p>
+<p>They operate alongside practitioners, handling the high-volume, low-value work that clogs security pipelines while surfacing context, recommendations, and insights that help humans make better decisions.</p>
+<p>The result is that security professionals are freed from the grind of endless alert triage, script writing and analysis, and security policy reviews. Instead, they can focus on what truly matters: strategic risk reduction, proactive threat hunting, and building trust with stakeholders. I genuinely believe that organisations will thrive in this new era, and will build strategies, cultures, and digital teams that think and act alongside humans as teammates.</p>
+<p>You just need to be ahead of the curve, and not get left behind.</p>
+<h3 id="credibility-through-consistency-and-context">Credibility Through Consistency and Context<a class="headerlink" href="#credibility-through-consistency-and-context" title="Permanent link">&para;</a></h3>
+<p>Credibility in security is built on two pillars: </p>
+<p><strong>Consistency</strong> and <strong>Context</strong>. </p>
+<p>Consistency means responding to incidents, policy changes, and compliance requirements in a repeatable, defensible way. Context means understanding not just what happened, but why and what to do next. </p>
+<p>Agentic AI amplifies both.</p>
+<ul>
+<li>
+<p><strong>Consistency:</strong> Agents apply the same logic, evidence, and best practices <strong>every time</strong>, reducing variance and human error. </p>
+</li>
+<li>
+<p><strong>Context:</strong> By integrating signals from across the security stack and even external threat intelligence, Agents provide practitioners with the 'why?' behind every recommendation, making it easier to explain decisions to auditors, executives, and regulators.</p>
+</li>
+</ul>
+<p>In short, agentic AI <strong>does not replace the human element</strong> and instead <strong>enhances it</strong>, making every practitioner more credible, confident, and capable.</p>
+<hr />
+<h2 id="ignite-2025-security-copilot-agents-now-included-for-microsoft-365-e5">Ignite 2025: Security Copilot Agents Now Included for Microsoft 365 E5<a class="headerlink" href="#ignite-2025-security-copilot-agents-now-included-for-microsoft-365-e5" title="Permanent link">&para;</a></h2>
+<p>At Ignite 2025, Microsoft unveiled a landmark update for enterprise security teams: Security Copilot agents are now included for all Microsoft 365 E5 customers, with roll-out which commended November 2025. This inclusion marks a pivotal shift in how organisations access and operationalise agentic AI, unlocking embedded capabilities across Defender, Entra, Intune, Purview, and the standalone Security Copilot portal. </p>
+<p><img alt="securitycopilotagents-announcement" src="../Images/securitycopilotagents-announcement.png" /></p>
+<p>Source: <a href="https://www.microsoft.com/en-us/security/blog/2025/11/18/agents-built-into-your-workflow-get-security-copilot-with-microsoft-365-e5/?msockid=2153e7ce7cd16ace1acbf2687d126bcf">Agents built into your workflow: Get Security Copilot with Microsoft 365 E5 | Microsoft Security Blog</a> </p>
+<p>Not only that, an announcement soon after advised that Microsoft 365 E5 customers ALSO going to include a set of SCU's available on a monthly basis (which necessary to drive these Agents).</p>
+<p>Source: <a href="https://learn.microsoft.com/en-us/copilot/security/security-copilot-inclusion">Learn about Security Copilot inclusion in Microsoft 365 E5 subscription | Microsoft Learn</a></p>
+<h3 id="whats-included">What’s Included<a class="headerlink" href="#whats-included" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>400 SCUs per 1,000 E5 licences</strong>, pro‑rated for smaller deployments, scaling up to 10,000 SCUs per month.</li>
+<li><strong>No additional cost</strong>, SCUs are bundled into the existing E5 subscription.</li>
+<li><strong>Zero‑click activation</strong>, with auto‑provisioning and a 30‑day advance notification before go live.</li>
+<li><strong>Embedded agents</strong>, natively integrated into Microsoft’s security stack and available via the Security Copilot portal.</li>
+<li><strong>Partner and custom agents</strong>, accessible through the Security Store, featuring 30+ partner‑built agents and tools for building bespoke solutions.</li>
+</ul>
+<p><em>This is more than a licensing update</em></p>
+<p>It’s a strategic move to democratise AI‑driven security and make advanced capabilities accessible to organisations of all sizes.</p>
+<h3 id="understanding-scus-security-compute-units">Understanding SCUs: Security Compute Units<a class="headerlink" href="#understanding-scus-security-compute-units" title="Permanent link">&para;</a></h3>
+<p>A Security Compute Unit (SCU) is Microsoft’s metric for the compute power required to run Security Copilot workloads (Whether that’s a chat prompt, an agentic workflow, or an automated investigation).</p>
+<p><strong>And no, it’s not a 'SKU'.</strong></p>
+<p><em>If I had a dollar for every time someone confused the two, I’d have enough SCUs to run Copilot on my Fridge 24/7 365.</em></p>
+<p>With E5 inclusion, customers receive:</p>
+<ul>
+<li><strong>400 licences = 160 SCUs/month</strong></li>
+<li><strong>4,000 licences = 1,600 SCUs/month</strong></li>
+</ul>
+<p>SCUs are pooled at the tenant level and can be used across all workspaces and embedded experiences. There’s no need for manual provisioning.</p>
+<p>Source: https://learn.microsoft.com/en-us/copilot/security/security-copilot-inclusion#licensing-and-capacity</p>
+<h3 id="autoprovisioning">Auto‑Provisioning<a class="headerlink" href="#autoprovisioning" title="Permanent link">&para;</a></h3>
+<p>One of the most impactful operational changes is the shift to auto‑provisioning. For eligible E5 tenants, Security Copilot is automatically configured.</p>
+<p><strong>No Azure setup</strong></p>
+<p><strong>No manual capacity provisioning, and</strong></p>
+<p><strong>No complex onboarding flows.</strong></p>
+<p>Key settings such as data residency, GPU processing location, and data sharing are pre‑selected based on your tenant’s geography and compliance posture. Default roles are assigned for owner and contributor access, with guided onboarding banners appearing in‑product to help teams get started.</p>
+<p>This zero‑click model lowers the barrier to entry, allowing security teams to focus on adoption and value realisation rather than technical setup. However, it also places a premium on proactive planning.</p>
+<p><strong>Organisations must be ready to govern, monitor, and optimise SCU usage from day one.</strong></p>
+<h3 id="consumption-limits-and-overage">Consumption, Limits, and Overage<a class="headerlink" href="#consumption-limits-and-overage" title="Permanent link">&para;</a></h3>
+<p>SCUs are consumed as agents and Copilot features are used. Each action, such as:</p>
+<ul>
+<li>
+<p>phishing triage, </p>
+</li>
+<li>
+<p>incident summarisation, or</p>
+</li>
+<li>
+<p>threat intelligence briefing </p>
+</li>
+</ul>
+<p>These deduct a non-specific number of SCUs from the monthly pool. Allocations reset monthly, and unused SCUs do not roll over.</p>
+<p>If usage exceeds the included allocation, Microsoft will throttle further use at a future date. Customers will have the option to purchase additional SCUs on a pay‑as‑you‑go basis at <strong>$6 per SCU</strong>.</p>
+<h3 id="why-scu-planning-matters">Why SCU Planning Matters<a class="headerlink" href="#why-scu-planning-matters" title="Permanent link">&para;</a></h3>
+<p>The move from hourly billing to monthly allocation introduces both predictability and risk. While it simplifies procurement and budgeting, it also means that unused SCUs are forfeited at month’s end, and overuse can lead to throttling or unexpected costs.</p>
+<p><strong>This is where proactive planning is essential:</strong></p>
+<ul>
+<li>
+<p><strong>Monitor usage</strong>, using the in‑product dashboard to track SCU consumption by agent, user, and workload.</p>
+</li>
+<li>
+<p><strong>Prioritise high‑value use cases</strong>, focusing on scenarios that deliver measurable impact, such as reducing mean time to respond or automating repetitive investigations.</p>
+</li>
+<li>
+<p><strong>Optimise configuration</strong>, disabling non‑essential features that consume SCUs (e.g. automatic incident summaries for low‑severity alerts) and allocating resources to critical agents.</p>
+</li>
+<li>
+<p><strong>Plan for surges</strong>, integrating agentic workflows into daily operations rather than sporadic, ad‑hoc use.</p>
+</li>
+</ul>
+<hr />
+<h2 id="embedded-security-agents">Embedded Security Agents<a class="headerlink" href="#embedded-security-agents" title="Permanent link">&para;</a></h2>
+<p>Microsoft has moved agentic AI from an optional accelerator to a foundational capability across the entire security stack. Security Copilot agents are no longer standalone tools or experimental add‑ons. </p>
+<p>They are now embedded directly into the products security teams use every day. </p>
+<p>This shift transforms how practitioners investigate, respond, govern, and secure their environments.</p>
+<p>Each product family now includes purpose‑built agents designed to reduce toil, enhance consistency, and elevate the credibility of every analyst, regardless of experience level. These agents operate in the flow of work, applying evidence‑based logic, contextual reasoning, and Microsoft’s threat intelligence to deliver faster, more accurate outcomes.</p>
+<p>What follows is a breakdown of how each product area leverages agentic AI to solve long‑standing operational challenges, streamline decision‑making, and unlock new levels of efficiency and precision across the SOC, identity, endpoint, and data security domains.</p>
+<p><img alt="securitycopilotagents-agents" src="../Images/securitycopilotagents-agents.png" /></p>
+<h3 id="defender-agents">Defender Agents<a class="headerlink" href="#defender-agents" title="Permanent link">&para;</a></h3>
+<p>In Microsoft Defender, Security Copilot agents are purpose-built to reduce SOC toil by automating the repetitive, high‑volume tasks that slow analysts down. Key capabilities include:</p>
+<ul>
+<li>
+<p><strong>Phishing Triage Agent:</strong> Automatically classifies and summarises user‑reported phishing incidents, reducing manual effort and accelerating response.</p>
+</li>
+<li>
+<p><strong>Alert Triage and Incident Summarisation:</strong> Agents correlate signals, enrich alerts, and generate actionable summaries, enabling analysts to focus on true positives and complex investigations.</p>
+</li>
+<li>
+<p><strong>Natural Language Threat Hunting:</strong> Analysts can ask questions in plain English (“Find activity related to this domain across my environment”) and receive focused, context‑rich results.</p>
+</li>
+<li>
+<p><strong>Missed Threat Detection:</strong> Agents proactively hunt for gaps in coverage and recommend improvements to detection logic.</p>
+</li>
+</ul>
+<p>These agents are embedded directly within the Defender portal, delivering value in the flow of work without requiring analysts to learn new tools or interfaces.</p>
+<p>Source: <a href="https://learn.microsoft.com/en-us/defender-xdr/security-copilot-agents-defender?bc=%2Fsecurity-copilot%2Fbreadcrumb%2Ftoc.json&amp;toc=%2Fsecurity-copilot%2Ftoc.json">Deploy AI agents in Microsoft Defender - Microsoft Defender XDR | Microsoft Learn</a></p>
+<h4 id="threat-intelligence-briefing-agent">Threat Intelligence Briefing Agent<a class="headerlink" href="#threat-intelligence-briefing-agent" title="Permanent link">&para;</a></h4>
+<p>An example of this, in a bit more detail would of course be the Threat Intelligence Briefing Agent, available both in the standalone Security Copilot portal and embedded within Defender, tackles a long‑standing challenge for threat intelligence analysts: the time‑consuming process of collecting, correlating, and contextualising threat data.</p>
+<p><strong>Key features:</strong></p>
+<ul>
+<li>
+<p><strong>Automated Briefing Generation:</strong> Curates relevant threat intelligence based on the latest actor activity, vulnerabilities, and organisational context, in minutes rather than hours or days.</p>
+</li>
+<li>
+<p><strong>Dynamic Workflow:</strong> Adapts its steps based on real‑time outcomes, ensuring briefings remain timely and relevant.</p>
+</li>
+<li>
+<p><strong>Customisable Parameters:</strong> Analysts can specify the number of vulnerabilities to investigate, look‑back periods, regions, and industries of interest.</p>
+</li>
+<li>
+<p><strong>Integration with Defender and External Attack Surface Management:</strong> Leverages signals from Defender for Endpoint and External Attack Surface Management to produce richer, more accurate reports.</p>
+</li>
+</ul>
+<p>By automating the grunt work of intelligence gathering, this agent frees analysts to focus on interpretation, communication, and proactive defence.</p>
+<p>Source: <a href="https://learn.microsoft.com/en-us/copilot/security/threat-intel-briefing-agent">Microsoft Security Copilot Threat Intelligence Briefing Agent | Microsoft Learn</a></p>
+<h3 id="entra-agents">Entra Agents<a class="headerlink" href="#entra-agents" title="Permanent link">&para;</a></h3>
+<p>Microsoft Entra agents specialise in identity‑centric security tasks:</p>
+<ul>
+<li>
+<p><strong>Conditional Access Optimisation Agent:</strong> Monitors for users or applications not covered by existing policies, recommends updates, and enables one‑click remediation.</p>
+</li>
+<li>
+<p><strong>Identity Risk Management Agent:</strong> Investigates risky users, suggests remediation paths (such as access revocation), and automates access reviews.</p>
+</li>
+<li>
+<p><strong>Application Lifecycle Management Agent:</strong> Automates discovery and onboarding of applications, flagging those that violate policy.</p>
+</li>
+</ul>
+<p>Each agent operates with a unique, auditable identity (Entra Agent ID), ensuring actions are traceable and permissions are tightly scoped; a critical requirement for compliance and insider‑risk management.</p>
+<p>Source: <a href="https://learn.microsoft.com/en-us/entra/security-copilot/entra-agents?bc=%2Fsecurity-copilot%2Fbreadcrumb%2Ftoc.json&amp;toc=%2Fsecurity-copilot%2Ftoc.json">Microsoft Entra Agents | Microsoft Learn</a></p>
+<h3 id="intune-agents">Intune Agents<a class="headerlink" href="#intune-agents" title="Permanent link">&para;</a></h3>
+<p>In Microsoft Intune, Security Copilot agents help IT teams manage endpoints and policies at scale:</p>
+<ul>
+<li>
+<p><strong>Change Review Agent:</strong> Evaluates the impact of approval requests and recommends appropriate actions.</p>
+</li>
+<li>
+<p><strong>Device Offboarding Agent:</strong> Identifies stale or misaligned devices and provides actionable insights for offboarding.</p>
+</li>
+<li>
+<p><strong>Policy Configuration Agent:</strong> Translates plain‑language requirements into Intune policy settings, reducing configuration errors.</p>
+</li>
+<li>
+<p><strong>Vulnerability Remediation Agent:</strong> Monitors vulnerabilities using Defender data, prioritises remediation, and provides step‑by‑step guidance.</p>
+</li>
+</ul>
+<p>These agents operate within the Intune admin centre, leveraging role‑based access controls to ensure only authorised users can trigger sensitive actions.</p>
+<p>Source: <a href="https://learn.microsoft.com/en-us/intune/agents/?bc=%2Fsecurity-copilot%2Fbreadcrumb%2Ftoc.json&amp;toc=%2Fsecurity-copilot%2Ftoc.json">Security Copilot Agents in Intune - Microsoft Intune | Microsoft Learn</a></p>
+<h3 id="purview-agents">Purview Agents<a class="headerlink" href="#purview-agents" title="Permanent link">&para;</a></h3>
+<p>Microsoft Purview agents bring AI‑powered automation to data security and compliance operations:</p>
+<ul>
+<li>
+<p><strong>DLP and Insider Risk Management Agents:</strong> Manage alert queues, prioritise high‑risk activities, and provide explanations for categorisation decisions.</p>
+</li>
+<li>
+<p><strong>Data Discovery and Remediation:</strong> Assist in identifying oversharing, remediating sensitive data exposure, and generating compliance‑ready reports.</p>
+</li>
+<li>
+<p><strong>DSPM (Data Security Posture Management):</strong> Centralises insights across Information Protection, DLP, and IRM, offering actionable recommendations for policy tuning and risk reduction.</p>
+</li>
+</ul>
+<p>Purview agents are particularly valuable for organisations facing regulatory scrutiny, helping maintain continuous compliance while reducing manual workload for data security teams.</p>
+<p>Source: <a href="https://learn.microsoft.com/en-us/purview/copilot-in-purview-agents?bc=%2Fsecurity-copilot%2Fbreadcrumb%2Ftoc.json&amp;toc=%2Fsecurity-copilot%2Ftoc.json">Microsoft Security Copilot agents in Microsoft Purview (preview) | Microsoft Learn</a></p>
+<hr />
+<h2 id="governance-and-control-agent-365-and-foundry">Governance and Control: Agent 365 and Foundry<a class="headerlink" href="#governance-and-control-agent-365-and-foundry" title="Permanent link">&para;</a></h2>
+<p>As the number of agents grows, so does the need for strong governance. Microsoft has introduced <strong>Agent 365</strong>, a centralised control plane for discovering, inventorying, and governing agents across the enterprise. Agent 365 ties agent identities to Entra, enforces RBAC‑like policies, and provides telemetry and visualisation for agent activity.</p>
+<p><a href="https://www.microsoft.com/en-au/microsoft-agent-365?msockid=2153e7ce7cd16ace1acbf2687d126bcf">Agent 365: AI Agent Management for Microsoft 365</a></p>
+<p><img alt="securitycopilotagents-agents365" src="../Images/securitycopilotagents-agents365.png" /></p>
+<p>Agentic AI introduces new risks alongside its benefits: opaque decision‑making, potential for overreach, insider risk, and the challenge of ensuring agent actions align with organisational intent. These “digital insiders” require the same level of oversight, auditability, and lifecycle management as human users.</p>
+<p><strong>Key governance principles:</strong></p>
+<ul>
+<li>
+<p><strong>Unique agent identities:</strong> Every agent operates with a distinct, auditable identity (such as an Entra Agent ID), enabling granular permissioning and traceability.</p>
+</li>
+<li>
+<p><strong>Least privilege:</strong> Agents receive only the permissions required for their function, with regular reviews to prevent privilege creep.</p>
+</li>
+<li>
+<p><strong>Audit trails:</strong> All agent actions, prompts, and outputs are logged and available for review, supporting compliance and incident response.</p>
+</li>
+<li>
+<p><strong>Human‑in‑the‑loop:</strong> High‑risk or destructive actions require explicit human approval, ensuring accountability remains with practitioners.</p>
+</li>
+<li>
+<p><strong>Adversarial testing:</strong> Organisations should regularly test agents for prompt injection, memory poisoning, and other attack vectors, using red teaming and sandboxing where appropriate.</p>
+</li>
+</ul>
+<p>Microsoft’s Copilot Control System and Responsible AI documentation provide a comprehensive framework for securing agentic AI deployments. Key controls include:</p>
+<ul>
+<li>
+<p><strong>Data security:</strong> Use of Purview for data loss prevention, sensitivity labelling, and data residency enforcement.</p>
+</li>
+<li>
+<p><strong>AI security:</strong> Built‑in protections against prompt injection, harmful content, and unauthorised data access.</p>
+</li>
+<li>
+<p><strong>Compliance and privacy:</strong> Integration with Purview eDiscovery, audit, and lifecycle management tools.</p>
+</li>
+<li>
+<p><strong>Zero Trust:</strong> Agents are treated as untrusted by default, with explicit verification and least‑privilege access.</p>
+</li>
+</ul>
+<p>By embedding these controls throughout the agent lifecycle, organisations can harness the power of agentic AI without compromising security, compliance, or trust.</p>
+<p>Source: <a href="https://learn.microsoft.com/en-us/copilot/security/responsible-ai-overview-security-copilot">Responsible AI overview | Microsoft Learn</a>, <a href="https://learn.microsoft.com/en-us/copilot/security/rai-faqs-security-copilot">Responsible AI FAQ - Microsoft Security Copilot | Microsoft Learn</a>, <a href="https://learn.microsoft.com/en-us/copilot/security/rai-faqs-security-copilot-agents">Security Copilot Agent Responsible AI FAQ - Microsoft Security Copilot | Microsoft Learn</a></p>
+<hr />
+<h2 id="measuring-impact-what-does-success-look-like">Measuring Impact: What Does Success Look Like?<a class="headerlink" href="#measuring-impact-what-does-success-look-like" title="Permanent link">&para;</a></h2>
+<p>To move beyond anecdote and measure the true impact of agentic AI, organisations should track key performance indicators (KPIs) that reflect both operational efficiency and credibility amplification. </p>
+<p>Id recommend metrics like:</p>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Description</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mean Time to Detect (MTTD)</td>
+<td>Average time from incident occurrence to detection</td>
+<td>Faster detection reduces attacker dwell time</td>
+</tr>
+<tr>
+<td>Mean Time to Respond (MTTR)</td>
+<td>Average time from detection to containment/remediation</td>
+<td>Shorter MTTR limits damage and business impact</td>
+</tr>
+<tr>
+<td>False Positive Rate</td>
+<td>Percentage of alerts incorrectly flagged as threats</td>
+<td>Lower rates reduce analyst fatigue</td>
+</tr>
+<tr>
+<td>Analyst Coverage</td>
+<td>Number of incidents handled per analyst per month</td>
+<td>Higher coverage signals increased efficiency</td>
+</tr>
+<tr>
+<td>Upskilling Rate</td>
+<td>Percentage of junior analysts completing advanced tasks</td>
+<td>Indicates democratization of expertise</td>
+</tr>
+<tr>
+<td>Policy Review Accuracy</td>
+<td>Percentage of access reviews completed without error</td>
+<td>Reflects consistency and compliance</td>
+</tr>
+<tr>
+<td>SCU Utilization Rate</td>
+<td>Percentage of allocated SCUs consumed each month</td>
+<td>High utilization signals effective adoption</td>
+</tr>
+<tr>
+<td>Stakeholder Satisfaction</td>
+<td>Surveyed confidence in security team’s outputs</td>
+<td>Measures credibility with business leaders</td>
+</tr>
+</tbody>
+</table>
+<p>This assists organisations with really confirming whether or not an Agent within operations is actually providing the value that you may need. This also helps align the potential shift to another Agentic AI, or process which may deem better value to the organisation, saving you money in the long run.</p>
+<hr />
+<h2 id="human-roles-and-skills">Human Roles and Skills<a class="headerlink" href="#human-roles-and-skills" title="Permanent link">&para;</a></h2>
+<p>One of the most significant shifts introduced by agentic AI is its ability to <strong>democratise expertise</strong>.</p>
+<p>By embedding best practices, evidence‑based logic, and contextual recommendations directly into workflows, Security Copilot agents empower junior analysts to take on responsibilities that once required years of experience.</p>
+<ul>
+<li>
+<p><strong>For junior analysts:</strong> Agents offer step‑by‑step guidance, natural‑language explanations, and curated promptbooks that accelerate onboarding and build confidence.</p>
+</li>
+<li>
+<p><strong>For senior analysts:</strong> Agents absorb the repetitive operational load, freeing time for proactive threat hunting, red teaming, and strategic uplift.</p>
+</li>
+<li>
+<p><strong>For CISOs and managers:</strong> Agents generate clear, executive‑ready reporting that strengthens communication with boards and senior stakeholders.</p>
+</li>
+</ul>
+<p>The result is a SOC that shifts from a hierarchical, bottle necked structure to a collaborative, learning‑centred environment, where every practitioner’s credibility is amplified and expertise is shared rather than silo'd.</p>
+<hr />
+<h2 id="risk-scenarios-and-mitigation">Risk Scenarios and Mitigation<a class="headerlink" href="#risk-scenarios-and-mitigation" title="Permanent link">&para;</a></h2>
+<p>While agentic AI delivers transformative benefits, like all good things really, it also introduces a new class of risks that security teams must anticipate and manage:</p>
+<ul>
+<li>
+<p><strong>Misuse or overreach:</strong> Agents granted excessive permissions may take unintended actions, from deleting critical data to escalating privileges.</p>
+</li>
+<li>
+<p><strong>Insider risk:</strong> Compromised or misaligned agents behave as “digital insiders”, potentially causing harm if not properly governed.</p>
+</li>
+<li>
+<p><strong>Supply chain vulnerabilities:</strong> Partner or custom agents may introduce insecure dependencies or malicious code.</p>
+</li>
+<li>
+<p><strong>Opaque decision‑making:</strong> Without transparency and auditability, agent actions can be difficult to explain or defend.</p>
+</li>
+<li>
+<p><strong>Capacity mismanagement:</strong> Overuse or underuse of SCUs can result in throttling, wasted potential, or unexpected costs.</p>
+</li>
+</ul>
+<p>Now, there's no cookie cutter way to address these risks, though I recommend organisations:</p>
+<ul>
+<li>
+<p><strong>Implement strong identity and access management:</strong> Use Entra Agent ID for unique, auditable identities and enforce least‑privilege permissions.</p>
+</li>
+<li>
+<p><strong>Establish governance frameworks:</strong> Define clear policies for agent onboarding, approval, monitoring, and offboarding, supported by regular reviews and audits.</p>
+</li>
+<li>
+<p><strong>Monitor and log all agent activity:</strong> Centralise logs, configure real‑time anomaly alerts, and integrate with SIEM/SOAR platforms for correlation and response.</p>
+</li>
+<li>
+<p><strong>Require human‑in‑the‑loop for high‑risk actions:</strong> For destructive or sensitive operations, mandate multi‑person sign‑off and explicit approval.</p>
+</li>
+<li>
+<p><strong>Vet partner and custom agents:</strong> Review code, dependencies, and permissions before deployment; use Security Store attestation and SLAs as a baseline.</p>
+</li>
+<li>
+<p><strong>Continuously test and red team agents:</strong> Simulate attacks, prompt injections, and privilege escalations to identify and remediate vulnerabilities before production rollout.</p>
+</li>
+</ul>
+<p>By treating agents as first‑class, identity‑bound, auditable services, organisations can capture the upside of agentic AI while minimising operational and security risks.</p>
+<h3 id="practical-adoption-steps-from-entitlement-to-impact">Practical Adoption Steps: From Entitlement to Impact<a class="headerlink" href="#practical-adoption-steps-from-entitlement-to-impact" title="Permanent link">&para;</a></h3>
+<h4 id="1-prepare-your-environment">1. Prepare Your Environment<a class="headerlink" href="#1-prepare-your-environment" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Confirm activation timeline:</strong> Monitor for your 30‑day activation notice and validate configuration across Defender, Entra, Intune, and Purview.</p>
+</li>
+<li>
+<p><strong>Review data handling and compliance:</strong> Engage legal and compliance teams to ensure data residency, privacy, and audit requirements are met.</p>
+</li>
+<li>
+<p><strong>Audit prerequisites:</strong> Confirm that underlying products (such as Defender for Office 365 Plan 2, Sentinel, and mature Conditional Access policies) are in place to maximise agent effectiveness.</p>
+</li>
+</ul>
+<h4 id="2-identify-highimpact-use-cases">2. Identify High‑Impact Use Cases<a class="headerlink" href="#2-identify-highimpact-use-cases" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Select 2–3 scenarios:</strong> Prioritise measurable, high‑value workflows such as phishing triage, incident investigation, access review, or policy tuning.</p>
+</li>
+<li>
+<p><strong>Define success metrics:</strong> Establish KPIs (as mentioned above) - for example, reduced MTTR or increased analyst coverage - to track impact.</p>
+</li>
+</ul>
+<h4 id="3-standardise-and-measure">3. Standardise and Measure<a class="headerlink" href="#3-standardise-and-measure" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Develop promptbooks:</strong> Build repeatable workflows for common tasks, using Microsoft’s curated libraries as a foundation.</p>
+</li>
+<li>
+<p><strong>Establish access controls:</strong> Use role‑based access and agent identities to govern who can deploy and manage agents.</p>
+</li>
+<li>
+<p><strong>Monitor SCU consumption:</strong> Use the in‑product dashboard to track usage, set alerts for surges, and optimise allocation.</p>
+</li>
+</ul>
+<h4 id="4-govern-and-optimise">4. Govern and Optimise<a class="headerlink" href="#4-govern-and-optimise" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Set up Agent 365 and Foundry:</strong> Inventory all agents, enforce RBAC policies, and monitor activity for anomalies.</p>
+</li>
+<li>
+<p><strong>Pilot in monitor‑only mode:</strong> Begin with read/suggest‑only agents, measure improvements, and gradually enable auto‑remediation as confidence grows.</p>
+</li>
+<li>
+<p><strong>Engage partners carefully:</strong> Vet third‑party agents for security, compliance, and contractual SLAs before production deployment.</p>
+</li>
+</ul>
+<h4 id="5-upskill-and-communicate">5. Upskill and Communicate<a class="headerlink" href="#5-upskill-and-communicate" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Train your team:</strong> Invest in AI literacy, prompt engineering, and governance skills across all practitioner levels.</p>
+</li>
+<li>
+<p><strong>Communicate value:</strong> Share success stories and measurable outcomes with business stakeholders to build trust and secure ongoing investment.</p>
+</li>
+</ul>
+<hr />
+<p>The inclusion of Microsoft Security Copilot agents for all Microsoft 365 E5 customers marks a milestone moment for security operations. </p>
+<p>And I repeat:</p>
+<p><strong>Agentic AI is not a threat to jobs</strong></p>
+<p>It is a credibility amplifier, empowering practitioners at every level to deliver faster, more consistent, and more defensible outcomes. </p>
+<p><em>Isn't that really what we all are trying to do in our day-to-day.</em></p>
+
+
+<!-- taken from 
+https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
+
+<hr />
+<div class="md-source-file">
+<small>
+
+    <!-- mkdocs-git-revision-date-localized-plugin -->
+    
+</small>
+</div>
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Microsoft Copilot">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Microsoft Copilot
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../vulnerabilityremediationagent/" class="md-footer__link md-footer__link--next" aria-label="Next: Transforming Vulnerability Management with the Security Copilot Agent in Intune">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Transforming Vulnerability Management with the Security Copilot Agent in Intune
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/AntoPorter"  target="_blank" rel="noopener">Anthony Porter</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/AntoPorter" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/anthonyantoporter/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotate", "content.code.copy", "content.action.view", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
