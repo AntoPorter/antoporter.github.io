@@ -4,24 +4,22 @@
 
 **Expert Insights & Strategies for Microsoft Defender XDR, Endpoint Management & More**
 
-As a Cloud Security Architect specialising in these technologies, I aim to provide my experience and knowledge as actionable insights and resources, designed to fortify your organisation's defence strategies and optimise IT management.
-
 ---
 
 ## Latest Posts
 
+- [A New Narrative for Agentic AI in Security](./copilot/copilotsecurity/securitycopilotagents.md)
+	
+- [Dynamic Intune Scope Tagging through Entra ID Groups](./endpoint/intune/dynamic-scoping.md)
+	
 - [Endpoint Privilege Management (EPM): The New Era of Privileged Access Management](./endpoint/intune/epm-as-pam.md)
-	
-- [KQL Made Less Scary: A Practical Starting Point Hidden in Plain Sight](./defenderxdr/sentinel/kqlactivitytemplates.md)
-	
-- [Intune + Defender: See What’s Really Effective](./defenderxdr/defenderendpoint/effectivesettings.md)
 	
 
 ---
 
 ## Latest Podcast
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9MBEHWk9GZ0?si=EACLwR5F7BMy1uCd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2-EdlN2P5Ms?si=Lnh0HwuEvsOsk9RL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [**Out Of Band: A Microsoft Security Podcast**](./podcast/outofband/index.md)
 

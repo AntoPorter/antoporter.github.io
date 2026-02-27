@@ -4,6 +4,10 @@
 
 ### Episodes
 
+- [Episode 13: 2026 Begins](episode13.md)
+	
+- [Episode 12: Agents, Agents Everywhere](episode12.md)
+	
 - [Episode 11: Microsoft Secure 2025](episode11.md)
 	
 - [Episode 10: Security Chin Wag with Mat Clark](episode10.md)

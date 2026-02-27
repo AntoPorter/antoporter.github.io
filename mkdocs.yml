@@ -170,6 +170,7 @@ nav:
       - endpoint/intune/baselineinsights.md
       - endpoint/intune/entraid-vs-oobe.md
       - endpoint/intune/epm-as-pam.md
+      - endpoint/intune/dynamic-scoping.md
     - Microsoft Configuration Manager:
       - endpoint/configmgr/challengesolution-mcmtointune.md
   - Microsoft Purview: 
@@ -179,6 +180,7 @@ nav:
   - Microsoft Copilot:
     - Microsoft Copilot: copilot/index.md
     - Microsoft Security Copilot:
+      - copilot/copilotsecurity/securitycopilotagents.md
       - copilot/copilotsecurity/vulnerabilityremediationagent.md
       - copilot/copilotsecurity/globalaibootcamppresentation.md
       - copilot/copilotsecurity/deploy-templatespec.md
@@ -216,5 +218,7 @@ nav:
     - podcast/outofband/episode9.md
     - podcast/outofband/episode10.md
     - podcast/outofband/episode11.md
+    - podcast/outofband/episode12.md
+    - podcast/outofband/episode13.md
   - About Me:
     - aboutme.md
