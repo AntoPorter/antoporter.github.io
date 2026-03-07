@@ -8,12 +8,13 @@
 
 ## Latest Posts
 
+- [Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps](./defenderxdr/defendercloudapps/protectingAIagents.md)
+	
 - [A New Narrative for Agentic AI in Security](./copilot/copilotsecurity/securitycopilotagents.md)
 	
 - [Dynamic Intune Scope Tagging through Entra ID Groups](./endpoint/intune/dynamic-scoping.md)
 	
-- [Endpoint Privilege Management (EPM): The New Era of Privileged Access Management](./endpoint/intune/epm-as-pam.md)
-	
+
 
 ---
 

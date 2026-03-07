@@ -21,6 +21,7 @@
 ## Defender for Cloud Apps
 ---
 
+- [Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps](./defendercloudapps/protectingAIagents.md)
 - [Demystifying Microsoft Defender for Cloud Apps](./defendercloudapps/demystifying-policies.md)
 - [Automatically Unsanctioning Risky Apps](./defendercloudapps/unsanctioning-riskyapps.md)
 - [Enforce App Blocking with Microsoft Defender for Endpoint](./defendercloudapps/appblocking-dfe.md)
