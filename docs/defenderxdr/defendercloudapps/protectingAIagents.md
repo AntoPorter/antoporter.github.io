@@ -57,7 +57,7 @@ Of course, nothing involving Power Platform is ever fully automatic, so off I go
 
 Toggle: **Enable Microsoft Defender Copilot Studio AI Agents**
 
-![protectingAIagents-cs](protectingAIagents-cs.png)
+![protectingAIagents-cs](./images/protectingAIagents-cs.png)
 
 I flip the switch and it politely tells me it will need 30 minutes.
 
