@@ -8,13 +8,12 @@
 
 ## Latest Posts
 
+- [Sentinel to Defender - Part 1: What's Actually Changing (And What Isn't)](./defenderxdr/sentinel/sentineldefender-part1.md)
+	
 - [Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps](./defenderxdr/defendercloudapps/protectingAIagents.md)
 	
 - [A New Narrative for Agentic AI in Security](./copilot/copilotsecurity/securitycopilotagents.md)
 	
-- [Dynamic Intune Scope Tagging through Entra ID Groups](./endpoint/intune/dynamic-scoping.md)
-	
-
 
 ---
 
