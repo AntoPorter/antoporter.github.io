@@ -51,3 +51,4 @@
 
 - [Sentinel to Defender - Part 1: What's Actually Changing (And What Isn't)](./sentinel/sentineldefender-part1.md)
 	
+- [Sentinel to Defender - Part 2: Before You Touch Anything](./sentinel/sentineldefender-part2.md)

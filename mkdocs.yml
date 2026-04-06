@@ -2,7 +2,7 @@
 site_name: SecuringM365
 site_url: https://www.securingm365.com/
 site_author: Anthony Porter
-site_description: Expert Insights & Strategies for Microsoft Defender XDR, Endpoint Management & More
+site_description: An experts insights & strategies for Microsoft Defender XDR, Endpoint Management & More
 edit_uri: tree/main/docs
 
 # Repository
@@ -151,6 +151,7 @@ nav:
       - defenderxdr/defendercloudapps/appblocking-dfe.md
       - defenderxdr/defendercloudapps/unsanctioning-riskyapps.md
     - Microsoft Sentinel:
+      - defenderxdr/sentinel/sentineldefender-part2.md
       - defenderxdr/sentinel/sentineldefender-part1.md
       - defenderxdr/sentinel/kqlactivitytemplates.md
       - defenderxdr/sentinel/unifiedsoc.md
