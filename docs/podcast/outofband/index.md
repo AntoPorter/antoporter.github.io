@@ -1,37 +1,8 @@
 # Out of Band: A Microsoft Security Podcast
 
----
+## Watch All Episodes
 
-### Episodes
-
-- [Episode 13: 2026 Begins](episode13.md)
-	
-- [Episode 12: Agents, Agents Everywhere](episode12.md)
-	
-- [Episode 11: Microsoft Secure 2025](episode11.md)
-	
-- [Episode 10: Security Chin Wag with Mat Clark](episode10.md)
-	
-- [Episode 9: Inside the Threat Landscape](episode9.md)
-	
-- [Episode 8: Into the World of Copilot](episode8.md)
-	
-- [Episode 7: S.E.C.U.R.E with Mat Clark](episode7.md)
-	
-- [Episode 6: Stories from Redmond - Post MVP Summit 2025](episode6.md)
-	
-- [Episode 5: Before Redmond - MVP Origins](episode5.md)
-	
-- [Episode 4: Chronicles of a Rogue Device](episode4.md)
-	
-- [Episode 3: Entra Goodness with Merill Fernando](episode3.md)
-	
-- [Episode 2: Intune It](episode2.md)
-	
-- [Episode 1: Boots on Ground](episode1.md)
-	
-- [Episode 0: Welcome to the Band](episode0.md)
-	
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/videoseries?list=PLkpqXIlQmhO8dc-48d75adecj8iQE8lXR" title="Out of Band Podcast - YouTube Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 

@@ -305,7 +305,7 @@ I do my best to capture key notes, but these upcoming slides were packed;
     
 5. **Access Control**: Copilot only interacts with data you are authorized to access.
 
-Prompt Library: [aka.ms/power-prompts](aka.ms/power-prompts)
+Prompt Library: [aka.ms/power-prompts](https://aka.ms/power-prompts)
 
 ---
 

@@ -95,7 +95,7 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - toc:
-      permalink: true
+      permalink: false
 
   # Python Markdown Extensions
   - pymdownx.arithmatex:
@@ -127,30 +127,31 @@ copyright: |
 nav:
   - Homepage:
     - index.md
-    - Microsoft Defender XDR: defenderxdr/index.md
+    - Defender XDR: defenderxdr/index.md
     - Endpoint Management: endpoint/index.md
-    - Microsoft Purview: purview/index.md
-    - Microsoft Copilot: copilot/index.md
-    - Microsoft Entra: entra/index.md
-    - Miscellaneous: misc/index.md
-    - Out of Band Podcast: podcast/outofband/index.md
-    - About Me: aboutme.md
-  - Microsoft Defender XDR:
-    - Microsoft Defender XDR: defenderxdr/index.md
-    - Microsoft Defender for Endpoint:
+    - Purview: purview/index.md
+    - Copilot: copilot/index.md
+    - Entra: entra/index.md
+    - TrustM365: trustm365/index.md
+    - Misc: misc/index.md
+    - Podcast: podcast/outofband/index.md
+    - WHOAMI: aboutme.md
+  - Defender XDR:
+    - Defender XDR: defenderxdr/index.md
+    - Defender for Endpoint:
       - defenderxdr/defenderendpoint/effectivesettings.md
       - defenderxdr/defenderendpoint/enablingdfefeatures.md
       - defenderxdr/defenderendpoint/enforcementscope.md
-    - Microsoft Defender for Office 365:
+    - Defender for Office 365:
       - defenderxdr/defenderoffice365/ll-safelinks-rewrap.md
-    - Microsoft Defender for Identity:
+    - Defender for Identity:
       - defenderxdr/defenderidentity/top5features.md  
-    - Microsoft Defender for Cloud Apps:
+    - Defender for Cloud Apps:
       - defenderxdr/defendercloudapps/protectingAIagents.md
       - defenderxdr/defendercloudapps/demystifying-policies.md
       - defenderxdr/defendercloudapps/appblocking-dfe.md
       - defenderxdr/defendercloudapps/unsanctioning-riskyapps.md
-    - Microsoft Sentinel:
+    - Sentinel:
       - defenderxdr/sentinel/sentineldefender-part2.md
       - defenderxdr/sentinel/sentineldefender-part1.md
       - defenderxdr/sentinel/kqlactivitytemplates.md
@@ -159,7 +160,7 @@ nav:
       - defenderxdr/sentinel/workspaceworkbookexport.md
   - Endpoint Management: 
     - Endpoint Management: endpoint/index.md
-    - Microsoft Intune:
+    - Intune:
       - endpoint/intune/quickwins-securitytasks.md
       - endpoint/intune/quickwins-appcontrolforbusiness.md
       - endpoint/intune/quickwins-autopilotv2.md
@@ -174,13 +175,13 @@ nav:
       - endpoint/intune/entraid-vs-oobe.md
       - endpoint/intune/epm-as-pam.md
       - endpoint/intune/dynamic-scoping.md
-    - Microsoft Configuration Manager:
+    - Configuration Manager:
       - endpoint/configmgr/challengesolution-mcmtointune.md
-  - Microsoft Purview: 
+  - Purview: 
     - purview/index.md
     - purview/browsersignaldetection.md
     - purview/m365copilotDLP.md
-  - Microsoft Copilot:
+  - Copilot:
     - Microsoft Copilot: copilot/index.md
     - Microsoft Security Copilot:
       - copilot/copilotsecurity/securitycopilotagents.md
@@ -193,11 +194,13 @@ nav:
     - Microsoft 365 Copilot:
       - copilot/copilotm365/gettingstarted.md
       - copilot/copilotm365/enablecopilotm365.md
-  - Microsoft Entra:
+  - Entra ID:
     - entra/index.md
     - entra/azconnect-device.md
     - entra/exploringtrv2.md
-  - Miscellaneous:
+  - TrustM365:
+    - trustm365/index.md
+  - Misc:
     - misc/index.md
     - misc/misconception-technicalcontrols.md
     - misc/understandingcybersecurityethics.md
@@ -207,21 +210,7 @@ nav:
     - misc/summerbootcamp2025-day1.md
     - misc/summerbootcamp2025-day2.md
     - misc/summerbootcamp2025-day3.md
-  - Out of Band Podcast:
+  - Podcast:
     - podcast/outofband/index.md
-    - podcast/outofband/episode0.md
-    - podcast/outofband/episode1.md
-    - podcast/outofband/episode2.md
-    - podcast/outofband/episode3.md
-    - podcast/outofband/episode4.md
-    - podcast/outofband/episode5.md
-    - podcast/outofband/episode6.md
-    - podcast/outofband/episode7.md
-    - podcast/outofband/episode8.md
-    - podcast/outofband/episode9.md
-    - podcast/outofband/episode10.md
-    - podcast/outofband/episode11.md
-    - podcast/outofband/episode12.md
-    - podcast/outofband/episode13.md
-  - About Me:
+  - WHOAMI:
     - aboutme.md
