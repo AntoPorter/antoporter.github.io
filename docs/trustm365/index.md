@@ -1,60 +1,63 @@
-# TrustM365: Monitor. Baseline. Restore.
 
-**Self-hosted baseline management and drift detection for Microsoft 365**
+# TrustM365
 
-> TrustM365 empowers MSSPs, Microsoft 365 admins, and security architects with complete control over tenant baseline management, real-time drift detection, and one-click remediation in a locally-deployed environment.
+**Monitor. Baseline. Restore.**
 
----
+![trustm365-banner.png](./trustm365-banner.png)
 
-## What is TrustM365?
-
-TrustM365 is a self-hosted, local-instance platform designed to establish and maintain security baselines across Microsoft 365 tenants. Unlike cloud-dependent compliance tools, TrustM365 runs in your own environment, giving you complete control over baseline creation, drift detection, and remediation workflows.
+Self-hosted baseline management and drift detection for Microsoft 365 tenants.
 
 ---
 
-## Why TrustM365?
+## Overview
 
-### The Problem Statement
+TrustM365 is an open source platform for Microsoft 365 administrators, MSSPs, and security teams to:
 
-Organisations struggle to maintain consistency and detect configuration drift across multiple Microsoft 365 tenants. 
+- Define and manage security baselines for one or many tenants
+	
+- Detect configuration drift in real time
+	
+- Restore drifted settings with a single click
+	
+- Generate detailed audit reports (HTML, PDF, DOCX)
 
-Multiple MSSP's control single tenants with no ownership models. 
-
-Manual baseline monitoring is time-consuming, remediation is reactive and sometimes missed, and multi-tenant management at scale becomes operationally unsustainable.
-
-### The Solution 
-
-TrustM365 automates baseline creation, continuously monitors for drift, and provides one-click remediation. 
-
-Connect one or more M365 tenants, define a gold-standard baseline of critical configuration per tenant, and know instantly when something drifts, with a full property-level diff, one-click restore, and a completely reportable audit trail. 
-
-Whether you're an MSSP managing hundreds of tenants or an enterprise managing multiple business units, TrustM365 keeps your Microsoft 365 environment compliant and consistent.
+Run TrustM365 in your own environment for full control, privacy, and compliance—no cloud dependencies.
 
 ---
 
-## Core Features
+## Key Features
 
-- **Selective Monitoring & Versioning** — Don't monitor everything—select the resources that matter. Define a gold-standard baseline and maintain versions throughout your tenant lifecycle.
-
-- **Property-Level Drift Detection** — Industry-first property-level diff shows exactly what changed. Three drift states (Drifted, Clean, Missing) provide clear visibility.
-
-- **Resource Groups & Organisation** — Organise resources into named, colour-coded groups. Search across resources and baselines with full audit trails.
-
-- **One-Click Restore & Remediation** — Revert drifted configurations with one click. Test changes with dry-run before applying. Full restore log with timestamps.
-
-- **Portfolio & Multi-Tenant Views** — Manage hundreds of tenants from a single instance. Scorecard and Matrix views show drift across all tenants simultaneously.
-
-- **Webhook Notifications & Reporting** — Real-time alerts via Teams, Slack, PagerDuty. Generate audit reports in HTML, PDF, or Word (.docx).
-
-- **Security & Compliance Baselines** — Integrated Maester and CISA SCuBA frameworks. Custom collectors support any Microsoft Graph endpoint.
-
-- **MSSP White-Label & Remediation** — Complete branding with custom org name, logo, and brand colour. Per-tenant notes and settings management.
+- **Multi-tenant management** with portfolio and scorecard views
+	
+- **Property-level drift detection** and clear diff reporting
+	
+- **One-click remediation** and full restore history
+	
+- **Customisable baselines** and resource grouping
+	
+- **Webhook notifications** (Teams, Slack, PagerDuty)
+	
+- **White-label branding** for MSSPs
+	
+- **Secure, local-first architecture** (Node.js, React, SQLite, AES-256-GCM)
+	
 
 ---
 
-## Want to Get Involved
+## Get Started
 
-**Check out the GitHub Repository here:** [AntoPorter/TrustM365](https://github.com/AntoPorter/TrustM365)
+TrustM365 is open source and ready for self-hosted deployment.
+
+- [View the project on GitHub](https://github.com/AntoPorter/TrustM365)
+	
+- [Read the documentation](https://github.com/AntoPorter/TrustM365/blob/main/docs/guides)
+	
+
+---
+
+## Contribute
+
+Contributions, feedback, and issues are welcome! Visit the GitHub repository to get involved or open an issue.
 
 ---
 
