@@ -26,7 +26,7 @@
 ## Defender for Cloud Apps
 ---
 
-- [Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps](./defendercloudapps/protectingAIagents.md)
+- [Enabling Protection and Visibility for AI Agents with Microsoft Defender Security for AI](./defendercloudapps/protectingAIagents.md)
 	
 - [Demystifying Microsoft Defender for Cloud Apps](./defendercloudapps/demystifying-policies.md)
 	
@@ -52,3 +52,6 @@
 - [Sentinel to Defender - Part 1: What's Actually Changing (And What Isn't)](./sentinel/sentineldefender-part1.md)
 	
 - [Sentinel to Defender - Part 2: Before You Touch Anything](./sentinel/sentineldefender-part2.md)
+	
+- [Sentinel to Defender - Part 3: The RBAC Transition](./sentinel/sentineldefender-part3.md)
+	

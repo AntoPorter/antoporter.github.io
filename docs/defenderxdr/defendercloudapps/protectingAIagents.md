@@ -1,206 +1,101 @@
-# Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps
+# Enabling Protection and Visibility for AI Agents with Microsoft Defender Security for AI
 
+## Update (April 2026)
 
-I always know a feature is still in preview when the first thing I do is hover over the toggle and think, _“Alright, what is this going to break?”_  
+This article was updated to align with Microsoft Defender Security for AI guidance. Key references:
 
-Copilot Studio Real Time Protection inside Defender for Cloud Apps gives exactly that feeling. It is powerful, necessary, and still wearing its early access badge.
+- https://learn.microsoft.com/en-us/defender-xdr/security-for-ai/defender-security-for-ai
+- https://learn.microsoft.com/en-us/defender-xdr/security-for-ai/ai-agent-inventory
+- https://learn.microsoft.com/en-us/defender-xdr/security-for-ai/ai-agent-detection-protection
 
-Still, if we are going to let AI agents run around our environments making decisions, the least we can do is give them a security system that actually watches what they are doing. So I start where every good security story begins: in the Defender portal, staring at a toggle that promises protection and visibility for AI agents.
+Summary of changes:
 
-## Understanding how the pieces fit together
+- Updated guidance to reflect Defender XDR Security for AI.
+- Retained the original Defender for Cloud Apps walkthrough below for tenants that still use the Copilot Studio integration.
 
-Before diving into the toggles, it helps to understand the architecture. There are three systems involved, and each one plays a different role.
+When AI agents act on behalf of users, they can access data and invoke tools. That makes visibility, detection, and runtime control essential. This guide explains how Defender and Power Platform work together to provide inventory, detections, and real time protection for AI agents.
 
-- Defender for Cloud Apps provides the enforcement and visibility layer. This is where runtime decisions, alerts, and oversight live.
-	
-- Power Platform provides the environment level controls and the data sharing path that lets Defender receive telemetry.
-	
-- Copilot Studio Real Time Protection is the runtime gatekeeper that evaluates every tool invocation an agent attempts.
-	
+## How it fits together
 
-Once you know this, the back and forth between portals makes a lot more sense. You are wiring up a pipeline that lets Power Platform send agent telemetry to Defender, and lets Defender make allow or block decisions in real time.
+- Microsoft Defender (Defender XDR): discovery, near real time detections, runtime protection, and investigation. Defender integrates with Microsoft Agent 365 and provides Advanced Hunting tables such as AIAgentsInfo.
 
-## The preview warning that sets the tone
+- Power Platform and the agent runtime: hosts Copilot Studio agents and other Agent 365 managed agents, emits audit logs, and enforces protection decisions at runtime.
 
-The banner reminds me that this is a preview feature bundled with the Defender for Cloud Apps licence ***for now***.  
+- Copilot Studio integration: supplies telemetry and an ingestion endpoint. Federated identity credentials allow Defender to authenticate without secrets.
 
-**My Translation:** Enjoy it while it is free, because when GA arrives, someone in security will ask why the toggle suddenly turned itself off, and why is it no longer free?
+## Preview and permissions
 
-To me though? Fine. I accept the terms of engagement and head to:
+- Required roles: Security Administrator for Defender and Power Platform Administrator for Power Platform.
+- Some features are in preview and may require specific licenses or tenant access.
 
-!!! note
+## Enable Copilot telemetry in Power Platform
 
-    You will need Security Administrator for this...
-	
+1. Sign in to the Power Platform admin center.
+2. Go to Security > Threat Detection > Microsoft Defender Copilot Studio AI Agents (Preview).
+3. Toggle Enable Microsoft Defender Copilot Studio AI Agents.
+4. Wait up to 30 minutes for the connection to establish.
 
-**Defender XDR > System > Settings > Cloud Apps > Copilot Studio AI Agents > Turn on the toggle**
+## Connect Copilot Studio real time protection in Defender
 
-Defender immediately starts wiring things together. The M365 app connector links itself automatically, which is one of those rare moments where something in security configuration works without a fight.
+1. Open the Defender portal at https://security.microsoft.com/.
+2. Go to System > Settings > Security for AI agents.
+3. Under AI real time protection and investigation, select Connect for Copilot Studio Real Time Protection.
+4. Choose the setup path: automated script or manual app registration.
 
-!!! tip
+### Automated script (recommended)
 
-    Before you plan to write an article on deploying configuration, make sure to take screenshots during it, to use in that article. Lets just pretend this says "Not Connected". Thanks
-	
+- The script prompts for Tenant ID, Endpoint URL, display name, and a Federated Identity Credential name.
+- It checks for MSAL.PS, installs it if needed, creates the app registration and FIC, and returns the App ID.
+- This approach reduces manual steps and lowers the chance of errors.
 
-![protectingAIagents-dfca](./images/protectingAIagents-dfca.png)
+### Manual app registration
 
-## Power Platform Admin Center enters the chat
+1. Create a single tenant app registration in Entra ID.
+2. Generate Base64 values for the Tenant ID and the Power Platform ingestion endpoint.
+3. Create a Federated Identity Credential on the app using those values.
+4. Enter the App ID and Endpoint URL in the Defender settings and save.
+5. If saving fails, verify the FIC values and tenant configuration.
 
-Of course, nothing involving Power Platform is ever fully automatic, so off I go:
+## Per environment setup in Power Platform
 
-!!! note
+1. In Power Platform, go to Security > Threat Protection > Additional threat detection and protection for Copilot Studio agents.
+2. Select an environment and choose Setup.
+3. Enable Allow Copilot Studio to share data with threat detection partner.
+4. Enter the App ID and Endpoint URL used in Defender.
+5. Set Error Behaviour to Block the Query to fail closed in that environment if Defender blocks an action.
+6. Save and confirm the environment shows Connection is On for Environment.
 
-    You will need Power Platform Administrator for this...
-	
+Note: repeat these steps for every environment that runs agents. Enabling the setting in one environment does not enable it tenant wide.
 
-**Power Platform > Security > Threat Detection > Microsoft Defender Copilot Studio AI Agents (Preview)**
+## Runtime behavior
 
-Toggle: **Enable Microsoft Defender Copilot Studio AI Agents**
+- Defender evaluates agent tool invocations and has about one second to allow or block an action.
+- If no decision is made in that window, the runtime defaults to Allow so agents do not fail mid flow.
+- Real time protection focuses on high confidence threats such as attempts to extract system instructions, direct data exfiltration, misuse of internal tools, routing to untrusted endpoints, obfuscated content that manipulates agents, and credential leaks.
 
-![protectingAIagents-cs](./images/protectingAIagents-cs.png)
+## Alerts and investigation
 
-I flip the switch and it politely tells me it will need 30 minutes.
+- When Defender blocks an action it generates an alert with context, including the agent, tool, and the reason for the block.
+- Use Defender incidents, alerts, and Advanced Hunting to investigate and hunt for risks.
 
-Which, in Power Platform time, is basically an invitation to make a coffee and maybe a well deserved lunch break.
+## Advanced Hunting and inventory
 
-Eventually though, it shows as connected. One piece down.
+Use the AIAgentsInfo table to discover agents and their configuration. Example query to get the latest snapshot per agent:
 
-## Now for Copilot Studio Real Time Protection
+```kql
+AIAgentsInfo
+| summarize arg_max(Timestamp, *) by AIAgentId
+| where RegistrySource == "A365"
+| where AgentStatus != "Deleted"
+```
 
-Back to Defender.  
-Back to the toggle.  
-Back to the part where I know I am about to be asked to create an app registration.
+Other useful tables include CloudAppEvents, AlertInfo, and AlertEvidence to trace agent activity and correlate alerts.
 
-I select Connect on Copilot Studio Real Time Protection and turn it on. Defender offers two paths:
+## What to expect
 
-- Run the automated script
-	
-- Do it manually through App Registration
-	
-
-This is where the internal monologue really kicks in.
-
-### The automated script option
-
-Running the script prompts for:
-
-- Tenant ID
-	
-- Endpoint URL from the Enable Power Platform Integration
-	
-- Display Name for the app
-	
-- FIC Name
-	
-
-It then checks whether MSAL.PS exists and installs it if needed. Gives you the App ID GUID at the end. Wipe hands on pants.
-
-The automated script is the fastest path and ideal for most tenants. It handles the identity objects for you and avoids the manual steps.
-
-Now, Ill be honest, I actually decided to go with the manual method... I wanted to see what was involved in the Federated Credentials aspect (a new 'thing' for me).
-
-## The manual method (for those interested)
-
-Pretty straight forward for the process, but in summary (and go to [Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-copilot-studio/external-security-provider#option-b-configure-manually-using-azure-portal for a deeper dive into it) for a proper set of instructions):
-
-1. Create a **Single Tenant App Registration**
-	
-2. Follow the instructions here to generate the Base64 values for the Tenant ID and Endpoint URL.
-	
-3. Enter the Base64 aspects into the Value, and create a Federated Credential using it.
-	
-
-A quick note on what these things actually are:
-
-- The Endpoint URL is the ingestion endpoint Defender uses to receive real time agent telemetry from Power Platform.
-	
-- Federated Identity Credentials allow Defender to authenticate to the app registration without secrets. No client secret, no certificate, just workload identity federation. This is why the app registration looks strangely empty.
-	
-
-Once the App Registration and FIC are complete, I enter the details into the Defender settings prompt and click Save.
-
-If it saves, great!
-
-If it does not, it is because Entra was not configured properly and Defender is not shy about saying so.
-
-## Back to Power Platform again
-
-Now that Defender knows about the app, Power Platform needs to know too.
-
-I head back to:
-
-**Power Platform > Security > Threat Protection > Additional threat detection and protection for Copilot Studio agents**
-
-![protectingAIagents-pp](./images/protectingAIagents-pp.png)
-
-
-I select the environment, click **Setup**, and then:
-
-- Tick **Allow Copilot Studio to share data with threat detection partner**
-	
-- Enter the same **App ID** and **Endpoint URL** from Defender
-	
-- Set **Error Behaviour** to Block the Query
-	
-- Save
-	
-
-![protectingAIagents-sharedata](./images/protectingAIagents-sharedata.png)
-
-If everything is configured correctly, I get:
-
-**Connection is On for Environment**
-
-If not, I get the equally predictable:
-
-"**Your Microsoft Entra app is not properly configured**"
-
-(At least it is honest.)
-
-**One important detail here:** this configuration is per environment. Turning it on in one environment does not enable it tenant wide. Every environment that hosts agents needs to be wired up individually.
-
-## How the protection behaves at runtime
-
-Once everything is wired up, the threat detection system sits in front of every tool invocation an agent attempts. It has one second to decide:
-
-- Allow
-	
-- Block
-	
-
-If it cannot decide in time, the system defaults to **allow**.  
-
-This one second window applies to every tool invocation. The decision is enforced by the Power Platform runtime, and the default allow behaviour is intentional so that agents do not break mid flow if Defender is slow or unreachable
-
-Even after everything is enabled, it can still take up to 30 minutes before Defender starts showing data. (Took mine a few hours, I wont lie, but lets stick with 30 minutes.)
-
-## What Defender actually sees
-
-Once the plumbing is in place, Defender becomes the eyes and ears for your AI agents. It can surface:
-
-- Tool invocation logs
-	
-- Agent identity inventory
-	
-- Misconfiguration detection
-	
-- Suspicious behaviour patterns
-	
-- Risk scoring
-	
-- Real time blocks on risky tool calls
-	
-
-This is also where the new AI Agent Inventory lives, giving you a central view of your agents, their tools, and their posture.
-
-It is the difference between having AI agents running in your tenant and having AI agents running in your tenant with actual oversight.
+- Inventory and near real time detections can take a short time to appear after configuration changes.
+- Verify App ID and FIC values and update screenshots before enabling per environment protection.
 
 ---
 
-But all in all, In the end, all of this wiring together of Defender, Power Platform, Copilot Studio, app registrations, scripts, toggles, and waiting periods is really about one thing.
-
-**Giving you a proper security perimeter around AI agents that would otherwise be operating on trust alone.**
-
-Once everything is connected, you move from hoping your agents behave to actually seeing what they are doing, stopping what they should not be doing, and giving your security team the visibility they expect from any other workload in the environment.
-
-It feels like a lot of setup, but the payoff is real oversight, real protection, and real confidence that your AI agents are working for you rather than wandering off into trouble.
+Putting these pieces together gives you visibility into agent behavior, the ability to block unsafe actions in real time, and the tools to investigate incidents. If you want, I can split this content into separate pages for overview, inventory, and detection and protection.

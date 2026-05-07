@@ -152,6 +152,7 @@ nav:
       - defenderxdr/defendercloudapps/appblocking-dfe.md
       - defenderxdr/defendercloudapps/unsanctioning-riskyapps.md
     - Sentinel:
+      - defenderxdr/sentinel/sentineldefender-part3.md
       - defenderxdr/sentinel/sentineldefender-part2.md
       - defenderxdr/sentinel/sentineldefender-part1.md
       - defenderxdr/sentinel/kqlactivitytemplates.md

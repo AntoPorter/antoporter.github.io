@@ -6,11 +6,12 @@
 
 ## Latest Content
 
+- [Sentinel to Defender - Part 3: The RBAC Transition](./defenderxdr/sentinel/sentineldefender-part3.md)
+	
 - [Sentinel to Defender - Part 2: Before You Touch Anything](./defenderxdr/sentinel/sentineldefender-part2.md)
-
+	
 - [Sentinel to Defender - Part 1: What's Actually Changing (And What Isn't)](./defenderxdr/sentinel/sentineldefender-part1.md)
-
-- [Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps](./defenderxdr/defendercloudapps/protectingAIagents.md)
+	
 
 ---
 
