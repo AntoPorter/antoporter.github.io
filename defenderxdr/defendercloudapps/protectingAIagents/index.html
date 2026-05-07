@@ -29,7 +29,7 @@
     
     
       
-        <title>Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps - SecuringM365</title>
+        <title>Enabling Protection and Visibility for AI Agents with Microsoft Defender Security for AI - SecuringM365</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enabling-protection-and-visibility-for-ai-agents-with-microsoft-defender-for-cloud-apps" class="md-skip">
+        <a href="#enabling-protection-and-visibility-for-ai-agents-with-microsoft-defender-security-for-ai" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps
+              Enabling Protection and Visibility for AI Agents with Microsoft Defender Security for AI
             
           </span>
         </div>
@@ -1374,7 +1374,7 @@
   <span class="md-ellipsis">
     
   
-    Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps
+    Enabling Protection and Visibility for AI Agents with Microsoft Defender Security for AI
   
 
     
@@ -1392,7 +1392,7 @@
   <span class="md-ellipsis">
     
   
-    Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps
+    Enabling Protection and Visibility for AI Agents with Microsoft Defender Security for AI
   
 
     
@@ -1418,10 +1418,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#understanding-how-the-pieces-fit-together" class="md-nav__link">
+  <a href="#update-april-2026" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Understanding how the pieces fit together
+        Update (April 2026)
       
     </span>
   </a>
@@ -1429,10 +1429,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-preview-warning-that-sets-the-tone" class="md-nav__link">
+  <a href="#how-it-fits-together" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The preview warning that sets the tone
+        How it fits together
       
     </span>
   </a>
@@ -1440,10 +1440,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#power-platform-admin-center-enters-the-chat" class="md-nav__link">
+  <a href="#preview-and-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Power Platform Admin Center enters the chat
+        Preview and permissions
       
     </span>
   </a>
@@ -1451,22 +1451,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#now-for-copilot-studio-real-time-protection" class="md-nav__link">
+  <a href="#enable-copilot-telemetry-in-power-platform" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Now for Copilot Studio Real Time Protection
+        Enable Copilot telemetry in Power Platform
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Now for Copilot Studio Real Time Protection">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-copilot-studio-real-time-protection-in-defender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connect Copilot Studio real time protection in Defender
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connect Copilot Studio real time protection in Defender">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-automated-script-option" class="md-nav__link">
+  <a href="#automated-script-recommended" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The automated script option
+        Automated script (recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-app-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual app registration
       
     </span>
   </a>
@@ -1479,10 +1501,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-manual-method-for-those-interested" class="md-nav__link">
+  <a href="#per-environment-setup-in-power-platform" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The manual method (for those interested)
+        Per environment setup in Power Platform
       
     </span>
   </a>
@@ -1490,10 +1512,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#back-to-power-platform-again" class="md-nav__link">
+  <a href="#runtime-behavior" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Back to Power Platform again
+        Runtime behavior
       
     </span>
   </a>
@@ -1501,10 +1523,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-the-protection-behaves-at-runtime" class="md-nav__link">
+  <a href="#alerts-and-investigation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How the protection behaves at runtime
+        Alerts and investigation
       
     </span>
   </a>
@@ -1512,10 +1534,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-defender-actually-sees" class="md-nav__link">
+  <a href="#advanced-hunting-and-inventory" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What Defender actually sees
+        Advanced Hunting and inventory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-expect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What to expect
       
     </span>
   </a>
@@ -1644,6 +1677,8 @@
       
         
       
+        
+      
     
     
     
@@ -1693,6 +1728,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sentinel/sentineldefender-part3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Series: Sentinel to Defender Portal - The RBAC Transition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3913,178 +3976,101 @@
   
 
 
-<h1 id="enabling-protection-and-visibility-for-ai-agents-with-microsoft-defender-for-cloud-apps">Enabling Protection and Visibility for AI Agents with Microsoft Defender for Cloud Apps</h1>
-<p>I always know a feature is still in preview when the first thing I do is hover over the toggle and think, <em>“Alright, what is this going to break?”</em>  </p>
-<p>Copilot Studio Real Time Protection inside Defender for Cloud Apps gives exactly that feeling. It is powerful, necessary, and still wearing its early access badge.</p>
-<p>Still, if we are going to let AI agents run around our environments making decisions, the least we can do is give them a security system that actually watches what they are doing. So I start where every good security story begins: in the Defender portal, staring at a toggle that promises protection and visibility for AI agents.</p>
-<h2 id="understanding-how-the-pieces-fit-together">Understanding how the pieces fit together</h2>
-<p>Before diving into the toggles, it helps to understand the architecture. There are three systems involved, and each one plays a different role.</p>
+<h1 id="enabling-protection-and-visibility-for-ai-agents-with-microsoft-defender-security-for-ai">Enabling Protection and Visibility for AI Agents with Microsoft Defender Security for AI</h1>
+<h2 id="update-april-2026">Update (April 2026)</h2>
+<p>This article was updated to align with Microsoft Defender Security for AI guidance. Key references:</p>
+<ul>
+<li>https://learn.microsoft.com/en-us/defender-xdr/security-for-ai/defender-security-for-ai</li>
+<li>https://learn.microsoft.com/en-us/defender-xdr/security-for-ai/ai-agent-inventory</li>
+<li>https://learn.microsoft.com/en-us/defender-xdr/security-for-ai/ai-agent-detection-protection</li>
+</ul>
+<p>Summary of changes:</p>
+<ul>
+<li>Updated guidance to reflect Defender XDR Security for AI.</li>
+<li>Retained the original Defender for Cloud Apps walkthrough below for tenants that still use the Copilot Studio integration.</li>
+</ul>
+<p>When AI agents act on behalf of users, they can access data and invoke tools. That makes visibility, detection, and runtime control essential. This guide explains how Defender and Power Platform work together to provide inventory, detections, and real time protection for AI agents.</p>
+<h2 id="how-it-fits-together">How it fits together</h2>
 <ul>
 <li>
-<p>Defender for Cloud Apps provides the enforcement and visibility layer. This is where runtime decisions, alerts, and oversight live.</p>
+<p>Microsoft Defender (Defender XDR): discovery, near real time detections, runtime protection, and investigation. Defender integrates with Microsoft Agent 365 and provides Advanced Hunting tables such as AIAgentsInfo.</p>
 </li>
 <li>
-<p>Power Platform provides the environment level controls and the data sharing path that lets Defender receive telemetry.</p>
+<p>Power Platform and the agent runtime: hosts Copilot Studio agents and other Agent 365 managed agents, emits audit logs, and enforces protection decisions at runtime.</p>
 </li>
 <li>
-<p>Copilot Studio Real Time Protection is the runtime gatekeeper that evaluates every tool invocation an agent attempts.</p>
+<p>Copilot Studio integration: supplies telemetry and an ingestion endpoint. Federated identity credentials allow Defender to authenticate without secrets.</p>
 </li>
 </ul>
-<p>Once you know this, the back and forth between portals makes a lot more sense. You are wiring up a pipeline that lets Power Platform send agent telemetry to Defender, and lets Defender make allow or block decisions in real time.</p>
-<h2 id="the-preview-warning-that-sets-the-tone">The preview warning that sets the tone</h2>
-<p>The banner reminds me that this is a preview feature bundled with the Defender for Cloud Apps licence <strong><em>for now</em></strong>.  </p>
-<p><strong>My Translation:</strong> Enjoy it while it is free, because when GA arrives, someone in security will ask why the toggle suddenly turned itself off, and why is it no longer free?</p>
-<p>To me though? Fine. I accept the terms of engagement and head to:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You will need Security Administrator for this...</p>
-</div>
-<p><strong>Defender XDR &gt; System &gt; Settings &gt; Cloud Apps &gt; Copilot Studio AI Agents &gt; Turn on the toggle</strong></p>
-<p>Defender immediately starts wiring things together. The M365 app connector links itself automatically, which is one of those rare moments where something in security configuration works without a fight.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Before you plan to write an article on deploying configuration, make sure to take screenshots during it, to use in that article. Lets just pretend this says "Not Connected". Thanks</p>
-</div>
-<p><img alt="protectingAIagents-dfca" src="../images/protectingAIagents-dfca.png" /></p>
-<h2 id="power-platform-admin-center-enters-the-chat">Power Platform Admin Center enters the chat</h2>
-<p>Of course, nothing involving Power Platform is ever fully automatic, so off I go:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You will need Power Platform Administrator for this...</p>
-</div>
-<p><strong>Power Platform &gt; Security &gt; Threat Detection &gt; Microsoft Defender Copilot Studio AI Agents (Preview)</strong></p>
-<p>Toggle: <strong>Enable Microsoft Defender Copilot Studio AI Agents</strong></p>
-<p><img alt="protectingAIagents-cs" src="../images/protectingAIagents-cs.png" /></p>
-<p>I flip the switch and it politely tells me it will need 30 minutes.</p>
-<p>Which, in Power Platform time, is basically an invitation to make a coffee and maybe a well deserved lunch break.</p>
-<p>Eventually though, it shows as connected. One piece down.</p>
-<h2 id="now-for-copilot-studio-real-time-protection">Now for Copilot Studio Real Time Protection</h2>
-<p>Back to Defender.<br />
-Back to the toggle.<br />
-Back to the part where I know I am about to be asked to create an app registration.</p>
-<p>I select Connect on Copilot Studio Real Time Protection and turn it on. Defender offers two paths:</p>
+<h2 id="preview-and-permissions">Preview and permissions</h2>
 <ul>
-<li>
-<p>Run the automated script</p>
-</li>
-<li>
-<p>Do it manually through App Registration</p>
-</li>
+<li>Required roles: Security Administrator for Defender and Power Platform Administrator for Power Platform.</li>
+<li>Some features are in preview and may require specific licenses or tenant access.</li>
 </ul>
-<p>This is where the internal monologue really kicks in.</p>
-<h3 id="the-automated-script-option">The automated script option</h3>
-<p>Running the script prompts for:</p>
-<ul>
-<li>
-<p>Tenant ID</p>
-</li>
-<li>
-<p>Endpoint URL from the Enable Power Platform Integration</p>
-</li>
-<li>
-<p>Display Name for the app</p>
-</li>
-<li>
-<p>FIC Name</p>
-</li>
-</ul>
-<p>It then checks whether MSAL.PS exists and installs it if needed. Gives you the App ID GUID at the end. Wipe hands on pants.</p>
-<p>The automated script is the fastest path and ideal for most tenants. It handles the identity objects for you and avoids the manual steps.</p>
-<p>Now, Ill be honest, I actually decided to go with the manual method... I wanted to see what was involved in the Federated Credentials aspect (a new 'thing' for me).</p>
-<h2 id="the-manual-method-for-those-interested">The manual method (for those interested)</h2>
-<p>Pretty straight forward for the process, but in summary (and go to <a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/external-security-provider#option-b-configure-manually-using-azure-portal for a deeper dive into it">Microsoft Learn</a> for a proper set of instructions):</p>
+<h2 id="enable-copilot-telemetry-in-power-platform">Enable Copilot telemetry in Power Platform</h2>
 <ol>
-<li>
-<p>Create a <strong>Single Tenant App Registration</strong></p>
-</li>
-<li>
-<p>Follow the instructions here to generate the Base64 values for the Tenant ID and Endpoint URL.</p>
-</li>
-<li>
-<p>Enter the Base64 aspects into the Value, and create a Federated Credential using it.</p>
-</li>
+<li>Sign in to the Power Platform admin center.</li>
+<li>Go to Security &gt; Threat Detection &gt; Microsoft Defender Copilot Studio AI Agents (Preview).</li>
+<li>Toggle Enable Microsoft Defender Copilot Studio AI Agents.</li>
+<li>Wait up to 30 minutes for the connection to establish.</li>
 </ol>
-<p>A quick note on what these things actually are:</p>
+<h2 id="connect-copilot-studio-real-time-protection-in-defender">Connect Copilot Studio real time protection in Defender</h2>
+<ol>
+<li>Open the Defender portal at https://security.microsoft.com/.</li>
+<li>Go to System &gt; Settings &gt; Security for AI agents.</li>
+<li>Under AI real time protection and investigation, select Connect for Copilot Studio Real Time Protection.</li>
+<li>Choose the setup path: automated script or manual app registration.</li>
+</ol>
+<h3 id="automated-script-recommended">Automated script (recommended)</h3>
 <ul>
-<li>
-<p>The Endpoint URL is the ingestion endpoint Defender uses to receive real time agent telemetry from Power Platform.</p>
-</li>
-<li>
-<p>Federated Identity Credentials allow Defender to authenticate to the app registration without secrets. No client secret, no certificate, just workload identity federation. This is why the app registration looks strangely empty.</p>
-</li>
+<li>The script prompts for Tenant ID, Endpoint URL, display name, and a Federated Identity Credential name.</li>
+<li>It checks for MSAL.PS, installs it if needed, creates the app registration and FIC, and returns the App ID.</li>
+<li>This approach reduces manual steps and lowers the chance of errors.</li>
 </ul>
-<p>Once the App Registration and FIC are complete, I enter the details into the Defender settings prompt and click Save.</p>
-<p>If it saves, great!</p>
-<p>If it does not, it is because Entra was not configured properly and Defender is not shy about saying so.</p>
-<h2 id="back-to-power-platform-again">Back to Power Platform again</h2>
-<p>Now that Defender knows about the app, Power Platform needs to know too.</p>
-<p>I head back to:</p>
-<p><strong>Power Platform &gt; Security &gt; Threat Protection &gt; Additional threat detection and protection for Copilot Studio agents</strong></p>
-<p><img alt="protectingAIagents-pp" src="../images/protectingAIagents-pp.png" /></p>
-<p>I select the environment, click <strong>Setup</strong>, and then:</p>
+<h3 id="manual-app-registration">Manual app registration</h3>
+<ol>
+<li>Create a single tenant app registration in Entra ID.</li>
+<li>Generate Base64 values for the Tenant ID and the Power Platform ingestion endpoint.</li>
+<li>Create a Federated Identity Credential on the app using those values.</li>
+<li>Enter the App ID and Endpoint URL in the Defender settings and save.</li>
+<li>If saving fails, verify the FIC values and tenant configuration.</li>
+</ol>
+<h2 id="per-environment-setup-in-power-platform">Per environment setup in Power Platform</h2>
+<ol>
+<li>In Power Platform, go to Security &gt; Threat Protection &gt; Additional threat detection and protection for Copilot Studio agents.</li>
+<li>Select an environment and choose Setup.</li>
+<li>Enable Allow Copilot Studio to share data with threat detection partner.</li>
+<li>Enter the App ID and Endpoint URL used in Defender.</li>
+<li>Set Error Behaviour to Block the Query to fail closed in that environment if Defender blocks an action.</li>
+<li>Save and confirm the environment shows Connection is On for Environment.</li>
+</ol>
+<p>Note: repeat these steps for every environment that runs agents. Enabling the setting in one environment does not enable it tenant wide.</p>
+<h2 id="runtime-behavior">Runtime behavior</h2>
 <ul>
-<li>
-<p>Tick <strong>Allow Copilot Studio to share data with threat detection partner</strong></p>
-</li>
-<li>
-<p>Enter the same <strong>App ID</strong> and <strong>Endpoint URL</strong> from Defender</p>
-</li>
-<li>
-<p>Set <strong>Error Behaviour</strong> to Block the Query</p>
-</li>
-<li>
-<p>Save</p>
-</li>
+<li>Defender evaluates agent tool invocations and has about one second to allow or block an action.</li>
+<li>If no decision is made in that window, the runtime defaults to Allow so agents do not fail mid flow.</li>
+<li>Real time protection focuses on high confidence threats such as attempts to extract system instructions, direct data exfiltration, misuse of internal tools, routing to untrusted endpoints, obfuscated content that manipulates agents, and credential leaks.</li>
 </ul>
-<p><img alt="protectingAIagents-sharedata" src="../images/protectingAIagents-sharedata.png" /></p>
-<p>If everything is configured correctly, I get:</p>
-<p><strong>Connection is On for Environment</strong></p>
-<p>If not, I get the equally predictable:</p>
-<p>"<strong>Your Microsoft Entra app is not properly configured</strong>"</p>
-<p>(At least it is honest.)</p>
-<p><strong>One important detail here:</strong> this configuration is per environment. Turning it on in one environment does not enable it tenant wide. Every environment that hosts agents needs to be wired up individually.</p>
-<h2 id="how-the-protection-behaves-at-runtime">How the protection behaves at runtime</h2>
-<p>Once everything is wired up, the threat detection system sits in front of every tool invocation an agent attempts. It has one second to decide:</p>
+<h2 id="alerts-and-investigation">Alerts and investigation</h2>
 <ul>
-<li>
-<p>Allow</p>
-</li>
-<li>
-<p>Block</p>
-</li>
+<li>When Defender blocks an action it generates an alert with context, including the agent, tool, and the reason for the block.</li>
+<li>Use Defender incidents, alerts, and Advanced Hunting to investigate and hunt for risks.</li>
 </ul>
-<p>If it cannot decide in time, the system defaults to <strong>allow</strong>.  </p>
-<p>This one second window applies to every tool invocation. The decision is enforced by the Power Platform runtime, and the default allow behaviour is intentional so that agents do not break mid flow if Defender is slow or unreachable</p>
-<p>Even after everything is enabled, it can still take up to 30 minutes before Defender starts showing data. (Took mine a few hours, I wont lie, but lets stick with 30 minutes.)</p>
-<h2 id="what-defender-actually-sees">What Defender actually sees</h2>
-<p>Once the plumbing is in place, Defender becomes the eyes and ears for your AI agents. It can surface:</p>
+<h2 id="advanced-hunting-and-inventory">Advanced Hunting and inventory</h2>
+<p>Use the AIAgentsInfo table to discover agents and their configuration. Example query to get the latest snapshot per agent:</p>
+<div class="highlight"><pre><span></span><code><span class="n">AIAgentsInfo</span>
+<span class="p">|</span><span class="w"> </span><span class="k">summarize</span><span class="w"> </span><span class="n">arg_max</span><span class="p">(</span><span class="n">Timestamp</span><span class="p">,</span><span class="w"> </span><span class="p">*)</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">AIAgentId</span>
+<span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">RegistrySource</span><span class="w"> </span><span class="p">==</span><span class="w"> </span><span class="s">&quot;A365&quot;</span>
+<span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">AgentStatus</span><span class="w"> </span><span class="p">!=</span><span class="w"> </span><span class="s">&quot;Deleted&quot;</span>
+</code></pre></div>
+<p>Other useful tables include CloudAppEvents, AlertInfo, and AlertEvidence to trace agent activity and correlate alerts.</p>
+<h2 id="what-to-expect">What to expect</h2>
 <ul>
-<li>
-<p>Tool invocation logs</p>
-</li>
-<li>
-<p>Agent identity inventory</p>
-</li>
-<li>
-<p>Misconfiguration detection</p>
-</li>
-<li>
-<p>Suspicious behaviour patterns</p>
-</li>
-<li>
-<p>Risk scoring</p>
-</li>
-<li>
-<p>Real time blocks on risky tool calls</p>
-</li>
+<li>Inventory and near real time detections can take a short time to appear after configuration changes.</li>
+<li>Verify App ID and FIC values and update screenshots before enabling per environment protection.</li>
 </ul>
-<p>This is also where the new AI Agent Inventory lives, giving you a central view of your agents, their tools, and their posture.</p>
-<p>It is the difference between having AI agents running in your tenant and having AI agents running in your tenant with actual oversight.</p>
 <hr />
-<p>But all in all, In the end, all of this wiring together of Defender, Power Platform, Copilot Studio, app registrations, scripts, toggles, and waiting periods is really about one thing.</p>
-<p><strong>Giving you a proper security perimeter around AI agents that would otherwise be operating on trust alone.</strong></p>
-<p>Once everything is connected, you move from hoping your agents behave to actually seeing what they are doing, stopping what they should not be doing, and giving your security team the visibility they expect from any other workload in the environment.</p>
-<p>It feels like a lot of setup, but the payoff is real oversight, real protection, and real confidence that your AI agents are working for you rather than wandering off into trouble.</p>
+<p>Putting these pieces together gives you visibility into agent behavior, the ability to block unsafe actions in real time, and the tools to investigate incidents. If you want, I can split this content into separate pages for overview, inventory, and detection and protection.</p>
 
 
 <!-- taken from 
