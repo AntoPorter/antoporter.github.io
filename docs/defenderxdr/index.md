@@ -55,3 +55,5 @@
 	
 - [Sentinel to Defender - Part 3: The RBAC Transition](./sentinel/sentineldefender-part3.md)
 	
+- [Sentinel to Defender - Part 4: Automation, Playbooks and SOAR](./sentinel/sentineldefender-part4.md)
+	

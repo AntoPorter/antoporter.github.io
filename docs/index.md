@@ -6,11 +6,11 @@
 
 ## Latest Content
 
+- [Sentinel to Defender - Part 4: Automation, Playbooks and SOAR](./defenderxdr/sentinel/sentineldefender-part4.md)
+	
 - [Sentinel to Defender - Part 3: The RBAC Transition](./defenderxdr/sentinel/sentineldefender-part3.md)
 	
 - [Sentinel to Defender - Part 2: Before You Touch Anything](./defenderxdr/sentinel/sentineldefender-part2.md)
-	
-- [Sentinel to Defender - Part 1: What's Actually Changing (And What Isn't)](./defenderxdr/sentinel/sentineldefender-part1.md)
 	
 
 ---
@@ -21,23 +21,23 @@
 
 **[Out Of Band: A Microsoft Security Podcast](./podcast/outofband/index.md)**
 
-Join Microsoft Security MVPs [Shehan Perera](https://www.linkedin.com/in/shehanperera85/), [Andrew O'Young](https://www.linkedin.com/in/andrewoyoung/), and [Anthony Porter](https://www.linkedin.com/in/anthonyantoporter/) for discussions spanning Identity, Endpoint Management, Defender XDR, Microsoft Intune, Microsoft Purview, AI advancements, and more.
+Join Microsoft Security MVP [Andrew O'Young](https://www.linkedin.com/in/andrewoyoung/), [Mathew Clark](https://www.linkedin.com/in/mathewclarkau/) and [Anthony Porter](https://www.linkedin.com/in/anthonyantoporter/) for discussions spanning Identity, Endpoint Management, Defender XDR, Microsoft Intune, Microsoft Purview, AI advancements, and more.
 
 ---
 
 ## Featured Topics
 
-**🛡️ [Microsoft Defender XDR](./defenderxdr/index.md)**
+🛡️ [Microsoft Defender XDR](./defenderxdr/index.md)
 
-**💻 [Endpoint Management](./endpoint/index.md)**
+💻 [Endpoint Management](./endpoint/index.md)
 
-**🔐 [Microsoft Entra](./entra/index.md)**
+🔐 [Microsoft Entra](./entra/index.md)
 
-**☁️ [Microsoft Purview](./purview/index.md)**
+☁️ [Microsoft Purview](./purview/index.md)
 
-**🤖 [Microsoft Copilot](./copilot/index.md)**
+🤖 [Microsoft Copilot](./copilot/index.md)
 
-**🔐 [TrustM365](./trustm365/index.md)**
+🔐 [TrustM365](./trustm365/index.md)
 
 ---
 
