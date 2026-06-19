@@ -6,11 +6,11 @@
 
 ## Latest Content
 
+- [Sentinel to Defender - Part 5: The MSSP and Multi-Tenant Migration Playbook](./defenderxdr/sentinel/sentineldefender-part5.md)
+	
 - [Sentinel to Defender - Part 4: Automation, Playbooks and SOAR](./defenderxdr/sentinel/sentineldefender-part4.md)
 	
 - [Sentinel to Defender - Part 3: The RBAC Transition](./defenderxdr/sentinel/sentineldefender-part3.md)
-	
-- [Sentinel to Defender - Part 2: Before You Touch Anything](./defenderxdr/sentinel/sentineldefender-part2.md)
 	
 
 ---

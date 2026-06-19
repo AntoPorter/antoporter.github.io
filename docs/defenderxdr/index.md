@@ -57,3 +57,5 @@
 	
 - [Sentinel to Defender - Part 4: Automation, Playbooks and SOAR](./sentinel/sentineldefender-part4.md)
 	
+- [Sentinel to Defender - Part 5: The MSSP and Multi-Tenant Migration Playbook](./sentinel/sentineldefender-part5.md)
+	
