@@ -10,7 +10,6 @@ TLDR:
 
 Everything this series has covered so far, connectors, RBAC, automation, playbooks, applies when you multiply it across a portfolio of customer workspaces. The complexity does not change in kind. It changes in scale, in coordination overhead, and in the number of things that can go wrong at the same time.
 
-> [!NOTE]
 > A quick caveat before we go further. There is limited public discussion (that I have stumbled upon) on how this actually operates across MSSP's globally, so what I am describing reflects how I (personal opinion) would tackle this going forward.
 
 Part 5 is where the series comes together operationally. It covers what the Unified portal looks like as an MSSP operating environment, how to sequence a migration program across a customer portfolio, how content distribution works at scale, and where the access delegation model has evolved in ways that should inform how you design your operating architecture today.
