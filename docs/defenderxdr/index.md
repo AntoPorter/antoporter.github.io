@@ -59,3 +59,5 @@
 	
 - [Sentinel to Defender - Part 5: The MSSP and Multi-Tenant Migration Playbook](./sentinel/sentineldefender-part5.md)
 	
+- [Sentinel to Defender - Part 6: Life After Migration](./sentinel/sentineldefender-part6.md)
+	
