@@ -38,6 +38,8 @@
 ## Microsoft Sentinel
 ---
 
+- [Security for Microsoft Agent 365 with Defender](./sentinel/securityagent365.md)
+	
 - [KQL Made Less Scary: A Practical Starting Point Hidden in Plain Sight](./sentinel/kqlactivitytemplates.md)
 	
 - [The Future of SOC, with Microsoft](./sentinel/unifiedsoc.md)

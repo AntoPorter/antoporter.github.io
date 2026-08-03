@@ -6,11 +6,11 @@
 
 ## Latest Content
 
+- [Security for Microsoft Agent 365 with Defender](./defenderxdr/sentinel/securityagent365.md)
+	
 - [Sentinel to Defender - Part 6: Life After Migration](./defenderxdr/sentinel/sentineldefender-part6.md)
 	
 - [Sentinel to Defender - Part 5: The MSSP and Multi-Tenant Migration Playbook](./defenderxdr/sentinel/sentineldefender-part5.md)
-	
-- [Sentinel to Defender - Part 4: Automation, Playbooks and SOAR](./defenderxdr/sentinel/sentineldefender-part4.md)
 	
 
 ---
