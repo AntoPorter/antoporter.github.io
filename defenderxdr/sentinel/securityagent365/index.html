@@ -4292,8 +4292,10 @@
 <p><img alt="securityagent365-m365components" src="../Images/securityagent365-m365components.png" /></p>
 <p><strong>Microsoft Entra Users and groups</strong> is selected by default as a prerequisite for all monitoring capabilities.</p>
 <blockquote>
-<p>[!warning] Skip this connector and you fly blind on Copilot Studio alerts
-Real-time protection for Copilot Studio agents will still block suspicious activity at runtime even without this connector connected. But the alerts and incidents for those blocks won't show up anywhere in the Defender portal. Operationally, that means blocking without visibility, which is a hard sell to anyone doing incident response or reporting up the chain.</p>
+<div class="admonition warning">
+<p class="admonition-title">Skip this connector and you fly blind on Copilot Studio alerts</p>
+</div>
+<p>Real-time protection for Copilot Studio agents will still block suspicious activity at runtime even without this connector connected. But the alerts and incidents for those blocks won't show up anywhere in the Defender portal. Operationally, that means blocking without visibility, which is a hard sell to anyone doing incident response or reporting up the chain.</p>
 </blockquote>
 <h3 id="3-connect-copilot-studio-for-real-time-protection">3. Connect Copilot Studio for real-time protection</h3>
 <p>This is the one that needs a Power Platform administrator in the room, since it's a cross-team handshake:</p>
@@ -4349,12 +4351,14 @@ Real-time protection for Copilot Studio agents will still block suspicious activ
 <p><strong>Local agents</strong> are covered through Defender for Endpoint's runtime protection, which needs to be running in active mode and is onboarded separately from cloud agents entirely.</p>
 </li>
 </ul>
-<p>![[securityagent365-realtimeprotection.png]]</p>
+<p><img alt="securityagent365-realtimeprotection" src="../Images/securityagent365-realtimeprotection.png" /></p>
 <p>Rules live under <strong>Settings &gt; Security for AI &gt; Policies &amp; rules &gt; Real-time protection</strong>. There's a built-in <strong>Default</strong> rule that audits everything without blocking, giving you a baseline view before you start enforcing. Custom rules let you scope blocking to specific agents and detection types (secret exfiltration, malicious content propagation, evasion techniques, unsafe email domain, and others), with the ability to exclude specific agents from a rule.</p>
 <p>Every audit or block event lands in the <code>BehaviorInfo</code> table as a queryable behaviour, including what happened, why it was flagged, and which agent, user, and tool were involved. That table is your hunting and custom-detection substrate for this feature.</p>
 <blockquote>
-<p>[!warning] Copilot Studio behaviour recording gap
-Block events from Microsoft Prompt Shields for Foundry and Microsoft 365 Copilot Agent Builder get recorded as behaviours in <code>BehaviorInfo</code>. Copilot Studio doesn't support this yet. If you're building hunting queries or automation off <code>BehaviorInfo</code> and expecting full parity across platforms, you'll come up short on Copilot Studio specifically until this closes.</p>
+<div class="admonition warning">
+<p class="admonition-title">Copilot Studio behaviour recording gap</p>
+</div>
+<p>Block events from Microsoft Prompt Shields for Foundry and Microsoft 365 Copilot Agent Builder get recorded as behaviours in <code>BehaviorInfo</code>. Copilot Studio doesn't support this yet. If you're building hunting queries or automation off <code>BehaviorInfo</code> and expecting full parity across platforms, you'll come up short on Copilot Studio specifically until this closes.</p>
 </blockquote>
 <h3 id="investigation-and-hunting">Investigation and hunting</h3>
 <p>Alerts correlate into incidents the same way any other Defender signal does, giving you the incident graph, entity relationships, and blast radius view. For hunting, six Advanced Hunting tables matter here:</p>
@@ -4459,8 +4463,10 @@ Block events from Microsoft Prompt Shields for Foundry and Microsoft 365 Copilot
 </tbody>
 </table>
 <blockquote>
-<p>[!warning] This is a separate residency commitment to your core Defender data
-Australia doesn't get its own region under this model. A tenant provisioned in Australia has its Agent 365 security data (trace payloads, session data, agent inventory) stored in the United States, by design. </p>
+<div class="admonition warning">
+<p class="admonition-title">This is a separate residency commitment to your core Defender data</p>
+</div>
+<p>Australia doesn't get its own region under this model. A tenant provisioned in Australia has its Agent 365 security data (trace payloads, session data, agent inventory) stored in the United States, by design. </p>
 <p>This is a distinct commitment from the data residency options available for other Defender and Microsoft 365 workloads, and the two shouldn't be conflated when you're answering a data sovereignty question from a customer, a board, or an APRA-regulated entity. </p>
 <p>If residency is a hard requirement in your environment, this is a "check before you onboard" item, not a "raise it after go-live" item, because the tenant's storage location is locked in at creation and can't be moved afterwards.</p>
 </blockquote>
