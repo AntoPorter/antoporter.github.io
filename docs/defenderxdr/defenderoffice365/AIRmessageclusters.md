@@ -9,8 +9,8 @@ On a busy one, or across a queue with dozens of concurrent investigations, indiv
 
 Automated remediation closes that gap. It's off by default, and in most environments I'd argue it shouldn't stay that way.
 
-> !!! info "Licensing Requirement"
-> Automated remediation is a feature of **automated investigation and response (AIR)**, which requires Microsoft Defender for Office 365 Plan 2. That's included in Microsoft 365 E5, Microsoft 365 E5 Security, or available as a standalone Plan 2 add-on. If your tenant is running Plan 1 only, you won't see the Automation settings page at all. Check your licensing before you go looking for a menu that isn't there.
+!!! info "Licensing Requirement"
+	Automated remediation is a feature of **automated investigation and response (AIR)**, which requires Microsoft Defender for Office 365 Plan 2. That's included in Microsoft 365 E5, Microsoft 365 E5 Security, or available as a standalone Plan 2 add-on. If your tenant is running Plan 1 only, you won't see the Automation settings page at all. Check your licensing before you go looking for a menu that isn't there.
 
 ---
 ## Why this exists
@@ -55,8 +55,8 @@ This is exactly the mechanism that reaches campaigns spread across multiple slig
 
 Right now there's a single option in the **Remediation action** section: **Soft delete**. Messages get moved to the Recoverable Items folder rather than being purged outright, which gives automated remediation a built-in safety margin, if a cluster ever gets caught that shouldn't have been, there's a recovery path rather than a permanent loss.
 
-> !!! warn "Recoverability depends on retention, not on AIR"
-> How long a soft-deleted message stays recoverable is governed by the deleted item retention setting on each mailbox, not by anything AIR controls. Confirm that window suits your organisation, and check it against any compliance obligations around retaining flagged malicious mail, before you lean on it as your safety net.
+!!! warn "Recoverability depends on retention, not on AIR"
+	How long a soft-deleted message stays recoverable is governed by the deleted item retention setting on each mailbox, not by anything AIR controls. Confirm that window suits your organisation, and check it against any compliance obligations around retaining flagged malicious mail, before you lean on it as your safety net.
 
 ## How SOC teams operate with this in the portal
 
