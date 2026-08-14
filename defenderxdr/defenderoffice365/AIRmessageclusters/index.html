@@ -4059,12 +4059,10 @@
 <p>On a quiet day that's fine. </p>
 <p>On a busy one, or across a queue with dozens of concurrent investigations, individual messages within a cluster can end up under-actioned, delayed, or missed entirely while an analyst works through what's in front of them. </p>
 <p>Automated remediation closes that gap. It's off by default, and in most environments I'd argue it shouldn't stay that way.</p>
-<blockquote>
 <div class="admonition info">
 <p class="admonition-title">Licensing Requirement</p>
-</div>
 <p>Automated remediation is a feature of <strong>automated investigation and response (AIR)</strong>, which requires Microsoft Defender for Office 365 Plan 2. That's included in Microsoft 365 E5, Microsoft 365 E5 Security, or available as a standalone Plan 2 add-on. If your tenant is running Plan 1 only, you won't see the Automation settings page at all. Check your licensing before you go looking for a menu that isn't there.</p>
-</blockquote>
+</div>
 <hr />
 <h2 id="why-this-exists">Why this exists</h2>
 <p>Microsoft frames the benefit plainly: automated remediation expedites remediation of more threats and <strong>saves SecOps the time otherwise spent approving clusters that are, in most cases, an easy call</strong>. </p>
@@ -4110,12 +4108,10 @@
 <p>This is exactly the mechanism that reaches campaigns spread across multiple slightly-varied messages, the ones that don't share a single file or link but clearly came from the same actor. Without this cluster type enabled, that whole category of related mail relies on an analyst spotting the pattern manually and actioning each match by hand.</p>
 <h2 id="remediation-action-soft-delete-and-only-soft-delete">Remediation action: soft delete, and only soft delete</h2>
 <p>Right now there's a single option in the <strong>Remediation action</strong> section: <strong>Soft delete</strong>. Messages get moved to the Recoverable Items folder rather than being purged outright, which gives automated remediation a built-in safety margin, if a cluster ever gets caught that shouldn't have been, there's a recovery path rather than a permanent loss.</p>
-<blockquote>
 <div class="admonition warn">
 <p class="admonition-title">Recoverability depends on retention, not on AIR</p>
-</div>
 <p>How long a soft-deleted message stays recoverable is governed by the deleted item retention setting on each mailbox, not by anything AIR controls. Confirm that window suits your organisation, and check it against any compliance obligations around retaining flagged malicious mail, before you lean on it as your safety net.</p>
-</blockquote>
+</div>
 <h2 id="how-soc-teams-operate-with-this-in-the-portal">How SOC teams operate with this in the portal</h2>
 <p>The shift for a SOC team isn't in how they investigate, it's in where they look for evidence of what already happened, since there's no approval action left to click for the cluster types you've enabled. A few places to know:</p>
 <p><strong>Action Center.</strong> Automatically remediated clusters land on the <strong>History</strong> tab, not Pending. Filter by <strong>Decided by</strong> = <strong>Automation</strong> to see exactly what fired without a human touching it. If something needs reversing, <strong>Move to Inbox</strong> or <strong>Move to Junk</strong> are available from the cluster details flyout on that same tab.</p>
