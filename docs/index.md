@@ -6,11 +6,11 @@
 
 ## Latest Content
 
+- [AIR's Off-by-Default Auto-Remediation for MDO](./defenderxdr/defenderoffice365/AIRmessageclusters.md)
+	
 - [Security for Microsoft Agent 365 with Defender](./defenderxdr/sentinel/securityagent365.md)
 	
 - [Sentinel to Defender - Part 6: Life After Migration](./defenderxdr/sentinel/sentineldefender-part6.md)
-	
-- [Sentinel to Defender - Part 5: The MSSP and Multi-Tenant Migration Playbook](./defenderxdr/sentinel/sentineldefender-part5.md)
 	
 
 ---

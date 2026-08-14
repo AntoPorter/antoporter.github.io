@@ -143,6 +143,7 @@ nav:
       - defenderxdr/defenderendpoint/enablingdfefeatures.md
       - defenderxdr/defenderendpoint/enforcementscope.md
     - Defender for Office 365:
+      - defenderxdr/defenderoffice365/AIRmessageclusters.md
       - defenderxdr/defenderoffice365/ll-safelinks-rewrap.md
     - Defender for Identity:
       - defenderxdr/defenderidentity/top5features.md  

@@ -14,6 +14,8 @@
 ## Defender for Office 365
 ---
 
+- [AIR's Off-by-Default Auto-Remediation for MDO](./defenderoffice365/AIRmessageclusters.md)
+	
 - [Lessons Learnt: Resolving Safe Links Rewrap Breaking URLs](./defenderoffice365/ll-safelinks-rewrap.md)
 	
 
